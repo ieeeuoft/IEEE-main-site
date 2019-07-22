@@ -3,7 +3,7 @@ import styles from './member.module.scss'
 
 export default class Member extends PureComponent {
     render() {
-        let imgSrc = "../images/team/" + this.props.year + this.props.imgName + ".jpg";
+        let imgSrc = "./../../../Assets/Images/team/" + this.props.year + '/' + this.props.imgName + ".jpg";
         
         return (
             <div className={styles['card']}>

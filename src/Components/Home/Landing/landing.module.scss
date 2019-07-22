@@ -1,25 +1,6 @@
 @import "./../../../abstracts/variables";
 @import "./../../../abstracts/mixins";
 
-// Header
-.header {
-    @include flexPosition(space-between, flex-start);
-    width: 100vw;
-    padding: 0rem 2rem;
-    box-sizing: border-box;
-    margin: auto;
-    z-index: 100;
-    position: fixed;
-    top: 0;
-
-    .logo {
-        height: calc(50vw/6);
-
-        &-img {
-            height: 100%;
-        }
-    }
-}
 
 // Images of the skyline
 .skyline-outline {

@@ -10,7 +10,7 @@ const FooterHome = () => {
                     <h3 className={styles['footer-div-contact-heading']}>Email Us</h3>
                     <p className={styles['footer-div-contact-text']}>If you have any inquiries regarding our club, or would like to reach out to us about our events, please send us an email!</p>
                     <br/>
-                    <a className={styles['footer-div-contact-text && email']} href="mailto:uoft@ieee.org">uoft@ieee.org</a>
+                    <a className={styles['footer-div-contact-text'] + ' ' + styles['email']} href="mailto:uoft@ieee.org">uoft@ieee.org</a>
                     <h3 className={styles['footer-div-contact-heading']}>Address</h3>
                     <p className={styles['footer-div-contact-text']}>The Institute of Electrical and Electronics Engineers<br/>University of Toronto Student Branch</p>
                     <br/>
