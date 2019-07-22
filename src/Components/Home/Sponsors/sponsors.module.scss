@@ -1,0 +1,141 @@
+@import "./../../../abstracts/variables";
+@import "./../../../abstracts/mixins";
+
+// I made a mixin since essentially, all of the boxes have the same CSS but just different colors
+// So I just call the mixin and the column it's in, and the array in the next line maps the column
+// number to the respective colors (same as _about.scss)
+// I included @media so I can control the grid/layout of the design when the screen gets thin
+
+$aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1; 
+
+@mixin social($col) {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-decoration: none;
+
+    @each $about in $aboutCols {
+        grid-column: $col;
+        grid-row: 1/-1;
+        @if ($col == nth($about, 1)) {    
+            background-color: color(nth($about, 2));
+            transition: all .5s;
+            $z-ind: 2;
+            
+            &:hover {
+                padding: 2rem;
+                box-sizing: content-box;
+                z-index: 3;
+
+                &-heading, &-text{
+                    $z-ind: 4;
+                }
+            }
+
+            &:focus, &:visited, &:active {
+                background-color: color(nth($about, 2));
+            }
+
+            &-heading {
+                @include title(nth($about, 3));
+                font-size: size(lg);
+                @include grid-row-col(1, $col);
+                z-index: $z-ind;
+                margin-top: 8rem;
+                text-decoration: none;
+            }
+
+            &-text {
+                font-size: size(xs);
+                line-height: 2.4rem;
+                text-align: center;
+                width: 26vw;
+                max-width: 370px;
+                @include grid-row-col(2, $col);
+                align-self: start;
+                z-index: $z-ind;
+                margin-bottom: 9rem;
+                text-decoration: none;
+                color: color(font);
+            }
+
+            &-text:hover, &-heading:hover {
+                @if ($col == 1) {
+                    ~ .facebook {
+                        padding: 2rem;
+                        box-sizing: content-box;
+                        z-index: 3;
+                    }
+                }
+                @if ($col == 2) {
+                    ~ .newsletter {
+                        padding: 2rem;
+                        box-sizing: content-box;
+                        z-index: 3;
+                    }
+                }
+                @if ($col == 3) {
+                    ~ .membership {
+                        padding: 2rem;
+                        box-sizing: content-box;
+                        z-index: 3;
+                    }
+                }
+            }
+        }
+
+        @include response(lg/md) {
+            grid-column: 1;
+            @if ($col ==  1) { grid-row: 1/3}
+            @if ($col ==  2) { grid-row: 3/5}
+            @if ($col ==  3) { grid-row: 5/8}
+
+            &-heading {
+                grid-column: 1;
+                font-size: size(md)+2rem;
+                @if ($col ==  1) { grid-row: 1}
+                @if ($col ==  2) { grid-row: 3}
+                @if ($col ==  3) { grid-row: 5}
+                margin-top: 5rem;
+            }
+
+            &-text {
+                grid-column: 1;
+                @if ($col ==  1) { grid-row: 2}
+                @if ($col ==  2) { grid-row: 4}
+                @if ($col ==  3) { grid-row: 6}
+                width: 80vw;
+                max-width: 80vw;
+                margin: 2rem 0 4rem;
+            }
+        }
+    }    
+}
+
+.social-containter {
+    width: 100vw;
+    @include flexPosition;
+    display: grid;
+    grid-template-columns: 33.4vw 33.4vw 33.4vw;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: center;
+    z-index: 11;
+    grid-row-gap: 3rem;
+
+    @include response(lg/md) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-row-gap: 0;
+    }
+
+    .facebook {
+        @include social(1);
+    }
+    .newsletter {
+        @include social(2);
+    }
+    .membership {
+        @include social(3);
+    }
+}

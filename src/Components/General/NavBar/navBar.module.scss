@@ -1,0 +1,35 @@
+@import "./../../../abstracts/variables";
+@import "./../../../abstracts/mixins";
+
+// Navigation on top right corner
+nav {
+    // Writing all this to overwrite Materialize's CSS for the nav element
+    color: color(white);
+    text-decoration: none;
+    background-color: transparent;
+    box-shadow: none;
+    width: auto;
+
+    .nav {
+        &-list {
+            @include flexPosition(space-around);
+            font-size: size(xs);
+            font-family: font(source);
+        }
+
+        &-item {
+            list-style: none;
+            padding: 0 .8rem;
+        }
+
+        &-link  {
+            font-size: size(xs) !important;
+            transition: all 0.3s;
+
+            &:hover {
+                color: color(blue4);
+                background-color: transparent;
+            }
+        }
+    }
+}

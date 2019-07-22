@@ -1,0 +1,43 @@
+@import "./Assets/CSS/standarizedColours.scss";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// @import "layout/landing";
+// @import "layout/about";
+// @import "layout/upcoming";
+// @import "layout/events";
+// @import "layout/social";
+// @import "layout/sponsors";
+// @import "layout/footer";
+
+// @import "layout/team/team";
+
+
+// General stuff concerning the entire webpage
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%; 
+  height: 100%;
+  // overflow-x: hidden;
+  // overflow-y: scroll;
+
+  @include response(lg) {
+      font-size: 50%; 
+  }
+}
+
+body {
+  font-family: font(source);
+  height: 100%;
+  // padding-top: size(header);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+// End of general stuff concerning the entire webpage
+
+

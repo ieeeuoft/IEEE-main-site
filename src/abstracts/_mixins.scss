@@ -1,0 +1,234 @@
+@mixin flexPosition ($jusCon: space-between, $alIte: center) {
+    display: flex;
+    justify-content: $jusCon;
+    align-items: $alIte;
+}
+
+@mixin title ($color: blue1) {
+    font-family: font(roboto);
+    color: color($color);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+
+@mixin grid-row-col($row, $col) {
+    grid-row: $row;
+    grid-column: $col;
+}
+
+@mixin response($breakpoint) {
+    @if($breakpoint == xl) {
+        @media(max-width: 1200px) {
+            @content;
+        }
+    }
+    @if($breakpoint == lg) {
+        @media(max-width: 1000px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == lg/md) {
+        @media(max-width: 800px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == md) {
+        @media(max-width: 600px) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == sm) {
+        @media(max-width: 400px) {
+            @content;
+        }
+    }
+}
+
+// @each $about in $aboutCols {
+//         grid-column: $col;
+//         @if ($col == nth($about, 1)) {    
+//             background-color: color(nth($about, 2));
+//             &-heading {
+//                 @include title(nth($about, 3));
+//                 font-size: size(lg);
+//                 @include grid-row-col(2, $col);
+//                 z-index: 2;
+//                 margin: 6rem 0px 3rem;
+//             }
+//             &-text {
+//                 font-size: size(xs);
+//                 line-height: 2.4rem;
+//                 text-align: center;
+//                 width: 80%;
+//                 max-width: 500px;
+//                 @include grid-row-col(3, $col);
+//                 align-self: start;
+//                 z-index: 2;
+//             }
+//             @if ($col ==  1 or $col == 3) {
+//                 grid-row: 2/-2;
+//                 &-img {
+//                     height: 15vw;
+//                     padding: 20px;
+//                     @include grid-row-col(4, $col);
+//                     z-index: 2;
+//                 }
+//             }
+//             @else {
+//                 grid-row: 1/-1;
+//                 &-heading {
+//                     font-size: size(xl);
+//                 }
+//                 &-text {
+//                     font-size: size(sm);
+//                     line-height: 2.7rem;
+//                 }
+//                 &-btn-container {
+//                     width: 80%;
+//                     max-width: 500px;
+//                     grid-row: 4;
+//                     @include grid-row-col(4, $col);
+//                     z-index: 2;
+                
+//                     &-button {
+//                         width: 100%;
+//                         padding: 15px 40px;
+//                         border: 2px solid color(orange2);
+//                         color: color(orange2);
+//                         background-color: color(orange3);
+//                         font-family: font(merri);
+//                         font-weight: bold;
+//                         font-size: 4.2rem; 
+//                         text-align: center;
+//                         padding: 2rem;
+//                         margin-bottom: 15px;
+//                         transition: all .5s;
+        
+//                         &:hover {
+//                             color: color(orange3);
+//                             border: 2px solid color(orange2);
+//                             background-color: color(orange2);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }    
+// }
+
+
+
+
+// @mixin social(
+
+// $about: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1; 
+    
+
+// $clr-bkgrd, $clr-heading) {
+//     background-color: color($clr-bkgrd);
+//     width: 33.4vw;
+//     padding: 8rem 0px 9rem;
+//     transition: all .5s;
+//     border: 1px solid color($clr-bkgrd);
+
+//     &:hover {
+//         // padding: 10rem 2rem 11rem;
+//         border: 2rem solid color($clr-bkgrd);
+//         box-sizing: content-box;
+//         z-index: 10;
+//         //background-color: darken(color($clr-bkgrd), 5%);
+//     }
+
+//     &-link {
+//         @include flexPosition;
+//         flex-direction: column;
+//         text-decoration: none;
+//         cursor: pointer;
+
+//         &-heading {
+//             @include title($clr-heading);
+//             font-size: size(xl);
+//             width: 30vw;
+//             margin-bottom: 3rem;
+//         }
+//         &-text {
+//             font-size: size(sm);
+//             width: 23vw;
+//             max-width: 450px;
+//             text-align: center; 
+//             color: color(font);
+//             line-height: 2.7rem;
+//         }
+//     }   
+// }
+
+
+
+
+// @mixin test1 {
+//     display:inline-block;
+//     position: relative;
+//     transition: all .5s;
+//     width: 33.3vw;
+//     background-color: pink; //color(nth($about, 2));
+
+//     &-link {
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: size(lg) auto;
+//         align-items: center;
+//         justify-items: center;
+//         width: 33.4vw;
+//         grid-row-gap: 2rem;
+//         padding-top: 8rem;
+
+        
+
+//     }
+//     &:focus, &:visited, &:active {
+//         background-color: pink;
+//     }
+
+//     &-heading {
+//         @include title;
+//         font-size: size(lg);
+//         @include grid-row-col(1, 1);
+//     }
+
+//     &-text {
+//         font-size: size(xs);
+//         line-height: 2.4rem;
+//         text-align: center;
+//         width: 26vw;
+//         max-width: 370px;
+//         align-self: start;
+//         margin-bottom: 9rem;
+//         @include grid-row-col(2, 1);
+//     }
+
+//     &:hover {
+//         // padding: 10rem 2rem 11rem;
+//         border: 2rem solid pink; //color($clr-bkgrd);
+//         box-sizing: content-box;
+//         z-index: 10;
+//         //background-color: darken(color($clr-bkgrd), 5%);
+//     }
+
+// }
+// //             &-text {
+// //                 grid-column: 1;
+// //                 @if ($col ==  1) { grid-row: 2}
+// //                 @if ($col ==  2) { grid-row: 4}
+// //                 @if ($col ==  3) { grid-row: 6}
+// //                 width: 80vw;
+// //                 max-width: 80vw;
+// //                 margin: 2rem 0 4rem;
+// //             }
+// //         }
+// //     }    
+// // }

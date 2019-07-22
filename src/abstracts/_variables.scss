@@ -1,0 +1,43 @@
+$colors: (
+    font: #333,
+    white: #fff,
+    blue1: #00639C,
+    blue2: #0485BA,
+    blue3: #539CC9,
+    blue4: #8BB5D5,
+    blue5:#BFD4E6,
+    blue6: #DBEAF6,
+    green1: #2CA0AF,
+    green2: #9BD3D7,
+    green3: #C6ECEE,
+    orange1: #F6AA58,
+    orange2: #F37E00,
+    orange3: #FFE5C9
+);
+
+$fonts: (
+    source: 'Source Sans Pro',
+    merri: 'Merriweather',
+    roboto: 'Roboto Condensed'
+);
+
+$font-sizes: (
+    xl: 6rem,
+    lg: 4.2rem,
+    md: 3rem,
+    sm: 2rem,
+    xs: 1.8rem,
+    header: 80px
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name); //(name of map, key)
+}
+
+@function font($fonts-name) {
+    @return map-get($fonts, $fonts-name); //(name of map, key)
+}
+
+@function size($size) {
+    @return map-get($font-sizes, $size); //(name of map, key)
+}

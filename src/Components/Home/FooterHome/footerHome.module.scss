@@ -1,0 +1,90 @@
+@import "./../../../abstracts/variables";
+@import "./../../../abstracts/mixins";
+@import "./../Events/events.module.scss";
+
+.footer {
+    @extend .events-div;
+    background-color: color(blue1);
+    color: color(white);
+    &-heading {
+        @include title(white);
+        font-size: size(xl);
+    }
+
+    &-div {
+        @include flexPosition(space-between, flex-start);
+        width: 90%;
+        margin-top: 4rem;
+        
+        &-contact {
+            @include flexPosition(space-between, flex-start);
+            flex-direction: column;
+            width: 50%;
+            
+            &-heading {
+                font-weight: bold;
+                font-size: 3.2rem;
+                margin-bottom: 2rem;
+
+            }
+            &-text {
+                font-size: size(sm);
+            }
+        }
+
+        &-map {
+            padding-left: 2rem;
+            width: 40vw;
+
+            &-iframe {
+                width: 100%;
+            }
+        }
+    }
+
+    &-copyright {
+        font-weight: 600;
+        font-size: size(sm);
+        margin-top: 4rem;
+        text-align: center;
+        font-family: font(source);
+    }
+
+    @include response(lg) {
+        &-div{
+            flex-direction: column;
+            align-items: center;
+
+            &-contact {
+                width: 80%;
+                flex-direction: column;
+                align-items: center;
+
+                &-heading, &-text, .email {
+                    text-align: center;
+                }
+            }
+
+            &-map {
+                margin-top: 5rem;
+                width: 100%;
+
+
+            }
+        }
+    }
+}
+
+.email {
+    font-weight: 600;
+    margin-bottom: 6rem;
+    letter-spacing: .09rem;
+    color: color(white);
+
+    &:hover {
+        text-decoration: underline;
+        color: color(blue6);
+    }
+}
+    
+   

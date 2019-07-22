@@ -1,0 +1,7 @@
+@import "./../../abstracts/mixins";
+
+.team-container {
+    width: 100vw;
+    flex-direction: column;
+    @include flexPosition;
+}

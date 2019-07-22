@@ -1,0 +1,188 @@
+@import "./../../../abstracts/variables";
+@import "./../../../abstracts/mixins";
+
+// Header
+.header {
+    @include flexPosition(space-between, flex-start);
+    width: 100vw;
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+    margin: auto;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+
+    .logo {
+        height: calc(50vw/6);
+
+        &-img {
+            height: 100%;
+        }
+    }
+}
+
+// Images of the skyline
+.skyline-outline {
+    z-index: -10;
+}
+
+.skyline-outline, .skyline-solid {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-70%, -50%);
+    height: 85vh;
+    max-height: 100rem;
+    overflow-x: hidden;
+
+    @include response(lg/md) {
+        left: 40vw;
+    }
+}
+// End of images of the skyline
+
+
+// Blue trapezoid that crops skyline-solid
+.blue-background {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: color(blue1);
+    width: 100vw;
+    height: 100vh;
+    max-height: 150rem;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: -5;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 86%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 86%);
+
+    @include response(lg/md) {
+        -webkit-clip-path: polygon(40% 0%, 100% 0, 100% 100%, 0 100%, 0 86%);
+        clip-path: polygon(40% 0%, 100% 0, 100% 100%, 0 100%, 0 86%);
+    }
+
+    display: inline-block;
+    white-space: nowrap;
+
+    @include response(lg) {
+        max-height: 120rem;
+    }
+}
+
+// Div of skyline-outline
+.no-background {
+    display: inline-block;
+    white-space: nowrap;
+    width: 100vw;
+    height: auto;
+}
+
+// Text of "IEEE UofT Student Branch
+.heading {
+    width: 50%;
+    padding: 10rem;
+    padding-left: 0;
+
+    top: 50vh;
+    left: 50vw;
+    // transform: translate(0%, 0%);
+
+    &-title, &-blue-title {
+        text-align: right;
+        font-family: font(roboto);
+        font-weight: bold;
+        font-size: 20rem;
+        color: color(white);
+    } 
+
+    &-subtitle, &-blue-subtitle {
+        text-align: right;
+        font-family: font(source);
+        font-weight: bold;
+        font-size: size(lg);
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    &-blue {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        padding: 10rem;
+        z-index: -4;
+    
+        &-title, &-subtitle {
+            color: color(blue1);
+        }
+    }
+
+
+    @include response (xl) {
+        &-title, &-blue-title {
+            font-size: 18rem;
+        }
+        &-subtitle, &-blue-subtitle {
+            font-size: size(lg) - 1rem;
+        }  
+    }
+    @include response (lg) {
+        padding: 8rem;
+        padding-left: 0;
+        &-blue {padding: 8rem;}
+        transform: translate(0%, 5%);
+
+        &-title, &-blue-title {
+            font-size: 20rem;
+        }
+        &-subtitle, &-blue-subtitle {
+            font-size: size(lg)-0.5rem;
+        }  
+    }
+    @include response(lg/md) {
+        // transform: translate(0%, 5%);
+        &-blue {padding: 6rem;}
+        &-title, &-blue-title {
+            font-size: 17rem;
+        }
+        &-subtitle, &-blue-subtitle {
+            font-size: size(md);
+        }  
+
+        
+    }
+    @include response(md) {
+        // transform: translate(0%, 5%);
+        padding: 5rem;
+        padding-left: 0;
+        &-blue {
+            padding: 5rem;
+            padding-left: 0;
+        }
+
+        &-title, &-blue-title {
+            font-size: 14rem;
+        }
+        &-subtitle, &-blue-subtitle {
+            font-size: size(md);
+        }  
+    }
+}
+
+
+// Change the font-color of the nav from white to blue when the header color changes to white
+.change-color {
+    color: color(blue1) !important;
+}
+
+// Change header color to white
+.change-color2 {
+    background-color: #fff;
+    z-index: 100;
+    color: color(blue1);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+    @include flexPosition(space-between, center);
+}
