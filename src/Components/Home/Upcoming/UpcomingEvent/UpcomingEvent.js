@@ -10,7 +10,7 @@ export default class UpcomingEvent extends PureComponent {
             EventDate
         } = this.props
 
-        let imgSrc = './../../../../Assets/Images/events/' + {img} + '.png';
+        let imgSrc = './../../../../Assets/Images/events/' + img + '.png';
 
         return (
             <div className={styles['upcoming-event']}>

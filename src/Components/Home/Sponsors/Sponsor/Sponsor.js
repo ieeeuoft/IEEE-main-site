@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import styles from './sponsor.module.scss'
-import { stringify } from 'querystring';
+// import { stringify } from 'querystring';
 
 export default class Sponsor extends PureComponent {
     render() {
@@ -9,7 +9,7 @@ export default class Sponsor extends PureComponent {
             companyName
         } = this.props
 
-        let imgSrc = './../../../../Assets/Images/sponsors/' + {companyName} + '.png';
+        let imgSrc = './../../../../Assets/Images/sponsors/' + companyName + '.png';
 
         return (
             <div className={styles['sponsors-container']}>
