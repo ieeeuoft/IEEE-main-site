@@ -5,11 +5,13 @@ import styles from './team.module.scss'
 import TeamNav from '../../Components/Team/TeamNav/TeamNav.js';
 import skylineLeft from './../../Assets/Images/skyline/skyline-left.svg';
 import skylineRight from './../../Assets/Images/skyline/skyline-right.svg';
+import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
 
 export default class Team extends Component {
     render() {
         return (
             <div>
+                <YearDropdown />
                 <TeamNav />
                 <Team2019 />
                 <div className={styles['skyline-imgs']}>

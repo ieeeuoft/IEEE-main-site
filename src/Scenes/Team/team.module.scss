@@ -128,13 +128,6 @@
     }
 }
 
-.row {
-    @include flexPosition(center, center);
-    width: 100%;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-}
-
 
 @mixin flexPosition ($jusCon: space-between, $alIte: center) {
     display: flex;

@@ -5,3 +5,10 @@
     flex-direction: column;
     @include flexPosition;
 }
+
+.row {
+    @include flexPosition(center, center);
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
