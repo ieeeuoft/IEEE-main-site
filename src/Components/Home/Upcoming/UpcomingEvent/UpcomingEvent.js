@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import styles from './upcomingEvent.module.scss'
+import imgSrc from './../../../../Assets/Images/events/MakeUofT.png';
 
 export default class UpcomingEvent extends PureComponent {
     render() {
@@ -10,7 +11,7 @@ export default class UpcomingEvent extends PureComponent {
             EventDate
         } = this.props
 
-        let imgSrc = './../../../../Assets/Images/events/' + img + '.png';
+        // let imgSrc = './../../../../Assets/Images/events/' + img + '.png';
 
         return (
             <div className={styles['upcoming-event']}>

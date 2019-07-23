@@ -45,6 +45,8 @@ nav {
         &-link  {
             font-size: size(xs) !important;
             transition: all 0.3s;
+            line-height: 143%;
+            text-align: center;
 
             &:hover {
                 color: color(blue4);

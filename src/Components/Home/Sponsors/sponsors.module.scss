@@ -11,46 +11,24 @@
         @include title;
         font-size: size(xl);
     }
-
-    .sponsors {
-        @include flexPosition;
-
-        &-container {
-            @include flexPosition;
-            flex-direction: column;
-            padding: 4rem;
-            transition: all .4s;
-
-            &-img {
-                max-height: 20rem;
-                height: 10vw;
-            }
-
-            &:hover {
-                padding-top: 1.5rem;
-            }
-
-            &-tier {
-                color: color(green1);
-                font-family: font(merri);
-                font-weight: bold;
-                font-size: size(sm);
-                margin-top: 2rem;
-            }
-
-            @include response(lg) {
-                &-img {
-                    height: 12vw;
-                }
-            }
-
-            @include response(lg/md) {
-                padding: 3rem;
-    
-                &-img {
-                    height: 15vw;
-                }
-            }
-        }
-    }
 }
+
+.sponsors {
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 3000px;
+    padding: 40px 0px;
+    background: color(white);
+}
+
+.slick-slide div {
+    margin: 20px;
+}
+
+.slick-slide img {
+    margin: auto;
+}
+
+// .slick-dots li button::before, .slick-dots li.slick-active button:before {
+//     color: color(blue1);
+// }

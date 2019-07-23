@@ -3,15 +3,14 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-// @import "layout/landing";
-// @import "layout/about";
-// @import "layout/upcoming";
-// @import "layout/events";
-// @import "layout/social";
-// @import "layout/sponsors";
-// @import "layout/footer";
+.container {
+  padding: 40px;
+  background: #419be0;
+}
 
-// @import "layout/team/team";
+.slick-slide img {
+  margin: auto;
+}
 
 
 // General stuff concerning the entire webpage

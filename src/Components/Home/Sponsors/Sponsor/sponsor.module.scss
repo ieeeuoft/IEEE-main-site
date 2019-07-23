@@ -1,0 +1,44 @@
+@import "./../../../../abstracts/variables";
+@import "./../../../../abstracts/mixins";
+
+.sponsors {
+    @include flexPosition;
+
+    &-container {
+        @include flexPosition;
+        flex-direction: column;
+        padding: 4rem;
+        transition: all .4s;
+
+        &-img {
+            max-height: 20rem;
+            height: 10vw;
+        }
+
+        &:hover {
+            padding-top: 1.5rem;
+        }
+
+        &-tier {
+            color: color(green1);
+            font-family: font(merri);
+            font-weight: bold;
+            font-size: size(sm);
+            margin-top: 2rem;
+        }
+
+        @include response(lg) {
+            &-img {
+                height: 12vw;
+            }
+        }
+
+        @include response(lg/md) {
+            padding: 3rem;
+
+            &-img {
+                height: 15vw;
+            }
+        }
+    }
+}

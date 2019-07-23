@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import styles from './eventEvent.module.scss'
+import imgSrc from './../../../../Assets/Images/events/MakeUofT.png';
 
 export default class EventEvent extends PureComponent {
     render() {
@@ -10,7 +11,7 @@ export default class EventEvent extends PureComponent {
             EventDate
         } = this.props
 
-        let imgSrc = './../../../../Assets/Images/events/' + {img} + '.png';
+        // let imgSrc = './../../../../Assets/Images/events/' + img + '.png';
 
         return (
             <a className={styles['carousel-item'] + ' ' + styles['events-event']} href={link} target="_blank">

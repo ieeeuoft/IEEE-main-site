@@ -15,9 +15,11 @@
     }
 
     .events {
-        @include flexPosition(space-between, flex-start);
-        // width: 90%;
-        // max-width: 1200px;   
+        width: 100vw;
+        margin: 0 auto;
+        max-width: 3000px;
+        padding: 40px 0px;
+        background: color(white);
     }
 }
 

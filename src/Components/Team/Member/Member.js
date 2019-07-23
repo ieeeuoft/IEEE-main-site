@@ -8,6 +8,7 @@ export default class Member extends PureComponent {
     render() {
         const {
             fullName, 
+            name,
             position,
             year,
             emailLink,
