@@ -16,9 +16,7 @@ export default class Sponsors extends PureComponent {
     return (
         <div className={styles['sponsors-div']}>
             <h2 className={styles['sponsors-div-heading']}>Our Sponsors</h2> 
-      
             <div className={styles['sponsors']}>
-
                 <Slider {...settings}>
                     {sponsorList.allSponsors.map((item, i) =><Sponsor companyName={item.companyName} tier={item.tier} imgType={item.imgType} /> )}  
                 </Slider>

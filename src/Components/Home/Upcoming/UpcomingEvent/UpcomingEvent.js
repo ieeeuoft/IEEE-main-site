@@ -6,18 +6,17 @@ export default class UpcomingEvent extends PureComponent {
     render() {
         const {
             link, 
-            img, 
+            // img, 
             EventName,
             EventDate
         } = this.props
 
-        // let imgSrc = './../../../../Assets/Images/events/' + img + '.png';
 
         return (
-            <div className={styles['upcoming-event']}>
+            <div>
                 <div className={styles['upcoming-event-img']}>
                     <a className={styles['upcoming-event-img-crop']} href={link} target="_blank">
-                        <img src={imgSrc} alt={img} className={styles['upcoming-event-img-crop-src']} />
+                        <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventName} className={styles['upcoming-event-img-crop-src']}/>
                     </a>
                 </div>
                 <h3 className={styles['upcoming-event-name']}>{EventName}</h3>

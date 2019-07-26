@@ -6,7 +6,7 @@ export const allSponsors = [
     { companyName: "Twilio", tier: "Silver", imgType: ".svg" },
     { companyName: "Google", tier: "Silver", imgType: ".svg" },
     { companyName: "AMD", tier: "Bronze", imgType: ".svg" },
-    { companyName: "Redbull", tier: "Bronze", imgType: ".svg" },
-    { companyName: "Ecobee", tier: "Bronze", imgType: ".svg" },
+    { companyName: "Marvell", tier: "Bronze", imgType: ".svg" },
+    { companyName: "Hatchery", tier: "Bronze", imgType: ".svg" },
     { companyName: "Particle", tier: "Bronze", imgType: ".svg" }
 ]

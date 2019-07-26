@@ -1,12 +1,11 @@
 import React, { PureComponent } from 'react';
 import styles from './eventEvent.module.scss'
-import imgSrc from './../../../../Assets/Images/events/MakeUofT.png';
+// import imgSrc from './../../../../Assets/Images/events/MakeUofT.png';
 
 export default class EventEvent extends PureComponent {
     render() {
         const {
             link, 
-            img, 
             EventName,
             EventDate
         } = this.props
@@ -17,8 +16,8 @@ export default class EventEvent extends PureComponent {
             <a className={styles['carousel-item'] + ' ' + styles['events-event']} href={link} target="_blank">
                 <div className={styles['events-event-img']}>
                     <div className={styles['events-event-img-crop']}>
-                        <div class={styles['dark-gradient']}></div>
-                        <img src={imgSrc} alt={img} className={styles['events-event-img-crop-src']} />
+                        {/* <div className={styles['dark-gradient']}></div> */}
+                        <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventName} className={styles['events-event-img-crop-src']}/>
                     </div>
                 </div>
                 <div className={styles['events-event-text']}>

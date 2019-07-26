@@ -15,8 +15,6 @@ export default class Member extends PureComponent {
             LinkedInLink
         } = this.props;
 
-        // let imgSrc = "./../../../Assets/Images/team/" + year + "/" + fullName + ".jpg";
-
         return (
             <div className={styles['card']}>
                 <div className={styles['card-crop']}>

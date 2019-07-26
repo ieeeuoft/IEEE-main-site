@@ -1,6 +1,7 @@
 @import "./../../../../abstracts/variables";
 @import "./../../../../abstracts/mixins";
 
+
 .sponsors {
     @include flexPosition;
 
@@ -9,10 +10,12 @@
         flex-direction: column;
         padding: 4rem;
         transition: all .4s;
+        width: auto;
 
         &-img {
             max-height: 20rem;
             height: 10vw;
+            width: 100%;
         }
 
         &:hover {

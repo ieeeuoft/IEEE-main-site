@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import styles from './events.module.scss'
 import EventEvent from './EventEvent/EventEvent'
 import * as eventList from './../../../Assets/Lists/allEvents'
+import { Link } from 'react-router-dom';
 
 export default class Sponsors extends PureComponent {
   render() {
@@ -16,13 +17,14 @@ export default class Sponsors extends PureComponent {
     return (
         <div className={styles['events-div']}>
             <h2 className={styles['events-div-heading']}>All Events</h2>
-       
-                <div className={styles['events']} id="events-carousel">  
-
-                    {/* "container" + " " +  */}
-                    <Slider {...settings}>
-                        {eventList.allEvents.map((item, i) => <EventEvent EventName={item.EventName} EventDate={item.date} EventLink={item.link} /> )}  
-                    </Slider>
+              <div className={styles['events']} id="events-carousel">  
+                  <Slider {...settings}>
+                      { eventList.allEvents.map((item, i) => 
+                        <Link to={item.link}>
+                          <EventEvent EventName={item.EventName} EventDate={item.date} EventLink={item.link} />
+                        </Link>
+                      )}  
+                  </Slider>
             </div>
         </div>  
     );

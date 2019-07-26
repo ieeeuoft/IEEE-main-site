@@ -18,8 +18,15 @@ const About = () => {
             <h2 className={styles['about-heading']}>About Us</h2>
             <p className={styles['about-text']}>IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. The UofT Student Branch consists of two chapters: Computer and Electronics. We host numerous events throughout the year, which are designed to help students reach their personal and professional development goals.</p>
             <div className={styles['about-btn-container']}>
-                <button className={styles['about-btn-container-button']}>our team</button>
-                <button className={styles['about-btn-container-button']}>visit ieee.org</button>
+                <Link to={'/team'}>
+                    <button className={styles['about-btn-container-button']}>our team</button>
+                </Link>
+
+                <Link to={'./www.ieee.org'}>
+                    <button className={styles['about-btn-container-button']}>visit ieee.org</button>
+                </Link>
+                
+                
             </div>
             <div className={styles['electronics']}></div>
             <h2 className={styles['electronics-heading']}>Electronics Chapter</h2>
