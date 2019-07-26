@@ -1,8 +1,16 @@
 @import "./../../../../abstracts/variables";
 @import "./../../../../abstracts/mixins";
 
-.events {
+.dark-gradient {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 59.89%, rgba(0, 0, 0, 0.42) 68.02%);
+    margin-right: -408px;
+    z-index: 1;
+}
 
+.events {
     &-event {
         display: flex  !important;
         @include flexPosition(flex-end, center);
@@ -34,23 +42,7 @@
                 -ms-transition: width .7s, height .7s, margin .7s;
                 transition: width .7s, height .7s, margin .7s;
 
-                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 68%);
-
-
-                // &::after {
-                //     display: block;
-                //     position: relative;
-                    
-                //     // height: 100%;
-                //     // width: 100%;
-                //     height: calc(30vw - 4rem);
-                // width: calc(30vw - 4rem);
-                // max-width: 36rem;
-                // max-height: 36rem;
-                //     content: '';
-                //     margin-top: -100%;
-                //     z-index: 200;
-                // }
+                // background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 68%)
                 
                 &-src {
                     height: 30vw;
@@ -66,106 +58,20 @@
                 }
 
             }
-        //     @include response(lg) {
-        //         width: 26vw;
-        //         // height: 26vw;
-        //         max-width: 26vw;
-        //         // max-height: 26vw;
-
-        //         &-crop {
-        //             // height: calc(26vw - 3rem);
-        //             width: calc(26vw - 3rem);
-        //             max-width: 26vw;
-        //             // max-height: 26vw;
-
-        //             &-src {
-        //                 display: block;
-        //                 // height: 26vw;
-        //                 width: 26vw;
-        //                 max-width: 26vw;
-        //                 // max-height: 26vw;
-        //             }
-        //             &:hover {
-        //                 width: 26vw;
-        //                 // height: 26vw;
-        //                 max-width: 26vw;
-        //                 // max-height: 26vw;
-        //             }
-        //         }
-                
-        //     }
-        //     @include response(lg/mg) {
-        //         width:30vw;
-        //         // height:30vw;
-        //         max-width:30vw;
-        //         // max-height:30vw;
-
-        //         &-crop {
-        //             // height: calc(30vw - 3rem);
-        //             width: calc(30vw - 3rem);
-        //             max-width:30vw;
-        //             // max-height:30vw;
-
-        //             &-src {
-        //                 display: block;
-        //                 // height:30vw;
-        //                 width:30vw;
-        //                 max-width:30vw;
-        //                 // max-height:30vw;
-        //             }
-                
-        //             &:hover {
-        //                 width:30vw;
-        //                 // height:30vw;
-        //                 max-width:30vw;
-        //                 // max-height:30vw;
-        //             }
-        //         }
-                
-        //     }
-        //     @include response(md) {
-        //         width: 35vw;
-        //         // height: 35vw;
-        //         max-width: 35vw;
-        //         // max-height: 35vw;
-
-        //         &-crop {
-        //             // height: calc(35vw - 3rem);
-        //             width: calc(35vw - 3rem);
-        //             max-width: 35vw;
-        //             // max-height: 35vw;
-
-        //             &-src {
-        //                 display: block;
-        //                 // height: 35vw;
-        //                 width: 35vw;
-        //                 max-width: 35vw;
-        //                 // max-height: 35vw;
-        //             }
-        //             &:hover {
-        //                 width: 35vw;
-        //                 // height: 35vw;
-        //                 max-width: 35vw;
-        //                 // max-height: 35vw;
-        //             }
-        //         }
-                
-        //     }
         }
 
         &-text {
-            z-index: 1;
-            width: 75%;
+            width: 340px;
             position: absolute;
-            bottom: 4rem;
+            bottom: 5rem;
 
                 &:hover {
-                .events-event-img-crop {
-                    height: 30vw; 
-                    width: auto;
-                    max-height: 40rem;
-                    margin-top: -1.5rem;
-                }
+                    .events-event-img-crop {
+                        height: 30vw; 
+                        width: auto;
+                        max-height: 40rem;
+                        margin-top: -1.5rem;
+                    }
             }
 
             &-name {

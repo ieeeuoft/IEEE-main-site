@@ -17,6 +17,7 @@ export default class EventEvent extends PureComponent {
             <a className={styles['carousel-item'] + ' ' + styles['events-event']} href={link} target="_blank">
                 <div className={styles['events-event-img']}>
                     <div className={styles['events-event-img-crop']}>
+                        <div class={styles['dark-gradient']}></div>
                         <img src={imgSrc} alt={img} className={styles['events-event-img-crop-src']} />
                     </div>
                 </div>

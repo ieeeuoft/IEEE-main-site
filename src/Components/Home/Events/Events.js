@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import Slider from "react-slick";
 import styles from './events.module.scss'
 import EventEvent from './EventEvent/EventEvent'
+import * as eventList from './../../../Assets/Lists/allEvents'
 
 export default class Sponsors extends PureComponent {
   render() {
@@ -10,7 +11,9 @@ export default class Sponsors extends PureComponent {
       autoplaySpeed: 100,
       autoplay: true,
       slidesToShow: 3,
-      speed: 3000
+      speed: 3000,
+      centerMode: true,
+      centerPadding: "100px"
     };
     return (
         <div className={styles['events-div']}>
@@ -20,18 +23,7 @@ export default class Sponsors extends PureComponent {
 
                     {/* "container" + " " +  */}
                     <Slider {...settings}>
-                        <EventEvent tier="Gold" />
-                        <EventEvent tier="Gold" />
-                        <EventEvent tier="Gold" />
-                        <EventEvent tier="Gold" />
-                        <EventEvent tier="Gold" />
-                        <EventEvent tier="Gold" />
-
-                        
-                        {/* <div>
-                            <img src="http://placekitten.com/g/400/200" />
-                        </div> */}
-                        
+                        {eventList.allEvents.map((item, i) => <EventEvent EventName={item.EventName} EventDate={item.date} EventLink={item.link} /> )}  
                     </Slider>
             </div>
         </div>  

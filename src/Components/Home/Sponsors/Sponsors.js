@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import styles from './sponsors.module.scss';
+import * as sponsorList from './../../../Assets/Lists/allSponsors';
 import Slider from "react-slick";
 import Sponsor from './Sponsor/Sponsor';
 
@@ -18,20 +19,8 @@ export default class Sponsors extends PureComponent {
       
             <div className={styles['sponsors']}>
 
-                {/* "container" + " " +  */}
                 <Slider {...settings}>
-                    <Sponsor tier="Gold" />
-                    <Sponsor tier="Gold" />
-                    <Sponsor tier="Gold" />
-                    <Sponsor tier="Gold" />
-                    <Sponsor tier="Gold" />
-                    <Sponsor tier="Gold" />
-
-                    
-                    {/* <div>
-                        <img src="http://placekitten.com/g/400/200" />
-                    </div> */}
-                    
+                    {sponsorList.allSponsors.map((item, i) =><Sponsor companyName={item.companyName} tier={item.tier} imgType={item.imgType} /> )}  
                 </Slider>
             </div>
         </div>  

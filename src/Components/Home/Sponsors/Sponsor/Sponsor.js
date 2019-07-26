@@ -7,7 +7,8 @@ export default class Sponsor extends PureComponent {
     render() {
         const {
             tier,
-            companyName
+            companyName,
+            imgType
         } = this.props
 
         // let imgSrc = './../../../../Assets/Images/sponsors/' + companyName + '.png';
