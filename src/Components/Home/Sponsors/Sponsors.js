@@ -7,7 +7,7 @@ import Sponsor from './Sponsor/Sponsor';
 export default class Sponsors extends PureComponent {
   render() {
     var settings = {
-      dots: true,
+      // dots: true,
       autoplaySpeed: 100,
       autoplay: true,
       slidesToShow: 5,

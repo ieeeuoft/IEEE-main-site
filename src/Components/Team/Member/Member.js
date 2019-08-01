@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import styles from './member.module.scss'
-import imgSrc from "./../../../Assets/Images/team/2019_20/Nhien Tran-Nyguen.jpg";
 import Email from './../../../Assets/Images/team/icons/email.svg';
 import LinkedIn from './../../../Assets/Images/team/icons/linkedin.svg';
 
@@ -8,7 +7,6 @@ export default class Member extends PureComponent {
     render() {
         const {
             fullName, 
-            name,
             position,
             year,
             emailLink,
@@ -18,7 +16,7 @@ export default class Member extends PureComponent {
         return (
             <div className={styles['card']}>
                 <div className={styles['card-crop']}>
-                    <img className={styles['card-crop-img']} src={imgSrc} alt={fullName} />
+                    <img className={styles['card-crop-img']} src={require('./../../../Assets/Images/team/' + year + '/' + fullName + '.jpg')} alt={fullName} />
                 </div>
                 <p className={styles['card-title']}>{position}</p>
                 <p className={styles['card-name']}>{fullName}</p>

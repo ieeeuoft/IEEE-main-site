@@ -67,10 +67,8 @@ export default class Upcoming extends PureComponent {
                                     <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="www.facebook.com" />
                                 }
                             </div>
-                        
                         )
                     })
-
                 }
             </div>
             </div>
