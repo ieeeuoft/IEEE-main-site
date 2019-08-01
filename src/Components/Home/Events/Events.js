@@ -10,9 +10,10 @@ export default class Sponsors extends PureComponent {
     var settings = {
       // dots: true,
       autoplaySpeed: 2500,
-      autoplay: true,
+      // autoplay: true,
       slidesToShow: 3,
-      speed: 500
+      speed: 500, 
+      pauseOnHover: false
     };
     return (
         <div className={styles['events-div']}>

@@ -11,7 +11,8 @@ export default class Sponsors extends PureComponent {
       autoplaySpeed: 100,
       autoplay: true,
       slidesToShow: 5,
-      speed: 3000
+      speed: 3000,
+      pauseOnHover: false
     };
     return (
         <div className={styles['sponsors-div']}>

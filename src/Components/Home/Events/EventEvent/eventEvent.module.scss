@@ -2,12 +2,10 @@
 @import "./../../../../abstracts/mixins";
 
 .dark-gradient {
-    width: 500px;
-    height: 500px;
-    display: inline-block;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 59.89%, rgba(0, 0, 0, 0.42) 68.02%);
-    margin-right: -408px;
-    z-index: 1;
+    position: absolute
 }
 
 .events {
@@ -15,64 +13,85 @@
         display: flex  !important;
         @include flexPosition(flex-end, center);
         flex-direction: column;
-        width: 30vw;
-        // padding-bottom: 150px;
-        
+        width: 30vw;        
 
-        @include response(lg/md) { width: 30vw; }
+        &:hover {
+            .events-event-img-crop {
+                height: 30vw;
+                width: auto;
+                max-height: 40rem;
+                margin-top: -1.5rem;
+            }
+            .events-event-text {
+                bottom: 6rem;
+            }
+        }
+
+        // @media screen and (max-width: 1200px ) {
+        //     .events-event:hover {
+        //         .events-event-img-crop {
+        //             height: 3vw;
+
+        //         }
+        //     }
+        // }
+
+        // @include response(xl) { 
+        //     // width: 30vw;
+        //     .events-event:hover {
+        //         .events-event-img-crop {
+        //             height: 2vw;
+        //         }
+        //         .events-event-text {
+        //             bottom: 6rem;
+        //         }
+        //     }
+        
+        // }
 
         &-img {
             width: auto;
             height: 30vw;
             max-height: 40rem;
-            // margin: 5rem 0rem 2rem;
             @include flexPosition(center, center);
 
             &-crop {
+                position: relative;
                 height: calc(30vw - 4rem);
                 width: calc(30vw - 4rem);
                 max-width: 36rem;
                 max-height: 36rem;
                 @include flexPosition(center, center);
+
+
+                @media screen and (max-width: 1200px ) {
+                    height: calc(30vw - 2rem);
+                    width: calc(30vw - 2rem);
+
+                }
                 
                 -webkit-clip-path: circle(50% at 50% 50%);
                 clip-path: circle(50% at 50% 50%);
-                -webkit-transition: width .7s, height .7s, margin .7s;
-                -moz-transition: width .7s, height .7s, margin .7s;
-                -ms-transition: width .7s, height .7s, margin .7s;
-                transition: width .7s, height .7s, margin .7s;
-
-                // background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 68%)
+                -webkit-transition: all .7s;
+                -moz-transition: all .7s;
+                -ms-transition: all .7s;
+                transition: all .7s;
                 
                 &-src {
                     height: 30vw;
                     width: auto;
                     max-height: 40rem;
                 }
-
-                &:hover {
-                    height: 30vw;
-                    width: auto;
-                    max-height: 40rem;
-                    margin-top: -1.5rem;
-                }
-
             }
         }
 
         &-text {
-            width: 340px;
+            width: calc(30vw - 40px);
+            max-width: 32rem;
             position: absolute;
             bottom: 5rem;
 
-                &:hover {
-                    .events-event-img-crop {
-                        height: 30vw; 
-                        width: auto;
-                        max-height: 40rem;
-                        margin-top: -1.5rem;
-                    }
-            }
+            transition: bottom .6s;
 
             &-name {
                 font-family: font(merri);
@@ -85,9 +104,8 @@
                 margin: 0;
                 text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.89);
 
-                @include response(md) {
-                    font-size: size(md);
-                }
+                @include response(xl) { font-size: size(md) - 0.5rem; }
+                @include response(md) { font-size: size(sm); }
             }
 
             &-date {

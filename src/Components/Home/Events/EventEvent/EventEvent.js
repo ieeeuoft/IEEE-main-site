@@ -13,10 +13,10 @@ export default class EventEvent extends PureComponent {
         // let imgSrc = './../../../../Assets/Images/events/' + img + '.png';
 
         return (
-            <a href={EventLink} target="_blank" className={styles['carousel-item'] + ' ' + styles['events-event']} >
+            <a href={EventLink} target="_blank" className={styles['events-event']} >
                 <div className={styles['events-event-img']}>
                     <div className={styles['events-event-img-crop']}>
-                        {/* <div className={styles['dark-gradient']}></div> */}
+                        <div className={styles['dark-gradient']}></div>
                         <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventName} className={styles['events-event-img-crop-src']}/>
                     </div>
                 </div>
