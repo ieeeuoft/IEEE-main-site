@@ -43,7 +43,10 @@ export default class Team extends Component {
         this.setState({teamKey: group});
     }
 
-    changeYear(year){
+    changeYear = (event) => {
+        this.setState({
+          year:event.target.value
+        });
 
     }
 
@@ -87,9 +90,9 @@ export default class Team extends Component {
                     { (teamKey === "execs") &&
                         <div className={styles['row']}>
                             {
-                                members.current[0].execs.map((member, i) => {
+                                members[this.state.year][0].execs.map((member, i) => {
                                     return (
-                                        <Member fullName={member.fullName} position={member.position} year={member.year} />
+                                        <Member fullName={member.fullName} position={member.position} year={this.state.year} />
                                     )
                                 })
                             }
@@ -99,9 +102,9 @@ export default class Team extends Component {
                     { (teamKey === "computer") &&
                         <div className={styles['row']}>
                             {
-                                members.current[1].computer.map((member, i) => {
+                                members[this.state.year][1].computer.map((member, i) => {
                                     return (
-                                        <Member fullName={member.fullName} position={member.position} year={member.year} />
+                                        <Member fullName={member.fullName} position={member.position} year={this.state.year} />
                                     )
                                 })
                             }
@@ -110,9 +113,9 @@ export default class Team extends Component {
                     { (teamKey === "electronics") &&
                         <div className={styles['row']}>
                             {
-                                members.current[0].electronics.map((member, i) => {
+                                members[this.state.year][2].electronics.map((member, i) => {
                                     return (
-                                        <Member fullName={member.fullName} position={member.position} year={member.year} />
+                                        <Member fullName={member.fullName} position={member.position} year={this.state.year} />
                                     )
                                 })
                             }
