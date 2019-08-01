@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-//import axios from 'axios'
 import Team2019 from '../../Components/Team/Team2019.js'
 import Footer from './../../Components/General/Footer/Footer.js'
 import styles from './team.module.scss'
