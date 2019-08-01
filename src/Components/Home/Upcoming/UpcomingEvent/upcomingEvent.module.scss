@@ -4,7 +4,10 @@
 .upcoming {
 
     &-event {
-        @include flexPosition(flex-start, center);
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         flex-direction: column;
         width: 26vw;
         max-width: 31rem;
@@ -16,7 +19,7 @@
             width: 23vw;
             height: 23vw;
             max-height: 33rem;
-            margin: 5rem 0rem 2rem;
+            margin-bottom: 2rem;
             @include flexPosition(center, center);
 
             &-crop {
@@ -62,6 +65,7 @@
                     &:hover {
                         height: 26vw;
                         max-height: 26vw;
+                        margin-top: -3rem;
                     }
                 }
                 
@@ -89,27 +93,30 @@
                 
             }
             @include response(md) {
-                width: 45vw;
-                max-width: 45vw;
+                width: 38vw;
+                max-width: 38vw;
                 height: auto;
 
                 &-crop {
-                    height: calc(45vw - 3rem);
-                    max-height: 45vw;
+                    height: calc(38vw - 15rem);
+                    max-height: 38vw;
                     width: auto;
 
                     &-src {
                         display: block;
-                        height: 45vw;
-                        max-height: 45vw;
+                        height: 38vw;
+                        max-height: 38vw;
                     }
                     &:hover {
-                        height: 45vw;
-                        max-height: 45vw;
+                        height: calc(38vw - 11rem);
+                        max-height: calc(38vw - 11rem);
+
+
+                        margin-top: -3.79rem;
                     }
-                }
-                
+                }   
             }
+
             @include response(sm) {
                 width: 45vw;
                 max-width: 45vw;
@@ -129,9 +136,10 @@
                     &:hover {
                         height: 45vw;
                         max-height: 45vw;
+
+                        margin-top: -1.5rem;
                     }
                 }
-                
             }
         }
 
@@ -146,6 +154,7 @@
 
             @include response(md) {
                 font-size: size(md);
+                margin-top: 10rem;
             }
         }
 

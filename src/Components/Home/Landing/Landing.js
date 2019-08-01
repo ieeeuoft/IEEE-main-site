@@ -9,7 +9,7 @@ const Landing = () => {
             <div className={styles['blue-background']}>
                 <div className={styles['heading']}>
                     <h1 className={styles['heading-title']}>IEEE</h1>
-                    <h2 className={styles['heading-subtitle']}>University of Toronto Student Branch</h2>
+                    <h2 className={styles['heading-subtitle']}>University of Toronto<br/>Student Branch</h2>
                 </div>
                 <img src={skylineSolid} alt="" className={styles['skyline-solid']} />
             </div>

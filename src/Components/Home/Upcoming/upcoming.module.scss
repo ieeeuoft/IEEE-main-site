@@ -20,12 +20,12 @@
         @include flexPosition(space-between, flex-start);
         width: 90%;
         max-width: 1200px;
-        
-        &-event {
-            @include flexPosition(flex-start, center);
-            flex-direction: column;
-            width: 26vw;
-            max-width: 31rem;
+        margin-top: 5rem;
+
+        @include response(md) {
+            width: 80%;
+            margin-top: 11rem;
         }
+
     }    
 }

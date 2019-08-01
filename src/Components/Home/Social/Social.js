@@ -6,7 +6,7 @@ const Social = () => {
     return (
         <div className={styles['social-containter']}>
         `   <a href="https://www.facebook.com/ieeeuoft/" className={styles['facebook-heading']}>Facebook</a>
-            <a href="https://www.facebook.com/ieeeuoft/" className={styles['facebook-text']}>We post about our events and blah blah blah. Like us on Facebook.</a>
+            <a href="https://www.facebook.com/ieeeuoft/" className={styles['facebook-text']}>Like us on Facebook to get the latest updates on our events and ticket ____.</a>
             <a href="https://www.facebook.com/ieeeuoft/" className={styles['facebook']} target="_blank"></a>
                 
             <a href="https://www.facebook.com/ieeeuoft/" className={styles['newsletter-heading']}>Newsletter</a>

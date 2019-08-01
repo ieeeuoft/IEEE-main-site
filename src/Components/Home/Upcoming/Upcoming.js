@@ -56,7 +56,7 @@ export default class Upcoming extends PureComponent {
                 {
                     eventsList.allEvents.map((eventItem, i) => {
                         return (
-                            <div className={styles['upcoming-event']}>
+                            <>
                                 {stateIndex === i &&
                                     <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="www.facebook.com" />
                                 }
@@ -66,7 +66,7 @@ export default class Upcoming extends PureComponent {
                                 {stateIndex === i-2 &&
                                     <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="www.facebook.com" />
                                 }
-                            </div>
+                            </>
                         )
                     })
                 }
