@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+//import axios from 'axios'
 import Team2019 from '../../Components/Team/Team2019.js'
 import Footer from './../../Components/General/Footer/Footer.js'
 import styles from './team.module.scss'
@@ -8,6 +9,10 @@ import skylineRight from './../../Assets/Images/skyline/skyline-right.svg';
 import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
 import Member from './../../Components/Team/Member/Member.js'
 import * as memberList from './../../Assets/Lists/allMembers'
+import members from './../../Assets/Lists/members.js'
+//import membersJSON from './../../Assets/Lists/members';
+//const members = () => JSON.parse(JSON.stringify(membersJSON));
+
 
 // export default class Team extends Component {
 //     render() {
@@ -15,7 +20,7 @@ import * as memberList from './../../Assets/Lists/allMembers'
 //             <div>
 //                 <YearDropdown />
 //                 {/* <TeamNav /> */}
-                
+
 //                 <Team2019 />
 //                 <div className={styles['skyline-imgs']}>
 //                     <img src={skylineLeft} alt="Skyline" className={styles['skyline-imgs-lr']} />
@@ -30,11 +35,19 @@ import * as memberList from './../../Assets/Lists/allMembers'
 export default class Team extends Component {
     constructor(props) {
         super(props);
-        this.state = { teamKey: "execs"}
+        this.state = { teamKey: "execs", year:"2019-2020"}
     }
+
 
     showTeam(group) {
         this.setState({teamKey: group});
+    }
+
+    changeYear = (event) => {
+        this.setState({
+          year:event.target.value
+        });
+
     }
 
     render() {
@@ -42,7 +55,24 @@ export default class Team extends Component {
         var { teamKey } = this.state;
         return (
             <div>
-                <YearDropdown />
+                {/*<YearDropdown />*/}
+                <div className={styles['select-year']}>
+                    <div className={styles['triangle-down']}></div>
+                    <select onChange={this.changeYear} value={this.state.value} id="great-names" className={styles['select-year-div']}>
+                        <option value="2019-2020">2019-2020</option>
+
+                        <option value="2018-2019">2018-2019</option>
+
+                        <option value="2017-2018">2017-2018</option>
+
+                        <option value="2016-2017">2016-2017</option>
+
+                        <option value="2015-2016">2015-2016</option>
+
+                        <option value="2014-2015">2014-2015</option>
+
+                    </select>
+                </div>
                 {/* <TeamNav /> */}
                 <nav className={styles['team-nav']}>
                     <ul className={styles['team-nav-list']}>
@@ -53,43 +83,43 @@ export default class Team extends Component {
                         <li className={styles['team-nav-list-item']  + ' ' + styles['electronics-nav-item']} onClick={() => this.showTeam("electronics")}>Electronics Chapter</li>
                     </ul>
                 </nav>
-                
+
                 {/* <Team2019 teamKey={this.state.teamState} />  */}
 
-                <div className={styles['team-container']} id="team-2019-20">                
+                <div className={styles['team-container']} id="team-2019-20">
                     { (teamKey === "execs") &&
                         <div className={styles['row']}>
                             {
-                                memberList.execs.map((member, i) => {
+                                members[this.state.year][0].execs.map((member, i) => {
                                     return (
-                                        <Member fullName={member.fullName} position={member.position} year={member.year} />
+                                        <Member fullName={member.fullName} position={member.position} year={this.state.year} />
                                     )
                                 })
                             }
-                        </div>    
+                        </div>
                     }
 
                     { (teamKey === "computer") &&
                         <div className={styles['row']}>
                             {
-                                memberList.computer.map((member, i) => {
+                                members[this.state.year][1].computer.map((member, i) => {
                                     return (
-                                        <Member fullName={member.fullName} position={member.position} year={member.year} />
+                                        <Member fullName={member.fullName} position={member.position} year={this.state.year} />
                                     )
                                 })
                             }
-                        </div>    
+                        </div>
                     }
                     { (teamKey === "electronics") &&
                         <div className={styles['row']}>
                             {
-                                memberList.electronics.map((member, i) => {
+                                members[this.state.year][2].electronics.map((member, i) => {
                                     return (
-                                        <Member fullName={member.fullName} position={member.position} year={member.year} />
+                                        <Member fullName={member.fullName} position={member.position} year={this.state.year} />
                                     )
                                 })
                             }
-                        </div>    
+                        </div>
                     }
                 </div>
 
@@ -102,4 +132,3 @@ export default class Team extends Component {
         )
     }
 }
-

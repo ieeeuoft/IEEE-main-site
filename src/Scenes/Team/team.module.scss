@@ -35,7 +35,7 @@
                 background-color: color(blue6);
             }
         }
-    
+
         .computer-nav-item {
             color: color(blue2);
 
@@ -52,7 +52,7 @@
         }
 
     }
-   
+
 }
 
 .team-container {
@@ -78,7 +78,7 @@
             width: 100%;
         }
     }
-    
+
 
     &-title {
         font-family: font(merri);
@@ -177,7 +177,7 @@
                 background-color: color(blue6);
             }
         }
-    
+
         .computer-nav-item {
             color: color(blue2);
 
@@ -194,5 +194,50 @@
         }
 
     }
-   
+
+}
+
+//@import "./../../../abstracts/variables";
+//@import "./../../../abstracts/mixins";
+
+.select-year {
+    width: 100%;
+    margin-top: 120px;
+    @include flexPosition(center, center);
+    flex-direction: row-reverse;
+
+    &-div {
+        display: inline-block;
+
+        font-family: font(merri);
+        font-weight: bold;
+        font-size: size(md);
+        color: color(blue1);
+
+        width: 280px;
+        height: auto;
+
+
+        border: none;
+        outline: none;
+        border-bottom: 3px solid color(blue1);
+        border-radius: 0;
+
+        padding: 15px 45px 15px 25px;
+
+        background: none;
+
+
+    }
+}
+
+
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid color(blue1);
+    margin-left: -36px;
 }
