@@ -3,10 +3,18 @@ import styles from './upcomingEvent.module.scss'
 import imgSrc from './../../../../Assets/Images/events/MakeUofT.png';
 
 export default class UpcomingEvent extends PureComponent {
+    constructor(props){
+      super(props);
+    }
+
+    handleClick = (event) => {
+        window.location.replace(event.value);
+
+    }
     render() {
         const {
-            link, 
-            // img, 
+            link,
+            // img,
             EventName,
             EventDate
         } = this.props
@@ -25,5 +33,3 @@ export default class UpcomingEvent extends PureComponent {
         );
     }
 }
-
-

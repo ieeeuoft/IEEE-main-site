@@ -17,16 +17,14 @@ export default class Sponsors extends PureComponent {
     return (
         <div className={styles['events-div']}>
             <h2 className={styles['events-div-heading']}>All Events</h2>
-              <div className={styles['events']} id="events-carousel">  
+              <div className={styles['events']} id="events-carousel">
                   <Slider {...settings}>
-                      { eventList.allEvents.map((item, i) => 
-                        <Link to={item.link}>
+                      { eventList.allEvents.map((item, i) =>
                           <EventEvent EventName={item.EventName} EventDate={item.date} EventLink={item.link} />
-                        </Link>
-                      )}  
+                      )}
                   </Slider>
             </div>
-        </div>  
+        </div>
     );
   }
 }
@@ -42,7 +40,7 @@ export default class Sponsors extends PureComponent {
 //             <div className={styles['events-div']}>
 //                 <h2 className={styles['events-div-heading']}>All Events</h2>
 
-//                 <div className={styles['carousel events" id="events-carousel']}>  
+//                 <div className={styles['carousel events" id="events-carousel']}>
 //                     <EventEvent EventName="Blah" EventDate="Blah" img="MakeUofT" link="www.facebook.com" />
 //                     <EventEvent EventName="Blah" EventDate="Blah" img="MakeUofT" link="www.facebook.com" />
 //                     <EventEvent EventName="Blah" EventDate="Blah" img="MakeUofT" link="www.facebook.com" />

@@ -5,7 +5,7 @@ import styles from './eventEvent.module.scss'
 export default class EventEvent extends PureComponent {
     render() {
         const {
-            link, 
+            EventLink,
             EventName,
             EventDate
         } = this.props
@@ -13,7 +13,7 @@ export default class EventEvent extends PureComponent {
         // let imgSrc = './../../../../Assets/Images/events/' + img + '.png';
 
         return (
-            <a className={styles['carousel-item'] + ' ' + styles['events-event']} href={link} target="_blank">
+            <a href={EventLink} target="_blank" className={styles['carousel-item'] + ' ' + styles['events-event']} >
                 <div className={styles['events-event-img']}>
                     <div className={styles['events-event-img-crop']}>
                         {/* <div className={styles['dark-gradient']}></div> */}
