@@ -98,9 +98,9 @@
                 height: auto;
 
                 &-crop {
-                    height: calc(38vw - 15rem);
+                    height: calc(38vw - 3rem);
                     max-height: 38vw;
-                    width: auto;
+                    width: calc(38vw - 3rem);
 
                     &-src {
                         display: block;
@@ -108,11 +108,9 @@
                         max-height: 38vw;
                     }
                     &:hover {
-                        height: calc(38vw - 11rem);
-                        max-height: calc(38vw - 11rem);
-
-
-                        margin-top: -3.79rem;
+                        height: calc(38vw - 0rem);
+                        max-height: calc(38vw - 0rem);
+                        margin-top: -3rem;
                     }
                 }   
             }
@@ -145,16 +143,32 @@
 
         &-name {
             font-family: font(merri);
-            font-size: size(lg);
+            font-size: size(lg) - .5rem;
             text-align: center;
             font-weight: normal;
             color: color(white);
             display: inline-block;
             width: 100%;
 
-            @include response(md) {
+            @include response(xl) {
+                font-size: size(lg) - .9rem;
+            }
+
+            @include response(lg) {
+                font-size: size(md) + .5rem;
+            }
+
+            @include response(lg/md) {
                 font-size: size(md);
-                margin-top: 10rem;
+            }
+
+            @include response(md) {
+                font-size: size(md) + .5rem;
+                margin-top: .5rem;
+            }
+
+            @include response(sm) {
+                font-size: size(sm) + .3rem;
             }
         }
 

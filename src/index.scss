@@ -1,5 +1,3 @@
-@import "./Assets/CSS/standarizedColours.scss";
-
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
@@ -36,6 +34,13 @@ body {
   // padding-top: size(header);
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+h2 {
+
+  @include response(sm) {
+      font-size: size(lg) !important;
+  }
 }
 // End of general stuff concerning the entire webpage
 

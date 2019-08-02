@@ -64,10 +64,15 @@
                 @include flexPosition(center, center);
 
 
-                @media screen and (max-width: 1200px ) {
+                @include response(xl) {
                     height: calc(30vw - 2rem);
                     width: calc(30vw - 2rem);
 
+                }
+
+                @include response(md) {
+                    height: 35vw;
+                    width: 35vw;
                 }
                 
                 -webkit-clip-path: circle(50% at 50% 50%);

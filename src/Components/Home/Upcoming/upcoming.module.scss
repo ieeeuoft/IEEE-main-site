@@ -1,6 +1,7 @@
 @import "./../../../abstracts/variables";
 @import "./../../../abstracts/mixins";
 
+
 .upcoming-div {
     background-color: color(blue2);
     width: 100vw;
@@ -24,7 +25,12 @@
 
         @include response(md) {
             width: 80%;
-            margin-top: 11rem;
+            margin-top: 6rem;
+        }
+
+        @include response(sm) {
+            width: 90%;
+            margin-top: 2rem;
         }
 
     }    

@@ -7,7 +7,8 @@ import skylineLeft from './../../Assets/Images/skyline/skyline-left.svg';
 import skylineRight from './../../Assets/Images/skyline/skyline-right.svg';
 import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
 import Member from './../../Components/Team/Member/Member.js'
-import * as memberList from './../../Assets/Lists/allMembers'
+import OldTeam from './../../Components/Team/previousTeam'
+// import * as memberList from './../../Assets/Lists/allMembers'
 import members from './../../Assets/Lists/members.js'
 //import membersJSON from './../../Assets/Lists/members';
 //const members = () => JSON.parse(JSON.stringify(membersJSON));
@@ -66,10 +67,7 @@ export default class Team extends Component {
 
                         <option value="2016-2017">2016-2017</option>
 
-                        <option value="2015-2016">2015-2016</option>
-
-                        <option value="2014-2015">2014-2015</option>
-
+                        <option value="2015-2016">Past Exec Team</option>
                     </select>
                 </div>
                 {/* <TeamNav /> */}
@@ -84,7 +82,7 @@ export default class Team extends Component {
                 </nav>
 
                 {/* <Team2019 teamKey={this.state.teamState} />  */}
-
+                
                 <div className={styles['team-container']} id="team-2019-20">
                     { (teamKey === "execs") &&
                         <div className={styles['row']}>
