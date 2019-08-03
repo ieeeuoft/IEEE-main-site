@@ -22,11 +22,9 @@ const About = () => {
                     <button className={styles['about-btn-container-button']}>our team</button>
                 </Link>
 
-                <Link to={'./www.ieee.org'}>
+                <Link to={'http://www.ieee.org'}>
                     <button className={styles['about-btn-container-button']}>visit ieee.org</button>
                 </Link>
-                
-                
             </div>
             <div className={styles['electronics']}></div>
             <h2 className={styles['electronics-heading']}>Electronics Chapter</h2>
