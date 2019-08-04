@@ -2,77 +2,82 @@
 @import "./../../../../abstracts/mixins";
 
 .dark-gradient {
-    width: 500px;
-    height: 500px;
-    display: inline-block;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 59.89%, rgba(0, 0, 0, 0.42) 68.02%);
-    margin-right: -408px;
-    z-index: 1;
+    width: 110%;
+    height: 110%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(47, 47, 47, 0) 33.19%, rgba(0, 0, 0, 0.25) 53.83%, rgba(0, 0, 0, 0.346916) 66.3%, rgba(0, 0, 0, 0.46) 81.5%);
+    position: absolute;
+
+    @include response(sm) { 
+        background: rgba(0, 0, 0, 0.32);
+    }
 }
 
 .events {
     &-event {
         display: flex  !important;
-        @include flexPosition(flex-end, center);
+        @include flexPosition(center, center);
         flex-direction: column;
-        width: 30vw;
-        // padding-bottom: 150px;
-        
+        // width: 30vw;        
+        margin-top: 1.5rem;
 
-        @include response(lg/md) { width: 30vw; }
+        &:hover {
+            .events-event-img-crop {
+                height: 30vw;
+                width: 30vw;
+                max-height: 40rem;
+                margin-top: -1.5rem;
+            }
+            .events-event-text {
+                bottom: 6rem;
+            }
+        }
 
         &-img {
-            width: auto;
+            width: 30vw;
             height: 30vw;
             max-height: 40rem;
-            // margin: 5rem 0rem 2rem;
             @include flexPosition(center, center);
 
             &-crop {
+                position: relative;
                 height: calc(30vw - 4rem);
                 width: calc(30vw - 4rem);
                 max-width: 36rem;
                 max-height: 36rem;
                 @include flexPosition(center, center);
+
+
+                @include response(xl) {
+                    height: calc(30vw - 2rem);
+                    width: calc(30vw - 2rem);
+                }
+
+                @include response(md) {
+                    height: 35vw;
+                    width: 35vw;
+                }
                 
                 -webkit-clip-path: circle(50% at 50% 50%);
                 clip-path: circle(50% at 50% 50%);
-                -webkit-transition: width .7s, height .7s, margin .7s;
-                -moz-transition: width .7s, height .7s, margin .7s;
-                -ms-transition: width .7s, height .7s, margin .7s;
-                transition: width .7s, height .7s, margin .7s;
-
-                // background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 68%)
+                -webkit-transition: all .7s;
+                -moz-transition: all .7s;
+                -ms-transition: all .7s;
+                transition: all .7s;
                 
                 &-src {
                     height: 30vw;
                     width: auto;
                     max-height: 40rem;
                 }
-
-                &:hover {
-                    height: 30vw;
-                    width: auto;
-                    max-height: 40rem;
-                    margin-top: -1.5rem;
-                }
-
             }
         }
 
         &-text {
-            width: 340px;
+            width: calc(30vw - 40px);
+            max-width: 32rem;
             position: absolute;
             bottom: 5rem;
-
-                &:hover {
-                    .events-event-img-crop {
-                        height: 30vw; 
-                        width: auto;
-                        max-height: 40rem;
-                        margin-top: -1.5rem;
-                    }
-            }
+            transition: bottom .6s;
 
             &-name {
                 font-family: font(merri);
@@ -85,9 +90,9 @@
                 margin: 0;
                 text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.89);
 
-                @include response(md) {
-                    font-size: size(md);
-                }
+                @include response(xl) { font-size: size(md) - 0.5rem; }
+                @include response(lg/md) { font-size: size(sm) + .4rem; }
+                @include response(md) { font-size: size(sm); }
             }
 
             &-date {
@@ -100,4 +105,64 @@
             }
         }
     }
+
+    @include response(lg/md) { 
+        &-event {
+            &:hover {
+                .events-event-img-crop {
+                    height: 40vw;
+                    width: 40vw;
+                }
+            }
+
+            &-text {
+                bottom: 4rem;
+                width: calc(40vw - 80px);
+            }
+
+            &-img {
+                width: 40vw;
+                height: 40vw;
+
+                &-crop {
+                    height: calc(40vw - 2rem);
+                    width: calc(40vw - 2rem);
+
+                    &-src {
+                        height: 40vw;
+                    }
+                }
+            }
+        }
+    }
+    @include response(sm) { 
+        &-event {
+            &:hover {
+                .events-event-img-crop {
+                    height: 50vw;
+                    width: 50vw;
+                }
+            }
+
+            &-text {
+                bottom: 3.5rem;
+                width: calc(50vw - 80px);
+            }
+
+            &-img {
+                width: 50vw;
+                height: 50vw;
+
+                &-crop {
+                    height: calc(50vw - 2rem);
+                    width: calc(50vw - 2rem);
+
+                    &-src {
+                        height: 50vw;
+                    }
+                }
+            }
+        }
+    }
+    
 }

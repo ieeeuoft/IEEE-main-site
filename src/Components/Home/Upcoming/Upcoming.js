@@ -32,9 +32,9 @@ export default class Upcoming extends PureComponent {
     //                             { stateIndex === i &&
     //                             <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="www.facebook.com" />
     //                             }
-    //                         // } {stateIndex === i && 
+    //                         // } {stateIndex === i &&
     //                         //     <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.EventDate} link="www.facebook.com" />
-    //                         // } {stateIndex === i && 
+    //                         // } {stateIndex === i &&
     //                         //     <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.EventDate} link="www.facebook.com" />
     //                         // }
     //                     )
@@ -56,17 +56,17 @@ export default class Upcoming extends PureComponent {
                 {
                     eventsList.allEvents.map((eventItem, i) => {
                         return (
-                            <div className={styles['upcoming-event']}>
+                            <>
                                 {stateIndex === i &&
-                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="www.facebook.com" />
+                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="http://www.facebook.com/ieeeuoft" />
                                 }
                                 {stateIndex === i-1 &&
-                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="www.facebook.com" />
+                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="http://www.facebook.com" />
                                 }
                                 {stateIndex === i-2 &&
-                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="www.facebook.com" />
+                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="http://www.facebook.com" />
                                 }
-                            </div>
+                            </>
                         )
                     })
                 }

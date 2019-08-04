@@ -7,8 +7,12 @@ import skylineLeft from './../../Assets/Images/skyline/skyline-left.svg';
 import skylineRight from './../../Assets/Images/skyline/skyline-right.svg';
 import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
 import Member from './../../Components/Team/Member/Member.js'
-import * as memberList from './../../Assets/Lists/allMembers'
-import { tsImportEqualsDeclaration } from '@babel/types';
+import OldTeam from './../../Components/Team/previousTeam'
+// import * as members from './../../Assets/Lists/allMembers'
+import members from './../../Assets/Lists/members.js'
+//import membersJSON from './../../Assets/Lists/members';
+//const members = () => JSON.parse(JSON.stringify(membersJSON));
+
 
 // export default class Team extends Component {
 //     render() {
@@ -16,7 +20,7 @@ import { tsImportEqualsDeclaration } from '@babel/types';
 //             <div>
 //                 <YearDropdown />
 //                 {/* <TeamNav /> */}
-                
+
 //                 <Team2019 />
 //                 <div className={styles['skyline-imgs']}>
 //                     <img src={skylineLeft} alt="Skyline" className={styles['skyline-imgs-lr']} />
@@ -31,8 +35,9 @@ import { tsImportEqualsDeclaration } from '@babel/types';
 export default class Team extends Component {
     constructor(props) {
         super(props);
-        this.state = { teamKey: "execs"}
+        this.state = { teamKey: "execs", year:"2019-2020"}
     }
+
 
     showTeam(group) {
         this.setState({teamKey: group});
@@ -42,7 +47,7 @@ export default class Team extends Component {
         const members = []
         for (var i = 0; i < listOfMembers.length; i++){
             var member = listOfMembers[i]
-            members.push(<Member fullName={member.fullName} position={member.position} year={member.year} />)
+            members.push(<Member fullName={member.fullName} position={member.position} year={this.state.year} />)
         }
 
         var numRows = Math.ceil(members.length / 7) * 2;
@@ -99,20 +104,27 @@ export default class Team extends Component {
         // Add more categories for conditions not under 2019-2020; ie: Power/Energy Chapter from 2015-2016
         switch(this.state.teamKey){
             case "execs":
-                return this.constructRows(memberList.execs)
+                return this.constructRows(members[this.state.year][0].execs)
             case "mf":
-                return this.constructRows(memberList.execs)
+                return this.constructRows(members[this.state.year][0].execs)
             case "web":
-                return this.constructRows(memberList.execs)
+                return this.constructRows(members[this.state.year][0].execs)
             case "computer":
-                return this.constructRows(memberList.computer)
+                return this.constructRows(members[this.state.year][1].computer)
             case "electronics":
-                return this.constructRows(memberList.electronics)
+                return this.constructRows(members[this.state.year][2].electronics)
             case "etc": // TODO: add additional cases
-                return this.constructRows(memberList.execs)    
+                return this.constructRows(members.execs)    
             default:
                 return (<div className={styles['team-container']} id="team-2019-20"></div>)
         }
+    }
+    
+    changeYear = (event) => {
+        this.setState({
+          year: event.target.value
+        });
+
     }
 
     render() {
@@ -120,7 +132,21 @@ export default class Team extends Component {
         var { teamKey } = this.state;
         return (
             <div>
-                <YearDropdown />
+                {/*<YearDropdown />*/}
+                <div className={styles['select-year']}>
+                    <div className={styles['triangle-down']}></div>
+                    <select onChange={this.changeYear} value={this.state.value} id="great-names" className={styles['select-year-div']}>
+                        <option value="2019-2020">2019-2020</option>
+
+                        <option value="2018-2019">2018-2019</option>
+
+                        <option value="2017-2018">2017-2018</option>
+
+                        <option value="2016-2017">2016-2017</option>
+
+                        <option value="2015-2016">Past Exec Team</option>
+                    </select>
+                </div>
                 {/* <TeamNav /> */}
                 <nav className={styles['team-nav']}>
                     <ul className={styles['team-nav-list']}>
@@ -143,4 +169,3 @@ export default class Team extends Component {
         )
     }
 }
-

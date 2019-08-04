@@ -19,65 +19,87 @@
             height: 100%;
         }
     }
+
+    .logoShrink {
+        height: 80px;
+    }
 }
 
 // Navigation on top right corner
-nav {
-    // // Writing all this to overwrite Materialize's CSS for the nav element
-    // color: color(white);
-    // text-decoration: none;
-    // background-color: transparent;
-    // box-shadow: none;
-    // width: auto;
+.nav {
+    &-list {
+        @include flexPosition(space-around);
+        font-size: size(xs);
+        font-family: font(source);
+        color: color(blue1);
+        width: calc(100% - 140px);
 
-    .nav {
-        &-list {
-            @include flexPosition(space-around);
-            font-size: size(xs);
-            font-family: font(source);
+        &-item {
+            list-style: none;
+            padding: 0 .8rem;
+        }
+
+        a {
+            font-size: size(xs) !important;
+            transition: all 0.3s;
+            list-style: none;
+            // line-height: 143%;
+            text-align: center;
+            text-decoration: none;
             color: color(blue1);
-            width: calc(100% - 140px);
 
-            &-item {
-                list-style: none;
-                padding: 0 .8rem;
+
+            &:hover {
+                color: color(blue4);
+                background-color: transparent;
             }
 
-            a {
-                font-size: size(xs) !important;
-                transition: all 0.3s;
-                list-style: none;
-                // line-height: 143%;
-                text-align: center;
-                text-decoration: none;
-                color: color(blue1);
-
-    
-                &:hover {
-                    color: color(blue4);
-                    background-color: transparent;
-                }
-
-                // &:active {
-                //     color: color(blue1);
-                // }
-            }
-        }        
-    }
+            // &:active {
+            //     color: color(blue1);
+            // }
+        }
+    }        
 }
 
 .slideoutNav {
     padding-left: 20px;
-    width: 50vw;
+    width: 750px;
     height: 70px;
     background-color: color(white);
     position: fixed;
-    right: -50vw;
+    right: -750px;
     // @include flexLayout;
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
     @include flexPosition;
     border-bottom: solid 1px #999;
     border-left: solid 1px #999;
+
+    @include response(lg) {
+        width: 60vw;
+        right: -60vw;
+        height: 100vh;
+        @include flexPosition(center, center);
+
+        .nav-list {
+            flex-direction: column;
+            width: 100%;
+
+            a {
+                padding: 30px;
+
+                li {
+                    font-size: size(lg);
+                }
+                
+            }
+        }
+    }
+
+    @include response(lg) {
+        .nav-list a li {
+            font-size: size(md);
+        }
+    }
 }
 
 .hamburger-menu {

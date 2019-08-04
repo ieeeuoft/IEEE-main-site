@@ -19,7 +19,7 @@
         }
 
         &:hover {
-            padding-top: 1.5rem;
+            padding-top: 3rem;
         }
 
         &-tier {
@@ -28,6 +28,7 @@
             font-weight: bold;
             font-size: size(sm);
             margin-top: 2rem;
+            text-align: center;
         }
 
         @include response(lg) {

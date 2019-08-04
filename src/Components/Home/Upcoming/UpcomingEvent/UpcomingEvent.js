@@ -3,27 +3,33 @@ import styles from './upcomingEvent.module.scss'
 import imgSrc from './../../../../Assets/Images/events/MakeUofT.png';
 
 export default class UpcomingEvent extends PureComponent {
+    constructor(props){
+      super(props);
+    }
+
+    handleClick = (event) => {
+        window.location.replace(event.value);
+
+    }
     render() {
         const {
-            link, 
-            // img, 
+            link,
+            // img,
             EventName,
             EventDate
         } = this.props
 
 
         return (
-            <div>
+            <a href={link} target="_blank" className={styles['upcoming-event']}>
                 <div className={styles['upcoming-event-img']}>
-                    <a className={styles['upcoming-event-img-crop']} href={link} target="_blank">
+                    <div className={styles['upcoming-event-img-crop']}>
                         <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventName} className={styles['upcoming-event-img-crop-src']}/>
-                    </a>
+                    </div>
                 </div>
                 <h3 className={styles['upcoming-event-name']}>{EventName}</h3>
                 <p className={styles['upcoming-event-date']}>{EventDate}</p>
-            </div>
+            </a>
         );
     }
 }
-
-
