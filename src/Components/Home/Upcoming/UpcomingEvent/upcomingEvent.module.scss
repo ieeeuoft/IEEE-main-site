@@ -145,7 +145,8 @@
             font-family: font(merri);
             font-size: size(lg) - .5rem;
             text-align: center;
-            font-weight: normal;
+            font-weight: 300;
+            letter-spacing: .2px;
             color: color(white);
             display: inline-block;
             width: 100%;
@@ -184,7 +185,9 @@
             &:nth-child(3) {
                 display: none;
             }
-            // width: 45vw;
+            &-date {
+                font-size: size(sm);
+            }
         }   
     }
 }

@@ -14,7 +14,6 @@ export default class UpcomingEvent extends PureComponent {
     render() {
         const {
             link,
-            // img,
             EventName,
             EventDate
         } = this.props

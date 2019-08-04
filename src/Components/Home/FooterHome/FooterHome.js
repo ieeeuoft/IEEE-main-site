@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './footerHome.module.scss'
+import Iframe from 'react-iframe'
 
 const FooterHome = () => {
     return (
@@ -23,7 +24,14 @@ const FooterHome = () => {
                     </p>    
                 </div>
                 <div className={styles['footer-div-map']}>
-                    {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4249606181816!2d-79.39818148450202!3d43.660130979121156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b8a07fbbf9%3A0x90f0fb1c4148d634!2sGalbraith+Bldg%2C+Toronto%2C+ON+M5S+1A4!5e0!3m2!1sen!2sca!4v1454741799584" height="450" frameborder="0" style="border:0" allowfullscreen="" className={styles['footer-div-map-iframe']}></iframe> */}
+                    <Iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4249606181816!2d-79.39818148450202!3d43.660130979121156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b8a07fbbf9%3A0x90f0fb1c4148d634!2sGalbraith+Bldg%2C+Toronto%2C+ON+M5S+1A4!5e0!3m2!1sen!2sca!4v1454741799584" 
+                        height="450" 
+                        frameborder="0" 
+                        style="border:0" 
+                        allowfullscreen="" 
+                        className={styles['footer-div-map-iframe']} 
+                    />
                 </div>
             </div>
             <p className={styles['footer-copyright']}>© 2019 IEEE University of Toronto Student Branch</p>
