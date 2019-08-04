@@ -3,76 +3,51 @@ import styles from './upcoming.module.scss';
 import UpcomingEvent from './UpcomingEvent/UpcomingEvent';
 import * as eventsList from './../../../Assets/Lists/allEvents';
 
+
 export default class Upcoming extends PureComponent {
-    constructor(props) {
-        super(props);
-        this.state = { stateIndex: 0, lenList: eventsList.allEvents.length }
-    }
+    upcoming() { 
+        var today = new Date();
+        var todayDate = (("0" + (today.getMonth()+1)).substring(-2) + "/" + ("0" + today.getDate()).substring(-2) + "/" + today.getFullYear());
+        var upcomingList = [];
+        
+        for (var i = 0; i < eventsList.allEvents.length; i++) {
+            if (eventsList.allEvents[i].date > todayDate) {
+                upcomingList.push(eventsList.allEvents[i]);
+                console.log(todayDate);
+                console.log(eventsList.allEvents[i]);
+                if (upcomingList.length == 3) {
+                    break
+                }
+            }
+        }
+        return upcomingList;
+    };
 
-    upcoming() { };
-    //  {
-    //     var today = new Date();
-    //     var todayDate = (today.getMonth()+1) + ' '+today.getDate() + ', ' + today.getFullYear();
-    //     var d = new Date(eventsList.allEvents);
 
-    //     if (todayDate > )
-    // }
-    //     //     d1 <  d2; // true
-    //     // d1 <= d2; // true
-    //     // d1 >  d2; // false
-    //     // d1 >= d2; // false
-
-    //     return (
-    //         <div className={styles['upcoming-div']} onLoad={() => this.upcoming()}>
-    //             <h2 className={styles['upcoming-div-heading']}>Upcoming Events</h2>
-    //             <div className={styles['upcoming']}>
-    //                 <>
-    //                     {eventsList.allEvents.map((eventItem, i) => {
-    //                         return (
-    //                             { stateIndex === i &&
-    //                             <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="www.facebook.com" />
-    //                             }
-    //                         // } {stateIndex === i &&
-    //                         //     <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.EventDate} link="www.facebook.com" />
-    //                         // } {stateIndex === i &&
-    //                         //     <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.EventDate} link="www.facebook.com" />
-    //                         // }
-    //                     )
-    //                     })}
-    //                 </>
-    //             </div>
-    //         </div>
-    //     )
-    // }
     render() {
-        const { stateIndex } = this.state;
-
+        var upcomingList = this.upcoming();
+        var upcomingDivClass = "";
+        var upcomingClass = "";
+        
+        // if (upcomingList.length == 0) {
+        //     upcomingDivClass = styles.none;
+        // } else if (upcomingList.length < 3) {
+        //     upcomingClass = styles.two;
+        // } 
 
         return (
-            <>
-            <div className={styles['upcoming-div']} onLoad={() => this.upcoming()}>
+            <div className={`${styles['upcoming-div']} ${upcomingDivClass}`} onLoad={() => this.upcoming()}>
                 <h2 className={styles['upcoming-div-heading']}>Upcoming Events</h2>
-                <div className={styles['upcoming']}>
-                {
-                    eventsList.allEvents.map((eventItem, i) => {
-                        return (
-                            <>
-                                {stateIndex === i &&
-                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="http://www.facebook.com/ieeeuoft" />
-                                }
-                                {stateIndex === i-1 &&
-                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="http://www.facebook.com" />
-                                }
-                                {stateIndex === i-2 &&
-                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.date} link="http://www.facebook.com" />
-                                }
-                            </>
-                        )
-                    })
-                }
+                <div className={`${styles['upcoming']} ${upcomingClass}`}>
+                    {
+                        upcomingList.map((eventItem, i) => {
+                            return (
+                                <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.displayDate} link="http://www.facebook.com/ieeeuoft" />
+                            )
+                        })
+                    }
+                </div>
             </div>
-            </div>
-            </>
         )
     }
 }

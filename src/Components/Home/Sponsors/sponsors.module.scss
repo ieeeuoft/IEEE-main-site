@@ -2,23 +2,33 @@
 @import "./../../../abstracts/mixins";
 @import "./../Events/events.module.scss";
 
-.sponsors-div {
-    @extend .events-div;
-    overflow: hidden;
-    background-color: color(white);
-    
-    &-heading {
-        @include title;
-        font-size: size(xl);
-    }
-}
-
 .sponsors {
     width: 100vw;
     margin: 0 auto;
     max-width: 3000px;
-    padding: 40px 0px;
+    padding: 4rem 0px;
     background: color(white);
+
+    @include response(md) {
+        width: 120vw;
+        margin-left: -10vw;
+        padding: 3rem 0px 2rem;
+    }
+
+    &-div {
+        @extend .events-div;
+        overflow: hidden;
+        background-color: color(white);
+        
+        &-heading {
+            @include title;
+            font-size: size(xl);
+        }
+
+        @include response(sm) {
+            padding: 6rem 0px 3rem;
+        }
+    }
 }
 
 .slick-slide div {

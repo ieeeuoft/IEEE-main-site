@@ -12,8 +12,23 @@ export default class Sponsors extends PureComponent {
       autoplay: true,
       slidesToShow: 5,
       speed: 3000,
-      pauseOnHover: false
+      pauseOnHover: false,
+      responsive : [
+        {
+          breakpoint: 850,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3
+          }
+        }
+      ]
     };
+
     return (
         <div className={styles['sponsors-div']}>
             <h2 className={styles['sponsors-div-heading']}>Our Sponsors</h2> 
