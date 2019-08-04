@@ -8,7 +8,7 @@ import skylineRight from './../../Assets/Images/skyline/skyline-right.svg';
 import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
 import Member from './../../Components/Team/Member/Member.js'
 import OldTeam from './../../Components/Team/previousTeam'
-// import * as memberList from './../../Assets/Lists/allMembers'
+// import * as members from './../../Assets/Lists/allMembers'
 import members from './../../Assets/Lists/members.js'
 //import membersJSON from './../../Assets/Lists/members';
 //const members = () => JSON.parse(JSON.stringify(membersJSON));
@@ -43,6 +43,83 @@ export default class Team extends Component {
         this.setState({teamKey: group});
     }
 
+    constructRows(listOfMembers) {
+        const members = []
+        for (var i = 0; i < listOfMembers.length; i++){
+            var member = listOfMembers[i]
+            members.push(<Member fullName={member.fullName} position={member.position} year={this.state.year} />)
+        }
+
+        var numRows = Math.ceil(members.length / 7) * 2;
+        var membersLeft = members.length
+        const rows = []
+        var ind = 0
+
+        for (var i = 0; i < numRows; i++){
+            if (membersLeft === 0){
+                break;
+            } else if (i % 2 === 0){ // 0, 2, 4, ... even row add 3 members
+                var obj
+                if (membersLeft >= 3){
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                          members[ind], members[ind + 1], members[ind + 2])
+                    ind += 3
+                    membersLeft -= 3
+                } else if (membersLeft === 2){
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                          members[ind], members[ind + 1])
+                } else if (membersLeft === 1){
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                          members[ind])
+                }
+            } else {          // 1, 3, 5, ... odd row add 4 members
+                var obj
+                if (membersLeft >= 3){
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                          members[ind], members[ind + 1], members[ind + 2], members[ind + 3])
+                    ind += 4
+                    membersLeft -= 4
+                } else if (membersLeft === 3){
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                          members[ind], members[ind + 1], members[ind + 2])
+                } else if (membersLeft === 2){
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                          members[ind], members[ind + 1])
+                } else if (membersLeft === 1){
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                          members[ind])
+                }
+            }
+            rows.push(obj)
+        }
+
+        return (
+            <div className={styles['team-container']} id="team-2019-20">
+                {rows}
+            </div>
+        )
+    }
+
+    constructMemberChart() {
+        // Add more categories for conditions not under 2019-2020; ie: Power/Energy Chapter from 2015-2016
+        switch(this.state.teamKey){
+            case "execs":
+                return this.constructRows(members[this.state.year][0].execs)
+            case "mf":
+                return this.constructRows(members[this.state.year][0].execs)
+            case "web":
+                return this.constructRows(members[this.state.year][0].execs)
+            case "computer":
+                return this.constructRows(members[this.state.year][1].computer)
+            case "electronics":
+                return this.constructRows(members[this.state.year][2].electronics)
+            case "etc": // TODO: add additional cases
+                return this.constructRows(members.execs)    
+            default:
+                return (<div className={styles['team-container']} id="team-2019-20"></div>)
+        }
+    }
+    
     changeYear = (event) => {
         this.setState({
           year: event.target.value
@@ -80,45 +157,8 @@ export default class Team extends Component {
                         <li className={styles['team-nav-list-item']  + ' ' + styles['electronics-nav-item']} onClick={() => this.showTeam("electronics")}>Electronics Chapter</li>
                     </ul>
                 </nav>
-
-                {/* <Team2019 teamKey={this.state.teamState} />  */}
                 
-                <div className={styles['team-container']} id="team-2019-20">
-                    { (teamKey === "execs") &&
-                        <div className={styles['row']}>
-                            {
-                                members[this.state.year][0].execs.map((member, i) => {
-                                    return (
-                                        <Member fullName={member.fullName} position={member.position} year={this.state.year} />
-                                    )
-                                })
-                            }
-                        </div>
-                    }
-
-                    { (teamKey === "computer") &&
-                        <div className={styles['row']}>
-                            {
-                                members[this.state.year][1].computer.map((member, i) => {
-                                    return (
-                                        <Member fullName={member.fullName} position={member.position} year={this.state.year} />
-                                    )
-                                })
-                            }
-                        </div>
-                    }
-                    { (teamKey === "electronics") &&
-                        <div className={styles['row']}>
-                            {
-                                members[this.state.year][2].electronics.map((member, i) => {
-                                    return (
-                                        <Member fullName={member.fullName} position={member.position} year={this.state.year} />
-                                    )
-                                })
-                            }
-                        </div>
-                    }
-                </div>
+                {this.constructMemberChart()}
 
                 <div className={styles['skyline-imgs']}>
                     <img src={skylineLeft} alt="Skyline" className={styles['skyline-imgs-lr']} />
