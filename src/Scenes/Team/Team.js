@@ -9,7 +9,7 @@ import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
 import Member from './../../Components/Team/Member/Member.js'
 import OldTeam from './../../Components/Team/previousTeam'
 // import * as members from './../../Assets/Lists/allMembers'
-import members from './../../Assets/Lists/members.js'
+import memberData from './../../Assets/Lists/members.js'
 //import membersJSON from './../../Assets/Lists/members';
 //const members = () => JSON.parse(JSON.stringify(membersJSON));
 
@@ -43,10 +43,10 @@ export default class Team extends Component {
         this.setState({teamKey: group});
     }
 
-    constructRows(listOfMembers) {
+    constructRows(memberData) {
         const members = []
-        for (var i = 0; i < listOfMembers.length; i++){
-            var member = listOfMembers[i]
+        for (var i = 0; i < memberData["membersList"].length; i++){
+            var member = memberData["membersList"][i]
             members.push(<Member fullName={member.fullName} position={member.position} year={this.state.year} />)
         }
 
@@ -58,7 +58,25 @@ export default class Team extends Component {
         for (var i = 0; i < numRows; i++){
             if (membersLeft === 0){
                 break;
-            } else if (i % 2 === 0){ // 0, 2, 4, ... even row add 3 members
+            } else if (i === 0) { // treat the first row differently
+                var obj
+                if (memberData["firstRowSize"] === 1) {
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    members[ind])
+                    ind += 1
+                    membersLeft -= 1
+                } else if (memberData["firstRowSize"] === 2) {
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    members[ind], members[ind + 1])
+                    ind += 2
+                    membersLeft -= 2
+                } else if (memberData["firstRowSize"] === 3) {
+                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    members[ind], members[ind + 1], members[ind + 2])
+                    ind += 3
+                    membersLeft -= 3
+                }
+            } else if (i % 2 !== 0){ // 1, 3, 5, ... odd row add 3 members
                 var obj
                 if (membersLeft >= 3){
                     obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
@@ -72,7 +90,7 @@ export default class Team extends Component {
                     obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
                           members[ind])
                 }
-            } else {          // 1, 3, 5, ... odd row add 4 members
+            } else {          // 0, 2, 4, ... even row add 4 members
                 var obj
                 if (membersLeft >= 3){
                     obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
@@ -104,17 +122,17 @@ export default class Team extends Component {
         // Add more categories for conditions not under 2019-2020; ie: Power/Energy Chapter from 2015-2016
         switch(this.state.teamKey){
             case "execs":
-                return this.constructRows(members[this.state.year][0].execs)
+                return this.constructRows(memberData[this.state.year][this.state.teamKey])
             case "mf":
-                return this.constructRows(members[this.state.year][0].execs)
+                return this.constructRows(memberData[this.state.year][this.state.teamKey])
             case "web":
-                return this.constructRows(members[this.state.year][0].execs)
+                return this.constructRows(memberData[this.state.year][this.state.teamKey])
             case "computer":
-                return this.constructRows(members[this.state.year][1].computer)
+                return this.constructRows(memberData[this.state.year][this.state.teamKey])
             case "electronics":
-                return this.constructRows(members[this.state.year][2].electronics)
+                return this.constructRows(memberData[this.state.year][this.state.teamKey])
             case "etc": // TODO: add additional cases
-                return this.constructRows(members.execs)    
+                return this.constructRows(memberData.execs)    
             default:
                 return (<div className={styles['team-container']} id="team-2019-20"></div>)
         }
@@ -151,8 +169,8 @@ export default class Team extends Component {
                 <nav className={styles['team-nav']}>
                     <ul className={styles['team-nav-list']}>
                         <li className={styles['team-nav-list-item']} onClick={() => this.showTeam("execs")}>Exec Team</li>
-                        <li className={styles['team-nav-list-item']} onClick={() => this.showTeam("mf")}>Marketing & Finance</li>
-                        <li className={styles['team-nav-list-item']} onClick={() => this.showTeam("web")}>Webmasters</li>
+                        <li className={styles['team-nav-list-item']} onClick={() => this.showTeam("execs")}>Marketing & Finance</li> {/*TODO: replace with mf*/}
+                        <li className={styles['team-nav-list-item']} onClick={() => this.showTeam("execs")}>Webmasters</li>          {/*TODO: replace with web*/}
                         <li className={styles['team-nav-list-item'] + ' ' + styles['computer-nav-item']} onClick={() => this.showTeam("computer")}>Computer Chapter</li>
                         <li className={styles['team-nav-list-item']  + ' ' + styles['electronics-nav-item']} onClick={() => this.showTeam("electronics")}>Electronics Chapter</li>
                     </ul>
