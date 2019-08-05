@@ -6,12 +6,14 @@ export default class Sponsor extends PureComponent {
         const {
             tier,
             companyName,
-            imgType,
+            imgType
         } = this.props
 
         return (
             <div className={styles['sponsors-container']}>
-                <img src={require('./../../../../Assets/Images/sponsors/' + companyName + imgType)} alt={companyName} className={styles['sponsors-container-img']}/>
+                <div className={styles['sponsors-container-img-div']}>
+                    <img src={require('./../../../../Assets/Images/sponsors/' + companyName + imgType)} alt={companyName} className={styles['sponsors-container-img']} />   
+                </div>
                 <h3 className={styles['sponsors-container-tier']}>{tier}</h3>
             </div>
         );

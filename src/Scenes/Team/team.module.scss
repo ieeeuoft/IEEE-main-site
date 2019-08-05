@@ -138,12 +138,33 @@
 .skyline-imgs {
     width: 100vw;
     z-index: -100;
-    margin-top: -40rem;
+    margin-top: -30vw;
     @include flexPosition(space-between, flex-end);
 
     &-lr {
         width: 40vw;
         max-width: 55rem;
+    }
+
+    @include response(lg/md) {
+        width: 120vw;
+        margin-left: -10vw;
+
+        &-lr {
+            width: 40vw;
+        }
+    }
+    @include response(md) {
+        margin-top: -35vw;
+        &-lr {
+            width: 50vw;
+        }
+    }
+    
+    @include response(sm) {
+        &-lr {
+            width: 55vw;
+        }
     }
 }
 
@@ -154,10 +175,10 @@
 }
 
 .row {
-    @include flexPosition(center, center);
+    @include flexPosition(center, flex-start);
     width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
 }
 
 // @import "./../../../abstracts/variables";
