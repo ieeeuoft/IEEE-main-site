@@ -4,12 +4,13 @@
 .card {
     @include flexPosition;
     flex-direction: column;
-    margin: 0 5vw;
+    margin: 0 4vw 3rem;
     z-index: 1;
+    width: 20rem;
 
     &-crop {
-        height: 21rem;
-        width: 21rem;
+        height: 18rem;
+        width: 18rem;
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         @include flexPosition(center, center);
@@ -66,32 +67,26 @@
             }
         }
     }
+
+    @include response(lg/md) {
+        margin: 0 3vw 3rem;
+        width: 18rem;
+        &-crop {
+            height: 16rem;
+            width: 16rem;
+        }
+    }
+
+    @include response(md) {
+        width: 17rem 1rem;
+        &-crop {
+            height: 14rem;
+            width: 14rem;
+        }
+    }
+
+    @include response(sm) {
+        width: 16rem;
+        margin: 0 2vw 1rem;
+    }
 }
-
-// import React, { PureComponent } from 'react'
-// import styles from './footer.module.css'
-// // import radarStyles from './../../../Scenes/Radar/radar.module.css'
-
-// export default class Member extends PureComponent {
-//     render() {
-//         let imgSrc = "../images/team/" + this.props.year + this.props.imgName + ".jpg";
-        
-//         return (
-//             <div className="card">
-//                 <div className="card-crop">
-//                     <img className="card-crop-img" src={imgSrc} alt={this.props.fullName} />
-//                 </div>
-//                 <p className="card-title">{this.props.position}</p>
-//                 <p className="card-name">{this.props.fullName}</p>
-//                 <div className="card-btn">
-//                     <a href={this.props.emailLink} className="card-btn-email">
-//                         <i src="../images/team/icons/email.svg" className="card-btn-email-icon"></i>
-//                     </a>
-//                     <a href={this.props.LinkedInLink} className="card-btn-linkedin">
-//                         <i src="../images/team/icons/linkedin.svg" className="card-btn-linkedin-icon"></i>
-//                     </a>
-//                 </div>
-//             </div>
-//         );
-//     }
-// }

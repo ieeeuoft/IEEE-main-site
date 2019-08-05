@@ -89,10 +89,7 @@
                 width: 100%;
                 margin: 0;
                 text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.89);
-
-                @include response(xl) { font-size: size(md) - 0.5rem; }
-                @include response(lg/md) { font-size: size(sm) + .4rem; }
-                @include response(md) { font-size: size(sm); }
+                letter-spacing: .2px;
             }
 
             &-date {
@@ -102,6 +99,13 @@
                 margin-top: .5rem;
                 color: color(white);
                 text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.89);
+            }
+
+            @include response(xl) { &-name {font-size: size(md) - 0.5rem;} }
+            @include response(lg/md) { &-name {font-size: size(sm) + .4rem;} }
+            @include response(md) { 
+                &-name {font-size: size(sm)}
+                &-date {font-size: size(sm)-.5rem; }
             }
         }
     }

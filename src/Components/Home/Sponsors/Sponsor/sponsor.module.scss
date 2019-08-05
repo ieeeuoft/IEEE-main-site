@@ -8,18 +8,25 @@
     &-container {
         @include flexPosition;
         flex-direction: column;
-        padding: 4rem;
         transition: all .4s;
-        width: auto;
-
-        &-img {
-            max-height: 20rem;
-            height: 10vw;
-            width: 100%;
-        }
+        padding: 1rem 4rem 0;
 
         &:hover {
-            padding-top: 3rem;
+            padding-top: 0;
+        }
+
+        &-img-div {
+            height: 10rem;
+            width: 100%;
+            @include flexPosition(center, center);
+        }
+
+        &-img {
+            display: block;
+            max-width: 15vw;
+            max-height: 10rem;
+            width: auto;
+            height: auto;
         }
 
         &-tier {
@@ -31,17 +38,15 @@
             text-align: center;
         }
 
-        @include response(lg) {
-            &-img {
-                height: 12vw;
+        @include response(lg/md) {
+            &-img-div {
+                height: 10rem;
             }
         }
 
-        @include response(lg/md) {
-            padding: 3rem;
-
-            &-img {
-                height: 15vw;
+        @include response(md) {
+            &-img-div {
+                height: 10rem;
             }
         }
     }
