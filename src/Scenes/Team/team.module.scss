@@ -15,6 +15,7 @@
     width: 100vw;
     @include flexPosition(center, center);
     margin: 20rem 0 5rem;
+    overflow-x: scroll;
 
     &-list {
         @include flexPosition;

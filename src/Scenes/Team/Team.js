@@ -47,7 +47,7 @@ export default class Team extends Component {
         const members = []
         for (var i = 0; i < memberData["membersList"].length; i++){
             var member = memberData["membersList"][i]
-            members.push(<Member fullName={member.fullName} position={member.position} year={this.state.year} />)
+            members.push(<Member fullName={member.fullName} position={member.position} year={this.state.year} LinkedInLink={this.state.LinkedInLink} emailLink={this.state.emailLink} />)
         }
 
         var numRows = Math.ceil((members.length - memberData["firstRowSize"]) / 7) * 2 + 1;

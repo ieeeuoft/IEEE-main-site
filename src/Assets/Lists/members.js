@@ -12,7 +12,7 @@ const memberData = {
           },
           "computer": {
                membersList: [
-               { "fullName": "Linda Wu", "position": "Chair"},
+               { "fullName": "Linda Wu", "position": "Chair", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"},
                { "fullName": "Quin Sykora", "position": "Vice Chair"},
                { "fullName": "Raymond Kim", "position": "Webmaster"},
                { "fullName": "Jennifer Kong", "position": "Director"},
