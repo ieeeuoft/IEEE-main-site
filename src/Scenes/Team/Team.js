@@ -10,6 +10,7 @@ import Member from './../../Components/Team/Member/Member.js'
 import OldTeam from './../../Components/Team/previousTeam'
 // import * as members from './../../Assets/Lists/allMembers'
 import memberData from './../../Assets/Lists/members.js'
+import { string, object } from 'prop-types';
 //import membersJSON from './../../Assets/Lists/members';
 //const members = () => JSON.parse(JSON.stringify(membersJSON));
 
@@ -129,25 +130,52 @@ export default class Team extends Component {
     }
 
     constructMemberChart() {
-        // Add more categories for conditions not under 2019-2020; ie: Power/Energy Chapter from 2015-2016
+        // Redundant for now, leave in case differentiation needed later
         switch(this.state.teamKey){
             case "execs":
                 return this.constructRows(memberData[this.state.year][this.state.teamKey])
             case "mf":
                 return this.constructRows(memberData[this.state.year][this.state.teamKey])
-            case "web":
-                return this.constructRows(memberData[this.state.year][this.state.teamKey])
             case "computer":
                 return this.constructRows(memberData[this.state.year][this.state.teamKey])
             case "electronics":
                 return this.constructRows(memberData[this.state.year][this.state.teamKey])
-            case "etc": // TODO: add additional cases
-                return this.constructRows(memberData.execs)    
+            case "energypower":
+                return this.constructRows(memberData[this.state.year][this.state.teamKey])   
             default:
-                return (<div className={styles['team-container']} id="team-2019-20"></div>)
+                return this.constructRows(memberData[this.state.year][this.state.teamKey]) 
         }
     }
     
+    constructNavListItems() {
+        var thisYearsData = Object.keys(memberData[this.state.year])
+        var numCategories = thisYearsData.length
+        var items = []
+
+        for (var i = 0; i < numCategories; i++){
+            var categoryName = thisYearsData[i]
+            items.push(this.constructNavListItem(categoryName))
+        }
+
+        return items
+    }
+
+    constructNavListItem(teamKey) {
+        switch(teamKey){
+            case "execs":
+                return (<li className={styles['team-nav-list-item']} onClick={() => this.showTeam("execs")}>Exec Team</li>)
+            case "mf":
+                return (<li className={styles['team-nav-list-item']} onClick={() => this.showTeam("mf")}>Marketing & Finance</li>)
+            case "computer":
+                return (<li className={styles['team-nav-list-item']+ ' ' + styles['computer-nav-item']} onClick={() => this.showTeam("computer")}>Electronics</li>)
+            case "electronics":
+                return (<li className={styles['team-nav-list-item']+ ' ' + styles['electronics-nav-item']} onClick={() => this.showTeam("electronics")}>Computer Chapter</li>)
+            case "energypower": // TODO: Change 'electronics-nav-item' to 'energypower-nav-item'
+                return (<li className={styles['team-nav-list-item']+ ' ' + styles['electronics-nav-item']} onClick={() => this.showTeam("energypower")}>Energy/Power Chapter</li>)
+        }
+
+    }
+
     changeYear = (event) => {
         this.setState({
           year: event.target.value
@@ -178,11 +206,7 @@ export default class Team extends Component {
                 {/* <TeamNav /> */}
                 <nav className={styles['team-nav']}>
                     <ul className={styles['team-nav-list']}>
-                        <li className={styles['team-nav-list-item']} onClick={() => this.showTeam("execs")}>Exec Team</li>
-                        <li className={styles['team-nav-list-item']} onClick={() => this.showTeam("execs")}>Marketing & Finance</li> {/*TODO: replace with mf*/}
-                        <li className={styles['team-nav-list-item']} onClick={() => this.showTeam("execs")}>Webmasters</li>          {/*TODO: replace with web*/}
-                        <li className={styles['team-nav-list-item'] + ' ' + styles['computer-nav-item']} onClick={() => this.showTeam("computer")}>Computer Chapter</li>
-                        <li className={styles['team-nav-list-item']  + ' ' + styles['electronics-nav-item']} onClick={() => this.showTeam("electronics")}>Electronics Chapter</li>
+                        {this.constructNavListItems()}
                     </ul>
                 </nav>
                 
