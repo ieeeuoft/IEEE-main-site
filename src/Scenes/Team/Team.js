@@ -50,7 +50,7 @@ export default class Team extends Component {
             members.push(<Member fullName={member.fullName} position={member.position} year={this.state.year} />)
         }
 
-        var numRows = Math.ceil(members.length / 7) * 2;
+        var numRows = Math.ceil((members.length - memberData["firstRowSize"]) / 7) * 2 + 1;
         var membersLeft = members.length
         const rows = []
         var ind = 0
@@ -86,9 +86,13 @@ export default class Team extends Component {
                 } else if (membersLeft === 2){
                     obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
                           members[ind], members[ind + 1])
+                    ind += 2
+                    membersLeft -= 2
                 } else if (membersLeft === 1){
                     obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
                           members[ind])
+                    ind += 1
+                    membersLeft -= 1
                 }
             } else {          // 0, 2, 4, ... even row add 4 members
                 var obj
@@ -100,12 +104,18 @@ export default class Team extends Component {
                 } else if (membersLeft === 3){
                     obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
                           members[ind], members[ind + 1], members[ind + 2])
+                    ind += 3
+                    membersLeft -= 3
                 } else if (membersLeft === 2){
                     obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
                           members[ind], members[ind + 1])
+                    ind += 2
+                    membersLeft -= 2
                 } else if (membersLeft === 1){
                     obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
                           members[ind])
+                    ind += 1
+                    membersLeft -= 1
                 }
             }
             rows.push(obj)
