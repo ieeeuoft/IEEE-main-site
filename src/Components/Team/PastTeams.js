@@ -1,5 +1,6 @@
 import React from 'react';
- 
+import styles from './team.module.scss'
+
 import {
     Accordion,
     AccordionItem,
@@ -13,9 +14,9 @@ import 'react-accessible-accordion/dist/fancy-example.css';
  
 export default function OldTeam() {
     return (
-        <Accordion>
+        <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
             <AccordionItem>
-                <AccordionItemHeading>
+                <AccordionItemHeading >
                     <AccordionItemButton>
                         2015-2016
                     </AccordionItemButton>
