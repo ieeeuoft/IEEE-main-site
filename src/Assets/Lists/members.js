@@ -1,13 +1,13 @@
-// , "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"
+// 
 const memberData = {
      "2019-2020": {
           "Exec Team": {
                membersList: [
-               { "fullName": "Nhien Tran-Nyguen", "position": "Branch Chair"},
-               { "fullName": "Maggie Ding", "position": "VC Marketing"},
-               { "fullName": "Fumi Shibutani", "position": "VC Finance"},
-               { "fullName": "Sirine Dhaouadi", "position": "VC External"},
-               { "fullName": "Danny Zhang", "position": "Branch Advisor"},
+               { "fullName": "Nhien Tran-Nyguen", "position": "Branch Chair", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"},
+               { "fullName": "Maggie Ding", "position": "VC Marketing", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"},
+               { "fullName": "Fumi Shibutani", "position": "VC Finance", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"},
+               { "fullName": "Sirine Dhaouadi", "position": "VC External", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"},
+               { "fullName": "Danny Zhang", "position": "Branch Advisor", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"}
                ], firstRowSize: 1
           },
           "Marketing & Finance": {

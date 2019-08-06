@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import styles from './events.module.scss'
 import EventEvent from './EventEvent/EventEvent'
 import * as eventList from './../../../Assets/Lists/allEvents'
-import { Link } from 'react-router-dom';
 
 export default class Sponsors extends PureComponent {
   render() {

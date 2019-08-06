@@ -16,7 +16,7 @@ export default class Upcoming extends PureComponent {
                 upcomingList.push(eventsList.allEvents[i]);
                 console.log(todayDate);
                 console.log(eventsList.allEvents[i]);
-                if (upcomingList.length == 3) {
+                if (upcomingList.length === 3) {
                     break
                 }
             }
@@ -30,7 +30,7 @@ export default class Upcoming extends PureComponent {
         var upcomingDivClass = "";
         var upcomingClass = "";
         
-        if (upcomingList.length == 0) {
+        if (upcomingList.length === 0) {
             upcomingDivClass = styles.none;
         } else if (upcomingList.length < 3) {
             upcomingClass = styles.two;

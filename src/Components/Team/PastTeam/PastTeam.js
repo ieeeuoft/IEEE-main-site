@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './team.module.scss'
-
+import styles from './pastTeam.module.scss';
+ 
 import {
     Accordion,
     AccordionItem,
@@ -9,28 +9,23 @@ import {
     AccordionItemButton
 } from 'react-accessible-accordion';
  
-// Demo styles, see 'Styles' section below for some notes on use.
-import 'react-accessible-accordion/dist/fancy-example.css';
- 
 export default function OldTeam() {
     return (
-        <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
-            <AccordionItem>
-                <AccordionItemHeading >
-                    <AccordionItemButton>
+        <Accordion className={styles['accordion']} allowZeroExpanded={true} allowMultipleExpanded={true}>
+            <AccordionItem className={styles['accordion__item']}>
+                <AccordionItemHeading>
+                    <AccordionItemButton className={styles['accordion__button']}>
                         2015-2016
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className={styles['accordion__panel']}>
                     <p><strong>Branch Chairs:</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Co-Chair: Kei-Ming Kwong</li>
                         <li>Co-Chair: Susan Dang</li>
                     </ul>
                     <p><strong>Computer Technical Chapter</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Chair: Elvis Gai</li>
                         <li>Vice Chair: Maggie Zhu</li>
                         <li>Director of Events: Zahra Sojoudi</li>
@@ -43,7 +38,6 @@ export default function OldTeam() {
                     </ul>
                     <p><strong>Electronics Technical Chapter</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Chair: Russ Li</li>
                         <li>Vice Chair: Vicky Chen</li>
                         <li>Director of Events: Melinda Lu</li>
@@ -56,7 +50,6 @@ export default function OldTeam() {
                     </ul>
                     <p><strong>Power/Energy Technical Chapter</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Chair: Muntaha Sakhi</li>
                         <li>Vice Chair: Shaoqi Ai</li>
                         <li>Director of Events: Kevin Tan</li>
@@ -67,14 +60,12 @@ export default function OldTeam() {
                     </ul>
                     <p><strong>Finance Committee</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Director of Finance (Academic Funding): Ayushi Jain</li>
                         <li>Director of Finance (Industry Sponsorship): Alison Ma</li>
                         <li>Director of Finance: Allan Rui</li>
                     </ul>
                     <p><strong>Marketing Committee</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Lead: Cathy Zhu</li>
                         <li>Director of Marketing: Ramya Prasad</li>
                         <li>Director of Marketing: Kathy Liu</li>
@@ -87,19 +78,18 @@ export default function OldTeam() {
                     </ul>
                     <p><strong>Website Design</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Webmaster: Gui Ming Jim Tang</li>
                         <li>Webmaster: Henry Zhou</li>
                     </ul>
                 </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem>
+            </AccordionItem >
+            <AccordionItem className={styles['accordion__item']}>
                 <AccordionItemHeading>
-                    <AccordionItemButton>
+                    <AccordionItemButton className={styles['accordion__button']}>
                         2014-2015
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className={styles['accordion__panel']}>
                 <p><strong>Branch Chairs:</strong></p>
                 <ul>
                     <li>Executive Chair: Emily Miao</li>
@@ -164,15 +154,15 @@ export default function OldTeam() {
                     <li>Director of Design Competitions: Wei Chan Xiang</li>
                 </ul>
                 </AccordionItemPanel>
-            </AccordionItem>
+            </AccordionItem >
 
-            <AccordionItem>
+            <AccordionItem className={styles['accordion__item']}>
                 <AccordionItemHeading>
-                    <AccordionItemButton>
+                    <AccordionItemButton className={styles['accordion__button']}>
                         2013-2014
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className={styles['accordion__panel']}>
                 <p><strong>Executives:</strong></p>
                 <ul>
                     <li>Executive Chair: Michael Chai</li>
@@ -229,15 +219,15 @@ export default function OldTeam() {
                     <li>Web Designer: Aaron Wang</li>
                 </ul>
                 </AccordionItemPanel>
-            </AccordionItem>
+            </AccordionItem >
             
-            <AccordionItem>
+            <AccordionItem className={styles['accordion__item']}>
                 <AccordionItemHeading>
-                    <AccordionItemButton>
+                    <AccordionItemButton className={styles['accordion__button']}>
                         2011-2012
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className={styles['accordion__panel']}>
                 <ul>
                     <li>Chair: Chao Chen</li>
                     <li>Vice Chair Public Relations: Ray Luo</li>
@@ -251,15 +241,15 @@ export default function OldTeam() {
                     <li>Chief in Technology: Ao Wan</li>
                 </ul>
                 </AccordionItemPanel>
-            </AccordionItem>
+            </AccordionItem >
 
-            <AccordionItem>
+            <AccordionItem className={styles['accordion__item']}>
                 <AccordionItemHeading>
-                    <AccordionItemButton>
+                    <AccordionItemButton className={styles['accordion__button']}>
                         2010-2011
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className={styles['accordion__panel']}>
                 
                 <ul>
                     <li>Chair: Haojun Liu</li>
@@ -274,15 +264,15 @@ export default function OldTeam() {
                     <li>Off Campus Rep: Chao Chen</li>
                 </ul>
                 </AccordionItemPanel>
-            </AccordionItem>
+            </AccordionItem >
 
-            <AccordionItem>
+            <AccordionItem className={styles['accordion__item']}>
                 <AccordionItemHeading>
-                    <AccordionItemButton>
+                    <AccordionItemButton className={styles['accordion__button']}>
                         2009-2010
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className={styles['accordion__panel']}>
                 <ul>
                     <li>Chair: Pearl Cao</li>
                     <li>Vice Chair Public Relations: Erkand Alushani</li>
@@ -295,18 +285,7 @@ export default function OldTeam() {
                     <li>Co-Chair Women in Engineering: Navila Uddin</li>
                 </ul>
                 </AccordionItemPanel>
-            </AccordionItem>
-
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        2014-2015
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-
-                </AccordionItemPanel>
-            </AccordionItem>
+            </AccordionItem >
         </Accordion>
     );
 }

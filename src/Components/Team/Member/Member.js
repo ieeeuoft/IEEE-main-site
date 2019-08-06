@@ -23,11 +23,11 @@ export default class Member extends PureComponent {
                 {emailLink && (
                     <div className={styles['card-btn']}>
                         <a href={`"mailto:" ${emailLink}`} className={styles['card-btn-email']}>
-                            <img src={Email} className={styles['card-btn-email-icon']}></img>
+                            <img src={Email} className={styles['card-btn-email-icon']} alt="Email" />
                         </a>
                     
                         <a href={LinkedInLink} className={styles['card-btn-linkedin']}>
-                            <img src={LinkedIn} className={styles['card-btn-linkedin-icon']}></img>
+                            <img src={LinkedIn} className={styles['card-btn-linkedin-icon']} alt="LinkedIn" />
                         </a>
                     </div>
                 )}

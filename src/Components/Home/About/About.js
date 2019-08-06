@@ -12,7 +12,7 @@ const About = () => {
         <div className={styles['about-containter']} id="about">
             <h2 className={styles['computer-heading']}>Computer Chapter</h2>
             <p className={styles['computer-text']}>Focusing on computer science and tech, we work hard to bring coding competitions, software workshops, industry tours and technical talks to the students at UofT. Our aim is to promote industry networking and career professionalism by coordinating with technology companies to provide exposure to new global innovations.</p>
-            <img src={computer} className={styles['computer-img']} />
+            <img src={computer} className={styles['computer-img']} alt="Computer Chapter" />
             <div className={styles['computer']}></div>
             <div className={styles['about']}></div>
             <h2 className={styles['about-heading']}>About Us</h2>
@@ -29,7 +29,7 @@ const About = () => {
             <div className={styles['electronics']}></div>
             <h2 className={styles['electronics-heading']}>Electronics Chapter</h2>
             <p className={styles['electronics-text']}>The Electronics Chapter deals with everything hardware, from embedded systems to analog circuits. We aim to help students gain technical expertise and industry exposure in these fields. Among our events are industry tours, the hardware certification workshop, and our flagship, MakeUofT.</p>
-            <img src={electronics} className={styles['electronics-img']} />
+            <img src={electronics} className={styles['electronics-img']} alt="Electronics Chapter"/>
         </div>
     )
 }

@@ -1,23 +1,17 @@
 import React, { PureComponent } from 'react';
 import styles from './upcomingEvent.module.scss'
-import imgSrc from './../../../../Assets/Images/events/MakeUofT.png';
 
 export default class UpcomingEvent extends PureComponent {
-    constructor(props){
-      super(props);
-    }
-
     handleClick = (event) => {
         window.location.replace(event.value);
-
     }
+
     render() {
         const {
             link,
             EventName,
             EventDate
         } = this.props
-
 
         return (
             <a href={link} target="_blank" className={styles['upcoming-event']}>

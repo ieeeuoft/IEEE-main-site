@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-// import Team2019 from '../../Components/Team/Team2019.js'
 import Footer from './../../Components/General/Footer/Footer.js'
 import styles from './team.module.scss'
-// import TeamNav from '../../Components/Team/TeamNav/TeamNav.js';
 import skylineLeft from './../../Assets/Images/skyline/skyline-left.svg';
 import skylineRight from './../../Assets/Images/skyline/skyline-right.svg';
-// import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
 import Member from './../../Components/Team/Member/Member.js'
-import PastTeams from '../../Components/Team/PastTeams'
-// import * as members from './../../Assets/Lists/allMembers'
+import PastTeam from '../../Components/Team/PastTeam/PastTeam'
 import memberData from './../../Assets/Lists/members.js'
 // import { string, object } from 'prop-types';
+// import Team2019 from '../../Components/Team/Team2019.js'
+// import * as members from './../../Assets/Lists/allMembers'
+// import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
+// import TeamNav from '../../Components/Team/TeamNav/TeamNav.js';
 
 export default class Team extends Component {
     constructor(props) {
@@ -34,7 +34,7 @@ export default class Team extends Component {
         const rows = []
         var ind = 0
 
-        for (var i = 0; i < numRows; i++){
+        for (i = 0; i < numRows; i++){
             if (membersLeft === 0){
                 break;
             } else if (i === 0) { // treat the first row differently
@@ -112,7 +112,7 @@ export default class Team extends Component {
             return (
                 <div>
                     <div className={styles['spacer1']}></div>
-                    {PastTeams()}
+                    {PastTeam()}
                     <div className={styles['spacer2']}></div>
                 </div>
             )
@@ -209,6 +209,8 @@ export default class Team extends Component {
                 </div>
                 {/* <TeamNav /> */}
                 {this.constructNav()}
+
+                <h2 className={styles.teamTitle}>{teamKey}</h2>
                 {/* <MemberCharts /> */}
                 {this.constructMemberChart()}
 
