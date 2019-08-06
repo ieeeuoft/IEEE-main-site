@@ -200,7 +200,7 @@ const memberData = {
                membersList: [
                { "fullName": "Henry Xu", "position": "Chair"},
                { "fullName": "Eric Zhang", "position": "Vice Chair"},
-               { "fullName": "Mohammed Tabrizi", "position": "Director"},
+               { "fullName": "Mohammad Tabrizi", "position": "Director"},
                { "fullName": "Justin Yuan", "position": "Director"},
                { "fullName": "Charlie Yang", "position": "Director"},
                { "fullName": "Walter Yang", "position": "Director"},
@@ -228,7 +228,7 @@ const memberData = {
                { "fullName": "Omer Faruque", "position": "Associate"},
                { "fullName": "Charlie Wang", "position": "Associate"},
                { "fullName": "Lorna Lan", "position": "Associate"},
-               { "fullName": "Christopher Kou", "position": "Associate"},
+               { "fullName": "Chris Kou", "position": "Associate"},
                { "fullName": "Haley Cao", "position": "Associate"},
                { "fullName": "Martin Ffrench", "position": "Associate"},
                ], firstRowSize: 1
@@ -239,7 +239,7 @@ const memberData = {
                { "fullName": "Robert Fairley", "position": "Vice-Chair"},
 
                { "fullName": "Justin Zhang", "position": "Director"},
-               { "fullName": "Yew Meng Khaw", "position": "Director"},
+               { "fullName": "Yew Meng", "position": "Director"},
                { "fullName": "Sally Lee", "position": "Director"},
 
                { "fullName": "John Zhang", "position": "Associate"},
