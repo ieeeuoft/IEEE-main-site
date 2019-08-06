@@ -1,7 +1,7 @@
 // , "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"
 const memberData = {
      "2019-2020": {
-          "execs": {
+          "Exec Team": {
                membersList: [
                { "fullName": "Nhien Tran-Nyguen", "position": "Branch Chair"},
                { "fullName": "Maggie Ding", "position": "VC Marketing"},
@@ -10,7 +10,7 @@ const memberData = {
                { "fullName": "Danny Zhang", "position": "Branch Advisor"},
                ], firstRowSize: 1
           },
-          "mf": {
+          "Marketing & Finance": {
                membersList: [
                { "fullName": "Maggie Ding", "position": "VC Marketing"},
                { "fullName": "Fumi Shibutani", "position": "VC Finance"},
@@ -30,7 +30,7 @@ const memberData = {
                { "fullName": "Alex Bogdan", "position": "Electronics Webmaster"}
                ], firstRowSize: 3	
           },
-          "computer": {
+          "Computer Chapter": {
                membersList: [
                { "fullName": "Linda Wu", "position": "Chair"},
                { "fullName": "Quin Sykora", "position": "Vice Chair"},
@@ -56,7 +56,7 @@ const memberData = {
                ], firstRowSize: 2
           },
 
-          "electronics": {
+          "Electronics Chapter": {
                membersList: [
                { "fullName": "Lisa Li", "position": "Co-Chaired"},
                { "fullName": "Martin Ffrench", "position": "Co-Chair"},
@@ -89,7 +89,7 @@ const memberData = {
           }	
      },
      "2018-2019": {
-          "execs": {
+          "Exec Team": {
                membersList: [
                { "fullName": "Kevin Zhang", "position": "Executive Chair"},
                { "fullName": "Judy Mao", "position": "Marketing Chair"},
@@ -99,7 +99,7 @@ const memberData = {
                ], firstRowSize: 1
           },
 
-          "mf": {
+          "Marketing & Finance": {
                membersList: [
                { "fullName": "Judy Mao", "position": "Marketing Chair"},
                { "fullName": "Shine Ko", "position": "Finance Chair"},
@@ -114,7 +114,7 @@ const memberData = {
                ], firstRowSize: 2
           },
 
-          "computer": {
+          "Computer Chapter": {
                membersList: [
                { "fullName": "Mohaimen Khan", "position": "Chair"},
                { "fullName": "Rosalyn Wong", "position": "Vice Chair"},
@@ -136,7 +136,7 @@ const memberData = {
                { "fullName": "Dorina Lin", "position": "Webmaster"},
                ], firstRowSize: 2
           },
-          "electronics": {
+          "Electronics Chapter": {
                membersList: [
                { "fullName": "Alaynah Malik", "position": "Co-Chair"},
                { "fullName": "Nhien Tran-Nguyen", "position": "Co-Chair"},
@@ -161,7 +161,7 @@ const memberData = {
                { "fullName": "Graham Hoyes", "position": "Webmaster"}
                ], firstRowSize: 2
           },
-          "energypower": {
+          "Energy/Power Chapter": {
                membersList: [
                { "fullName": "Verlyn Liang", "position": "Co-Chair"},
                { "fullName": "Yew Meng Khaw", "position": "Co-Chair"},

@@ -23,13 +23,11 @@ export default function OldTeam() {
                 <AccordionItemPanel>
                     <p><strong>Branch Chairs:</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Co-Chair: Kei-Ming Kwong</li>
                         <li>Co-Chair: Susan Dang</li>
                     </ul>
                     <p><strong>Computer Technical Chapter</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Chair: Elvis Gai</li>
                         <li>Vice Chair: Maggie Zhu</li>
                         <li>Director of Events: Zahra Sojoudi</li>
@@ -42,7 +40,6 @@ export default function OldTeam() {
                     </ul>
                     <p><strong>Electronics Technical Chapter</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Chair: Russ Li</li>
                         <li>Vice Chair: Vicky Chen</li>
                         <li>Director of Events: Melinda Lu</li>
@@ -55,7 +52,6 @@ export default function OldTeam() {
                     </ul>
                     <p><strong>Power/Energy Technical Chapter</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Chair: Muntaha Sakhi</li>
                         <li>Vice Chair: Shaoqi Ai</li>
                         <li>Director of Events: Kevin Tan</li>
@@ -66,14 +62,12 @@ export default function OldTeam() {
                     </ul>
                     <p><strong>Finance Committee</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Director of Finance (Academic Funding): Ayushi Jain</li>
                         <li>Director of Finance (Industry Sponsorship): Alison Ma</li>
                         <li>Director of Finance: Allan Rui</li>
                     </ul>
                     <p><strong>Marketing Committee</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Lead: Cathy Zhu</li>
                         <li>Director of Marketing: Ramya Prasad</li>
                         <li>Director of Marketing: Kathy Liu</li>
@@ -86,7 +80,6 @@ export default function OldTeam() {
                     </ul>
                     <p><strong>Website Design</strong></p>
                     <ul>
-                        <li>></li>
                         <li>Webmaster: Gui Ming Jim Tang</li>
                         <li>Webmaster: Henry Zhou</li>
                     </ul>
