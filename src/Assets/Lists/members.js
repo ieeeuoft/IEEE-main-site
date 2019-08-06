@@ -228,7 +228,7 @@ const memberData = {
                { "fullName": "Omer Faruque", "position": "Associate"},
                { "fullName": "Charlie Wang", "position": "Associate"},
                { "fullName": "Lorna Lan", "position": "Associate"},
-               { "fullName": "Christopher Kousinioris", "position": "Associate"},
+               { "fullName": "Christopher Kou", "position": "Associate"},
                { "fullName": "Haley Cao", "position": "Associate"},
                { "fullName": "Martin Ffrench", "position": "Associate"},
                ], firstRowSize: 1
