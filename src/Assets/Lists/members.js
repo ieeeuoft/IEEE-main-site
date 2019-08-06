@@ -174,6 +174,81 @@ const memberData = {
                { "fullName": "Lancy Wang", "position": "Associate"}
                ], firstRowSize: 2
           }
+     },
+     "2017-2018": {
+          "Exec Team": {
+               membersList: [
+               { "fullName": "Danny Zhang", "position": "Executive Co-Chair"},
+               { "fullName": "Kevin Tan", "position": "Executive Co-Chair"},
+               ], firstRowSize: 2
+          },
+
+          "Marketing & Finance": {
+               membersList: [
+               { "fullName": "Vicky Huo", "position": "Marketing Chair"},
+               { "fullName": "Bond Chen", "position": "Finance Chair"},
+               { "fullName": "Young Kim", "position": "Finance Associate"},
+               { "fullName": "Kevin Zhang", "position": "Marketing Director"},
+               { "fullName": "Shine Ko", "position": "Marketing Director"},
+               { "fullName": "Zining Zhu", "position": "Webmaster"},
+               { "fullName": "Daniel Koo", "position": "Webmaster"},
+               { "fullName": "Jerry Li", "position": "Webmaster"},
+               ], firstRowSize: 2
+          },
+
+          "Computer Chapter": {
+               membersList: [
+               { "fullName": "Henry Xu", "position": "Chair"},
+               { "fullName": "Eric Zhang", "position": "Vice Chair"},
+               { "fullName": "Mohammed Tabrizi", "position": "Director"},
+               { "fullName": "Justin Yuan", "position": "Director"},
+               { "fullName": "Charlie Yang", "position": "Director"},
+               { "fullName": "Walter Yang", "position": "Director"},
+               
+               { "fullName": "Rain Shen", "position": "Director"},
+               { "fullName": "Mohaimen Khan", "position": "Finance Director"},
+               { "fullName": "Himanshu Sharma", "position": "Associate"},
+               { "fullName": "David Ma", "position": "Associate"},
+               { "fullName": "Alexander Li", "position": "Associate"},
+               { "fullName": "Linda Wu", "position": "Associate"},
+               { "fullName": "Rosalyn Wong", "position": "Associate"},
+               ], firstRowSize: 1
+          },
+          "Electronics Chapter": {
+               membersList: [
+               { "fullName": "Henry Cho", "position": "Chair"},
+               { "fullName": "Anika Meng", "position": "Vice-Chair"},
+
+               { "fullName": "Yuni Kim", "position": "Director"},
+               { "fullName": "Alaynah Malik", "position": "Director"},
+               { "fullName": "Joanna Zhou", "position": "Director"},
+
+               { "fullName": "Tom Zhang", "position": "Associate"},
+               { "fullName": "Nhien Tran-Nguyen", "position": "Associate"},
+               { "fullName": "Omer Faruque", "position": "Associate"},
+               { "fullName": "Charlie Wang", "position": "Associate"},
+               { "fullName": "Lorna Lan", "position": "Associate"},
+               { "fullName": "Christopher Kousinioris", "position": "Associate"},
+               { "fullName": "Haley Cao", "position": "Associate"},
+               { "fullName": "Martin Ffrench", "position": "Associate"},
+               ], firstRowSize: 1
+          },
+          "Energy/Power Chapter": {
+               membersList: [
+               { "fullName": "Jenny Yue", "position": "Chair"},
+               { "fullName": "Robert Fairley", "position": "Vice-Chair"},
+
+               { "fullName": "Justin Zhang", "position": "Director"},
+               { "fullName": "Yew Meng Khaw", "position": "Director"},
+               { "fullName": "Sally Lee", "position": "Director"},
+
+               { "fullName": "John Zhang", "position": "Associate"},
+               { "fullName": "Akshay Shah", "position": "Associate"},
+               { "fullName": "Jane Wen", "position": "Event Associate"},
+               { "fullName": "Verlyn Liang", "position": "Associate"},
+               { "fullName": "Dorothy Zhang", "position": "Associate"}
+               ], firstRowSize: 1
+          }
      }
 };
 
