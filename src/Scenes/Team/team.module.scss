@@ -52,6 +52,14 @@
             }
         }
 
+        .energy-nav-item {
+            color: color(orange1);
+
+            &:hover {
+                background-color: #FFEFDE;
+            }
+        }
+
     }
 
 }

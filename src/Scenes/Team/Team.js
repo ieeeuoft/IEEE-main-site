@@ -11,27 +11,6 @@ import OldTeam from './../../Components/Team/previousTeam'
 // import * as members from './../../Assets/Lists/allMembers'
 import memberData from './../../Assets/Lists/members.js'
 import { string, object } from 'prop-types';
-//import membersJSON from './../../Assets/Lists/members';
-//const members = () => JSON.parse(JSON.stringify(membersJSON));
-
-
-// export default class Team extends Component {
-//     render() {
-//         return (
-//             <div>
-//                 <YearDropdown />
-//                 {/* <TeamNav /> */}
-
-//                 <Team2019 />
-//                 <div className={styles['skyline-imgs']}>
-//                     <img src={skylineLeft} alt="Skyline" className={styles['skyline-imgs-lr']} />
-//                     <img src={skylineRight} alt="Skyline" className={styles['skyline-imgs-lr']} />
-//                 </div>
-//                 <Footer />
-//             </div>
-//         )
-//     }
-// }
 
 export default class Team extends Component {
     constructor(props) {
@@ -171,7 +150,7 @@ export default class Team extends Component {
             case "electronics":
                 return (<li className={styles['team-nav-list-item']+ ' ' + styles['electronics-nav-item']} onClick={() => this.showTeam("electronics")}>Computer Chapter</li>)
             case "energypower": // TODO: Change 'electronics-nav-item' to 'energypower-nav-item'
-                return (<li className={styles['team-nav-list-item']+ ' ' + styles['electronics-nav-item']} onClick={() => this.showTeam("energypower")}>Energy/Power Chapter</li>)
+                return (<li className={styles['team-nav-list-item']+ ' ' + styles['energy-nav-item']} onClick={() => this.showTeam("energypower")}>Energy/Power Chapter</li>)
         }
 
     }
