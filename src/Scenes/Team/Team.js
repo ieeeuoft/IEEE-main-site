@@ -7,7 +7,8 @@ import skylineLeft from './../../Assets/Images/skyline/skyline-left.svg';
 import skylineRight from './../../Assets/Images/skyline/skyline-right.svg';
 // import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
 import Member from './../../Components/Team/Member/Member.js'
-import OldTeam from '../../Components/Team/OldTeam'
+import PastTeams from '../../Components/Team/PastTeams'
+// import * as members from './../../Assets/Lists/allMembers'
 import memberData from './../../Assets/Lists/members.js'
 // import { string, object } from 'prop-types';
 
@@ -107,6 +108,25 @@ export default class Team extends Component {
     }
 
     constructMemberChart() {
+        if (this.state.year === "past"){
+            return (
+                <div>
+                    <div className={styles['spacer1']}></div>
+                    {PastTeams()}
+                    <div className={styles['spacer2']}></div>
+                </div>
+            )
+        }
+
+        if (memberData[this.state.year] === undefined){
+            return (
+                <div>
+                    <div className={styles['spacer2']}></div>
+                    <div className={styles['spacer2']}>Please populate members.js for this year</div>
+                </div>
+            )
+        }
+
         // Redundant for now, leave in case differentiation needed later
         switch(this.state.teamKey){
             case "Exec Team":
@@ -124,7 +144,14 @@ export default class Team extends Component {
         }
     }
     
-    constructNavListItems() {
+    constructNav() {
+        if (this.state.year === "past"){
+            return
+        }
+        if (memberData[this.state.year] === undefined){
+            return
+        }
+
         var thisYearsData = Object.keys(memberData[this.state.year])
         var numCategories = thisYearsData.length
         var items = []
@@ -133,7 +160,14 @@ export default class Team extends Component {
             var categoryName = thisYearsData[i]
             items.push(this.constructNavListItem(categoryName))
         }
-        return items
+
+        return ( 
+            <nav className={styles['team-nav']}>
+                <ul className={styles['team-nav-list']}>
+                    {items}
+                </ul>
+            </nav>       
+        )
     }
 
     constructNavListItem(teamKey) {
@@ -165,33 +199,19 @@ export default class Team extends Component {
         return (
             <div>
                 <div className={styles['select-year']}>
-                    <div className={styles['triangle-down']}></div>
                     <select onChange={this.changeYear} value={this.state.value} id="great-names" className={styles['select-year-div']}>
                         <option value="2019-2020">2019-2020</option>
                         <option value="2018-2019">2018-2019</option>
                         <option value="2017-2018">2017-2018</option>
                         <option value="2016-2017">2016-2017</option>
-                        <option value="Past Exec Team">Past Exec Team</option>
+                        <option value="past">Past Teams</option>
                     </select>
                 </div>
+                {/* <TeamNav /> */}
+                {this.constructNav()}
+                {/* <MemberCharts /> */}
+                {this.constructMemberChart()}
 
-                {(year != "Past Exec Team") && (
-                        <nav className={styles['team-nav']}>
-                            <ul className={styles['team-nav-list']}>
-                                {this.constructNavListItems()}
-                            </ul>
-                        </nav>
-                    )
-                }
-
-                <h2 className={styles.teamTitle}>{teamKey}</h2>
-                {(year === "Past Exec Team") &&
-                    <OldTeam />
-                }
-                {(year != "Past Exec Team") &&
-                    this.constructMemberChart()
-                } 
-                
                 <div className={styles['skyline-imgs']}>
                     <img src={skylineLeft} alt="Skyline" className={styles['skyline-imgs-lr']} />
                     <img src={skylineRight} alt="Skyline" className={styles['skyline-imgs-lr']} />

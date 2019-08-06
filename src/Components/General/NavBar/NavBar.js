@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom';
 import styles from './navBar.module.scss';
 import logoBlue from './../../../Assets/Images/logo/logo-blue.png';
-import scrollToComponent from 'react-scroll-to-component';
 
 export default class NavBar extends PureComponent {
 
