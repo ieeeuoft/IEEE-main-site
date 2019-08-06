@@ -23,8 +23,8 @@ export default class NavBar extends PureComponent {
     //then create the method
     getWindowHeight = () => {
         const distanceY = window.pageYOffset;// || document.documentElement.scrollTop;
-        const shrinkOn = "200px";
-
+        const shrinkOn = 200;
+        console.log(distanceY)
         //Now In the condition change the state to smaller so if the condition is true it will change to smaller otherwise to default state
         if (distanceY > shrinkOn) {
             this.setState({ logoClass: "logoShrink" }) 
