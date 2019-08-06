@@ -31,10 +31,10 @@
 
                 -webkit-clip-path: circle(50% at 50% 50%);
                 clip-path: circle(50% at 50% 50%);
-                -webkit-transition: width .7s, height .7s, margin .7s;
-                -moz-transition: width .7s, height .7s, margin .7s;
-                -ms-transition: width .7s, height .7s, margin .7s;
-                transition: width .7s, height .7s, margin .7s;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                transition: all .5s;
 
                 &-src {
                     display: block;

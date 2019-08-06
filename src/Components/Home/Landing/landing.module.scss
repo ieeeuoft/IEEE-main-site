@@ -3,9 +3,6 @@
 
 
 // Images of the skyline
-.skyline-outline {
-    z-index: -10;
-}
 
 .skyline-outline, .skyline-solid {
     position: absolute;
@@ -15,6 +12,7 @@
     height: 85vh;
     max-height: 100rem;
     overflow-x: hidden;
+    z-index: -10;
 
     @include response(lg/md) {
         left: 40vw;

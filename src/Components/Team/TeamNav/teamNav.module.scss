@@ -5,6 +5,7 @@
     width: 100vw;
     @include flexPosition(center, center);
     margin: 4rem 0 5rem;
+    
 
     &-list {
         @include flexPosition;
