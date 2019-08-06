@@ -1,0 +1,84 @@
+@import "./../../abstracts/variables";
+@import "./../../abstracts/mixins";
+
+
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 30rem;
+    z-index: 1;
+
+    @include response(sm) {
+        margin-bottom: 16rem;
+    }
+}
+
+.accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: size(md) - .4rem;
+    font-weight: 600;
+}
+
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+    margin-right: 2rem;
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+    margin-bottom: .3rem;
+}
+
+.accordion__panel {
+    padding: 1rem 2rem 2rem;
+    animation: fadein 0.35s ease-in;
+    font-size: size(sm);
+
+    ul {
+        list-style: none;
+        padding: 0 .8rem;
+    }
+
+    p {
+        margin: 2rem 0 .2rem .8rem;
+        font-size: size(sm) + .1rem;
+    }
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
