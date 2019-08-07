@@ -7,7 +7,7 @@ export default class NavBar extends PureComponent {
 
     constructor(props) {
         super(props);
-        this.state = { logoClass: "" }
+        this.state = { logoClass: "", logoBackground: "", logoImg: logoBlue }
     }
 
     componentDidMount =
@@ -17,31 +17,49 @@ export default class NavBar extends PureComponent {
     
     componentWillUnmount =
         () => { window.removeEventListener('scroll', this.getWindowHeight)}; 
-    
-    
 
     //then create the method
     getWindowHeight = () => {
-        const distanceY = window.pageYOffset;// || document.documentElement.scrollTop;
+        const distanceY = window.pageYOffset || document.documentElement.scrollTop;
         const shrinkOn = 200;
         console.log(distanceY)
-        //Now In the condition change the state to smaller so if the condition is true it will change to smaller otherwise to default state
         if (distanceY > shrinkOn) {
-            this.setState({ logoClass: "logoShrink" }) 
+            this.setState({ logoClass: styles['logoShrink'], logoImg: logoBlueLeaf}) 
+        }
+
+        if (distanceY > 300) {
+            this.setState({ logoBackground: styles['logoBackground'] });
+        }
+
+        if (distanceY === 0) {
+            this.setState({ logoClass: styles['logoGrow'], logoImg: logoBlue }) 
+        }
+
+        if (distanceY < shrinkOn) {
+            this.setState({logoBackground: ""});
         }
     }
 
+    // contextTypes = {
+    //     router: React.PropTypes.object,
+    //     location: React.PropTypes.object
+    // }
 
     render() {
-        var { logoClass } = this.state;
+        var { logoClass, logoImg, logoBackground } = this.state;
+        
+        // var currentLocation = this.props.location.pathname;
+        let zindex = {zIndex: 100}
+        // if (this.context.location.pathname ==="team") {
+        //     zindex = {zIndex: -1}
+        // }
 
         return (
-            <header className={styles['header']}> 
-                <div className={`${styles['logo']} ${logoClass}`} ref="about" >
-                    <img src={logoBlue} alt="Logo" className={styles['logo-img']} id="logo-img" />
+            <header className={styles['header']} style={zindex}> 
+                <div className={`${styles['logo']} ${logoClass} ${logoBackground}`}>
+                    <img src={logoImg} alt="Logo" className={styles['logo-img']}/>
                 </div>
                 <nav className={styles['nav']}>
-    
                     <input type="checkbox" id="check" className={styles['checkbox']} hidden />
                     <div className={styles['hamburger-menu']}>
                         <label for="check" className={styles['menu']}>
@@ -78,114 +96,3 @@ export default class NavBar extends PureComponent {
         )
     }
 }
-
-    
-
-    // componentDidMount() {
-    //     window.addEventListener('scroll', this.growShrinkLogo);
-    // }
-    
-    // componentWillUnmount() {
-    //     window.removeEventListener('scroll', this.growShrinkLogo);
-    // }
-
-    // growShrinkLogo = () => {
-        // const distanceY = window.pageYOffset || document.documentElement.scrollTop;
-        // const shrinkOn = 100;
-
-        // //Now In the condition change the state to smaller so if the condition is true it will change to smaller otherwise to default state
-        // if (distanceY > shrinkOn) {
-        //     this.setState({
-        //         logoClass: "logoShrink"
-        //     });
-        // }
-
-        // let eTop = this.ref.about.offset().top;
-        //     if (eTop - window.scrollTop() > 800) {
-        //     // $(".logo").height(200); //screen.width*0.5/6
-        //         // $(".logo").animate({height: 200}, 500);
-        //         // $("#logo-img").attr("src","images/logo/logo-blue.png");
-        //         this.setState({
-        //             logoClass: "logoShrink"
-        //         });
-        //     } else if (eTop - window.scrollTop() <= 800) {
-        //         // $(".logo").animate({height: 50}, 500);
-        //         // $("#logo-img").attr("src","images/logo/logo-blue-leaf.png");  
-        //         this.setState({
-        //             logoClass: ""
-        //         });
-        //     }
-    // }
-
-    // constructor(props) {
-    //     super(props);
-    //     this.state = { logoClass: "" };
-    // }
-    
-    //   //use the lifecycle methods to trigger the getWindowHeight method.
-    
-    //   componentDidMount(){
-    //      () => {
-    //       window.addEventListener('scroll', this.getWindowHeight);
-    //      }
-    //   }
-    
-    //   componentWillUnmount(){
-    //     () => {
-    //       window.removeEventListener('scroll', this.getWindowHeight);
-    //     }
-    //   }
-    
-    //   //then create the method
-    //   getWindowHeight = () {
-    
-    //     const distanceY = window.pageYOffset ||
-    //       document.documentElement.scrollTop
-    //     const shrinkOn = "200px";
-    
-    //     //Now In the condition change the state to smaller so if the condition is true it will change to smaller otherwise to default state
-    //     if (distanceY > shrinkOn) {
-    //       this.setState({
-    //         class: "smaller"
-    //       })
-    //     }
-    //   }
-
-
-
-// <div className={styles.navDiv}>
-// <img className={styles.navLogo} src={logo} alt="Trendr" />
-// <nav className={styles.navBar}>
-//     
-//     <Link to={'/info'}>
-//         <PeopleIcon />
-//     </Link>
-//     <Link to={'/radar'}>
-//         <SignalCellularAltIcon />
-//     </Link>
-//     <FaceIcon />
-//     <Link to={'/info'}>
-//         <InfoIcon />
-//     </Link>
-//     <SettingsIcon />
-// </nav>
-// </div>
-
-        // var scrollToElement = require('scroll-to-element');
- 
-        // scrollToElement('#id');
-         
-        // // with options
-        // scrollToElement('.className', {
-        //     offset: 0,
-        //     ease: 'out-bounce',
-        //     duration: 1500
-        // });
-         
-        // // or if you already have a reference to the element
-        // var elem = document.querySelector('.className');
-        // scrollToElement(elem, {
-        //     offset: 0,
-        //     ease: 'out-bounce',
-        //     duration: 1500
-        // });

@@ -179,17 +179,18 @@ const memberData = {
           "Exec Team": {
                membersList: [
                { "fullName": "Danny Zhang", "position": "Executive Co-Chair"},
-               { "fullName": "Kevin Tan", "position": "Executive Co-Chair"},
+               { "fullName": "Kevin Tan", "position": "Executive Co-Chair"}
                ], firstRowSize: 2
           },
 
           "Marketing & Finance": {
                membersList: [
-               { "fullName": "Vicky Huo", "position": "Marketing Chair"},
                { "fullName": "Bond Chen", "position": "Finance Chair"},
                { "fullName": "Young Kim", "position": "Finance Associate"},
+               { "fullName": "Vicky Huo", "position": "Marketing Director"},
                { "fullName": "Kevin Zhang", "position": "Marketing Director"},
                { "fullName": "Shine Ko", "position": "Marketing Director"},
+               
                { "fullName": "Zining Zhu", "position": "Webmaster"},
                { "fullName": "Daniel Koo", "position": "Webmaster"},
                { "fullName": "Jerry Li", "position": "Webmaster"},
@@ -212,7 +213,7 @@ const memberData = {
                { "fullName": "Alexander Li", "position": "Associate"},
                { "fullName": "Linda Wu", "position": "Associate"},
                { "fullName": "Rosalyn Wong", "position": "Associate"},
-               ], firstRowSize: 1
+               ], firstRowSize: 2
           },
           "Electronics Chapter": {
                membersList: [
@@ -231,7 +232,7 @@ const memberData = {
                { "fullName": "Chris Kou", "position": "Associate"},
                { "fullName": "Haley Cao", "position": "Associate"},
                { "fullName": "Martin Ffrench", "position": "Associate"},
-               ], firstRowSize: 1
+               ], firstRowSize: 2
           },
           "Energy/Power Chapter": {
                membersList: [
@@ -239,7 +240,7 @@ const memberData = {
                { "fullName": "Robert Fairley", "position": "Vice-Chair"},
 
                { "fullName": "Justin Zhang", "position": "Director"},
-               { "fullName": "Yew Meng", "position": "Director"},
+               { "fullName": "Yew Meng Khaw", "position": "Director"},
                { "fullName": "Sally Lee", "position": "Director"},
 
                { "fullName": "John Zhang", "position": "Associate"},
@@ -247,7 +248,7 @@ const memberData = {
                { "fullName": "Jane Wen", "position": "Event Associate"},
                { "fullName": "Verlyn Liang", "position": "Associate"},
                { "fullName": "Dorothy Zhang", "position": "Associate"}
-               ], firstRowSize: 1
+               ], firstRowSize: 2
           }
      }
 };

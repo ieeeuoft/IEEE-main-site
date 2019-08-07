@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import styles from './member.module.scss'
 import Email from './../../../Assets/Images/team/icons/email.svg';
 import LinkedIn from './../../../Assets/Images/team/icons/linkedin.svg';
+import Placeholder from './../../../Assets/Images/team/placeholder.png'
 
 export default class Member extends PureComponent {
     render() {
@@ -10,13 +11,18 @@ export default class Member extends PureComponent {
             position,
             year,
             emailLink,
-            LinkedInLink
+            LinkedInLink,
         } = this.props;
+
+        let imgSrc = Placeholder;
+        if (year === "2018-2019" || year === "2017-2018") {
+            imgSrc = require('./../../../Assets/Images/team/' + year + '/' + fullName + '.jpg');
+        }
 
         return (
             <div className={styles['card']}>
                 <div className={styles['card-crop']}>
-                    <img className={styles['card-crop-img']} src={require('./../../../Assets/Images/team/' + year + '/' + fullName + '.jpg')} alt={fullName} />
+                    <img className={styles['card-crop-img']} src={imgSrc} alt={fullName} />
                 </div>
                 <p className={styles['card-title']}>{position}</p>
                 <p className={styles['card-name']}>{fullName}</p>
