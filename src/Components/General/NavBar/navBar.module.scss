@@ -5,15 +5,16 @@
 .header {
     @include flexPosition(space-between, flex-start);
     width: 100vw;
-    padding: 0rem 2rem;
+    padding: 0 2rem;
     box-sizing: border-box;
     margin: auto;
-    z-index: 100;
+    // z-index: 100;
     position: fixed;
     top: 0;
 
     .logo {
         height: calc(50vw/6);
+        padding-top: .5rem; 
 
         &-img {
             height: 100%;
@@ -21,8 +22,34 @@
     }
 
     .logoShrink {
-        height: 80px;
+        height: 60px !important;
+        width: 60px;
+        padding-top: 0;
+        animation: shrink 0.35s ease-in;
+        padding: 5px;
     }
+
+    .logoBackground {
+        @include flexPosition(center,center);
+        background-color: #fff;
+        border-radius: 200px;
+    }
+
+    .logoGrow {
+        width: auto;
+        height: calc(50vw/6) !important;
+        animation: grow 0.35s ease-in;
+    }
+}
+
+@keyframes shrink {
+    0% { height: calc(50vw/6); }
+    100% { height: 50px; }
+}
+
+@keyframes grow {
+    0% { height: 50px; }
+    100% { height: calc(50vw/6); }
 }
 
 // Navigation on top right corner

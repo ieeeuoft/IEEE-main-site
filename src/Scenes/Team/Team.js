@@ -23,7 +23,7 @@ export default class Team extends Component {
     }
 
     constructRows(memberData) {
-        const members = []
+        const members = [];
         for (var i = 0; i < memberData["membersList"].length; i++){
             var member = memberData["membersList"][i]
             members.push(<Member fullName={member.fullName} position={member.position} year={this.state.year} LinkedInLink={this.state.LinkedInLink} emailLink={this.state.emailLink} />)
@@ -40,17 +40,17 @@ export default class Team extends Component {
             } else if (i === 0) { // treat the first row differently
                 var obj
                 if (memberData["firstRowSize"] === 1) {
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                     members[ind])
                     ind += 1
                     membersLeft -= 1
                 } else if (memberData["firstRowSize"] === 2) {
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                     members[ind], members[ind + 1])
                     ind += 2
                     membersLeft -= 2
                 } else if (memberData["firstRowSize"] === 3) {
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                     members[ind], members[ind + 1], members[ind + 2])
                     ind += 3
                     membersLeft -= 3
@@ -58,17 +58,17 @@ export default class Team extends Component {
             } else if (i % 2 !== 0){ // 1, 3, 5, ... odd row add 3 members
                 var obj
                 if (membersLeft >= 3){
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                           members[ind], members[ind + 1], members[ind + 2])
                     ind += 3
                     membersLeft -= 3
                 } else if (membersLeft === 2){
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                           members[ind], members[ind + 1])
                     ind += 2
                     membersLeft -= 2
                 } else if (membersLeft === 1){
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                           members[ind])
                     ind += 1
                     membersLeft -= 1
@@ -76,22 +76,22 @@ export default class Team extends Component {
             } else {          // 0, 2, 4, ... even row add 4 members
                 var obj
                 if (membersLeft >= 3){
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                           members[ind], members[ind + 1], members[ind + 2], members[ind + 3])
                     ind += 4
                     membersLeft -= 4
                 } else if (membersLeft === 3){
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                           members[ind], members[ind + 1], members[ind + 2])
                     ind += 3
                     membersLeft -= 3
                 } else if (membersLeft === 2){
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                           members[ind], members[ind + 1])
                     ind += 2
                     membersLeft -= 2
                 } else if (membersLeft === 1){
-                    obj = React.createElement('div', {className:styles['row'], id:"team-2019-20"},
+                    obj = React.createElement('div', {className:styles['row']},
                           members[ind])
                     ind += 1
                     membersLeft -= 1
@@ -194,7 +194,6 @@ export default class Team extends Component {
     }
 
     render() {
-
         var { teamKey, year } = this.state;
         return (
             <div>
@@ -210,7 +209,9 @@ export default class Team extends Component {
                 {/* <TeamNav /> */}
                 {this.constructNav()}
 
-                <h2 className={styles.teamTitle}>{teamKey}</h2>
+                {(year != "past") && 
+                    <h2 className={styles.teamTitle}>{teamKey}</h2>
+                }
                 {/* <MemberCharts /> */}
                 {this.constructMemberChart()}
 
