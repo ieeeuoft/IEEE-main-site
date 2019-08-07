@@ -3,7 +3,7 @@ import styles from './social.module.scss'
 
 const Social = () => {
     return (
-        <div className={styles['social-containter']}>
+        <div id="joinus" className={styles['social-containter']}>
         `   <a href="https://www.facebook.com/ieeeuoft/" className={styles['facebook-heading']}>Facebook</a>
             <a href="https://www.facebook.com/ieeeuoft/" className={styles['facebook-text']}>Like us on Facebook to get the latest updates on our events and registration.</a>
             <a href="https://www.facebook.com/ieeeuoft/" className={styles['facebook']} target="_blank"></a>

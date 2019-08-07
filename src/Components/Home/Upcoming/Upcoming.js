@@ -37,7 +37,7 @@ export default class Upcoming extends PureComponent {
         } 
 
         return (
-            <div className={`${styles['upcoming-div']} ${upcomingDivClass}`} onLoad={() => this.upcoming()}>
+            <div id="events" className={`${styles['upcoming-div']} ${upcomingDivClass}`} onLoad={() => this.upcoming()}>
                 <h2 className={styles['upcoming-div-heading']}>Upcoming Events</h2>
                 <div className={`${styles['upcoming']} ${upcomingClass}`}>
                     {
