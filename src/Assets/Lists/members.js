@@ -1,4 +1,4 @@
-// 
+//
 const memberData = {
      "2019-2020": {
           "Exec Team": {
@@ -28,7 +28,7 @@ const memberData = {
                { "fullName": "Tyson Dennis-Sharma", "position": "Electronics Finance Director"},
                { "fullName": "Raymond Kim", "position": "Computer Webmaster"},
                { "fullName": "Alex Bogdan", "position": "Electronics Webmaster"}
-               ], firstRowSize: 3	
+               ], firstRowSize: 3
           },
           "Computer Chapter": {
                membersList: [
@@ -60,7 +60,7 @@ const memberData = {
                membersList: [
                { "fullName": "Lisa Li", "position": "Co-Chaired"},
                { "fullName": "Martin Ffrench", "position": "Co-Chair"},
-               
+
                { "fullName": "Yanisa Khambanonda", "position": "Marketing Director"},
                { "fullName": "Tyson Dennis-Sharma", "position": "Finance Director"},
 
@@ -86,7 +86,7 @@ const memberData = {
                { "fullName": "Alaynah Malik", "position": "Chapter Advisor"}
 
                ], firstRowSize: 2
-          }	
+          }
      },
      "2018-2019": {
           "Exec Team": {
@@ -122,7 +122,7 @@ const memberData = {
                { "fullName": "Daniel Koo", "position": "Director of Workshops"},
                { "fullName": "Justin Yuan", "position": "Event Director"},
                { "fullName": "Vicky Huo", "position": "Director of Sponorship"},
-               
+
                { "fullName": "Ashima Gupta", "position": "Associate"},
                { "fullName": "Helen Wang", "position": "Associate"},
                { "fullName": "Cynthia Liao", "position": "Associate"},
@@ -147,7 +147,7 @@ const memberData = {
                { "fullName": "Haley Cao", "position": "Sponsorship Director"},
                { "fullName": "Lorna Lan", "position": "Director of Operations and Logistics"},
                { "fullName": "Mary Wu", "position": "Outreach Director"},
-               
+
                { "fullName": "Paul Chen", "position": "Associate"},
                { "fullName": "Charlie Wang", "position": "Associate"},
                { "fullName": "Shashwat Panwar", "position": "Associate"},
@@ -190,7 +190,7 @@ const memberData = {
                { "fullName": "Vicky Huo", "position": "Marketing Director"},
                { "fullName": "Kevin Zhang", "position": "Marketing Director"},
                { "fullName": "Shine Ko", "position": "Marketing Director"},
-               
+
                { "fullName": "Zining Zhu", "position": "Webmaster"},
                { "fullName": "Daniel Koo", "position": "Webmaster"},
                { "fullName": "Jerry Li", "position": "Webmaster"},
@@ -205,7 +205,7 @@ const memberData = {
                { "fullName": "Justin Yuan", "position": "Director"},
                { "fullName": "Charlie Yang", "position": "Director"},
                { "fullName": "Walter Yang", "position": "Director"},
-               
+
                { "fullName": "Rain Shen", "position": "Director"},
                { "fullName": "Mohaimen Khan", "position": "Finance Director"},
                { "fullName": "Himanshu Sharma", "position": "Associate"},
@@ -249,6 +249,78 @@ const memberData = {
                { "fullName": "Verlyn Liang", "position": "Associate"},
                { "fullName": "Dorothy Zhang", "position": "Associate"}
                ], firstRowSize: 2
+          }
+     },
+     "2016-2017": {
+          "Exec Team": {
+               membersList: [
+               { "fullName": "Jane Liu", "position": "Executive Co-Chair"},
+               { "fullName": "Kevin Tan", "position": "Executive Co-Chair"}
+               ], firstRowSize: 2
+          },
+
+          "Marketing & Finance": {
+               membersList: [
+               { "fullName": "Jim Zeng", "position": "Finance Associate"},
+               { "fullName": "Kaiyang Chen", "position": "Finance Associate"},
+               { "fullName": "William Bi", "position": "Marketing - Computer"},
+               { "fullName": "Sharon Tao", "position": "Marketing - Electronics"},
+               { "fullName": "Sally Lee", "position": "Marketing - Energy"},
+               { "fullName": "Young Kim", "position": "Photographer"},
+
+               { "fullName": "Zining Zhu", "position": "Webmaster"},
+               { "fullName": "Rain Shen", "position": "Webmaster"},
+               { "fullName": "Jerry Li", "position": "Webmaster"}
+               ], firstRowSize: 2
+          },
+
+          "Computer Chapter": {
+               membersList: [
+               { "fullName": "Melinda Lu", "position": "Chair"},
+               { "fullName": "Kathryn Yu", "position": "Vice Chair"},
+               { "fullName": "Seung-Hun Chung", "position": "Events Director"},
+
+               { "fullName": "Raymond Ly", "position": "Associate"},
+               { "fullName": "Charlie Yang", "position": "Associate"},
+               { "fullName": "Justin Yuan", "position": "Associate"},
+               { "fullName": "Hao Liu", "position": "Associate"},
+               { "fullName": "Henry Xu", "position": "Associate"}
+               ], firstRowSize: 2
+          },
+          "Electronics Chapter": {
+               membersList: [
+               { "fullName": "Danny Zhang", "position": "Chair"},
+               { "fullName": "Franklin Li", "position": "Vice-Chair"},
+
+               { "fullName": "Henry Cho", "position": "Events Director"},
+               { "fullName": "Jianwei Sun", "position": "Events Director"},
+               { "fullName": "Helena Liu", "position": "Events Director"},
+               { "fullName": "Barry Fung", "position": "Events Director"},
+
+               { "fullName": "Yuni Kim", "position": "Associate"},
+               { "fullName": "Anika Meng", "position": "Associate"},
+               { "fullName": "Alaynah Malik", "position": "Associate"},
+               { "fullName": "Joanna Zhou", "position": "Associate"}
+
+               ], firstRowSize: 2
+          },
+          "Energy/Power Chapter": {
+               membersList: [
+               { "fullName": "Amr Mohamed", "position": "Chair"},
+
+               { "fullName": "Sarina Sit", "position": "Events Director"},
+               { "fullName": "Jenny Yue", "position": "Events Director"},
+
+               { "fullName": "Joshua Salim", "position": "Associate"},
+               { "fullName": "Kimberly Ren", "position": "Associate"},
+               { "fullName": "Chris Su", "position": "Event Associate"},
+               { "fullName": "Vaishali Iyer", "position": "Associate"},
+               { "fullName": "Robert Fairley", "position": "Associate"},
+               { "fullName": "Charlie Wang", "position": "Associate"},
+               { "fullName": "Jane Wen", "position": "Associate"},
+               { "fullName": "Tim Li", "position": "Associate"},
+               {"fullName": "Arnav Goel", "position": "Associate"}
+             ], firstRowSize: 1
           }
      }
 };
