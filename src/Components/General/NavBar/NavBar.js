@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import styles from './navBar.module.scss';
-import logoBlue from './../../../Assets/Images/logo/logo-blue.png';
+import logoBlue from './../../../Assets/Images/logo/logo-blue.svg';
+import logoBlueLeaf from './../../../Assets/Images/logo/logo-blue-leaf.svg';
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default class NavBar extends PureComponent {
