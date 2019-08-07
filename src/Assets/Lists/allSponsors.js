@@ -2,7 +2,7 @@ export const allSponsors = [
     { companyName: "Qualcomm", tier: "Platinum - MakeUofT", imgType: ".svg" },
     { companyName: "Google", tier: "Event Partner", imgType: ".svg" },
     { companyName: "PTI Transformers", tier: "Bronze - MakeUofT", imgType: ".png" },
-    { companyName: "Daisy Intelligence", tier: "Gold - Hello, Con!", imgType: ".png" },
+    { companyName: "Daisy Intelligence", tier: "Gold - Hello, Con!", imgType: ".svg" },
 
 
     { companyName: "Microsoft", tier: "Gold", imgType: ".svg" },

@@ -7,6 +7,7 @@ const memberData = {
                { "fullName": "Maggie Ding", "position": "VC Marketing", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"},
                { "fullName": "Fumi Shibutani", "position": "VC Finance", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"},
                { "fullName": "Sirine Dhaouadi", "position": "VC External", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"},
+               { "fullName": "Kevin Zhang", "position": "Branch Advisor", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"},
                { "fullName": "Danny Zhang", "position": "Branch Advisor", "LinkedInLink":"https://www.linkedin.com/", "emailLink":"uoft@ieee.org"}
                ], firstRowSize: 1
           },
@@ -20,8 +21,6 @@ const memberData = {
                { "fullName": "Katherine Liang", "position": "Computer Marketing Associate"},
                { "fullName": "Yuxuan Yao", "position": "Computer Marketing Associate"},
                { "fullName": "Karen Zhao", "position": "Electronics Marketing Associate"},
-               { "fullName": "Kathy Zhuang", "position": "Computer Graphics Design"},
-               { "fullName": "Shashwat Panwar", "position": "Electronics Graphics Design"},
                { "fullName": "Kathy Zhuang", "position": "Computer Graphics Design"},
                { "fullName": "Shashwat Panwar", "position": "Electronics Graphics Design"},
                { "fullName": "Neetha Parameswaran", "position": "Computer Finance Director"},

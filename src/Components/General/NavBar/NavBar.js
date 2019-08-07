@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom';
 import styles from './navBar.module.scss';
-import logoBlue from './../../../Assets/Images/logo/logo-blue.png';
-import logoBlueLeaf from './../../../Assets/Images/logo/logo-blue-leaf.png';
+import logoBlue from './../../../Assets/Images/logo/logo-blue.svg';
+import logoBlueLeaf from './../../../Assets/Images/logo/logo-blue-leaf.svg';
 
 export default class NavBar extends PureComponent {
 
