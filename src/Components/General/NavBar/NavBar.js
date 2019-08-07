@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react'
-import { Link } from 'react-router-dom';
 import styles from './navBar.module.scss';
 import logoBlue from './../../../Assets/Images/logo/logo-blue.svg';
 import logoBlueLeaf from './../../../Assets/Images/logo/logo-blue-leaf.svg';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default class NavBar extends PureComponent {
 
@@ -69,26 +69,25 @@ export default class NavBar extends PureComponent {
                             <div className={styles['menu-line'] + " " + styles['menu-line-3']}></div>
                         </label>
                     </div>
-    
-                   
+
                     <div className={styles['slideoutNav']}>
                         <ul className={styles['nav-list']}>
-                            <Link to={'/'}>
+                            <Link smooth to={'/#about'}>
                                 <li className={styles['nav-list-item']} tab='0'>About</li>
                             </Link>
                             <Link to={'/team'}>
                                 <li className={styles['nav-list-item']}>Our Team</li>
                             </Link>
-                            <Link to={'/team'}>
+                            <Link smooth to={'/#events'}>
                                 <li className={styles['nav-list-item']}>Events</li>
                             </Link>
-                            <Link to={'/team'}>
+                            <Link smooth to={'/#joinus'}>
                                 <li className={styles['nav-list-item']}>Join Us</li>
                             </Link>
-                            <Link to={'/team'}>
+                            <Link smooth to={'/#sponsors'}>
                                 <li className={styles['nav-list-item']}>Sponsors</li>
                             </Link>
-                            <Link to={'/team'}>
+                            <Link smooth to={'/#contactus'}>
                                 <li className={styles['nav-list-item']}>Contact Us</li>
                             </Link>
                         </ul>

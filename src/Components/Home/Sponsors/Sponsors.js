@@ -30,7 +30,7 @@ export default class Sponsors extends PureComponent {
     };
 
     return (
-        <div className={styles['sponsors-div']}>
+        <div id="sponsors" className={styles['sponsors-div']}>
             <h2 className={styles['sponsors-div-heading']}>Our Sponsors</h2> 
             <div className={styles['sponsors']}>
                 <Slider {...settings}>

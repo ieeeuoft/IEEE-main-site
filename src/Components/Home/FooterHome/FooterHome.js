@@ -4,7 +4,7 @@ import Iframe from 'react-iframe'
 
 const FooterHome = () => {
     return (
-        <footer className={styles['footer']}>
+        <footer id="contactus" className={styles['footer']}>
             <h2 className={styles['footer-heading']}>Contact Us</h2>
             <div className={styles['footer-div']}>
                 <div className={styles['footer-div-contact']}>

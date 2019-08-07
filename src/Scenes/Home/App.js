@@ -12,7 +12,7 @@ export default class App extends Component {
         return (
             <div>
                 <Landing />
-                <About />
+                <About/>
                 <Upcoming />
                 <Events />
                 <Social />
