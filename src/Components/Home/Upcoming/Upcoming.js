@@ -9,13 +9,10 @@ export default class Upcoming extends PureComponent {
         var today = new Date();
         var todayDate = (today.getFullYear() + "/" + ("0" + (today.getMonth()+1)).substring(-2) + "/" + ("0" + today.getDate()).substring(-2));
         var upcomingList = [];
-        console.log(todayDate);
         
         for (var i = 0; i < eventsList.allEvents.length; i++) {
             if (eventsList.allEvents[i].date > todayDate) {
                 upcomingList.push(eventsList.allEvents[i]);
-                console.log(todayDate);
-                console.log(eventsList.allEvents[i]);
                 if (upcomingList.length === 3) {
                     break
                 }

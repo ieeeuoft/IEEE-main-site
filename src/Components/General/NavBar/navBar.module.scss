@@ -6,16 +6,15 @@
     @include flexPosition(space-between, flex-start);
     width: 100vw;
     padding: 0 2rem;
-    box-sizing: border-box;
     margin: auto;
-    // z-index: 100;
     position: fixed;
     top: 0;
 
     .logo {
         height: calc(50vw/6);
         max-height: 110px;
-        padding-top: .5rem; 
+        padding-top: 1rem; 
+        margin-left: .31rem; 
 
         &-img {
             height: 100%;
@@ -25,21 +24,26 @@
     .logoShrink {
         height: 50px !important;
         width: 50px;
-        animation: shrink 0.35s ease-in;
-        padding: 5px;
-        margin-top: 5px;
+        animation: shrink 0.2s ease-in;
+        padding: .5rem; 
+        margin-top: .3rem; 
     }
 
     .logoBackground {
-        @include flexPosition(center,center);
-        background-color: #fff;
+        background-color: color(white);
         border-radius: 200px;
+        @include flexPosition(center,center);
+        margin-left: 0; 
+
+        &:hover {
+            background-color: color(blue7);
+        }
     }
 
     .logoGrow {
         width: auto;
         height: calc(50vw/6) !important;
-        animation: grow 0.35s ease-in;
+        animation: grow 0.2s ease-in;
     }
 }
 
@@ -58,7 +62,8 @@
     &-list {
         @include flexPosition(space-around);
         font-size: size(xs);
-        font-family: font(source);
+        font-weight: 600;
+        font-family: font(roboto);
         color: color(blue1);
         width: calc(100% - 140px);
 
@@ -71,20 +76,19 @@
             font-size: size(xs) !important;
             transition: all 0.3s;
             list-style: none;
-            // line-height: 143%;
             text-align: center;
             text-decoration: none;
             color: color(blue1);
 
-
-            &:hover {
+            &:hover, &:focus {
                 color: color(blue4);
                 background-color: transparent;
+                outline: none;
             }
 
-            // &:active {
-            //     color: color(blue1);
-            // }
+            &:active {
+                color: color(orange1);
+            }
         }
     }        
 }

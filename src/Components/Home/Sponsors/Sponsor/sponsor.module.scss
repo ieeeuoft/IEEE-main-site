@@ -1,7 +1,6 @@
 @import "./../../../../abstracts/variables";
 @import "./../../../../abstracts/mixins";
 
-
 .sponsors {
     @include flexPosition;
 
@@ -19,6 +18,7 @@
             height: 10rem;
             width: 100%;
             @include flexPosition(center, center);
+            outline: none;
         }
 
         &-img {

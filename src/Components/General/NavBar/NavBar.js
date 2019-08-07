@@ -5,90 +5,106 @@ import logoBlueLeaf from './../../../Assets/Images/logo/logo-blue-leaf.svg';
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default class NavBar extends PureComponent {
-
     constructor(props) {
         super(props);
         this.state = { logoClass: "", logoBackground: "", logoImg: logoBlue }
     }
 
     componentDidMount =
-        // scrollToComponent(this.Blue, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
         () => { window.addEventListener('scroll', this.getWindowHeight)}; 
     
     
     componentWillUnmount =
         () => { window.removeEventListener('scroll', this.getWindowHeight)}; 
 
-    //then create the method
     getWindowHeight = () => {
         const distanceY = window.pageYOffset || document.documentElement.scrollTop;
-        const shrinkOn = 200;
-        console.log(distanceY)
-        if (distanceY > shrinkOn) {
-            this.setState({ logoClass: styles['logoShrink'], logoImg: logoBlueLeaf}) 
+        let shrinkOn1 = 200;
+        let shrinkOn2 = 400;
+
+        // THIS IS SO SKETCHY SOMEONE PLS HELP FIX
+        if (window.location.href.slice(-4, -1) == "tea") {
+            shrinkOn1 = 50;
+            shrinkOn2 = 70;
         }
 
-        if (distanceY > 300) {
-            this.setState({ logoBackground: styles['logoBackground'] });
+        if (distanceY > shrinkOn1) {
+            this.setState({ logoClass: styles['logoShrink']}) 
+        }
+
+        if (distanceY > shrinkOn2) {
+            this.setState({ logoBackground: styles['logoBackground'], logoImg: logoBlueLeaf });
         }
 
         if (distanceY === 0) {
             this.setState({ logoClass: styles['logoGrow'], logoImg: logoBlue }) 
         }
 
-        if (distanceY < shrinkOn) {
+        if (distanceY < shrinkOn1) {
             this.setState({logoBackground: ""});
         }
     }
+    
+    closeNav(){
+        if (this.refs.checkboxRef.checked) {
+            this.refs.checkboxRef.checked = !this.refs.checkboxRef.checked;
+        }
+    }
 
-    // contextTypes = {
-    //     router: React.PropTypes.object,
-    //     location: React.PropTypes.object
-    // }
+    scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
 
     render() {
         var { logoClass, logoImg, logoBackground } = this.state;
         
-        // var currentLocation = this.props.location.pathname;
-        let zindex = {zIndex: 100}
-        // if (this.context.location.pathname ==="team") {
-        //     zindex = {zIndex: -1}
-        // }
+        let zindex = {zIndex: 100};
+
+        // THIS IS SO SKETCHY SOMEONE PLS HELP FIX
+        if (window.location.href.slice(-4, -1) == "tea") {
+            zindex = {zIndex: -1}
+        }
 
         return (
             <header className={styles['header']} style={zindex}> 
-                <div className={`${styles['logo']} ${logoClass} ${logoBackground}`}>
-                    <img src={logoImg} alt="Logo" className={styles['logo-img']}/>
-                </div>
+                <Link smooth to={'/'} onClick={() => {this.closeNav(); this.scrollToTop()}}>
+                    <div className={`${styles['logo']} ${logoClass} ${logoBackground}`} >
+                        <img src={logoImg} alt="Logo" className={styles['logo-img']}/>
+                    </div>
+                </Link>
+               
                 <nav className={styles['nav']}>
-                    <input type="checkbox" id="check" className={styles['checkbox']} hidden />
+                    <input type="checkbox" ref="checkboxRef" id="check" className={styles['checkbox']} hidden />
                     <div className={styles['hamburger-menu']}>
                         <label for="check" className={styles['menu']}>
-                            <div className={styles['menu-line'] + " " + styles['menu-line-1']}></div>
-                            <div className={styles['menu-line'] + " " + styles['menu-line-2']}></div>
-                            <div className={styles['menu-line'] + " " + styles['menu-line-3']}></div>
+                            <div className={`${styles['menu-line']} ${styles['menu-line-1']}`}></div>
+                            <div className={`${styles['menu-line']} ${styles['menu-line-2']}`}></div>
+                            <div className={`${styles['menu-line']} ${styles['menu-line-3']}`}></div>
                         </label>
                     </div>
 
                     <div className={styles['slideoutNav']}>
                         <ul className={styles['nav-list']}>
                             <Link smooth to={'/#about'}>
-                                <li className={styles['nav-list-item']} tab='0'>About</li>
+                                <li className={styles['nav-list-item']} tab='0' onClick={() => this.closeNav()} >About</li>
                             </Link>
                             <Link to={'/team'}>
-                                <li className={styles['nav-list-item']}>Our Team</li>
+                                <li className={styles['nav-list-item']} onClick={() => this.closeNav()}>Our Team</li>
                             </Link>
                             <Link smooth to={'/#events'}>
-                                <li className={styles['nav-list-item']}>Events</li>
+                                <li className={styles['nav-list-item']} onClick={() => this.closeNav()}>Events</li>
                             </Link>
                             <Link smooth to={'/#joinus'}>
-                                <li className={styles['nav-list-item']}>Join Us</li>
+                                <li className={styles['nav-list-item']} onClick={() => this.closeNav()}>Join Us</li>
                             </Link>
                             <Link smooth to={'/#sponsors'}>
-                                <li className={styles['nav-list-item']}>Sponsors</li>
+                                <li className={styles['nav-list-item']} onClick={() => this.closeNav()}>Sponsors</li>
                             </Link>
                             <Link smooth to={'/#contactus'}>
-                                <li className={styles['nav-list-item']}>Contact Us</li>
+                                <li className={styles['nav-list-item']} onClick={() => this.closeNav()}>Contact Us</li>
                             </Link>
                         </ul>
                     </div>

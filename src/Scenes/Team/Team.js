@@ -122,7 +122,7 @@ export default class Team extends Component {
             return (
                 <div>
                     <div className={styles['spacer2']}></div>
-                    <div className={styles['spacer2']}>Please populate members.js for this year</div>
+                    <div className={styles['spacer2']}>ERROR 404. Team not found.</div>
                 </div>
             )
         }
