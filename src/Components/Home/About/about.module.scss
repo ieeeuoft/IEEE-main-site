@@ -50,7 +50,7 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
             }
             &-text {
                 font-size: size(xs);
-                line-height: 2.4rem;
+                line-height: 2.5rem;
                 text-align: center;
                 width: 80%;
                 max-width: 800px;
@@ -134,10 +134,10 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
                     }
 
                 }
-                &-text {
-                    font-size: size(sm);
-                    line-height: 2.7rem;
-                }
+                // &-text {
+                //     font-size: size(sm);
+                //     line-height: 2.7rem;
+                // }
                 &-btn-container {
                     width: 80%;
                     max-width: 500px;
@@ -153,7 +153,7 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
                         background-color: color(orange3);
                         font-family: font(merri);
                         font-weight: bold;
-                        font-size: size(lg); 
+                        font-size: size(md); 
                         text-align: center;
                         padding: 2rem;
                         margin-bottom: 15px;
@@ -166,7 +166,7 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
                         }
 
                         @include response(lg) {
-                            font-size: size(md); 
+                            font-size: size(md) - .3rem; 
                         }
                     }
                     @include response(lg) {

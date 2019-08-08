@@ -96,7 +96,7 @@
 .skyline-imgs {
     width: 100vw;
     z-index: -100;
-    margin-top: -30vw;
+    margin-top: -25vw;
     @include flexPosition(space-between, flex-end);
 
     &-lr {
