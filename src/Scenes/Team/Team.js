@@ -198,7 +198,8 @@ export default class Team extends Component {
         return (
             <div>
                 <div className={styles['select-year']}>
-                    <select onChange={this.changeYear} value={this.state.value} id="great-names" className={styles['select-year-div']}>
+                    <div className={styles['triangle-down']}></div>
+                    <select onChange={this.changeYear} value={this.state.value} className={styles['select-year-div']}>
                         <option value="2019-2020">2019-2020</option>
                         <option value="2018-2019">2018-2019</option>
                         <option value="2017-2018">2017-2018</option>
@@ -206,6 +207,7 @@ export default class Team extends Component {
                         <option value="past">Past Teams</option>
                     </select>
                 </div>
+
                 {/* <TeamNav /> */}
                 {this.constructNav()}
 

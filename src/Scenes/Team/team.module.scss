@@ -136,17 +136,13 @@
     @include flexPosition(center, flex-start);
     width: 100%;
     flex-wrap: wrap;
-    // margin-bottom: 3rem;
 }
-
-// @import "./../../../abstracts/variables";
-// @import "./../../../abstracts/mixins";
 
 .team-nav {
     width: 100vw;
     @include flexPosition(center, center);
     margin-top: 4rem;
-    overflow-x: scroll;
+    // overflow-x: scroll;
     z-index: 101;
 
     &-list {
@@ -161,12 +157,22 @@
             color: color(blue1);
             padding: 2rem;
             list-style: none;
-            line-height: 100%;
+            line-height: 120%;
             cursor: pointer;
             transition: all 0.4s;
 
             &:hover {
                 background-color: color(blue6);
+            }
+        }
+
+        @include response(xl) {
+            width: 90%;
+        }
+
+        @include response(ld/md) {
+            &-item {
+                font-size: 1.5rem;
             }
         }
 
@@ -206,7 +212,7 @@
         display: inline-block;
         font-family: font(merri);
         font-weight: bold;
-        font-size: size(md);
+        font-size: size(md) - 0.5rem;
         color: color(blue1);
 
         width: 280px;
@@ -220,8 +226,11 @@
         padding: 15px 45px 15px 25px;
 
         background: none;
+        -webkit-appearance: none;
     }
 }
+
+
 
 .spacer1 {
     height: 5vh;

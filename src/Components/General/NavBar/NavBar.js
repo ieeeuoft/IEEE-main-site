@@ -63,10 +63,10 @@ export default class NavBar extends PureComponent {
         
         let zindex = {zIndex: 100};
 
-        // THIS IS SO SKETCHY SOMEONE PLS HELP FIX
-        if (window.location.href.slice(-4, -1) == "tea") {
-            zindex = {zIndex: -1}
-        }
+        // // THIS IS SO SKETCHY SOMEONE PLS HELP FIX
+        // if (window.location.href.slice(-4, -1) == "tea") {
+        //     zindex = {zIndex: -1}
+        // }
 
         return (
             <header className={styles['header']} style={zindex}> 
