@@ -15,9 +15,9 @@ pipeline {
       }
       steps {
 //          # Remove the old files
-          sh 'rm -rf /var/www/mainsitestaging/public_html/*'
+          sh 'rm -rf /var/www/html/public_html/*'
 //          # Copy over the new files
-          sh 'cp -r build/* /var/www/mainsitestaging/public_html/'
+          sh 'cp -r build/* /var/www/html/public_html/'
       }
     }
   }
