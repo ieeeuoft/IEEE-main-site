@@ -11,6 +11,7 @@
         flex-direction: column;
         width: 26vw;
         max-width: 31rem;
+        outline: none;
 
         @include response(lg/md) { width: 30vw; }
         @include response(sm) { width: 45vw; }

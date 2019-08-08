@@ -7,7 +7,7 @@ const memberData = {
                { "fullName": "Maggie Ding", "position": "VC Marketing", "LinkedInLink":"", "emailLink":"gaoxing.ding@mail.utoronto.ca"},
                { "fullName": "Fumi Shibutani", "position": "VC Finance", "LinkedInLink":"", "emailLink":"fumi.shibutani@mail.utoronto.ca"},
                { "fullName": "Sirine Dhaouadi", "position": "VC External", "LinkedInLink":"", "emailLink":"sirine.dhaouadi@mail.utoronto.ca"},
-               { "fullName": "Kevin Zhang", "position": "Branch Advisor", "LinkedInLink":"", "emailLink":"kevinhk.zhang@mail.utoronto.ca"},
+               { "fullName": "Kevin Zhang", "position": "Branch Advisor", "LinkedInLink":"https://www.linkedin.com/in/genshengzhang/", "emailLink":"kevinhk.zhang@mail.utoronto.ca"},
                { "fullName": "Danny Zhang", "position": "Branch Advisor", "LinkedInLink":"", "emailLink":"danny.zhang@isl.utoronto.ca"}
                ], firstRowSize: 1
           },
@@ -43,7 +43,7 @@ const memberData = {
 
                { "fullName": "Katherine Liang", "position": "Marketing Associate", "LinkedInLink":"", "emailLink":"katherine.liang@mail.utoronto.ca"},
                { "fullName": "Yuxuan Yao", "position": "Marketing Associate", "LinkedInLink":"", "emailLink":"yuxuan.yao@mail.utoronto.ca"},
-               { "fullName": "Haochen Zhang", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"hcz.zhang@mail.utoronto.ca"},
+               { "fullName": "Haochen Zhang", "position": "Logistics Associate", "LinkedInLink":"https://www.linkedin.com/in/haochenz11/", "emailLink":"hcz.zhang@mail.utoronto.ca"},
                { "fullName": "Amr Sharaf", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"amr.sharaf@mail.utoronto.ca"},
 
                { "fullName": "Kathy Zhuang", "position": "Graphics Design", "LinkedInLink":"", "emailLink":"kathy.zhuang@mail.utoronto.ca"},

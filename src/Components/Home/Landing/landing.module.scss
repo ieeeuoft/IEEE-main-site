@@ -35,7 +35,8 @@
     // left: 50%;
     // transform: translate(-50%, -50%);
     overflow: hidden;
-    z-index: -5;
+    position: relative;
+    z-index: -1;
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 86%);
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 86%);
 
@@ -52,12 +53,20 @@
     }
 }
 
+
 // Div of skyline-outline
 .no-background {
+    width: 100vw;
+    height: 100vh;
+    max-height: 150rem;
+    position: absolute;
+    left: 0;
+    top: 0;
     display: inline-block;
     white-space: nowrap;
-    width: 100vw;
-    height: auto;
+    z-index: -10;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 // Text of "IEEE UofT Student Branch

@@ -67,7 +67,6 @@
         font-size: size(xs);
         font-weight: 600;
         font-family: font(roboto);
-        color: color(blue1);
         width: calc(100% - 140px);
 
         &-item {
@@ -106,8 +105,8 @@
     // @include flexLayout;
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
     @include flexPosition;
-    border-bottom: solid 1px #999;
-    border-left: solid 1px #999;
+    border-bottom: solid 1px #ccc;
+    border-left: solid 1px #ccc;
 
     @include response(lg) {
         width: 60vw;

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './landing.module.scss'
 import skylineOutline from './../../../Assets/Images/skyline/skyline-outline.svg'
 import skylineSolid from './../../../Assets/Images/skyline/skyline-solid.svg'
+import { Parallax } from 'react-scroll-parallax';
 
 const Landing = () => {
     return (
@@ -13,6 +14,7 @@ const Landing = () => {
                 </div>
                 <img src={skylineSolid} alt="" className={styles['skyline-solid']} />
             </div>
+           
             <div className={styles['heading-blue']}>
                 <h2 className={styles['heading-blue-title']}>IEEE</h2>
                 <h2 className={styles['heading-blue-subtitle']}>University of Toronto Student Branch</h2>

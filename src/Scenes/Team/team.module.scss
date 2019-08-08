@@ -141,8 +141,8 @@
 .team-nav {
     width: 100vw;
     @include flexPosition(center, center);
+    flex-direction: column;
     margin-top: 4rem;
-    // overflow-x: scroll;
     z-index: 101;
 
     &-list {
@@ -161,32 +161,36 @@
             cursor: pointer;
             transition: all 0.4s;
 
-            &:hover {
+            &:hover, &-active {
                 background-color: color(blue6);
             }
         }
 
-        @include response(xl) {
-            width: 90%;
+        @include response(lg/md) {
+            width: 100%;
+            overflow-x: scroll;
+            align-self: flex-end;
         }
 
-        @include response(ld/md) {
+        @include response(md) {
             &-item {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
+                padding: 1.5rem;
             }
         }
 
         .computer-nav-item {
             color: color(blue2);
 
-            &:hover {
+            &:hover, &:active, &:focus, &-active { 
                 background-color:#B4DAEA;
             }
         }
+
         .electronics-nav-item {
             color: color(green1);
 
-            &:hover {
+            &:hover, &:active, &:focus, &-active {
                 background-color: #C6ECEE;
             }
         }
@@ -194,7 +198,7 @@
         .energy-nav-item {
             color: color(orange1);
 
-            &:hover {
+            &:hover, &:active, &:focus, &-active {
                 background-color: #FFEFDE;
             }
         }
@@ -223,7 +227,7 @@
         border-bottom: 3px solid color(blue1);
         border-radius: 0;
 
-        padding: 15px 45px 15px 25px;
+        padding: 12px 45px 10px 25px;
 
         background: none;
         -webkit-appearance: none;

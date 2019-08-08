@@ -15,11 +15,7 @@ import memberData from './../../Assets/Lists/members.js'
 export default class Team extends Component {
     constructor(props) {
         super(props);
-        this.state = { teamKey: "Exec Team", year:"2019-2020"}
-    }
-
-    showTeam(group) {
-        this.setState({teamKey: group});
+        this.state = { teamKey: "Exec Team", year:"2019-2020", active: 1}
     }
 
     constructRows(memberData) {
@@ -143,7 +139,23 @@ export default class Team extends Component {
                 return this.constructRows(memberData[this.state.year][this.state.teamKey]) 
         }
     }
-    
+
+    showTeam(group, activeNum) {
+        this.setState({
+            teamKey: group, active: activeNum
+        });
+
+    }
+
+
+    changeYear = (event) => {
+        this.setState({
+          year: event.target.value,
+          teamKey: "Exec Team",
+          active: 1
+        });
+    }
+
     constructNav() {
         if (this.state.year === "past"){
             return
@@ -171,25 +183,19 @@ export default class Team extends Component {
     }
 
     constructNavListItem(teamKey) {
+        let {active} = this.state
         switch(teamKey){
             case "Exec Team":
-                return (<li className={styles['team-nav-list-item']} onClick={() => this.showTeam("Exec Team")}>Exec Team</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${active == 1 ? styles['team-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Exec Team",1)}>Exec Team</li>)
             case "Marketing & Finance":
-                return (<li className={styles['team-nav-list-item']} onClick={() => this.showTeam("Marketing & Finance")}>Marketing & Finance</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${active == 2 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Marketing & Finance",2)}>Marketing & Finance</li>)
             case "Computer Chapter":
-                return (<li className={styles['team-nav-list-item']+ ' ' + styles['computer-nav-item']} onClick={() => this.showTeam("Computer Chapter")}>Computer Chapter</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${styles['computer-nav-item']} ${active == 3 ? styles['computer-nav-item-active'] : null}`} onClick={() => this.showTeam("Computer Chapter",3)}>Computer Chapter</li>)
             case "Electronics Chapter":
-                return (<li className={styles['team-nav-list-item']+ ' ' + styles['electronics-nav-item']} onClick={() => this.showTeam("Electronics Chapter")}>Electronics Chapter</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${styles['electronics-nav-item']} ${active == 4 ? styles['electronics-nav-item-active'] : null}`} onClick={() => this.showTeam("Electronics Chapter",4)}>Electronics Chapter</li>)
             case "Energy/Power Chapter": 
-                return (<li className={styles['team-nav-list-item']+ ' ' + styles['energy-nav-item']} onClick={() => this.showTeam("Energy/Power Chapter")}>Energy/Power Chapter</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${styles['energy-nav-item']} ${active == 5 ? styles['energy-nav-item-active'] : null}`} onClick={() => this.showTeam("Energy/Power Chapter",5)}>Energy/Power Chapter</li>)
         }
-
-    }
-
-    changeYear = (event) => {
-        this.setState({
-          year: event.target.value
-        });
 
     }
 
