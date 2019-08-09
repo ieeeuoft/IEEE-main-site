@@ -10,23 +10,24 @@ export default class Sponsors extends PureComponent {
       // dots: true,
       autoplaySpeed: 100,
       autoplay: true,
-      slidesToShow: 5,
+      // slidesToShow: 5,
+      slidesToShow: 3,
       speed: 3000,
       pauseOnHover: false,
-      responsive : [
-        {
-          breakpoint: 850,
-          settings: {
-            slidesToShow: 4
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 3
-          }
-        }
-      ]
+      // responsive : [
+      //   {
+      //     breakpoint: 850,
+      //     settings: {
+      //       slidesToShow: 4
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 600,
+      //     settings: {
+      //       slidesToShow: 3
+      //     }
+      //   }
+      // ]
     };
 
     return (
@@ -34,7 +35,7 @@ export default class Sponsors extends PureComponent {
             <h2 className={styles['sponsors-div-heading']}>Our Sponsors</h2> 
             <div className={styles['sponsors']}>
                 <Slider {...settings}>
-                    {sponsorList.allSponsors.map((item, i) =><Sponsor companyName={item.companyName} tier={item.tier} imgType={item.imgType} /> )}  
+                    {sponsorList.allSponsors.map((item, i) =><Sponsor companyName={item.companyName} tier={item.tier} imgType={item.imgType} siteLink={item.siteLink}/> )}  
                 </Slider>
             </div>
         </div>  

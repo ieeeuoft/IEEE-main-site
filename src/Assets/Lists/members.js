@@ -3,7 +3,7 @@ const memberData = {
      "2019-2020": {
           "Exec Team": {
                membersList: [
-               { "fullName": "Nhien Tran-Nyguen", "position": "Branch Chair", "emailLink":"nhien.tran.nguyen@mail.utoronto.ca"},
+               { "fullName": "Nhien Tran-Nguyen", "position": "Branch Chair", "emailLink":"nhien.tran.nguyen@mail.utoronto.ca"},
                { "fullName": "Maggie Ding", "position": "VC Marketing", "LinkedInLink":"", "emailLink":"gaoxing.ding@mail.utoronto.ca"},
                { "fullName": "Fumi Shibutani", "position": "VC Finance", "LinkedInLink":"", "emailLink":"fumi.shibutani@mail.utoronto.ca"},
                { "fullName": "Sirine Dhaouadi", "position": "VC External", "LinkedInLink":"", "emailLink":"sirine.dhaouadi@mail.utoronto.ca"},
@@ -65,9 +65,9 @@ const memberData = {
 
                { "fullName": "Raghav Srinivasan", "position": "Tech Director", "LinkedInLink":"https://www.linkedin.com/in/raghav-srinivasan-b45350170", "emailLink":"raghav.srinivasan@mail.utoronto.ca"},
                { "fullName": "Andres Lombo", "position": "Tech Director", "LinkedInLink":"", "emailLink":"a.lombo@mail.utoronto.ca"},
-               { "fullName": "Zhaoping Wang", "position": "Director of ?", "LinkedInLink":"", "emailLink":"zhaoping.wang@mail.utoronto.ca"},
-               { "fullName": "William Sinnatamby", "position": "Director of ?", "LinkedInLink":"", "emailLink":"william.flint@mail.utoronto.ca"},
-               { "fullName": "Jennifer Kong", "position": "Director of ?", "LinkedInLink":"", "emailLink":"jennie.kong@mail.utoronto.ca"},
+               { "fullName": "Zhaoping Wang", "position": "Director", "LinkedInLink":"", "emailLink":"zhaoping.wang@mail.utoronto.ca"},
+               { "fullName": "William Sinnatamby", "position": "Director", "LinkedInLink":"", "emailLink":"william.flint@mail.utoronto.ca"},
+               { "fullName": "Jennifer Kong", "position": "Director", "LinkedInLink":"", "emailLink":"jennie.kong@mail.utoronto.ca"},
 
                { "fullName": "Karen Zhao", "position": "Marketing Associate", "LinkedInLink":"https://www.linkedin.com/in/karenjyzhao", "emailLink":"karen.zhao@mail.utoronto.ca"},
                { "fullName": "Matthew Leung", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"matthewchingho.leung@mail.utoronto.ca"},
