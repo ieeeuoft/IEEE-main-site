@@ -147,7 +147,6 @@ export default class Team extends Component {
 
     }
 
-
     changeYear = (event) => {
         this.setState({
           year: event.target.value,

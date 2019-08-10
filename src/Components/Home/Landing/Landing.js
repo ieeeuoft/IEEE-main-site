@@ -6,7 +6,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 const Landing = () => {
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <div className={styles['blue-background']}>
                 <div className={styles['heading']}>
                     <h1 className={styles['heading-title']}>IEEE</h1>
@@ -19,7 +19,7 @@ const Landing = () => {
                 <h2 className={styles['heading-blue-title']}>IEEE</h2>
                 <h2 className={styles['heading-blue-subtitle']}>University of Toronto Student Branch</h2>
             </div>
-            <div className={styles['no-background']}>
+            <div className={styles['no-background']} style={{overflowX: "hidden"}}>
                 <img src={skylineOutline} alt="" className={styles['skyline-outline']} />
             </div>
         </div>

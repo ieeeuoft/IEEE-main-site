@@ -97,6 +97,7 @@
     width: 100vw;
     z-index: -100;
     margin-top: -25vw;
+    overflow-x: hidden;
     @include flexPosition(space-between, flex-end);
 
     &-lr {

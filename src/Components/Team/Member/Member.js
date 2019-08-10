@@ -15,7 +15,7 @@ export default class Member extends PureComponent {
         } = this.props;
 
         let imgSrc = Placeholder;
-        if (year === "2018-2019" || year === "2017-2018") {
+        if (year != "2019-2020") {
             imgSrc = require('./../../../Assets/Images/team/' + year + '/' + fullName + '.jpg');
         }
 
