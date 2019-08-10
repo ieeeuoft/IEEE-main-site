@@ -6,6 +6,7 @@ import NavBar from './Components/General/NavBar/NavBar.js'
 import Team from  './Scenes/Team/Team'
 import App from './Scenes/Home/App.js'
 import ScrollToTop from './Assets/ScrollToTop'
+import ToTop from './Components/General/ToTop/ToTop'
 import * as serviceWorker from './serviceWorker';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -19,8 +20,10 @@ class MyApp extends React.PureComponent {
                         <NavBar />
                         <Route exact path="/" component={App} />
                         <Route path="/team" component={Team} />
+                        <ToTop />
                     </ScrollToTop>
                 </Router>
+
             </div>
         )
     }

@@ -43,7 +43,12 @@
     }
 
     @if($breakpoint == sm) {
-        @media(max-width: 450px) {
+        @media(max-width: 465px) {
+            @content;
+        }
+    }
+    @if($breakpoint == xs) {
+        @media(max-width: 350px) {
             @content;
         }
     }
