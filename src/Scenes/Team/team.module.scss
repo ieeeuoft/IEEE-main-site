@@ -93,14 +93,19 @@
 }
 
 .skyline-imgs {
-    width: 100%;
-    z-index: -100;
-    margin-top: -25vw;
+    width: 100vw;
     overflow-x: hidden;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    
     @include flexPosition(space-between, flex-end);
 
+    &-crop {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        margin-top: -25vw;
+        overflow-x: hidden;
+        z-index: -100;
+        width: 100%;
+    }
     &-lr {
         width: 40vw;
         max-width: 55rem;
@@ -116,7 +121,10 @@
         }
     }
     @include response(md) {
-        margin-top: -35vw;
+        &-crop {
+            margin-top: -35vw;
+        }
+        
         &-lr {
             width: 50vw;
         }
