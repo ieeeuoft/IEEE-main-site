@@ -94,7 +94,7 @@
 }
 
 .skyline-imgs {
-    width: 100vw;
+    width: 100%;
     z-index: -100;
     margin-top: -25vw;
     overflow-x: hidden;
@@ -103,6 +103,7 @@
     &-lr {
         width: 40vw;
         max-width: 55rem;
+        overflow-x: hidden;
     }
 
     @include response(lg/md) {

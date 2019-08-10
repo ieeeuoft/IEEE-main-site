@@ -1,7 +1,6 @@
 @import "./../../../abstracts/variables";
 @import "./../../../abstracts/mixins";
 
-// Header
 .header {
     @include flexPosition(space-between, flex-start);
     width: 100vw;
@@ -9,6 +8,10 @@
     margin: auto;
     position: fixed;
     top: 0;
+
+    @include response(sm) {
+        padding: 0 1rem;
+    }
 
     .logo {
         height: calc(50vw/6);
@@ -19,7 +22,6 @@
 
         &-img {
             height: 100%;
-            
         }
     }
 
@@ -102,7 +104,6 @@
     background-color: color(white);
     position: fixed;
     right: -750px;
-    // @include flexLayout;
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
     @include flexPosition;
     border-bottom: solid 1px #ccc;
@@ -139,8 +140,8 @@
     width: 40px;
     height: 40px;
     position: fixed;
-    top: 10px;
-    right: 40px;
+    top: 1rem;
+    right: 4rem;
     z-index: 300;
 
     transform: rotateZ(90deg);
@@ -148,6 +149,9 @@
 
     @include response(lg) {
         transform: rotateZ(0deg);
+    }
+    @include response(sm) {
+        right: 3rem;
     }
 
     .menu {

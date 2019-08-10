@@ -51,25 +51,7 @@ export default class Team extends Component {
                     ind += 3
                     membersLeft -= 3
                 }
-            } else if (i % 2 !== 0){ // 1, 3, 5, ... odd row add 3 members
-                var obj
-                if (membersLeft >= 3){
-                    obj = React.createElement('div', {className:styles['row']},
-                          members[ind], members[ind + 1], members[ind + 2])
-                    ind += 3
-                    membersLeft -= 3
-                } else if (membersLeft === 2){
-                    obj = React.createElement('div', {className:styles['row']},
-                          members[ind], members[ind + 1])
-                    ind += 2
-                    membersLeft -= 2
-                } else if (membersLeft === 1){
-                    obj = React.createElement('div', {className:styles['row']},
-                          members[ind])
-                    ind += 1
-                    membersLeft -= 1
-                }
-            } else {          // 0, 2, 4, ... even row add 4 members
+            }else if (i % 2 !== 0) {          // 0, 2, 4, ... even row add 4 members
                 var obj
                 if (membersLeft >= 3){
                     obj = React.createElement('div', {className:styles['row']},
@@ -92,7 +74,26 @@ export default class Team extends Component {
                     ind += 1
                     membersLeft -= 1
                 }
-            }
+            } 
+            else { // 1, 3, 5, ... odd row add 3 members
+                var obj
+                if (membersLeft >= 3){
+                    obj = React.createElement('div', {className:styles['row']},
+                          members[ind], members[ind + 1], members[ind + 2])
+                    ind += 3
+                    membersLeft -= 3
+                } else if (membersLeft === 2){
+                    obj = React.createElement('div', {className:styles['row']},
+                          members[ind], members[ind + 1])
+                    ind += 2
+                    membersLeft -= 2
+                } else if (membersLeft === 1){
+                    obj = React.createElement('div', {className:styles['row']},
+                          members[ind])
+                    ind += 1
+                    membersLeft -= 1
+                }
+            } 
             rows.push(obj)
         }
 

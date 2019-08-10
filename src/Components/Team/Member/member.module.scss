@@ -19,7 +19,6 @@
             width: 100%;
         }
     }
-    
 
     &-title {
         font-family: font(merri);
@@ -35,7 +34,6 @@
     }
 
     &-btn {
-        margin-top: 1rem;
         display: flex;
         justify-content: space-around;
         padding: 1rem;
@@ -45,10 +43,9 @@
             text-decoration: none;
             width: 40px;
             height: 40px;
-            // border: .1rem solid color(blue1);
             border-radius: 100%;
             @include flexPosition(center, center);
-            background-color: #00639C;
+            background-color: color(blue1);
             margin: 0 1.5rem;
             transition: all 0.3s;
 

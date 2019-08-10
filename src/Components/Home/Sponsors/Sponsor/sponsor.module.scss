@@ -46,8 +46,14 @@
         }
 
         @include response(md) {
+            padding: 1rem 0 0;
+
             &-img-div {
                 height: 10rem;
+            }
+
+            &-img {
+                max-width: 30vw;
             }
         }
     }
