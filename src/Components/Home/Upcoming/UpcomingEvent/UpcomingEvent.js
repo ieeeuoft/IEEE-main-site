@@ -18,6 +18,11 @@ export default class UpcomingEvent extends PureComponent {
             EventNameChar = "Hello, Con!";
         }
 
+        if (link === undefined){
+            link = "https://www.facebook.com/ieeeuoft/"
+            console.log("Hiiii");
+        }
+
         return (
             <a href={link} target="_blank" className={styles['upcoming-event']}>
                 <div className={styles['upcoming-event-img']}>

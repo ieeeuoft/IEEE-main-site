@@ -15,8 +15,14 @@ export default class EventEvent extends PureComponent {
             EventNameChar = "Hello, Con!";
         }
 
+        let link = EventLink;
+        if (link === undefined){
+            link = "www.facebook.com/ieeeuoft/"
+            console.log("Hiiii");
+        }
+
         return (
-            <a href={"http://" + EventLink} target="_blank" className={styles['events-event']} >
+            <a href={"http://" + link} target="_blank" className={styles['events-event']} >
                 <div className={styles['events-event-img']}>
                     <div className={styles['events-event-img-crop']}>
                         <div className={styles['dark-gradient']}></div>
