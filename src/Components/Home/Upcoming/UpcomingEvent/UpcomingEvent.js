@@ -18,21 +18,33 @@ export default class UpcomingEvent extends PureComponent {
             EventNameChar = "Hello, Con!";
         }
 
-        if (link === undefined){
-            link = "https://www.facebook.com/ieeeuoft/"
-            console.log("Hiiii");
-        }
-
         return (
-            <a href={link} target="_blank" className={styles['upcoming-event']}>
-                <div className={styles['upcoming-event-img']}>
-                    <div className={styles['upcoming-event-img-crop']}>
-                        <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>
+            <>
+            {(link === undefined) &&
+                <div className={styles['upcoming-event']} style={{cursor: "default"}}>
+                    <div className={styles['upcoming-event-img']}>
+                        <div className={styles['upcoming-event-img-crop']}>
+                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>
+                        </div>
                     </div>
+                    <h3 className={styles['upcoming-event-name']}>{EventNameChar}</h3>
+                    <p className={styles['upcoming-event-date']}>{EventDate}</p>
                 </div>
-                <h3 className={styles['upcoming-event-name']}>{EventNameChar}</h3>
-                <p className={styles['upcoming-event-date']}>{EventDate}</p>
-            </a>
+            }
+
+            {link &&
+                <a href={link} target="_blank" className={styles['upcoming-event']}>
+                    <div className={styles['upcoming-event-img']}>
+                        <div className={styles['upcoming-event-img-crop']}>
+                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>
+                        </div>
+                    </div>
+                    <h3 className={styles['upcoming-event-name']}>{EventNameChar}</h3>
+                    <p className={styles['upcoming-event-date']}>{EventDate}</p>
+                </a>
+            }
+
+            </>
         );
     }
 }

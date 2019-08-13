@@ -40,7 +40,7 @@ export default class Upcoming extends PureComponent {
                     {
                         upcomingList.map((eventItem, i) => {
                             return (
-                                <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.displayDate} link="http://www.facebook.com/ieeeuoft" />
+                                <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.displayDate} link={eventItem.link} />
                             )
                         })
                     }

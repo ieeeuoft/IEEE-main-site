@@ -5,7 +5,7 @@ import styles from './eventEvent.module.scss'
 export default class EventEvent extends PureComponent {
     render() {
         const {
-            EventLink,
+            link,
             EventName,
             EventDate
         } = this.props
@@ -15,25 +15,38 @@ export default class EventEvent extends PureComponent {
             EventNameChar = "Hello, Con!";
         }
 
-        let link = EventLink;
-        if (link === undefined){
-            link = "www.facebook.com/ieeeuoft/"
-            console.log("Hiiii");
-        }
-
         return (
-            <a href={"http://" + link} target="_blank" className={styles['events-event']} >
-                <div className={styles['events-event-img']}>
-                    <div className={styles['events-event-img-crop']}>
-                        <div className={styles['dark-gradient']}></div>
-                        <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventNameChar} className={styles['events-event-img-crop-src']}/>
+            <>
+            {(link === undefined) &&
+                <div className={styles['events-event']} style={{cursor: "default"}} >
+                    <div className={styles['events-event-img']}>
+                        <div className={styles['events-event-img-crop']}>
+                            <div className={styles['dark-gradient']}></div>
+                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventNameChar} className={styles['events-event-img-crop-src']}/>
+                        </div>
+                    </div>
+                    <div className={styles['events-event-text']}>
+                        <h3 className={styles['events-event-text-name']}>{EventNameChar}</h3>
+                        <p className={styles['events-event-text-date']}>{EventDate}</p>
                     </div>
                 </div>
-                <div className={styles['events-event-text']}>
-                    <h3 className={styles['events-event-text-name']}>{EventNameChar}</h3>
-                    <p className={styles['events-event-text-date']}>{EventDate}</p>
-                </div>
-            </a>
+            }
+
+            {link &&
+                <a href={"http://" + link} target="_blank" className={styles['events-event']} >
+                    <div className={styles['events-event-img']}>
+                        <div className={styles['events-event-img-crop']}>
+                            <div className={styles['dark-gradient']}></div>
+                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventNameChar} className={styles['events-event-img-crop-src']}/>
+                        </div>
+                    </div>
+                    <div className={styles['events-event-text']}>
+                        <h3 className={styles['events-event-text-name']}>{EventNameChar}</h3>
+                        <p className={styles['events-event-text-date']}>{EventDate}</p>
+                    </div>
+                </a>
+            }
+            </>
         );
     }
 }

@@ -20,7 +20,7 @@ export default class Sponsors extends PureComponent {
               <div className={styles['events']} id="events-carousel">
                   <Slider {...settings}>
                       { eventList.allEvents.map((item, i) =>
-                          <EventEvent EventName={item.EventName} EventDate={item.displayDate} EventLink={item.link} />
+                          <EventEvent EventName={item.EventName} EventDate={item.displayDate} link={item.link} />
                       )}
                   </Slider>
             </div>
