@@ -1,69 +1,115 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#IEEE Main Site#
 
-## Available Scripts
+https://ieee.utoronto.ca/
 
-In the project directory, you can run:
+Contact Alex Bodgan `alex.bogdan@mail.utoronto.ca` or Lisa Li `lisasa.li@mail.utoronto.ca` for access to the repo or if you have any questions.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Install 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```bash 
+npm install
+```
 
-### `npm test`
+## Start
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash 
+npm start
+```
 
-### `npm run build`
+Commit and push your changes to automatically update the live site.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Adding new events
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Go to:
 
-### `npm run eject`
+```
+src 
+└───Assets
+    └───Lists
+        └───allEvents.js
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Add a new event with the following props:
+Prop          | Meaning
+------------- | -------------
+EventName     | Name of the event that will be displayed on the site
+displayDate   | Date of the event that will be displayed on the site
+date          | Use YYYY/MM/DD; used to calculate what day the event is so that the upcoming 3 events can appear on the "Upcoming Events" section. If the event spans more than one day, use the start date for DD
+link          | Link to event (either FB, Insta, Eventbrite, etc)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Place images of the event in:
+```
+src 
+└───Assets
+    └───Images
+        └───events
+```
+Notes: 
+1. Images must be **wider than they are tall**.
+2. Shrink images if they are too big. The height of the image should be ideally 360px (and not a pixel less).
+3. If EventName contains a character that can't be read (such as the ! in Hello, Con!), remove that problematic character(s) in EventName and the name of the image. Then add a condition in line 14 of `EventEvent.js`. See below.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```javascript
+let EventNameChar = EventName;
+if (EventNameChar == "Hello, Con") {
+    EventNameChar = "Hello, Con!";
+}
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Adding new sponsors
 
-## Learn More
+Similar to above. Add a new sponsor with the same props (they're self explanatory) in `allSponsors.js`. Add the images to the folder `sponsors`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src 
+└───Assets
+    └───Lists
+        └───allSponsors.js
+    └───Images
+        └───sponsors
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+SVG works best so please contact the sponsor for an SVG logo if you can't find it online. PNG and JPG will suffice however.
 
-### Code Splitting
+## Adding new members
+Similar to above. To input a new member, or a new year of members, go to `members.js`. Add the image(s) in the folder `team`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
+src 
+└───Assets
+    └───Lists
+        └───members.js
+    └───Images
+        └───team
+            └─── ~whatever year the member is in~
+```
 
-### Analyzing the Bundle Size
+Notes: 
+1. Name the image the same as the prop _fullName_ in members.js. MAKE IT A JPG.
+2. Images must be **taller than they are wide** (preferably a square). THIS IS DIFFERENT FROM EVENT IMAGES.
+3. Shrink images if they are too big so they load faster. The width of the image should be ideally 180px (and not a pixel less).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+Currently, the nav bar on the Team page contains _Execs, Marketing & Finance, Computer Chapter, Electronics Chapter_ and/or _Energy Chapter_. If you want to add a new nav item, edit the switch statements of the functions `constructMemberChart()` and `constructNavListItem(teamKey)` in `Team.js`. Add a new class if you want it to have a different color.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Adding/updating colors
+This may happen when VC Marketing decides so. Go to:
+```
+src 
+└───abstracts
+    └───_variables.scss
+```
+The function `@function color($color-name)` maps the colors inside the array `$colors`. Therefore, to use a color, it's written as:
+```
+color: color(blue1);
+```
+with `$blue1` as an example. Applies to any CSS style that can take in a color (i.e. background-color, fill, etc).
 
-### Advanced Configuration
+Simply add a new varible name and hex/rbga code of the new color in the array `$color`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+###### IEEEEEEEEEEEEE ######
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# IEEEEEEEE
