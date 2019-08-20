@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import styles from './upcoming.module.scss';
 import UpcomingEvent from './UpcomingEvent/UpcomingEvent';
 import * as eventsList from './../../../Assets/Lists/allEvents';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class Upcoming extends PureComponent {
     upcoming() { 
@@ -40,7 +40,9 @@ export default class Upcoming extends PureComponent {
                     {
                         upcomingList.map((eventItem, i) => {
                             return (
-                                <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.displayDate} link={eventItem.link} />
+                                <ScrollAnimation animateOnce={true} duration={1} offset={100} delay={i} animateIn="fadeInUp">
+                                    <UpcomingEvent EventName={eventItem.EventName} EventDate={eventItem.displayDate} link={eventItem.link}/>
+                                </ScrollAnimation>
                             )
                         })
                     }
