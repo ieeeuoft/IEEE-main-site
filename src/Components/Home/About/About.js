@@ -11,6 +11,8 @@ const About = () => {
 
     return (
         <div id="about" className={styles['about-containter']}>
+
+            
             <h2 className={styles['computer-heading']}>Computer Chapter</h2>
             <p className={styles['computer-text']}>Focusing on computer science and tech, we work hard to bring coding competitions, software workshops, industry tours and technical talks to the students at UofT. Our aim is to promote industry networking and career professionalism by coordinating with technology companies to provide exposure to new global innovations.</p>
             
