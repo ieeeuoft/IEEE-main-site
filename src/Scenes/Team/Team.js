@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
-import Footer from './../../Components/General/Footer/Footer.js'
-import styles from './team.module.scss'
+import React, { Component } from 'react';
+import Footer from './../../Components/General/Footer/Footer.js';
+import styles from './team.module.scss';
 import skylineLeft from './../../Assets/Images/skyline/skyline-left.svg';
 import skylineRight from './../../Assets/Images/skyline/skyline-right.svg';
-import Member from './../../Components/Team/Member/Member.js'
-import PastTeam from '../../Components/Team/PastTeam/PastTeam'
-import memberData from './../../Assets/Lists/members.js'
+import Member from './../../Components/Team/Member/Member.js';
+import PastTeam from '../../Components/Team/PastTeam/PastTeam';
+import memberData from './../../Assets/Lists/members.js';
+
 // import { string, object } from 'prop-types';
 // import Team2019 from '../../Components/Team/Team2019.js'
 // import * as members from './../../Assets/Lists/allMembers'
@@ -222,6 +223,7 @@ export default class Team extends Component {
                 }
                 {/* <MemberCharts /> */}
                 {this.constructMemberChart()}
+                
 
                 <div className={styles['skyline-imgs-crop']}>
                     <div className={styles['skyline-imgs']}>
