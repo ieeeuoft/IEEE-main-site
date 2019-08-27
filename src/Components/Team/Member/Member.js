@@ -21,7 +21,7 @@ export default class Member extends PureComponent {
         }
 
         return (
-            <ScrollAnimation animateOnce={true} duration={1} offset={50} className={styles['card']} animateIn="fadeInUp" style={{widht: "100%"}}>
+            // <ScrollAnimation animateOnce={true} duration={1} offset={50} className={styles['card']} animateIn="fadeInUp" style={{widht: "100%"}}>
                 <div className={styles['card']}>
                     <div className={styles['card-crop']}>
                         <img className={styles['card-crop-img']} src={imgSrc} alt={fullName} />
@@ -41,7 +41,7 @@ export default class Member extends PureComponent {
                         )}
                     </div>
                 </div>
-            </ScrollAnimation>
+            // </ScrollAnimation>
         );
     }
 }

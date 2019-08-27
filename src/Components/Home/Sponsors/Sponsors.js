@@ -10,24 +10,24 @@ export default class Sponsors extends PureComponent {
       // dots: true,
       autoplaySpeed: 100,
       autoplay: true,
-      // slidesToShow: 5,
-      slidesToShow: 3,
+      slidesToShow: 5,
+      // slidesToShow: 3,
       speed: 3000,
       pauseOnHover: false,
-      // responsive : [
-      //   {
-      //     breakpoint: 850,
-      //     settings: {
-      //       slidesToShow: 4
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 600,
-      //     settings: {
-      //       slidesToShow: 3
-      //     }
-      //   }
-      // ]
+      responsive : [
+        {
+          breakpoint: 850,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3
+          }
+        }
+      ]
     };
 
     return (
