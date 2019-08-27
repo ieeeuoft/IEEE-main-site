@@ -8,13 +8,11 @@
 
 $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1; 
 
-
 @mixin social($col) {
     width: 100%;
     height: 100%;
     z-index: 1;
-    text-decoration: none;
-
+    
     @each $about in $aboutCols {
         grid-column: $col;
         grid-row: 1/-1;
@@ -128,6 +126,11 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
         grid-row-gap: 0;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
     }
 
     .facebook {

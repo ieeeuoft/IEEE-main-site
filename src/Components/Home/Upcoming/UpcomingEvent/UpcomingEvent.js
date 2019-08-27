@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import styles from './upcomingEvent.module.scss'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class UpcomingEvent extends PureComponent {
     handleClick = (event) => {
@@ -21,7 +22,8 @@ export default class UpcomingEvent extends PureComponent {
         return (
             <>
             {(link === undefined) &&
-                <div className={styles['upcoming-event']} style={{cursor: "default"}}>
+            <ScrollAnimation animateOnce={true} duration={1} offset={80} animateIn="fadeInUp" className={styles['upcoming-event']}>
+                <div style={{cursor: "default"}}>
                     <div className={styles['upcoming-event-img']}>
                         <div className={styles['upcoming-event-img-crop']}>
                             <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>
@@ -30,10 +32,12 @@ export default class UpcomingEvent extends PureComponent {
                     <h3 className={styles['upcoming-event-name']}>{EventNameChar}</h3>
                     <p className={styles['upcoming-event-date']}>{EventDate}</p>
                 </div>
+            </ScrollAnimation>
             }
 
             {link &&
-                <a href={link} target="_blank" className={styles['upcoming-event']}>
+            <ScrollAnimation animateOnce={true} duration={1} offset={80} animateIn="fadeInUp" className={styles['upcoming-event']}>
+                <a href={link} target="_blank">
                     <div className={styles['upcoming-event-img']}>
                         <div className={styles['upcoming-event-img-crop']}>
                             <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>
@@ -42,6 +46,8 @@ export default class UpcomingEvent extends PureComponent {
                     <h3 className={styles['upcoming-event-name']}>{EventNameChar}</h3>
                     <p className={styles['upcoming-event-date']}>{EventDate}</p>
                 </a>
+            </ScrollAnimation>
+                
             }
 
             </>
