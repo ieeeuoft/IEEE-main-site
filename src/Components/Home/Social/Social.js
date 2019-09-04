@@ -14,19 +14,19 @@ const Social = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animateOnce={true} duration={1} offset={80} animateIn="fadeInUp" className={styles['newsletter-heading']}>
-                <a href="https://www.facebook.com/ieeeuoft/">Newsletter</a>
+                <a href="http://eepurl.com/7spfT">Newsletter</a>
             </ScrollAnimation>
             
             <ScrollAnimation animateOnce={true} duration={1} offset={80} animateIn="fadeInUp" className={styles['newsletter-text']}>
-                <a href="https://www.facebook.com/ieeeuoft/">Sign up for our monthly newsletter. Receive information about IEEE UofT events, updates, and other useful stuff right in your inbox!</a>
+                <a href="http://eepurl.com/7spfT">Sign up for our monthly newsletter. Receive information about IEEE UofT events, updates, and other useful stuff right in your inbox!</a>
             </ScrollAnimation>
 
             <ScrollAnimation animateOnce={true} duration={1} offset={80} animateIn="fadeInUp" className={styles['membership-heading']}>
-                <a href="https://www.facebook.com/ieeeuoft/">IEEE Membership</a>
+                <a href="https://www.ieee.org/content/ieee-org/en/membership/join/">IEEE Membership</a>
             </ScrollAnimation>   
                 
             <ScrollAnimation animateOnce={true} duration={1} offset={80} animateIn="fadeInUp" className={styles['membership-text']}>
-                <a href="https://www.facebook.com/ieeeuoft/">More than 80% discount for IEEE memberships and receive various exclusive benefits including job opportunities!</a>
+                <a href="https://www.ieee.org/content/ieee-org/en/membership/join/">More than 80% discount for IEEE memberships and receive various exclusive benefits including job opportunities!</a>
             </ScrollAnimation>
             
             <a href="https://www.facebook.com/ieeeuoft/" className={styles['facebook']} target="_blank"></a>
