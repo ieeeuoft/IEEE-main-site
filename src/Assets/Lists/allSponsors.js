@@ -1,4 +1,6 @@
 export const allSponsors = [
+    { companyName: "IEEE Toronto", tier: "Branch-Level Partner", imgType: ".png", siteLink: "https://toronto.ieee.ca/"},
+    { companyName: "IEEE Canada", tier: "Branch-Level Partner", imgType: ".png", siteLink: "https://www.ieee.ca/en/"},
     { companyName: "Qualcomm", tier: "Platinum - MakeUofT", imgType: ".svg", siteLink: "https://www.qualcomm.com/"},
     { companyName: "PTI Transformers", tier: "Bronze - MakeUofT", imgType: ".png", siteLink: "https://www.partnertechnologies.net/" },
     { companyName: "HP", tier: "Prize Sponsor - MakeUofT", imgType: ".svg", siteLink: "https://www.hpe.com/ca/en/home.html" },
