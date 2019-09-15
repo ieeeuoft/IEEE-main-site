@@ -6,8 +6,8 @@ const memberData = {
                { "fullName": "Nhien Tran-Nguyen", "position": "Branch Chair", "emailLink":"nhien.tran.nguyen@mail.utoronto.ca"},
                { "fullName": "Maggie Ding", "position": "VC Marketing", "LinkedInLink":"", "emailLink":"gaoxing.ding@mail.utoronto.ca"},
                { "fullName": "Fumi Shibutani", "position": "VC Finance", "LinkedInLink":"", "emailLink":"fumi.shibutani@mail.utoronto.ca"},
-               { "fullName": "Sirine Dhaouadi", "position": "VC External", "LinkedInLink":"", "emailLink":"sirine.dhaouadi@mail.utoronto.ca"},
-               { "fullName": "Steven Zhao", "position": "Chief Webmaster", "LinkedInLink":"", "emailLink":"wjz.zhao@mail.utoronto.ca"},
+               { "fullName": "Alex Bogdan", "position": "Co-Chief Webmaster", "LinkedInLink":"https://www.linkedin.com/in/bogdanalex/", "emailLink":"alex.bogdan@mail.utoronto.ca"},
+               { "fullName": "Raymond Kim", "position": "Co-Chief Webmaster", "LinkedInLink":"https://www.linkedin.com/in/raymond-d-kim", "emailLink":"rayray.kim@mail.utoronto.ca"},
                { "fullName": "Kevin Zhang", "position": "Branch Advisor", "LinkedInLink":"https://www.linkedin.com/in/genshengzhang/", "emailLink":"kevinhk.zhang@mail.utoronto.ca"},
                { "fullName": "Danny Zhang", "position": "Branch Advisor", "LinkedInLink":"", "emailLink":"danny.zhang@isl.utoronto.ca"}
                ], firstRowSize: 1
@@ -16,19 +16,17 @@ const memberData = {
                membersList: [
                { "fullName": "Maggie Ding", "position": "VC Marketing", "LinkedInLink":"", "emailLink":"gaoxing.ding@mail.utoronto.ca"},
                { "fullName": "Fumi Shibutani", "position": "VC Finance", "LinkedInLink":"", "emailLink":"fumi.shibutani@mail.utoronto.ca"},
-               { "fullName": "Steven Zhao", "position": "Chief Webmaster", "LinkedInLink":"", "emailLink":"wjz.zhao@mail.utoronto.ca"},
+               { "fullName": "Alex Bogdan", "position": "Co-Chief Webmaster", "LinkedInLink":"https://www.linkedin.com/in/bogdanalex/", "emailLink":"alex.bogdan@mail.utoronto.ca"},
+               { "fullName": "Raymond Kim", "position": "Co-Chief Webmaster", "LinkedInLink":"https://www.linkedin.com/in/raymond-d-kim", "emailLink":"rayray.kim@mail.utoronto.ca"},
                { "fullName": "Skyler Zhang", "position": "Computer Marketing Director", "LinkedInLink":"", "emailLink":"skyler.zhang@mail.utoronto.ca"},
                { "fullName": "Yanisa Khambanonda", "position": "Electronics Marketing Director", "LinkedInLink":"", "emailLink":"yanisa.khambanonda@mail.utoronto.ca"},
                { "fullName": "Katherine Liang", "position": "Computer Marketing Associate", "LinkedInLink":"", "emailLink":"katherine.liang@mail.utoronto.ca"},
                { "fullName": "Yuxuan Yao", "position": "Computer Marketing Associate", "LinkedInLink":"", "emailLink":"yuxuan.yao@mail.utoronto.ca"},
-               { "fullName": "Karen Zhao", "position": "Electronics Marketing Associate", "LinkedInLink":"https://www.linkedin.com/in/karenjyzhao", "emailLink":"karen.zhao@mail.utoronto.ca"},
                { "fullName": "Kathy Zhuang", "position": "Computer Graphics Design", "LinkedInLink":"", "emailLink":"kathy.zhuang@mail.utoronto.ca"},
                { "fullName": "Shashwat Panwar", "position": "Electronics Graphics Design", "LinkedInLink":"https://www.linkedin.com/in/shashwat-p/", "emailLink":"shashwat.panwar@mail.utoronto.ca"},
                { "fullName": "Neetha Parameswaran", "position": "Computer Finance Director", "LinkedInLink":"", "emailLink":"neetha.parameswaran@mail.utoronto.ca"},
-               { "fullName": "Tyson Dennis-Sharma", "position": "Electronics Finance Director", "LinkedInLink":"", "emailLink":"tyson.dennissharma@mail.utoronto.ca"},
-               { "fullName": "Raymond Kim", "position": "Computer Webmaster", "LinkedInLink":"https://www.linkedin.com/in/raymond-d-kim", "emailLink":"rayray.kim@mail.utoronto.ca"},
-               { "fullName": "Alex Bogdan", "position": "Electronics Webmaster", "LinkedInLink":"https://www.linkedin.com/in/bogdanalex/", "emailLink":"alex.bogdan@mail.utoronto.ca"}
-               ], firstRowSize: 3
+               { "fullName": "Tyson Dennis-Sharma", "position": "Electronics Finance Director", "LinkedInLink":"", "emailLink":"tyson.dennissharma@mail.utoronto.ca"}
+               ], firstRowSize: 4
           },
           "Computer Chapter": {
                membersList: [
@@ -48,7 +46,6 @@ const memberData = {
                { "fullName": "Amr Sharaf", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"amr.sharaf@mail.utoronto.ca"},
 
                { "fullName": "Kathy Zhuang", "position": "Graphics Design", "LinkedInLink":"", "emailLink":"kathy.zhuang@mail.utoronto.ca"},
-               { "fullName": "Raymond Kim", "position": "Webmaster", "LinkedInLink":"https://www.linkedin.com/in/raymond-d-kim", "emailLink":"rayray.kim@mail.utoronto.ca"},
 
                { "fullName": "Mohaimen Khan", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"mohaimen.khan@mail.utoronto.ca"},
                { "fullName": "Rosalyn Wong", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"rosalyn.wong@mail.utoronto.ca"},
@@ -70,7 +67,6 @@ const memberData = {
                { "fullName": "William Sinnatamby", "position": "Director", "LinkedInLink":"", "emailLink":"william.flint@mail.utoronto.ca"},
                { "fullName": "Jennifer Kong", "position": "Director", "LinkedInLink":"", "emailLink":"jennie.kong@mail.utoronto.ca"},
 
-               { "fullName": "Karen Zhao", "position": "Marketing Associate", "LinkedInLink":"https://www.linkedin.com/in/karenjyzhao", "emailLink":"karen.zhao@mail.utoronto.ca"},
                { "fullName": "Matthew Leung", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"matthewchingho.leung@mail.utoronto.ca"},
                { "fullName": "Julia Wagner", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"julia.wagner@mail.utoronto.ca"},
                { "fullName": "Brenny Chao", "position": "Logistics Associate", "LinkedInLink":"https://www.linkedin.com/in/brenny-chao-4962aa17b/", "emailLink":"brenny.chao@mail.utoronto.ca"},
@@ -82,9 +78,9 @@ const memberData = {
                { "fullName": "Urmil Modi", "position": "Tech Team", "LinkedInLink":"https://linkedin.com/in/urmilkm/", "emailLink":"u.modi@mail.utoronto.ca"},
 
                { "fullName": "Shashwat Panwar", "position": "Graphics Design", "LinkedInLink":"https://www.linkedin.com/in/shashwat-p/", "emailLink":"shashwat.panwar@mail.utoronto.ca"},
-               { "fullName": "Alex Bogdan", "position": "Webmaster", "LinkedInLink":"https://www.linkedin.com/in/bogdanalex/", "emailLink":"alex.bogdan@mail.utoronto.ca"},
                { "fullName": "Alaynah Malik", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"alaynah.malik@mail.utoronto.ca"}
-
+               // { "fullName": "Lisa Li", "position": "Co-Chair", "LinkedInLink":"https://www.linkedin.com/in/lisa-li/", "emailLink":"lisasa.li@mail.utoronto.ca"}
+               // { "fullName": "Alaynah Malik", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"alaynah.malik@mail.utoronto.ca"}
                ], firstRowSize: 2
           }
      },

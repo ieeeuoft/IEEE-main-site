@@ -15,10 +15,20 @@ export default class Member extends PureComponent {
             LinkedInLink,
         } = this.props;
 
-        let imgSrc = Placeholder;
-        if (year != "2019-2020") {
-            imgSrc = require('./../../../Assets/Images/team/' + year + '/' + fullName + '.jpg');
-        }
+        // var sFolderPath = "c:\\QHHH";
+// if (!fso.FolderExists(sFolderPath)) {
+//     alert("Folder does not exist!");
+//     return;
+// }
+
+//         let imgSrc = './../../../Assets/Images/team/' + year + '/' + fullName + '.jpg';
+        let imgSrc;
+        // if (year != "2019-2020") {
+        imgSrc = require('./../../../Assets/Images/team/' + year + '/' + fullName + '.jpg');
+        // }
+        // if (imgSrc === undefined) {
+        //     imgSrc = Placeholder;
+        // }
 
         return (
             // <ScrollAnimation animateOnce={true} duration={1} offset={50} className={styles['card']} animateIn="fadeInUp" style={{widht: "100%"}}>

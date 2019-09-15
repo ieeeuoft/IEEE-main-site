@@ -203,7 +203,7 @@ export default class Team extends Component {
     render() {
         var { teamKey, year } = this.state;
         return (
-            <div>
+            <div className={styles['team']}> 
                 <div className={styles['select-year']}>
                     <div className={styles['triangle-down']}></div>
                     <select onChange={this.changeYear} value={this.state.value} className={styles['select-year-div']}>
