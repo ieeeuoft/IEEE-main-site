@@ -1,0 +1,274 @@
+@import "./../../abstracts/variables";
+@import "./../../abstracts/mixins";
+
+.logo-sm {
+    height: calc(50vw/12) !important;
+}
+
+.teamTitle {
+    font-family: font(roboto);
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+    color: color(blue1);
+    margin: 5rem 0 4rem;
+}
+
+.team-container {
+    width: 100vw;
+    flex-direction: column;
+    @include flexPosition;
+}
+
+.card {
+    @include flexPosition;
+    flex-direction: column;
+    margin: 0 5vw;
+    z-index: 1;
+
+    &-crop {
+        height: 21rem;
+        width: 21rem;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        @include flexPosition(center, center);
+
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &-title {
+        font-family: font(merri);
+        font-weight: bold;
+        font-size: 2.2rem;
+        margin-top: 1.2rem;
+        text-align: center;
+    }
+    &-name {
+        font-family: font(source);
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    &-btn {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        box-sizing: border-box;
+
+        &-email, &-linkedin {
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            @include flexPosition(center, center);
+            background-color: #00639C;
+            margin: 0 1.5rem;
+            transition: all 0.3s;
+
+            &-icon {
+                width: 20px;
+                z-index: 1;
+            }
+
+            &:hover {
+                background-color: darken(color(blue1), 10%);
+            }
+        }
+        &-email {
+            &-icon {
+                width: 24px;
+            }
+        }
+    }
+}
+
+
+@mixin flexPosition ($jusCon: space-between, $alIte: center) {
+    display: flex;
+    justify-content: $jusCon;
+    align-items: $alIte;
+}
+
+.skyline-imgs {
+    width: 100vw;
+    overflow-x: hidden;
+    
+    @include flexPosition(space-between, flex-end);
+
+    &-crop {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        margin-top: -25vw;
+        overflow-x: hidden;
+        z-index: -100;
+        width: 100%;
+    }
+    &-lr {
+        width: 40vw;
+        max-width: 55rem;
+        overflow-x: hidden;
+    }
+
+    @include response(lg/md) {
+        width: 120vw;
+        margin-left: -10vw;
+
+        &-lr {
+            width: 40vw;
+        }
+    }
+    @include response(md) {
+        &-crop {
+            margin-top: -35vw;
+        }
+        
+        &-lr {
+            width: 50vw;
+        }
+    }
+    
+    @include response(sm) {
+        &-lr {
+            width: 55vw;
+        }
+    }
+}
+
+.team-container {
+    width: 100vw;
+    flex-direction: column;
+    @include flexPosition;
+}
+
+.row {
+    @include flexPosition(center, flex-start);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.team-nav {
+    width: 100vw;
+    @include flexPosition(center, center);
+    flex-direction: column;
+    margin-top: 4rem;
+    z-index: 101;
+
+    &-list {
+        @include flexPosition;
+        border-bottom: 3px solid color(blue1);
+
+        &-item {
+            font-family: font(merri);
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            color: color(blue1);
+            padding: 2rem;
+            list-style: none;
+            line-height: 120%;
+            cursor: pointer;
+            transition: all 0.4s;
+
+            &:hover, &-active {
+                background-color: color(blue6);
+            }
+        }
+
+        @include response(lg/md) {
+            width: 100%;
+            overflow-x: scroll;
+            align-self: flex-end;
+        }
+
+        @include response(md) {
+            &-item {
+                font-size: 1.8rem;
+                padding: 1.5rem;
+            }
+        }
+
+        .computer-nav-item {
+            color: color(blue2);
+
+            &:hover, &:active, &:focus, &-active { 
+                background-color:#B4DAEA;
+            }
+        }
+
+        .electronics-nav-item {
+            color: color(green1);
+
+            &:hover, &:active, &:focus, &-active {
+                background-color: #C6ECEE;
+            }
+        }
+
+        .energy-nav-item {
+            color: color(orange1);
+
+            &:hover, &:active, &:focus, &-active {
+                background-color: #FFEFDE;
+            }
+        }
+    }
+}
+
+.select-year {
+    width: 100%;
+    margin-top: 9vw;
+    @include flexPosition(center, center);
+    flex-direction: row-reverse;
+    z-index: 101;
+
+    &-div {
+        display: inline-block;
+        font-family: font(merri);
+        font-weight: bold;
+        font-size: size(md) - 0.5rem;
+        color: color(blue1);
+
+        width: 280px;
+        height: auto;
+
+        border: none;
+        outline: none;
+        border-bottom: 3px solid color(blue1);
+        border-radius: 0;
+
+        padding: 12px 45px 10px 25px;
+
+        background: none;
+        -webkit-appearance: none;
+    }
+
+    @include response(md) {
+        margin-top: 7rem;
+    }
+
+    
+}
+
+
+
+.spacer1 {
+    height: 5vh;
+}
+
+.spacer2 {
+    height: 25vh;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid color(blue1);
+    margin-left: -36px;
+    z-index: -1;
+}
