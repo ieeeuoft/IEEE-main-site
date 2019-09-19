@@ -21,7 +21,6 @@ const memberData = {
                { "fullName": "Skyler Zhang", "position": "Computer Marketing Director", "LinkedInLink":"", "emailLink":"skyler.zhang@mail.utoronto.ca"},
                { "fullName": "Yanisa Khambanonda", "position": "Electronics Marketing Director", "LinkedInLink":"", "emailLink":"yanisa.khambanonda@mail.utoronto.ca"},
                { "fullName": "Katherine Liang", "position": "Computer Marketing Associate", "LinkedInLink":"", "emailLink":"katherine.liang@mail.utoronto.ca"},
-               { "fullName": "Yuxuan Yao", "position": "Computer Marketing Associate", "LinkedInLink":"", "emailLink":"yuxuan.yao@mail.utoronto.ca"},
                { "fullName": "Kathy Zhuang", "position": "Computer Graphics Design", "LinkedInLink":"", "emailLink":"kathy.zhuang@mail.utoronto.ca"},
                { "fullName": "Shashwat Panwar", "position": "Electronics Graphics Design", "LinkedInLink":"https://www.linkedin.com/in/shashwat-p/", "emailLink":"shashwat.panwar@mail.utoronto.ca"},
                { "fullName": "Neetha Parameswaran", "position": "Computer Finance Director", "LinkedInLink":"", "emailLink":"neetha.parameswaran@mail.utoronto.ca"},
@@ -41,7 +40,6 @@ const memberData = {
                { "fullName": "Charlie Wang", "position": "Director of Business Development", "LinkedInLink":"", "emailLink":"yuanpeng.wang@mail.utoronto.ca"},
 
                { "fullName": "Katherine Liang", "position": "Marketing Associate", "LinkedInLink":"", "emailLink":"katherine.liang@mail.utoronto.ca"},
-               { "fullName": "Yuxuan Yao", "position": "Marketing Associate", "LinkedInLink":"", "emailLink":"yuxuan.yao@mail.utoronto.ca"},
                { "fullName": "Haochen Zhang", "position": "Logistics Associate", "LinkedInLink":"https://www.linkedin.com/in/haochenz11/", "emailLink":"hcz.zhang@mail.utoronto.ca"},
                { "fullName": "Amr Sharaf", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"amr.sharaf@mail.utoronto.ca"},
 

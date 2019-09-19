@@ -51,10 +51,15 @@ export default class Team extends Component {
                     members[ind], members[ind + 1], members[ind + 2])
                     ind += 3
                     membersLeft -= 3
+                } else if (memberData["firstRowSize"] === 4) {
+                    obj = React.createElement('div', {className:styles['row']},
+                    members[ind], members[ind + 1], members[ind + 2], members[ind + 3])
+                    ind += 4
+                    membersLeft -= 4
                 }
             }else if (i % 2 !== 0) {          // 0, 2, 4, ... even row add 4 members
                 var obj
-                if (membersLeft >= 3){
+                if (membersLeft > 3){
                     obj = React.createElement('div', {className:styles['row']},
                           members[ind], members[ind + 1], members[ind + 2], members[ind + 3])
                     ind += 4
