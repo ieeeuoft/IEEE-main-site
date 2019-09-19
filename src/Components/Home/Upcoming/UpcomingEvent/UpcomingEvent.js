@@ -37,7 +37,7 @@ export default class UpcomingEvent extends PureComponent {
 
             {link &&
             <ScrollAnimation animateOnce={true} duration={1} offset={80} animateIn="fadeInUp" className={styles['upcoming-event']}>
-                <a href={link} target="_blank">
+                <a href={"http://" + link} target="_blank">
                     <div className={styles['upcoming-event-img']}>
                         <div className={styles['upcoming-event-img-crop']}>
                             <img src={require('./../../../../Assets/Images/events/' + EventName + '.png')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>

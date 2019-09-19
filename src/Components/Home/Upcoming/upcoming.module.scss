@@ -11,6 +11,9 @@
     margin-top: -3rem;
     z-index: -1;
 
+    a {
+        text-decoration: none !important;
+    }
 
     &-heading {
         @include title(white);
