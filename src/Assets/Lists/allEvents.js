@@ -1,8 +1,6 @@
 // NOTE: UPLOADED IMAGES MUST BE WIDER THAN THEY ARE TALL
 
 export const allEvents = [
-
-    
     { 
         EventName: "Technical Interview Workshop", 
         displayDate: "September 28th, 2019", 
@@ -11,11 +9,16 @@ export const allEvents = [
         },
     { 
         EventName: "IEEE Day", 
-        displayDate: " October 1st, 2019", 
+        displayDate: "October 1st, 2019", 
         date: "2019/10/01", 
         link: "www.facebook.com/events/2461867070537958/",
         }, 
-
+    { 
+        EventName: "IBM Microservices Workshop", 
+        displayDate: "October 29th, 2019", 
+        date: "2019/10/29", 
+        // link: "www.facebook.com/events/2461867070537958/",
+        }, 
     { 
         EventName: "Hello, Con",
         displayDate: "November 16th, 2019", 
