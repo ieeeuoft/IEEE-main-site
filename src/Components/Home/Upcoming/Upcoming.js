@@ -6,7 +6,7 @@ import * as eventsList from './../../../Assets/Lists/allEvents';
 export default class Upcoming extends PureComponent {
     upcoming() { 
         var today = new Date();
-        var todayDate = (today.getFullYear() + "/" + ("0" + (today.getMonth()+1)).substring(-2) + "/" + ("0" + today.getDate()).substring(-2));
+        var todayDate = (today.getFullYear() + "/" + ("0" + (today.getMonth()+1)).slice(-2) + "/" + ("0" + today.getDate()).slice(-2));
         var upcomingList = [];
         
         for (var i = 0; i < eventsList.allEvents.length; i++) {
