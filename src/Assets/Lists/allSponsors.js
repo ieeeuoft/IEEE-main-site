@@ -10,6 +10,7 @@ export const allSponsors = [
     { companyName: "IBM", tier: "Event Partner", imgType: ".svg", siteLink: "https://www.ibm.com/ca-en" },
     { companyName: "Daisy Intelligence", tier: "Gold - Hello, Con!", imgType: ".svg", siteLink: "https://www.daisyintelligence.com/" },
     { companyName: "Munvo", tier: "Gold - Hello, Con!", imgType: ".png", siteLink: "https://munvo.com/" },
-    { companyName: "RBC", tier: "Gold - Hello, Con!", imgType: ".svg", siteLink: " https://www.rbcinvestease.com/" }
-   
+    { companyName: "RBC", tier: "Gold - Hello, Con!", imgType: ".svg", siteLink: " https://www.rbcinvestease.com/" },
+    { companyName: "IEEE Canadian Foundation", tier: "Sponsor - MakeUofT, NewHacks", imgType: ".jpg", siteLink: " http://www.ieeecanadianfoundation.org/" }
+
 ]
