@@ -7,6 +7,9 @@ export const allSponsors = [
     { companyName: "BITalino", tier: "Prize Sponsor - MakeUofT", imgType: ".png", siteLink: "https://bitalino.com/en/" },
     { companyName: "Google", tier: "Event Partner", imgType: ".svg", siteLink: "https://about.google"},
     { companyName: "AMD", tier: "Event Partner", imgType: ".svg", siteLink: "https://www.amd.com/en" },
+    { companyName: "IBM", tier: "Event Partner", imgType: ".svg", siteLink: "https://www.ibm.com/ca-en" },
     { companyName: "Daisy Intelligence", tier: "Gold - Hello, Con!", imgType: ".svg", siteLink: "https://www.daisyintelligence.com/" },
-    { companyName: "Munvo", tier: "Gold - Hello, Con!", imgType: ".png", siteLink: "https://munvo.com/" }
+    { companyName: "Munvo", tier: "Gold - Hello, Con!", imgType: ".png", siteLink: "https://munvo.com/" },
+    { companyName: "RBC", tier: "Gold - Hello, Con!", imgType: ".svg", siteLink: " https://www.rbcinvestease.com/" }
+   
 ]
