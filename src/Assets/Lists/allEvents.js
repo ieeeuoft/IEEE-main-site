@@ -15,8 +15,8 @@ export const allEvents = [
         }, 
     { 
         EventName: "IBM Microservices Workshop", 
-        displayDate: "October 29th, 2019", 
-        date: "2019/10/29", 
+        displayDate: "October 23rd, 2019", 
+        date: "2019/10/23", 
         link: "www.facebook.com/events/400443910647961/",
         }, 
     { 
