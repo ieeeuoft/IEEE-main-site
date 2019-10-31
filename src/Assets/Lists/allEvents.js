@@ -23,7 +23,7 @@ export const allEvents = [
         EventName: "Hello, Con",
         displayDate: "November 16th, 2019", 
         date: "2019/11/16", 
-        // link: "www.facebook.com/ieeeuoft",
+        link: "ieee.utoronto.ca/hellocon/",
         },
     { 
         EventName: "Hardware Introduction Workshop",
