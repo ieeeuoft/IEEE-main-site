@@ -42,12 +42,12 @@ const memberData = {
                { "fullName": "Katherine Liang", "position": "Marketing Associate", "LinkedInLink":"", "emailLink":"katherine.liang@mail.utoronto.ca"},
                { "fullName": "Haochen Zhang", "position": "Logistics Associate", "LinkedInLink":"https://www.linkedin.com/in/haochenz11/", "emailLink":"hcz.zhang@mail.utoronto.ca"},
                { "fullName": "Amr Sharaf", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"amr.sharaf@mail.utoronto.ca"},
+               { "fullName": "Smile Peng", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"smile.peng@mail.utoronto.ca"},
 
                { "fullName": "Kathy Zhuang", "position": "Graphics Design", "LinkedInLink":"", "emailLink":"kathy.zhuang@mail.utoronto.ca"},
 
                { "fullName": "Mohaimen Khan", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"mohaimen.khan@mail.utoronto.ca"},
-               { "fullName": "Rosalyn Wong", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"rosalyn.wong@mail.utoronto.ca"},
-               { "fullName": "Yuyang Wen", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"yuyang.wen@mail.utoronto.ca"}
+               { "fullName": "Rosalyn Wong", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"rosalyn.wong@mail.utoronto.ca"}
                ], firstRowSize: 2
           },
 
