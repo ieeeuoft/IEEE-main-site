@@ -22,7 +22,7 @@ export default class EventEvent extends PureComponent {
                     <div className={styles['events-event-img']}>
                         <div className={styles['events-event-img-crop']}>
                             <div className={styles['dark-gradient']}></div>
-                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.jpeg')} alt={EventNameChar} className={styles['events-event-img-crop-src']}/>
+                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.JPG')} alt={EventNameChar} className={styles['events-event-img-crop-src']}/>
                         </div>
                     </div>
                     <div className={styles['events-event-text']}>
@@ -37,7 +37,7 @@ export default class EventEvent extends PureComponent {
                     <div className={styles['events-event-img']}>
                         <div className={styles['events-event-img-crop']}>
                             <div className={styles['dark-gradient']}></div>
-                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.jpeg')} alt={EventNameChar} className={styles['events-event-img-crop-src']}/>
+                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.JPG')} alt={EventNameChar} className={styles['events-event-img-crop-src']}/>
                         </div>
                     </div>
                     <div className={styles['events-event-text']}>

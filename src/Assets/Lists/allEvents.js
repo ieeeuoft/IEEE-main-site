@@ -26,6 +26,12 @@ export const allEvents = [
         link: "ieee.utoronto.ca/hellocon/",
         },
     { 
+        EventName: "IEEE x MLH Localhost GitHub Workshop",
+        date: "2019/11/21",
+        displayDate: "November 21st, 2019", 
+        link: "www.facebook.com/events/2522965627961108/",
+        },
+    { 
         EventName: "Hardware Introduction Workshop",
         date: "2020/01/18",
         displayDate: "January 18th, 2020", 

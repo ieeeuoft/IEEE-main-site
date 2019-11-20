@@ -47,7 +47,7 @@ src
         └───events
 ```
 Notes: 
-1. Images must be **wider than they are tall**. Please make it a JPEG.
+1. Images must be **wider than they are tall**. Please make it a JPG.
 2. Shrink images if they are too big. The height of the image should be ideally 360px (and not a pixel less).
 3. If EventName contains a character that can't be read (such as the ! in Hello, Con!), remove that problematic character(s) in EventName and the name of the image. Then add a condition in line 14 of `EventEvent.js`. See below.
 

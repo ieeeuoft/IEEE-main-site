@@ -26,7 +26,7 @@ export default class UpcomingEvent extends PureComponent {
                 <div style={{cursor: "default"}}>
                     <div className={styles['upcoming-event-img']}>
                         <div className={styles['upcoming-event-img-crop']}>
-                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.jpeg')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>
+                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.JPG')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>
                         </div>
                     </div>
                     <h3 className={styles['upcoming-event-name']}>{EventNameChar}</h3>
@@ -40,7 +40,7 @@ export default class UpcomingEvent extends PureComponent {
                 <a href={"http://" + link} target="_blank">
                     <div className={styles['upcoming-event-img']}>
                         <div className={styles['upcoming-event-img-crop']}>
-                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.jpeg')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>
+                            <img src={require('./../../../../Assets/Images/events/' + EventName + '.JPG')} alt={EventNameChar} className={styles['upcoming-event-img-crop-src']}/>
                         </div>
                     </div>
                     <h3 className={styles['upcoming-event-name']}>{EventNameChar}</h3>
