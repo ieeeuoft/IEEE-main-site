@@ -37,7 +37,6 @@ const memberData = {
                { "fullName": "Shuyi Wang", "position": "Director of Workshops", "LinkedInLink":"", "emailLink":"shuyiw.wang@mail.utoronto.ca"},
                { "fullName": "Gaurav Ranganath", "position": "Director of Talks", "LinkedInLink":"https://www.linkedin.com/in/gaurav-ranganath/", "emailLink":"gaurav.ranganath@mail.utoronto.ca"},
                { "fullName": "Joanna Cho", "position": "Director of Conferences", "LinkedInLink":"", "emailLink":"joanna.cho@mail.utoronto.ca"},
-               { "fullName": "Charlie Wang", "position": "Director of Business Development", "LinkedInLink":"", "emailLink":"yuanpeng.wang@mail.utoronto.ca"},
 
                { "fullName": "Katherine Liang", "position": "Marketing Associate", "LinkedInLink":"", "emailLink":"katherine.liang@mail.utoronto.ca"},
                { "fullName": "Haochen Zhang", "position": "Logistics Associate", "LinkedInLink":"https://www.linkedin.com/in/haochenz11/", "emailLink":"hcz.zhang@mail.utoronto.ca"},
