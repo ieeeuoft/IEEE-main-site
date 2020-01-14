@@ -32,11 +32,45 @@ export const allEvents = [
         link: "www.facebook.com/events/2522965627961108/",
         },
     { 
-        EventName: "Hardware Introduction Workshop",
+        EventName: "My Journey Through Web Development by Ben Hare",
+        date: "2019/11/28",
+        displayDate: "November 28th, 2019", 
+        link: "https://www.facebook.com/events/2414370818891228/",
+        },
+    { 
+        EventName: "A Tech Evening with Microsoft",
+        date: "2020/01/10",
+        displayDate: "January 10th, 2020", 
+        link: "https://www.facebook.com/events/952746985108792/",
+        },
+ 
+    { 
+        EventName: "Electronics Certification Workshop",
         date: "2020/01/11",
         displayDate: "January 11th, 2020", 
-        // link: "www.facebook.com/ieeeuoft",
+        link: "www.facebook.com/events/949272735466590/",
         },
+    { 
+        EventName: "Google Game Night",
+        date: "2020/01/20",
+        displayDate: "January 20th, 2020", 
+        link: "https://www.facebook.com/events/1238684592984170/",
+        },
+            
+    { 
+        EventName: "Xilinx Pynq Workshop",
+        date: "2020/02/13",
+        displayDate: "February 12,13th, 2020"
+        // link: "https://www.facebook.com/events/1238684592984170/",
+        },
+
+    { 
+        EventName: "Solace Workshop",
+        date: "2020/02/14",
+        displayDate: "February 14th, 2020"
+        // link: "https://www.facebook.com/events/1238684592984170/",
+        },
+    
     // { 
     //     EventName: "Hardware Certification Workshop",
     //     displayDate: "January 25th, 2020", 
