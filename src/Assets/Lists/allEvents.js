@@ -56,11 +56,16 @@ export const allEvents = [
         displayDate: "January 20th, 2020", 
         link: "https://www.facebook.com/events/1238684592984170/",
         },
-            
+    { 
+        EventName: "Munvo Networking Event",
+        date: "2020/01/30",
+        displayDate: "January 30th, 2020", 
+        link: "https://www.facebook.com/events/568873457032494/",
+        },        
     { 
         EventName: "Xilinx Pynq Workshop",
         date: "2020/02/13",
-        displayDate: "February 12,13th, 2020"
+        displayDate: "February 12, 13th 2020"
         // link: "https://www.facebook.com/events/1238684592984170/",
         },
 
