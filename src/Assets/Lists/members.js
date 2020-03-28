@@ -1,5 +1,58 @@
 //
 const memberData = {
+     "2020-2021": {
+          "Exec Team": {
+               membersList: [
+               { "fullName": "Gaurav Ranganath", "position": "Chair", "LinkedInLink":"https://www.linkedin.com/in/gaurav-ranganath/", "emailLink":"gaurav.ranganath@mail.utoronto.ca"},
+               { "fullName": "Haochen Zhang", "position": "Vice Chair", "LinkedInLink":"https://www.linkedin.com/in/haochenz11/", "emailLink":"hcz.zhang@mail.utoronto.ca"},
+               ], firstRowSize: 2
+          },
+          "Marketing & Finance": {
+               membersList: [
+               { "fullName": "Matthew Leung", "position": "Marketing Managing Director", "LinkedInLink":"", "emailLink":"matthewchingho.leung@mail.utoronto.ca"},
+               { "fullName": "Fumi Shibutani", "position": "Finance Managing Director", "LinkedInLink":"", "emailLink":"fumi.shibutani@mail.utoronto.ca"},
+               { "fullName": "Kathy Zhuang", "position": "Graphic Design Senior Associate", "LinkedInLink":"", "emailLink":"kathy.zhuang@mail.utoronto.ca"},
+               ], firstRowSize: 2
+          },
+          "Logistics": {
+               membersList: [
+               { "fullName": "Julia Wagner", "position": "Hackathon Co-Managing Director", "LinkedInLink":"", "emailLink":"julia.wagner@mail.utoronto.ca"},
+               { "fullName": "Brenny Chao", "position": "Hackathon Co-Managing Director", "LinkedInLink":"https://www.linkedin.com/in/brenny-chao-4962aa17b/", "emailLink":"brenny.chao@mail.utoronto.ca"},
+               { "fullName": "William Sinnatamby", "position": "Technical Events Managing Director", "LinkedInLink":"", "emailLink":"william.flint@mail.utoronto.ca"},
+               { "fullName": "Yanisa Khambanonda", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"yanisa.khambanonda@mail.utoronto.ca"},
+               { "fullName": "Shuyi Wang", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"shuyiw.wang@mail.utoronto.ca"},
+               { "fullName": "Smile Peng", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"smile.peng@mail.utoronto.ca"},
+               ], firstRowSize: 3
+          },
+          "External Relations": {
+               membersList: [
+               { "fullName": "Katherine Liang", "position": "External Relations Managing Director", "LinkedInLink":"", "emailLink":"katherine.liang@mail.utoronto.ca"},
+               ], firstRowSize: 1
+          },
+          "Tech": {
+               membersList: [
+               { "fullName": "Shawn Zhang", "position": "Tech Team Co-Managing Director", "LinkedInLink":"www.linkedin.com/in/shawn-zhang-2000717", "emailLink":"xiaoen.zhang@mail.utoronto.ca"},
+               { "fullName": "Urmil Modi", "position": "Tech Team Co-Managing Director ", "LinkedInLink":"https://linkedin.com/in/urmilkm/", "emailLink":"u.modi@mail.utoronto.ca"},
+               { "fullName": "Raghav Srinivasan", "position": "Tech Team Senior Associate", "LinkedInLink":"https://www.linkedin.com/in/raghav-srinivasan-b45350170", "emailLink":"raghav.srinivasan@mail.utoronto.ca"},
+               ], firstRowSize: 2
+          },
+          "Web": {
+               membersList: [
+               { "fullName": "Graham Hoyes", "position": "Co-Chief Webmaster", "LinkedInLink":"https://www.linkedin.com/in/raymond-d-kim", "emailLink":"rayray.kim@mail.utoronto.ca"},
+               { "fullName": "Alex Bogdan", "position": "Co-Chief Webmaster", "LinkedInLink":"https://www.linkedin.com/in/bogdanalex/", "emailLink":"alex.bogdan@mail.utoronto.ca"},
+               ], firstRowSize: 2
+          },
+          "Advisors": {
+               membersList: [
+               { "fullName": "Nhien Tran-Nguyen", "position": "Advisor", "emailLink":"nhien.tran.nguyen@mail.utoronto.ca"},
+               { "fullName": "Lisa Li", "position": "Advisor", "LinkedInLink":"https://www.linkedin.com/in/lisa-li/", "emailLink":"lisasa.li@mail.utoronto.ca"},
+               { "fullName": "Martin Ffrench", "position": "Advisor", "LinkedInLink":"https://www.linkedin.com/in/martin-0xff", "emailLink":"martin.ffrench@mail.utoronto.ca"},
+               { "fullName": "Linda Wu", "position": "Advisor", "LinkedInLink":"https://www.linkedin.com/in/lindawu123/", "emailLink":"lindaa.wu@mail.utoronto.ca"},
+               { "fullName": "Quin Sykora", "position": "Advisor", "LinkedInLink":"", "emailLink":"quinlan.sykora@mail.utoronto.ca"},
+               { "fullName": "Kevin Zhang", "position": "Advisor", "LinkedInLink":"https://www.linkedin.com/in/genshengzhang/", "emailLink":"kevinhk.zhang@mail.utoronto.ca"},
+               ], firstRowSize: 3
+          }
+     },
      "2019-2020": {
           "Exec Team": {
                membersList: [
@@ -71,8 +124,6 @@ const memberData = {
 
                { "fullName": "Shashwat Panwar", "position": "Graphics Design", "LinkedInLink":"https://www.linkedin.com/in/shashwat-p/", "emailLink":"shashwat.panwar@mail.utoronto.ca"},
                { "fullName": "Alaynah Malik", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"alaynah.malik@mail.utoronto.ca"}
-               // { "fullName": "Lisa Li", "position": "Co-Chair", "LinkedInLink":"https://www.linkedin.com/in/lisa-li/", "emailLink":"lisasa.li@mail.utoronto.ca"}
-               // { "fullName": "Alaynah Malik", "position": "Chapter Advisor", "LinkedInLink":"", "emailLink":"alaynah.malik@mail.utoronto.ca"}
                ], firstRowSize: 2
           }
      },

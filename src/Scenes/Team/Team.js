@@ -7,16 +7,10 @@ import Member from './../../Components/Team/Member/Member.js';
 import PastTeam from '../../Components/Team/PastTeam/PastTeam';
 import memberData from './../../Assets/Lists/members.js';
 
-// import { string, object } from 'prop-types';
-// import Team2019 from '../../Components/Team/Team2019.js'
-// import * as members from './../../Assets/Lists/allMembers'
-// import YearDropdown from './../../Components/Team/YearDropdown/YearDropdown';
-// import TeamNav from '../../Components/Team/TeamNav/TeamNav.js';
-
 export default class Team extends Component {
     constructor(props) {
         super(props);
-        this.state = { teamKey: "Exec Team", year:"2019-2020", active: 1}
+        this.state = { teamKey: "Exec Team", year:"2020-2021", active: 1}
     }
 
     constructRows(memberData) {
@@ -130,21 +124,23 @@ export default class Team extends Component {
             )
         }
 
-        // Redundant for now, leave in case differentiation needed later
-        switch(this.state.teamKey){
-            case "Exec Team":
-                return this.constructRows(memberData[this.state.year][this.state.teamKey])
-            case "Marketing & Finance":
-                return this.constructRows(memberData[this.state.year][this.state.teamKey])
-            case "Computer Chapter":
-                return this.constructRows(memberData[this.state.year][this.state.teamKey])
-            case "Electronics Chapter":
-                return this.constructRows(memberData[this.state.year][this.state.teamKey])
-            case "Energy/Power Chapter":
-                return this.constructRows(memberData[this.state.year][this.state.teamKey])   
-            default:
-                return this.constructRows(memberData[this.state.year][this.state.teamKey]) 
-        }
+        return this.constructRows(memberData[this.state.year][this.state.teamKey])
+
+        //  Redundant for now, leave in case differentiation needed later
+        // switch(this.state.teamKey){
+        //     case "Exec Team":
+        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
+        //     case "Marketing & Finance":
+        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
+        //     case "Computer Chapter":
+        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
+        //     case "Electronics Chapter":
+        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
+        //     case "Energy/Power Chapter":
+        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])   
+        //     default:
+        //         return this.constructRows(memberData[this.state.year][this.state.teamKey]) 
+        // }
     }
 
     showTeam(group, activeNum) {
@@ -201,6 +197,16 @@ export default class Team extends Component {
                 return (<li className={`${styles['team-nav-list-item']} ${styles['electronics-nav-item']} ${active == 4 ? styles['electronics-nav-item-active'] : null}`} onClick={() => this.showTeam("Electronics Chapter",4)}>Electronics Chapter</li>)
             case "Energy/Power Chapter": 
                 return (<li className={`${styles['team-nav-list-item']} ${styles['energy-nav-item']} ${active == 5 ? styles['energy-nav-item-active'] : null}`} onClick={() => this.showTeam("Energy/Power Chapter",5)}>Energy/Power Chapter</li>)
+            case "Logistics": 
+                return (<li className={`${styles['team-nav-list-item']} ${active == 3 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Logistics",3)}>Logistics</li>)
+            case "External Relations": 
+                return (<li className={`${styles['team-nav-list-item']} ${active == 4 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("External Relations",4)}>External Relations</li>)
+            case "Tech": 
+                return (<li className={`${styles['team-nav-list-item']} ${active == 5 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Tech",5)}>Tech</li>)
+            case "Web": 
+                return (<li className={`${styles['team-nav-list-item']} ${active == 6 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Web",6)}>Web</li>)
+            case "Advisors": 
+                return (<li className={`${styles['team-nav-list-item']} ${active == 7 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Advisors",7)}>Advisors</li>)
         }
 
     }
@@ -212,6 +218,7 @@ export default class Team extends Component {
                 <div className={styles['select-year']}>
                     <div className={styles['triangle-down']}></div>
                     <select onChange={this.changeYear} value={this.state.value} className={styles['select-year-div']}>
+                        <option value="2020-2021">2020-2021</option>
                         <option value="2019-2020">2019-2020</option>
                         <option value="2018-2019">2018-2019</option>
                         <option value="2017-2018">2017-2018</option>
@@ -220,13 +227,11 @@ export default class Team extends Component {
                     </select>
                 </div>
 
-                {/* <TeamNav /> */}
                 {this.constructNav()}
 
                 {(year != "past") && 
                     <h2 className={styles.teamTitle}>{teamKey}</h2>
                 }
-                {/* <MemberCharts /> */}
                 {this.constructMemberChart()}
                 
 
