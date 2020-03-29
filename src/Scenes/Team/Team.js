@@ -126,7 +126,7 @@ export default class Team extends Component {
 
         return this.constructRows(memberData[this.state.year][this.state.teamKey])
 
-        //  Redundant for now, leave in case differentiation needed later
+        // Redundant for now, leave in case differentiation needed later
         // switch(this.state.teamKey){
         //     case "Exec Team":
         //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
@@ -190,7 +190,7 @@ export default class Team extends Component {
             case "Exec Team":
                 return (<li className={`${styles['team-nav-list-item']} ${active == 1 ? styles['team-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Exec Team",1)}>Exec Team</li>)
             case "Marketing & Finance":
-                return (<li className={`${styles['team-nav-list-item']} ${active == 2 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Marketing & Finance",2)}>Marketing & Finance</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${active == 2 ? styles['team-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Marketing & Finance",2)}>Marketing & Finance</li>)
             case "Computer Chapter":
                 return (<li className={`${styles['team-nav-list-item']} ${styles['computer-nav-item']} ${active == 3 ? styles['computer-nav-item-active'] : null}`} onClick={() => this.showTeam("Computer Chapter",3)}>Computer Chapter</li>)
             case "Electronics Chapter":
@@ -198,15 +198,15 @@ export default class Team extends Component {
             case "Energy/Power Chapter": 
                 return (<li className={`${styles['team-nav-list-item']} ${styles['energy-nav-item']} ${active == 5 ? styles['energy-nav-item-active'] : null}`} onClick={() => this.showTeam("Energy/Power Chapter",5)}>Energy/Power Chapter</li>)
             case "Logistics": 
-                return (<li className={`${styles['team-nav-list-item']} ${active == 3 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Logistics",3)}>Logistics</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${active == 3 ? styles['team-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Logistics",3)}>Logistics</li>)
             case "External Relations": 
-                return (<li className={`${styles['team-nav-list-item']} ${active == 4 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("External Relations",4)}>External Relations</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${active == 4 ? styles['team-nav-list-item-active'] : null}`} onClick={() => this.showTeam("External Relations",4)}>External Relations</li>)
             case "Tech": 
-                return (<li className={`${styles['team-nav-list-item']} ${active == 5 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Tech",5)}>Tech</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${active == 5 ? styles['team-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Tech",5)}>Tech</li>)
             case "Web": 
-                return (<li className={`${styles['team-nav-list-item']} ${active == 6 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Web",6)}>Web</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${active == 6 ? styles['team-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Web",6)}>Web</li>)
             case "Advisors": 
-                return (<li className={`${styles['team-nav-list-item']} ${active == 7 ? styles['eam-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Advisors",7)}>Advisors</li>)
+                return (<li className={`${styles['team-nav-list-item']} ${active == 7 ? styles['team-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Advisors",7)}>Advisors</li>)
         }
 
     }
