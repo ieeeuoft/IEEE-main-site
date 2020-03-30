@@ -17,6 +17,7 @@
     "react-scroll-parallax": "^2.1.2",
     "react-scroll-to-component": "^1.0.2",
     "react-slick": "^0.24.0",
+    "react-switch": "^5.0.1",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {

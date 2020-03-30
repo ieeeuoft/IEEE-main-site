@@ -237,9 +237,10 @@
         outline: none;
         border-bottom: 3px solid color(blue1);
         border-radius: 0;
+        cursor: pointer;
 
         padding: 12px 45px 10px 25px;
-
+        
         background: none;
         -webkit-appearance: none;
     }
@@ -250,7 +251,6 @@
 
     
 }
-
 
 
 .spacer1 {
@@ -272,3 +272,40 @@
     margin-left: -36px;
     z-index: -1;
 }
+
+.toggles {
+    margin-right: 5vw;
+    margin-bottom: -3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+
+    .baby {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: flex-end;
+        margin-left: 25px;
+        
+    
+        &-emoji {
+            height: 25px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+    
+        Label {
+            cursor: pointer;
+        }
+    }
+
+    @include response(lg/md) {
+        margin-top: 2rem;
+        margin-bottom: -3rem;
+        justify-content: center;
+        margin-right: 0;
+    }
+    
+}
+

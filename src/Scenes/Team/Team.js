@@ -3,21 +3,24 @@ import Footer from './../../Components/General/Footer/Footer.js';
 import styles from './team.module.scss';
 import skylineLeft from './../../Assets/Images/skyline/skyline-left.svg';
 import skylineRight from './../../Assets/Images/skyline/skyline-right.svg';
+import baby from './../../Assets/Images/misc/baby.svg';
+import dog from './../../Assets/Images/misc/dog.svg';
 import Member from './../../Components/Team/Member/Member.js';
 import PastTeam from '../../Components/Team/PastTeam/PastTeam';
 import memberData from './../../Assets/Lists/members.js';
+import Switch from "react-switch";
 
 export default class Team extends Component {
     constructor(props) {
         super(props);
-        this.state = { teamKey: "Exec Team", year:"2020-2021", active: 1}
+        this.state = { teamKey: "Exec Team", year:"2020-2021", active: 1, checkedBaby: false, checkedDog: false}
     }
 
     constructRows(memberData) {
         const members = [];
         for (var i = 0; i < memberData["membersList"].length; i++){
             var member = memberData["membersList"][i]
-            members.push(<Member fullName={member.fullName} position={member.position} year={this.state.year} LinkedInLink={member.LinkedInLink} emailLink={member.emailLink} />)
+            members.push(<Member fullName={member.fullName} position={member.position} year={this.state.year} LinkedInLink={member.LinkedInLink} emailLink={member.emailLink} baby={this.state.checkedBaby}  puppy={this.state.checkedDog} />)
         }
 
         var numRows = Math.ceil((members.length - memberData["firstRowSize"]) / 7) * 2 + 1;
@@ -98,7 +101,7 @@ export default class Team extends Component {
         }
 
         return (
-            <div className={styles['team-container']} id="team-2019-20">
+            <div className={styles['team-container']}> {/* id="team-2019-20" */}
                 {rows}
             </div>
         )
@@ -154,7 +157,9 @@ export default class Team extends Component {
         this.setState({
           year: event.target.value,
           teamKey: "Exec Team",
-          active: 1
+          active: 1,
+          checkedPuppy: false,
+          checkedBaby: false
         });
     }
 
@@ -208,32 +213,64 @@ export default class Team extends Component {
             case "Advisors": 
                 return (<li className={`${styles['team-nav-list-item']} ${active == 7 ? styles['team-nav-list-item-active'] : null}`} onClick={() => this.showTeam("Advisors",7)}>Advisors</li>)
         }
-
     }
+
+    contructYearOptions(keys) {
+        let options = []
+        for (let i = 0; i < keys.length; i++) {
+            options.push(<option value={`${keys[i]}`}>{keys[i]}</option>)
+        }
+        return options
+    }
+
+    handleChange(toggleNum) {
+        if (toggleNum == 1) { // puppy
+            this.setState({checkedDog: !this.state.checkedDog, checkedBaby: false});
+        } else if (toggleNum == 2) { // baby
+            this.setState({checkedBaby: !this.state.checkedBaby, checkedDog: false}); 
+        } 
+        
+      };
 
     render() {
         var { teamKey, year } = this.state;
+        const yearKeys = Object.keys(memberData);
+
         return (
             <div className={styles['team']}> 
                 <div className={styles['select-year']}>
                     <div className={styles['triangle-down']}></div>
                     <select onChange={this.changeYear} value={this.state.value} className={styles['select-year-div']}>
-                        <option value="2020-2021">2020-2021</option>
-                        <option value="2019-2020">2019-2020</option>
-                        <option value="2018-2019">2018-2019</option>
-                        <option value="2017-2018">2017-2018</option>
-                        <option value="2016-2017">2016-2017</option>
+                        {this.contructYearOptions(yearKeys)}
                         <option value="past">Past Teams</option>
                     </select>
                 </div>
+
+                {(yearKeys.slice(0, -4).includes(year)) && // Checks years 2020-2021 and beyond for baby feature
+                    <div className={styles['toggles']}>
+                        <div className={styles['baby']}>
+                            <label>
+                                <Switch onChange={() => this.handleChange(1)} checked={this.state.checkedDog}  onColor={'#00639C'} uncheckedIcon={false} checkedIcon={false}  />
+                            </label>
+                            <img src={dog} alt="Dog Emoji" className={styles['baby-emoji']} />
+                        </div>
+
+                        <div className={styles['baby']}>
+                            <label>
+                                <Switch onChange={() => this.handleChange(2)} checked={this.state.checkedBaby}  onColor={'#00639C'} uncheckedIcon={false} checkedIcon={false}  />
+                            </label>
+                            <img src={baby} alt="Baby Emoji" className={styles['baby-emoji']} />
+                        </div>
+                    </div>
+                }
 
                 {this.constructNav()}
 
                 {(year != "past") && 
                     <h2 className={styles.teamTitle}>{teamKey}</h2>
                 }
+
                 {this.constructMemberChart()}
-                
 
                 <div className={styles['skyline-imgs-crop']}>
                     <div className={styles['skyline-imgs']}>
