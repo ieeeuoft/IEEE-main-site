@@ -19,7 +19,7 @@ const memberData = {
                { "fullName": "Julia Wagner", "position": "Hackathon Co-Managing Director", "LinkedInLink":"", "emailLink":"julia.wagner@mail.utoronto.ca"},
                { "fullName": "Brenny Chao", "position": "Hackathon Co-Managing Director", "LinkedInLink":"https://www.linkedin.com/in/brenny-chao-4962aa17b/", "emailLink":"brenny.chao@mail.utoronto.ca"},
                { "fullName": "William Sinnatamby", "position": "Technical Events Managing Director", "LinkedInLink":"", "emailLink":"william.flint@mail.utoronto.ca"},
-               { "fullName": "Yanisa Khambanonda", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"yanisa.khambanonda@mail.utoronto.ca"},
+               // { "fullName": "Yanisa Khambanonda", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"yanisa.khambanonda@mail.utoronto.ca"},
                { "fullName": "Shuyi Wang", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"shuyiw.wang@mail.utoronto.ca"},
                { "fullName": "Smile Peng", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"smile.peng@mail.utoronto.ca"},
                ], firstRowSize: 3
