@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import styles from './member.module.scss'
 import Email from './../../../Assets/Images/team/icons/email.svg';
 import LinkedIn from './../../../Assets/Images/team/icons/linkedin.svg';
-import Placeholder from './../../../Assets/Images/team/placeholder.png'
+// import Placeholder from './../../../Assets/Images/team/placeholder.png'
 
 export default class Member extends PureComponent {
     render() {
@@ -25,21 +25,9 @@ export default class Member extends PureComponent {
         else if (!puppy && !baby) {
             extension = "/";
         }
-        
-        // var sFolderPath = "c:\\QHHH";
-// if (!fso.FolderExists(sFolderPath)) {
-//     alert("Folder does not exist!");
-//     return;
-// }
 
-//         let imgSrc = './../../../Assets/Images/team/' + year + '/' + fullName + '.jpg';
         let imgSrc;
-        // if (year != "2019-2020") {
         imgSrc = require('./../../../Assets/Images/team/' + year + extension + fullName + '.jpg');
-        // }
-        // if (imgSrc === undefined) {
-        //     imgSrc = Placeholder;
-        // }
 
         return (
             <div className={styles['card']}>

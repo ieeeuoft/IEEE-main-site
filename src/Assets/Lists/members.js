@@ -9,9 +9,14 @@ const memberData = {
           },
           "Marketing & Finance": {
                membersList: [
-               { "fullName": "Matthew Leung", "position": "Marketing Managing Director", "LinkedInLink":"", "emailLink":"matthewchingho.leung@mail.utoronto.ca"},
-               { "fullName": "Fumi Shibutani", "position": "Finance Managing Director", "LinkedInLink":"", "emailLink":"fumi.shibutani@mail.utoronto.ca"},
-               { "fullName": "Kathy Zhuang", "position": "Graphic Design Senior Associate", "LinkedInLink":"", "emailLink":"kathy.zhuang@mail.utoronto.ca"},
+               { "fullName": "Matthew Leung", "position": "Marketing Managing Director", "emailLink":"matthewchingho.leung@mail.utoronto.ca"},
+               { "fullName": "Fumi Shibutani", "position": "Finance Managing Director", "emailLink":"fumi.shibutani@mail.utoronto.ca"},
+               { "fullName": "Kathy Zhuang", "position": "Graphic Design Senior Associate", "emailLink":"kathy.zhuang@mail.utoronto.ca"},
+               { "fullName": "Skyler Zhang", "position": "Marketing Senior Associate", "emailLink":"skyler.zhang@mail.utoronto.ca"},
+               { "fullName": "Tiffany Yeh", "position": "Marketing Associate", "emailLink":"@mail.utoronto.ca"},
+               { "fullName": "Isha Sharma", "position": "Marketing Associate", "emailLink":"ishaa.sharma@mail.utoronto.ca"},
+               { "fullName": "Rosie Wang", "position": "Finance Associate", "emailLink":"rushi.wang@mail.utoronto.ca@mail.utoronto.ca"},
+               { "fullName": "Andrew Chen", "position": "Finance Associate", "emailLink":"@mail.utoronto.ca"},      
                ], firstRowSize: 2
           },
           "Logistics": {
@@ -22,11 +27,20 @@ const memberData = {
                // { "fullName": "Yanisa Khambanonda", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"yanisa.khambanonda@mail.utoronto.ca"},
                { "fullName": "Shuyi Wang", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"shuyiw.wang@mail.utoronto.ca"},
                { "fullName": "Smile Peng", "position": "Logistics Senior Associate", "LinkedInLink":"", "emailLink":"smile.peng@mail.utoronto.ca"},
+               { "fullName": "Bikramjit Narwal", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"bikramjit.narwal@mail.utoronto.ca"},
+               { "fullName": "Mojtaba Khavaninzadeh", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"@mail.utoronto.ca"},
+               { "fullName": "Himanish Jindal", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"himanish.jindal@mail.utoronto.ca"},
+               { "fullName": "Piyush Sharma", "position": "Logistics Associate", "LinkedInLink":"", "emailLink":"pi.sharma@mail.utoronto.ca"},              
                ], firstRowSize: 3
           },
           "External Relations": {
                membersList: [
                { "fullName": "Katherine Liang", "position": "External Relations Managing Director", "LinkedInLink":"", "emailLink":"katherine.liang@mail.utoronto.ca"},
+               { "fullName": "Harsimrat Wadhawan", "position": "External Relations Associate", "emailLink":"harsimrat.wadhawan@mail.utoronto.ca"},
+               { "fullName": "MeiFeng Yu", "position": "External Relations Associate", "LinkedInLink":"", "emailLink":"meifeng.yu@mail.utoronto.ca"},
+               { "fullName": "Trudie Cheung", "position": "External Relations Associate", "LinkedInLink":"", "emailLink":"@mail.utoronto.ca"},
+               { "fullName": "Shyam Menon", "position": "External Relations Associate", "LinkedInLink":"", "emailLink":"shyam.menon@mail.utoronto.ca"},
+               { "fullName": "Kushagra Goel", "position": "External Relations Associate", "LinkedInLink":"", "emailLink":"kushagra.goel@mail.utoronto.ca"}, 
                ], firstRowSize: 1
           },
           "Tech": {
@@ -34,17 +48,23 @@ const memberData = {
                { "fullName": "Shawn Zhang", "position": "Tech Team Co-Managing Director", "LinkedInLink":"www.linkedin.com/in/shawn-zhang-2000717", "emailLink":"xiaoen.zhang@mail.utoronto.ca"},
                { "fullName": "Urmil Modi", "position": "Tech Team Co-Managing Director ", "LinkedInLink":"https://linkedin.com/in/urmilkm/", "emailLink":"u.modi@mail.utoronto.ca"},
                { "fullName": "Raghav Srinivasan", "position": "Tech Team Senior Associate", "LinkedInLink":"https://www.linkedin.com/in/raghav-srinivasan-b45350170", "emailLink":"raghav.srinivasan@mail.utoronto.ca"},
+               { "fullName": "Chan Yang", "position": "Tech Team Associate", "LinkedInLink":"", "emailLink":"chanhyukyang.yang@mail.utoronto.ca"},
+               { "fullName": "Fahim Talukder", "position": "Tech Team Associate", "LinkedInLink":"", "emailLink":"Fahim.Talukder@mail.utoronto.ca"},
+               { "fullName": "Selena Liu", "position": "Tech Team Associate", "LinkedInLink":"", "emailLink":""},
+               { "fullName": "Stephen Yang", "position": "Tech Team Associate", "LinkedInLink":"", "emailLink":""},
+               { "fullName": "Tony Liu", "position": "Tech Team Associate", "LinkedInLink":"", "emailLink":""},
                ], firstRowSize: 2
           },
           "Web": {
                membersList: [
                { "fullName": "Graham Hoyes", "position": "Co-Chief Webmaster", "LinkedInLink":"https://www.linkedin.com/in/raymond-d-kim", "emailLink":"rayray.kim@mail.utoronto.ca"},
                { "fullName": "Alex Bogdan", "position": "Co-Chief Webmaster", "LinkedInLink":"https://www.linkedin.com/in/bogdanalex/", "emailLink":"alex.bogdan@mail.utoronto.ca"},
+               { "fullName": "Akinori Kimura", "position": "Webmaster Associate", "LinkedInLink":"", "emailLink":"akinori.kimura@mail.utoronto.ca"},
                ], firstRowSize: 2
           },
           "Advisors": {
                membersList: [
-               { "fullName": "Nhien Tran-Nguyen", "position": "Advisor", "emailLink":"nhien.tran.nguyen@mail.utoronto.ca"},
+               { "fullName": "Nhien Tran-Nguyen", "position": "Advisor", "LinkedInLink":"", "emailLink":"nhien.tran.nguyen@mail.utoronto.ca"},
                { "fullName": "Lisa Li", "position": "Advisor", "LinkedInLink":"https://www.linkedin.com/in/lisa-li/", "emailLink":"lisasa.li@mail.utoronto.ca"},
                { "fullName": "Martin Ffrench", "position": "Advisor", "LinkedInLink":"https://www.linkedin.com/in/martin-0xff", "emailLink":"martin.ffrench@mail.utoronto.ca"},
                { "fullName": "Linda Wu", "position": "Advisor", "LinkedInLink":"https://www.linkedin.com/in/lindawu123/", "emailLink":"lindaa.wu@mail.utoronto.ca"},
