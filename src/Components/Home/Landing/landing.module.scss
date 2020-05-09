@@ -30,10 +30,6 @@
     width: 100vw;
     height: 100vh;
     max-height: 150rem;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
     overflow: hidden;
     position: relative;
     z-index: -1;
@@ -52,7 +48,6 @@
         max-height: 120rem;
     }
 }
-
 
 // Div of skyline-outline
 .no-background {
@@ -134,7 +129,6 @@
         }  
     }
     @include response(lg/md) {
-        // transform: translate(0%, 5%);
         &-blue {padding: 6rem;}
         &-title, &-blue-title {
             font-size: 17rem;

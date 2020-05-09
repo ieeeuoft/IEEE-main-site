@@ -16,8 +16,7 @@
     &-event {
         display: flex  !important;
         @include flexPosition(center, center);
-        flex-direction: column;
-        // width: 30vw;        
+        flex-direction: column; 
         margin-top: 1.5rem;
 
         &:hover {

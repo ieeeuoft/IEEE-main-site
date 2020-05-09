@@ -11,7 +11,7 @@ export default class Sponsor extends PureComponent {
         } = this.props
 
         return (
-            <a className={styles['sponsors-container']} href={siteLink} target="__blank">
+            <a className={styles['sponsors-container']} href={siteLink} target="__blank">  
                 <div className={styles['sponsors-container-img-div']}>
                     <img src={require('./../../../../Assets/Images/sponsors/' + companyName + imgType)} alt={companyName} className={styles['sponsors-container-img']} />   
                 </div>

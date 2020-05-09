@@ -10,6 +10,7 @@
         transition: all .4s;
         padding: 1rem 4rem 0;
         text-decoration: none;
+        margin-top: 10px;
 
         &:hover {
             padding-top: 0;
@@ -40,6 +41,7 @@
         }
 
         @include response(lg/md) {
+            margin-top: 0;
             &-img-div {
                 height: 10rem;
             }

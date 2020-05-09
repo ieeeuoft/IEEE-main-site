@@ -246,7 +246,9 @@ export default class Team extends Component {
                     </select>
                 </div>
 
-                {(yearKeys.slice(0, -4).includes(year)) && // Checks years 2020-2021 and beyond for baby feature
+
+                {/* Uncomment for babies and puppies */}
+                {/* {(yearKeys.slice(0, -4).includes(year)) && // Checks years 2020-2021 and beyond for baby feature
                     <div className={styles['toggles']}>
                         <div className={styles['baby']}>
                             <label>
@@ -262,7 +264,7 @@ export default class Team extends Component {
                             <img src={baby} alt="Baby Emoji" className={styles['baby-emoji']} />
                         </div>
                     </div>
-                }
+                } */}
 
                 {this.constructNav()}
 
@@ -271,13 +273,14 @@ export default class Team extends Component {
                 }
 
                 {this.constructMemberChart()}
-
-                <div className={styles['skyline-imgs-crop']}>
+                
+ {/* <div className={styles['skyline-imgs-crop']}>
                     <div className={styles['skyline-imgs']}>
                         <img src={skylineLeft} alt="Skyline" className={styles['skyline-imgs-lr']} />
                         <img src={skylineRight} alt="Skyline" className={styles['skyline-imgs-lr']} />
                     </div>
-                </div>
+                </div> */}
+
                 <Footer />
             </div>
         )
