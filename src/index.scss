@@ -91,31 +91,11 @@ h2 {
   margin: auto;
 }
 
-// .slick-next {
-//   width: 80px;
-//   height: 80px;
-//   z-index: 999;
-//   opacity: 90%;
-//   right: 0px;
-
-//   &:hover {
-//     background: color(blue6);
-//   }
-
-//   &:before {
-//     color: color(blue1) !important;
-//   }
-
-//   &::before {
-//     font-size: 50px;
-//   }
-// }
-
 .slick-prev, .slick-next {
   width: 80px;
   height: 80px;
   z-index: 999;
-  opacity: 90%;
+  opacity: 90% !important;
   
   &:hover {
     background: color(blue6);
@@ -141,16 +121,8 @@ h2 {
 
 .slick-prev {
   left: 0;
-
-  // @include response(lg/md) {
-  //   left: 10vw;
-  // }
 }
 
 .slick-next {
   right: 0px;
-
-  // @include response(lg/md) {
-  //   right: 10vw;
-  // }
 }
