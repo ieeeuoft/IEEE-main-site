@@ -274,12 +274,12 @@ export default class Team extends Component {
 
                 {this.constructMemberChart()}
                 
- {/* <div className={styles['skyline-imgs-crop']}>
+                <div className={styles['skyline-imgs-crop']}>
                     <div className={styles['skyline-imgs']}>
                         <img src={skylineLeft} alt="Skyline" className={styles['skyline-imgs-lr']} />
                         <img src={skylineRight} alt="Skyline" className={styles['skyline-imgs-lr']} />
                     </div>
-                </div> */}
+                </div>
 
                 <Footer />
             </div>
