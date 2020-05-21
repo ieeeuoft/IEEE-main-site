@@ -75,22 +75,30 @@ const Social = () => {
                     exclusive benefits including job opportunities!
                 </a>
             </ScrollAnimation>
-            {/*https://goo.gl/forms/dyVbc0fyJAZJ0Bbv1*/}
             <a
                 href="https://www.facebook.com/ieeeuoft/"
                 className={styles["facebook"]}
                 target="_blank"
-            ></a>
+                rel="noopener noreferrer"
+            >
+                {" "}
+            </a>
             <a
                 href="http://eepurl.com/7spfT"
                 className={styles["newsletter"]}
                 target="_blank"
-            ></a>
+                rel="noopener noreferrer"
+            >
+                {" "}
+            </a>
             <a
                 href="https://www.ieee.org/membership/join"
                 className={styles["membership"]}
                 target="_blank"
-            ></a>
+                rel="noopener noreferrer"
+            >
+                {" "}
+            </a>
         </div>
     );
 };

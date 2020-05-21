@@ -6,7 +6,7 @@ export default class EventEvent extends PureComponent {
         const { link, EventName, EventDate } = this.props;
 
         let EventNameChar = EventName;
-        if (EventNameChar == "Hello, Con") {
+        if (EventNameChar === "Hello, Con") {
             EventNameChar = "Hello, Con!";
         }
 
@@ -44,6 +44,7 @@ export default class EventEvent extends PureComponent {
                     <a
                         href={"http://" + link}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className={styles["events-event"]}
                     >
                         <div className={styles["events-event-img"]}>

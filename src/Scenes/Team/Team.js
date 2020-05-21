@@ -257,7 +257,7 @@ export default class Team extends Component {
                 return (
                     <li
                         className={`${styles["team-nav-list-item"]} ${
-                            active == 1 ? styles["team-nav-list-item-active"] : null
+                            active === 1 ? styles["team-nav-list-item-active"] : null
                         }`}
                         onClick={() => this.showTeam("Exec Team", 1)}
                     >
@@ -268,7 +268,7 @@ export default class Team extends Component {
                 return (
                     <li
                         className={`${styles["team-nav-list-item"]} ${
-                            active == 2 ? styles["team-nav-list-item-active"] : null
+                            active === 2 ? styles["team-nav-list-item-active"] : null
                         }`}
                         onClick={() => this.showTeam("Marketing & Finance", 2)}
                     >
@@ -280,7 +280,7 @@ export default class Team extends Component {
                     <li
                         className={`${styles["team-nav-list-item"]} ${
                             styles["computer-nav-item"]
-                        } ${active == 3 ? styles["computer-nav-item-active"] : null}`}
+                        } ${active === 3 ? styles["computer-nav-item-active"] : null}`}
                         onClick={() => this.showTeam("Computer Chapter", 3)}
                     >
                         Computer Chapter
@@ -292,7 +292,7 @@ export default class Team extends Component {
                         className={`${styles["team-nav-list-item"]} ${
                             styles["electronics-nav-item"]
                         } ${
-                            active == 4 ? styles["electronics-nav-item-active"] : null
+                            active === 4 ? styles["electronics-nav-item-active"] : null
                         }`}
                         onClick={() => this.showTeam("Electronics Chapter", 4)}
                     >
@@ -304,7 +304,7 @@ export default class Team extends Component {
                     <li
                         className={`${styles["team-nav-list-item"]} ${
                             styles["energy-nav-item"]
-                        } ${active == 5 ? styles["energy-nav-item-active"] : null}`}
+                        } ${active === 5 ? styles["energy-nav-item-active"] : null}`}
                         onClick={() => this.showTeam("Energy/Power Chapter", 5)}
                     >
                         Energy/Power Chapter
@@ -314,7 +314,7 @@ export default class Team extends Component {
                 return (
                     <li
                         className={`${styles["team-nav-list-item"]} ${
-                            active == 3 ? styles["team-nav-list-item-active"] : null
+                            active === 3 ? styles["team-nav-list-item-active"] : null
                         }`}
                         onClick={() => this.showTeam("Logistics", 3)}
                     >
@@ -325,7 +325,7 @@ export default class Team extends Component {
                 return (
                     <li
                         className={`${styles["team-nav-list-item"]} ${
-                            active == 4 ? styles["team-nav-list-item-active"] : null
+                            active === 4 ? styles["team-nav-list-item-active"] : null
                         }`}
                         onClick={() => this.showTeam("External Relations", 4)}
                     >
@@ -336,7 +336,7 @@ export default class Team extends Component {
                 return (
                     <li
                         className={`${styles["team-nav-list-item"]} ${
-                            active == 5 ? styles["team-nav-list-item-active"] : null
+                            active === 5 ? styles["team-nav-list-item-active"] : null
                         }`}
                         onClick={() => this.showTeam("Tech", 5)}
                     >
@@ -347,7 +347,7 @@ export default class Team extends Component {
                 return (
                     <li
                         className={`${styles["team-nav-list-item"]} ${
-                            active == 6 ? styles["team-nav-list-item-active"] : null
+                            active === 6 ? styles["team-nav-list-item-active"] : null
                         }`}
                         onClick={() => this.showTeam("Web", 6)}
                     >
@@ -358,7 +358,7 @@ export default class Team extends Component {
                 return (
                     <li
                         className={`${styles["team-nav-list-item"]} ${
-                            active == 7 ? styles["team-nav-list-item-active"] : null
+                            active === 7 ? styles["team-nav-list-item-active"] : null
                         }`}
                         onClick={() => this.showTeam("Advisors", 7)}
                     >
@@ -377,10 +377,10 @@ export default class Team extends Component {
     }
 
     handleChange(toggleNum) {
-        if (toggleNum == 1) {
+        if (toggleNum === 1) {
             // puppy
             this.setState({ checkedDog: !this.state.checkedDog, checkedBaby: false });
-        } else if (toggleNum == 2) {
+        } else if (toggleNum === 2) {
             // baby
             this.setState({
                 checkedBaby: !this.state.checkedBaby,
@@ -428,7 +428,7 @@ export default class Team extends Component {
 
                 {this.constructNav()}
 
-                {year != "past" && <h2 className={styles.teamTitle}>{teamKey}</h2>}
+                {year !== "past" && <h2 className={styles.teamTitle}>{teamKey}</h2>}
 
                 {this.constructMemberChart()}
 
