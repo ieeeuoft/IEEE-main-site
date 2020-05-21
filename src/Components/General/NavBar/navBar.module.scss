@@ -14,10 +14,10 @@
     }
 
     .logo {
-        height: calc(50vw/6);
+        height: calc(50vw / 6);
         max-height: 110px;
         min-height: 50px;
-        margin-left: 1rem; 
+        margin-left: 1rem;
         padding-top: 1rem;
 
         &-img {
@@ -29,16 +29,16 @@
         height: 50px !important;
         width: 50px;
         animation: shrink 0.2s ease-in;
-        padding: .5rem; 
-        margin-top: .5rem; 
-        margin-left: 0.5rem; 
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
     }
 
     .logoBackground {
         background-color: color(white);
         border-radius: 200px;
-        @include flexPosition(center,center);
-        margin-left: 0; 
+        @include flexPosition(center, center);
+        margin-left: 0;
 
         &:hover {
             background-color: color(blue7);
@@ -47,19 +47,27 @@
 
     .logoGrow {
         width: auto;
-        height: calc(50vw/6) !important;
+        height: calc(50vw / 6) !important;
         animation: grow 0.2s ease-in;
     }
 }
 
 @keyframes shrink {
-    0% { height: calc(50vw/6); }
-    100% { height: 50px; }
+    0% {
+        height: calc(50vw / 6);
+    }
+    100% {
+        height: 50px;
+    }
 }
 
 @keyframes grow {
-    0% { height: 50px; }
-    100% { height: calc(50vw/6); }
+    0% {
+        height: 50px;
+    }
+    100% {
+        height: calc(50vw / 6);
+    }
 }
 
 // Navigation on top right corner
@@ -73,7 +81,7 @@
 
         &-item {
             list-style: none;
-            padding: 0 .8rem;
+            padding: 0 0.8rem;
         }
 
         a {
@@ -84,7 +92,8 @@
             text-decoration: none;
             color: color(blue1);
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 color: color(blue4);
                 background-color: transparent;
                 outline: none;
@@ -94,7 +103,7 @@
                 color: color(orange1);
             }
         }
-    }        
+    }
 }
 
 .slideoutNav {
@@ -168,7 +177,7 @@
             width: 100%;
             height: 4px;
             background-color: color(orange1);
-            transition: all .5s .5s;
+            transition: all 0.5s 0.5s;
             transform-origin: right;
         }
     }

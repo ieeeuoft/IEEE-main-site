@@ -1,10 +1,10 @@
 @import "./../../../abstracts/variables";
 @import "./../../../abstracts/mixins";
 
-
 // Images of the skyline
 
-.skyline-outline, .skyline-solid {
+.skyline-outline,
+.skyline-solid {
     position: absolute;
     top: 50vh;
     left: 50vw;
@@ -19,7 +19,6 @@
     }
 }
 // End of images of the skyline
-
 
 // Blue trapezoid that crops skyline-solid
 .blue-background {
@@ -77,15 +76,17 @@
     position: relative;
     right: -46vw;
 
-    &-title, &-blue-title {
+    &-title,
+    &-blue-title {
         text-align: right;
         font-family: font(roboto);
         font-weight: bold;
         font-size: 20rem;
         color: color(white);
-    } 
+    }
 
-    &-subtitle, &-blue-subtitle {
+    &-subtitle,
+    &-blue-subtitle {
         text-align: right;
         font-family: font(source);
         font-weight: bold;
@@ -100,44 +101,52 @@
         width: 50%;
         padding: 10rem;
         z-index: -4;
-    
-        &-title, &-subtitle {
+
+        &-title,
+        &-subtitle {
             color: color(blue1);
         }
     }
 
-
-    @include response (xl) {
-        &-title, &-blue-title {
+    @include response(xl) {
+        &-title,
+        &-blue-title {
             font-size: 18rem;
         }
-        &-subtitle, &-blue-subtitle {
+        &-subtitle,
+        &-blue-subtitle {
             font-size: size(lg) - 1rem;
-        }  
+        }
     }
-    @include response (lg) {
+    @include response(lg) {
         padding: 8rem;
         padding-left: 0;
-        &-blue {padding: 8rem;}
+        &-blue {
+            padding: 8rem;
+        }
         transform: translate(0%, 5%);
 
-        &-title, &-blue-title {
+        &-title,
+        &-blue-title {
             font-size: 20rem;
         }
-        &-subtitle, &-blue-subtitle {
+        &-subtitle,
+        &-blue-subtitle {
             font-size: size(lg)-0.5rem;
-        }  
+        }
     }
     @include response(lg/md) {
-        &-blue {padding: 6rem;}
-        &-title, &-blue-title {
+        &-blue {
+            padding: 6rem;
+        }
+        &-title,
+        &-blue-title {
             font-size: 17rem;
         }
-        &-subtitle, &-blue-subtitle {
+        &-subtitle,
+        &-blue-subtitle {
             font-size: size(md);
-        }  
-
-        
+        }
     }
     @include response(md) {
         padding: 5rem;
@@ -147,12 +156,14 @@
             padding-left: 0;
         }
 
-        &-title, &-blue-title {
+        &-title,
+        &-blue-title {
             font-size: 14rem;
         }
-        &-subtitle, &-blue-subtitle {
+        &-subtitle,
+        &-blue-subtitle {
             font-size: size(md);
-        }  
+        }
     }
     @include response(sm) {
         padding: 3rem;
@@ -160,12 +171,12 @@
         &-blue {
             padding: 3rem;
         }
-        &-subtitle, &-blue-subtitle {
+        &-subtitle,
+        &-blue-subtitle {
             font-size: size(md) !important;
-        }  
+        }
     }
 }
-
 
 // Change the font-color of the nav from white to blue when the header color changes to white
 .change-color {
@@ -177,6 +188,6 @@
     background-color: #fff;
     z-index: 100;
     color: color(blue1);
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
     @include flexPosition(space-between, center);
 }

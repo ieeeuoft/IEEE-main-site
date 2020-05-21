@@ -5,7 +5,6 @@
     width: 100vw;
     @include flexPosition(center, center);
     margin: 4rem 0 5rem;
-    
 
     &-list {
         @include flexPosition;
@@ -27,22 +26,20 @@
                 background-color: color(blue6);
             }
         }
-    
+
         .computer-nav-item {
             color: color(blue2);
 
             &:hover {
-                background-color:#B4DAEA;
+                background-color: #b4daea;
             }
         }
         .electronics-nav-item {
             color: color(green1);
 
             &:hover {
-                background-color: #C6ECEE;
+                background-color: #c6ecee;
             }
         }
-
     }
-   
 }

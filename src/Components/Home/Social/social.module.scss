@@ -6,32 +6,35 @@
 // number to the respective colors (same as _about.scss)
 // I included @media so I can control the grid/layout of the design when the screen gets thin
 
-$aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1; 
+$aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
 
 @mixin social($col) {
     width: 100%;
     height: 100%;
     z-index: 1;
-    
+
     @each $about in $aboutCols {
         grid-column: $col;
         grid-row: 1/-1;
-        @if ($col == nth($about, 1)) {    
+        @if ($col == nth($about, 1)) {
             background-color: color(nth($about, 2));
-            transition: all .5s;
+            transition: all 0.5s;
             $z-ind: 2;
-            
+
             &:hover {
                 padding: 2rem;
                 box-sizing: content-box;
                 z-index: 3;
 
-                &-heading, &-text{
+                &-heading,
+                &-text {
                     $z-ind: 4;
                 }
             }
 
-            &:focus, &:visited, &:active {
+            &:focus,
+            &:visited,
+            &:active {
                 background-color: color(nth($about, 2));
             }
 
@@ -58,7 +61,8 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
                 color: color(font);
             }
 
-            &-text:hover, &-heading:hover {
+            &-text:hover,
+            &-heading:hover {
                 @if ($col == 1) {
                     ~ .facebook {
                         padding: 2rem;
@@ -85,30 +89,48 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
 
         @include response(lg/md) {
             grid-column: 1;
-            @if ($col ==  1) { grid-row: 1/3}
-            @if ($col ==  2) { grid-row: 3/5}
-            @if ($col ==  3) { grid-row: 5/8}
+            @if ($col == 1) {
+                grid-row: 1/3;
+            }
+            @if ($col == 2) {
+                grid-row: 3/5;
+            }
+            @if ($col == 3) {
+                grid-row: 5/8;
+            }
 
             &-heading {
                 grid-column: 1;
-                font-size: size(md)+2rem;
-                @if ($col ==  1) { grid-row: 1}
-                @if ($col ==  2) { grid-row: 3}
-                @if ($col ==  3) { grid-row: 5}
+                font-size: size(md) + 2rem;
+                @if ($col == 1) {
+                    grid-row: 1;
+                }
+                @if ($col == 2) {
+                    grid-row: 3;
+                }
+                @if ($col == 3) {
+                    grid-row: 5;
+                }
                 margin-top: 5rem;
             }
 
             &-text {
                 grid-column: 1;
-                @if ($col ==  1) { grid-row: 2}
-                @if ($col ==  2) { grid-row: 4}
-                @if ($col ==  3) { grid-row: 6}
+                @if ($col == 1) {
+                    grid-row: 2;
+                }
+                @if ($col == 2) {
+                    grid-row: 4;
+                }
+                @if ($col == 3) {
+                    grid-row: 6;
+                }
                 width: 80vw;
                 max-width: 80vw;
                 margin: 2rem 0 4rem;
             }
         }
-    }    
+    }
 }
 
 .social-containter {

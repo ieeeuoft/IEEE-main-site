@@ -4,19 +4,26 @@
 .dark-gradient {
     width: 110%;
     height: 110%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(47, 47, 47, 0) 33.19%, rgba(0, 0, 0, 0.25) 53.83%, rgba(0, 0, 0, 0.346916) 66.3%, rgba(0, 0, 0, 0.46) 81.5%);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(47, 47, 47, 0) 33.19%,
+        rgba(0, 0, 0, 0.25) 53.83%,
+        rgba(0, 0, 0, 0.346916) 66.3%,
+        rgba(0, 0, 0, 0.46) 81.5%
+    );
     position: absolute;
 
-    @include response(xs) { 
+    @include response(xs) {
         background: rgba(0, 0, 0, 0.32);
     }
 }
 
 .events {
     &-event {
-        display: flex  !important;
+        display: flex !important;
         @include flexPosition(center, center);
-        flex-direction: column; 
+        flex-direction: column;
         margin-top: 1.5rem;
 
         &:hover {
@@ -45,7 +52,6 @@
                 max-height: 36rem;
                 @include flexPosition(center, center);
 
-
                 @include response(xl) {
                     height: calc(30vw - 2rem);
                     width: calc(30vw - 2rem);
@@ -55,14 +61,14 @@
                     height: 35vw;
                     width: 35vw;
                 }
-                
+
                 -webkit-clip-path: circle(50% at 50% 50%);
                 clip-path: circle(50% at 50% 50%);
-                -webkit-transition: all .7s;
-                -moz-transition: all .7s;
-                -ms-transition: all .7s;
-                transition: all .7s;
-                
+                -webkit-transition: all 0.7s;
+                -moz-transition: all 0.7s;
+                -ms-transition: all 0.7s;
+                transition: all 0.7s;
+
                 &-src {
                     height: 30vw;
                     width: auto;
@@ -76,7 +82,7 @@
             max-width: 32rem;
             position: absolute;
             bottom: 5rem;
-            transition: bottom .6s;
+            transition: bottom 0.6s;
 
             &-name {
                 font-family: font(merri);
@@ -88,28 +94,40 @@
                 width: 100%;
                 margin: 0;
                 text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.89);
-                letter-spacing: .2px;
+                letter-spacing: 0.2px;
             }
 
             &-date {
                 font-family: font(source);
                 font-size: size(sm);
                 text-align: center;
-                margin-top: .5rem;
+                margin-top: 0.5rem;
                 color: color(white);
                 text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.89);
             }
 
-            @include response(xl) { &-name {font-size: size(md) - 0.5rem;} }
-            @include response(lg/md) { &-name {font-size: size(sm) + .4rem;} }
-            @include response(md) { 
-                &-name {font-size: size(sm)}
-                &-date {font-size: size(sm)-.5rem; }
+            @include response(xl) {
+                &-name {
+                    font-size: size(md) - 0.5rem;
+                }
+            }
+            @include response(lg/md) {
+                &-name {
+                    font-size: size(sm) + 0.4rem;
+                }
+            }
+            @include response(md) {
+                &-name {
+                    font-size: size(sm);
+                }
+                &-date {
+                    font-size: size(sm)-0.5rem;
+                }
             }
         }
     }
 
-    @include response(lg/md) { 
+    @include response(lg/md) {
         &-event {
             &:hover {
                 .events-event-img-crop {
@@ -138,7 +156,7 @@
             }
         }
     }
-    @include response(sm) { 
+    @include response(sm) {
         &-event {
             &:hover {
                 .events-event-img-crop {
@@ -167,5 +185,4 @@
             }
         }
     }
-    
 }

@@ -2,85 +2,86 @@
 @import "abstracts/mixins";
 
 .container {
-  padding: 40px;
-  background: #419be0;
+    padding: 40px;
+    background: #419be0;
 }
 
 // General stuff concerning the entire webpage
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  font-size: 62.5%; 
-  height: 100%;
+    font-size: 62.5%;
+    height: 100%;
 
-  @include response(lg) {
-    font-size: 50%; 
-  }
+    @include response(lg) {
+        font-size: 50%;
+    }
 }
 
 body {
-  font-family: font(source);
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+    font-family: font(source);
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 h2 {
-  @include response(sm) {
-      font-size: size(lg) !important;
-  }
+    @include response(sm) {
+        font-size: size(lg) !important;
+    }
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url('Assets/Fonts/Source_Sans_Pro/SourceSansPro-Regular.woff2') format('woff2'),
-       url('Assets/Fonts/Source_Sans_Pro/SourceSansPro-Regular.woff') format('woff');      
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Source Sans Pro";
+    src: url("Assets/Fonts/Source_Sans_Pro/SourceSansPro-Regular.woff2") format("woff2"),
+        url("Assets/Fonts/Source_Sans_Pro/SourceSansPro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url('Assets/Fonts/Source_Sans_Pro/SourceSansPro-SemiBold.woff2') format('woff2'),
-       url('Assets/Fonts/Source_Sans_Pro/SourceSansPro-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Source Sans Pro";
+    src: url("Assets/Fonts/Source_Sans_Pro/SourceSansPro-SemiBold.woff2")
+            format("woff2"),
+        url("Assets/Fonts/Source_Sans_Pro/SourceSansPro-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto Condensed";
-  src: url('Assets/Fonts/Roboto_Condensed/RobotoCondensed-Bold.woff2') format('woff2'),
-       url('Assets/Fonts/Roboto_Condensed/RobotoCondensed-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+    font-family: "Roboto Condensed";
+    src: url("Assets/Fonts/Roboto_Condensed/RobotoCondensed-Bold.woff2") format("woff2"),
+        url("Assets/Fonts/Roboto_Condensed/RobotoCondensed-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Merriweather";
-  src: url('Assets/Fonts/Merriweather/Merriweather-Light.woff2') format('woff2'),
-       url('Assets/Fonts/Merriweather/Merriweather-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Merriweather";
+    src: url("Assets/Fonts/Merriweather/Merriweather-Light.woff2") format("woff2"),
+        url("Assets/Fonts/Merriweather/Merriweather-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Merriweather";
-  src: url('Assets/Fonts/Merriweather/Merriweather-Regular.woff2') format('woff2'),
-       url('Assets/Fonts/Merriweather/Merriweather-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Merriweather";
+    src: url("Assets/Fonts/Merriweather/Merriweather-Regular.woff2") format("woff2"),
+        url("Assets/Fonts/Merriweather/Merriweather-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Merriweather";
-  src: url('Assets/Fonts/Merriweather/Merriweather-Bold.woff2') format('woff2'),
-       url('Assets/Fonts/Merriweather/Merriweather-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Merriweather";
+    src: url("Assets/Fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"),
+        url("Assets/Fonts/Merriweather/Merriweather-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
 }
 
 // End of general stuff concerning the entire webpage
@@ -88,41 +89,42 @@ h2 {
 // Slick stuff that for some reason does not work unless its in the highest level scss
 
 .slick-slide img {
-  margin: auto;
+    margin: auto;
 }
 
-.slick-prev, .slick-next {
-  width: 80px;
-  height: 80px;
-  z-index: 999;
-  opacity: 0.9 !important;
-  
-  &:hover {
-    background: color(blue6);
-  }
+.slick-prev,
+.slick-next {
+    width: 80px;
+    height: 80px;
+    z-index: 999;
+    opacity: 0.9 !important;
 
-  &:before {
-    color: color(blue1) !important;
-  }
+    &:hover {
+        background: color(blue6);
+    }
 
-  &::before {
-    font-size: 50px;
-  }
-
-  @include response(lg/md) {
-    width: 50px;
-    height: 50px;
+    &:before {
+        color: color(blue1) !important;
+    }
 
     &::before {
-      font-size: 40px;
+        font-size: 50px;
     }
-  }
+
+    @include response(lg/md) {
+        width: 50px;
+        height: 50px;
+
+        &::before {
+            font-size: 40px;
+        }
+    }
 }
 
 .slick-prev {
-  left: 0;
+    left: 0;
 }
 
 .slick-next {
-  right: 0px;
+    right: 0px;
 }

@@ -16,14 +16,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: #F7FAFB
+        background: #f7fafb;
     }
 }
 
 .main {
     height: 100%;
     width: 80%;
-    color: #FFF;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -35,19 +35,21 @@
         width: 100%;
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         align-self: flex-start;
     }
 
     .bigCard {
         width: 100%;
         height: 250px;
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 7px;
         margin-top: 40px;
-        -webkit-box-shadow: 3px 4px 13px -8px rgba(0,0,0,0.75);
-        -moz-box-shadow: 3px 4px 13px -8px rgba(0,0,0,0.75);
-        box-shadow: 3px 4px 13px -8px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 3px 4px 13px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 3px 4px 13px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: 3px 4px 13px -8px rgba(0, 0, 0, 0.75);
     }
 
     .smallCardContainer {
@@ -59,13 +61,13 @@
         > div {
             width: 48%;
             height: 250px;
-            background: #FFFFFF;
+            background: #ffffff;
             -webkit-border-radius: 7px;
             -moz-border-radius: 7px;
             border-radius: 7px;
-            -webkit-box-shadow: 3px 4px 13px -8px rgba(0,0,0,0.75);
-            -moz-box-shadow: 3px 4px 13px -8px rgba(0,0,0,0.75);
-            box-shadow: 3px 4px 13px -8px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 3px 4px 13px -8px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 3px 4px 13px -8px rgba(0, 0, 0, 0.75);
+            box-shadow: 3px 4px 13px -8px rgba(0, 0, 0, 0.75);
         }
     }
 }

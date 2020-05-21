@@ -1,10 +1,10 @@
-@mixin flexPosition ($jusCon: space-between, $alIte: center) {
+@mixin flexPosition($jusCon: space-between, $alIte: center) {
     display: flex;
     justify-content: $jusCon;
     align-items: $alIte;
 }
 
-@mixin title ($color: blue1) {
+@mixin title($color: blue1) {
     font-family: font(roboto);
     color: color($color);
     font-weight: bold;
@@ -12,43 +12,42 @@
     letter-spacing: 0.5px;
 }
 
-
 @mixin grid-row-col($row, $col) {
     grid-row: $row;
     grid-column: $col;
 }
 
 @mixin response($breakpoint) {
-    @if($breakpoint == xl) {
-        @media(max-width: 1200px) {
+    @if ($breakpoint == xl) {
+        @media (max-width: 1200px) {
             @content;
         }
     }
-    @if($breakpoint == lg) {
-        @media(max-width: 1000px) {
-            @content;
-        }
-    }
-
-    @if($breakpoint == lg/md) {
-        @media(max-width: 800px) {
+    @if ($breakpoint == lg) {
+        @media (max-width: 1000px) {
             @content;
         }
     }
 
-    @if($breakpoint == md) {
-        @media(max-width: 600px) {
+    @if ($breakpoint == lg/md) {
+        @media (max-width: 800px) {
             @content;
         }
     }
 
-    @if($breakpoint == sm) {
-        @media(max-width: 465px) {
+    @if ($breakpoint == md) {
+        @media (max-width: 600px) {
             @content;
         }
     }
-    @if($breakpoint == xs) {
-        @media(max-width: 350px) {
+
+    @if ($breakpoint == sm) {
+        @media (max-width: 465px) {
+            @content;
+        }
+    }
+    @if ($breakpoint == xs) {
+        @media (max-width: 350px) {
             @content;
         }
     }

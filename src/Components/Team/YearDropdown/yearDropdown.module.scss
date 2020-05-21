@@ -9,30 +9,25 @@
 
     &-div {
         display: inline-block;
-    
+
         font-family: font(merri);
         font-weight: bold;
         font-size: size(md);
         color: color(blue1);
-    
+
         width: 280px;
         height: auto;
-    
-    
+
         border: none;
         outline: none;
         border-bottom: 3px solid color(blue1);
         border-radius: 0;
-    
+
         padding: 15px 45px 15px 25px;
 
         background: none;
-    
-    
     }
 }
-
-
 
 .triangle-down {
     width: 0;

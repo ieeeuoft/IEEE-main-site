@@ -2,7 +2,6 @@
 @import "./../../../../abstracts/mixins";
 
 .upcoming {
-
     &-event {
         text-decoration: none;
         display: flex;
@@ -13,8 +12,12 @@
         max-width: 31rem;
         outline: none;
 
-        @include response(lg/md) { width: 30vw; }
-        @include response(sm) { width: 45vw; }
+        @include response(lg/md) {
+            width: 30vw;
+        }
+        @include response(sm) {
+            width: 45vw;
+        }
 
         &-img {
             width: 23vw;
@@ -32,10 +35,10 @@
 
                 -webkit-clip-path: circle(50% at 50% 50%);
                 clip-path: circle(50% at 50% 50%);
-                -webkit-transition: all .5s;
-                -moz-transition: all .5s;
-                -ms-transition: all .5s;
-                transition: all .5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                transition: all 0.5s;
 
                 &-src {
                     display: block;
@@ -47,7 +50,6 @@
                     max-height: 33rem;
                     margin-top: -1.5rem;
                 }
-
             }
             @include response(lg) {
                 width: 26vw;
@@ -69,7 +71,6 @@
                         margin-top: -3rem;
                     }
                 }
-                
             }
             @include response(lg/mg) {
                 width: 30vw;
@@ -78,20 +79,19 @@
 
                 &-crop {
                     height: calc(30vw - 3rem);
-                    max-height:30vw;
+                    max-height: 30vw;
 
                     &-src {
                         display: block;
-                        height:30vw;
-                        max-height:30vw;
+                        height: 30vw;
+                        max-height: 30vw;
                     }
-                
+
                     &:hover {
-                        height:30vw;
-                        max-height:30vw;
+                        height: 30vw;
+                        max-height: 30vw;
                     }
                 }
-                
             }
             @include response(md) {
                 width: 38vw;
@@ -113,7 +113,7 @@
                         max-height: calc(38vw - 0rem);
                         margin-top: -3rem;
                     }
-                }   
+                }
             }
 
             @include response(sm) {
@@ -144,20 +144,20 @@
 
         &-name {
             font-family: font(merri);
-            font-size: size(lg) - .5rem;
+            font-size: size(lg) - 0.5rem;
             text-align: center;
             font-weight: 300;
-            letter-spacing: .2px;
+            letter-spacing: 0.2px;
             color: color(white);
             display: inline-block;
             width: 100%;
 
             @include response(xl) {
-                font-size: size(lg) - .9rem;
+                font-size: size(lg) - 0.9rem;
             }
 
             @include response(lg) {
-                font-size: size(md) + .5rem;
+                font-size: size(md) + 0.5rem;
             }
 
             @include response(lg/md) {
@@ -165,18 +165,18 @@
             }
 
             @include response(md) {
-                font-size: size(md) + .5rem;
-                margin-top: .5rem;
+                font-size: size(md) + 0.5rem;
+                margin-top: 0.5rem;
             }
 
             @include response(sm) {
-                font-size: size(sm) + .3rem;
+                font-size: size(sm) + 0.3rem;
             }
         }
 
         &-date {
             font-family: font(source);
-            font-size: size(sm) +.2rem;
+            font-size: size(sm) + 0.2rem;
             text-align: center;
             margin-top: 1rem;
             color: color(white);
@@ -190,6 +190,6 @@
             &-date {
                 font-size: size(sm);
             }
-        }   
+        }
     }
 }

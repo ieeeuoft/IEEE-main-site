@@ -2,7 +2,7 @@
 @import "./../../abstracts/mixins";
 
 .logo-sm {
-    height: calc(50vw/12) !important;
+    height: calc(50vw / 12) !important;
 }
 
 .teamTitle {
@@ -58,13 +58,14 @@
         padding: 1rem;
         box-sizing: border-box;
 
-        &-email, &-linkedin {
+        &-email,
+        &-linkedin {
             text-decoration: none;
             width: 40px;
             height: 40px;
             border-radius: 100%;
             @include flexPosition(center, center);
-            background-color: #00639C;
+            background-color: #00639c;
             margin: 0 1.5rem;
             transition: all 0.3s;
 
@@ -85,8 +86,7 @@
     }
 }
 
-
-@mixin flexPosition ($jusCon: space-between, $alIte: center) {
+@mixin flexPosition($jusCon: space-between, $alIte: center) {
     display: flex;
     justify-content: $jusCon;
     align-items: $alIte;
@@ -95,7 +95,7 @@
 .skyline-imgs {
     width: 100vw;
     overflow-x: hidden;
-    
+
     @include flexPosition(space-between, flex-end);
 
     &-crop {
@@ -125,12 +125,12 @@
         &-crop {
             margin-top: -35vw;
         }
-        
+
         &-lr {
             width: 50vw;
         }
     }
-    
+
     @include response(sm) {
         &-lr {
             width: 55vw;
@@ -173,7 +173,8 @@
             cursor: pointer;
             transition: all 0.4s;
 
-            &:hover, &-active {
+            &:hover,
+            &-active {
                 background-color: color(blue6);
             }
         }
@@ -194,24 +195,33 @@
         .computer-nav-item {
             color: color(blue2);
 
-            &:hover, &:active, &:focus, &-active { 
-                background-color:#B4DAEA;
+            &:hover,
+            &:active,
+            &:focus,
+            &-active {
+                background-color: #b4daea;
             }
         }
 
         .electronics-nav-item {
             color: color(green1);
 
-            &:hover, &:active, &:focus, &-active {
-                background-color: #C6ECEE;
+            &:hover,
+            &:active,
+            &:focus,
+            &-active {
+                background-color: #c6ecee;
             }
         }
 
         .energy-nav-item {
             color: color(orange1);
 
-            &:hover, &:active, &:focus, &-active {
-                background-color: #FFEFDE;
+            &:hover,
+            &:active,
+            &:focus,
+            &-active {
+                background-color: #ffefde;
             }
         }
     }
@@ -241,7 +251,7 @@
         cursor: pointer;
 
         padding: 12px 45px 10px 25px;
-        
+
         background: none;
         -webkit-appearance: none;
     }
@@ -249,10 +259,7 @@
     @include response(md) {
         margin-top: 7rem;
     }
-
-    
 }
-
 
 .spacer1 {
     height: 5vh;
@@ -288,14 +295,13 @@
         position: relative;
         justify-content: flex-end;
         margin-left: 25px;
-        
-    
+
         &-emoji {
             height: 25px;
             margin-left: 10px;
             margin-bottom: 5px;
         }
-    
+
         Label {
             cursor: pointer;
         }
@@ -307,6 +313,4 @@
         justify-content: center;
         margin-right: 0;
     }
-    
 }
-

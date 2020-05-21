@@ -6,7 +6,7 @@
 // number to the respective colors
 // I included @media so I can control the grid/layout of the design when the screen gets thin
 
-$aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1; 
+$aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
 
 @mixin about($col) {
     width: 100%;
@@ -14,7 +14,7 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
     z-index: 1;
 
     @each $about in $aboutCols {
-        @if ($col == nth($about, 1)) {    
+        @if ($col == nth($about, 1)) {
             background-color: color(nth($about, 2));
             grid-column: $col;
 
@@ -22,40 +22,40 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
                 @include grid-row-col(2, $col);
                 z-index: 2;
                 margin: 6rem 5px 3rem;
-                
+
                 h2 {
                     @include title(nth($about, 3));
                     font-size: size(lg);
 
                     @include response(lg/md) {
-                        font-size: size(lg)-.5rem;
+                        font-size: size(lg)-0.5rem;
                     }
                 }
 
-                @if ($col ==  2) {
+                @if ($col == 2) {
                     h2 {
                         font-size: size(xl);
                     }
                 }
-                
+
                 @include response(lg) {
                     margin: 5rem 5px 1rem;
                 }
                 @include response(lg/md) {
-                    @if ($col ==  1) {
+                    @if ($col == 1) {
                         @include grid-row-col(4, 1);
                     }
-                    @if ($col ==  3) {
+                    @if ($col == 3) {
                         @include grid-row-col(4, 2);
                     }
-                    @if ($col ==  2) {
-                        grid-row: 1; 
+                    @if ($col == 2) {
+                        grid-row: 1;
                         grid-column: 1/-1;
                     }
                     margin-bottom: 1.5rem;
                 }
                 @include response(sm) {
-                    @if ($col ==  3) {
+                    @if ($col == 3) {
                         @include grid-row-col(6, 1);
                     }
                 }
@@ -75,29 +75,28 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
 
                 @include response(lg/md) {
                     width: 90%;
-                    @if ($col ==  1) {
+                    @if ($col == 1) {
                         @include grid-row-col(5, 1);
                     }
-                    @if ($col ==  3) {
+                    @if ($col == 3) {
                         @include grid-row-col(5, 2);
                     }
-                    @if ($col ==  2) {
-                        grid-row: 2; 
+                    @if ($col == 2) {
+                        grid-row: 2;
                         grid-column: 1/-1;
-
                     }
                 }
                 @include response(sm) {
                     padding-bottom: 5rem;
-                    @if ($col ==  3) {
+                    @if ($col == 3) {
                         @include grid-row-col(7, 1);
                     }
-                    @if ($col ==  2) {
+                    @if ($col == 2) {
                         padding-bottom: 0;
                     }
                 }
             }
-            @if ($col ==  1 or $col == 3) {
+            @if ($col == 1 or $col == 3) {
                 grid-row: 2/-2;
                 &-img {
                     @include grid-row-col(4, $col);
@@ -130,28 +129,31 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
                 }
 
                 @include response(lg/md) {
-                    grid-row: 4/-1; 
-                    @if ($col ==  1) { grid-column: 1}
-                    @if ($col ==  3) { grid-column: 2}
+                    grid-row: 4/-1;
+                    @if ($col == 1) {
+                        grid-column: 1;
+                    }
+                    @if ($col == 3) {
+                        grid-column: 2;
+                    }
                 }
 
                 @include response(sm) {
-                    @if ($col ==  1) { 
-                        grid-row: 4/6; 
+                    @if ($col == 1) {
+                        grid-row: 4/6;
                     }
 
-                    @if ($col ==  3) { 
-                        grid-row: 6/-1; 
-                        grid-column: 1
+                    @if ($col == 3) {
+                        grid-row: 6/-1;
+                        grid-column: 1;
                     }
                 }
-            }
-            @else {
+            } @else {
                 grid-row: 1/-1;
                 &-heading {
                     font-size: size(xl);
                     @include response(lg/md) {
-                        font-size: size(lg)+1rem;
+                        font-size: size(lg) + 1rem;
                     }
                 }
 
@@ -164,7 +166,7 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
 
                     &-container {
                         width: 100%;
-                    
+
                         &-button {
                             cursor: pointer;
                             width: 100%;
@@ -175,12 +177,12 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
                             background-color: transparent;
                             font-family: font(merri);
                             font-weight: bold;
-                            font-size: size(md); 
+                            font-size: size(md);
                             text-align: center;
                             padding: 2rem;
                             margin-bottom: 15px;
-                            transition: all .5s;
-            
+                            transition: all 0.5s;
+
                             &:hover {
                                 color: color(orange3);
                                 border: 2px solid color(orange2);
@@ -188,7 +190,7 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
                             }
 
                             @include response(lg) {
-                                font-size: size(md) - .3rem; 
+                                font-size: size(md) - 0.3rem;
                             }
                         }
                     }
@@ -202,14 +204,13 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
                     }
                 }
                 @include response(lg/md) {
-                    grid-row: 1/4; 
+                    grid-row: 1/4;
                     grid-column: 1/-1;
                 }
             }
         }
-    }    
+    }
 }
-
 
 // Here's the actual CSS
 .about-containter {
@@ -236,7 +237,7 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
         grid-template-rows: repeat(8, auto);
         grid-template-columns: auto;
     }
-   
+
     // Here I call the mixin and just put the column # it's in
     .computer {
         @include about(1);
@@ -247,5 +248,4 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
     .about {
         @include about(2);
     }
-
 }

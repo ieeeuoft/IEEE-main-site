@@ -19,7 +19,7 @@
         @extend .events-div;
         overflow: hidden;
         background-color: color(white);
-        
+
         &-heading {
             @include title;
             font-size: size(xl);
@@ -30,7 +30,7 @@
         }
     }
 }
-  
+
 .slick-slide div {
     margin: 20px;
 }
