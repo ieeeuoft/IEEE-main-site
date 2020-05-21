@@ -3,7 +3,7 @@ import styles from "./copyright.module.scss";
 
 export default class Copyright extends PureComponent {
     getYear() {
-        var today = new Date();
+        let today = new Date();
         return today.getFullYear();
     }
 

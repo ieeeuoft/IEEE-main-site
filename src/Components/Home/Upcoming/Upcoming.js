@@ -5,16 +5,16 @@ import * as eventsList from "./../../../Assets/Lists/allEvents";
 
 export default class Upcoming extends PureComponent {
     upcoming() {
-        var today = new Date();
-        var todayDate =
+        let today = new Date();
+        let todayDate =
             today.getFullYear() +
             "/" +
             ("0" + (today.getMonth() + 1)).slice(-2) +
             "/" +
             ("0" + today.getDate()).slice(-2);
-        var upcomingList = [];
+        let upcomingList = [];
 
-        for (var i = 0; i < eventsList.allEvents.length; i++) {
+        for (let i = 0; i < eventsList.allEvents.length; i++) {
             if (eventsList.allEvents[i].date > todayDate) {
                 upcomingList.push(eventsList.allEvents[i]);
                 if (upcomingList.length === 3) {
@@ -26,9 +26,9 @@ export default class Upcoming extends PureComponent {
     }
 
     render() {
-        var upcomingList = this.upcoming();
-        var upcomingDivClass = "";
-        var upcomingClass = "";
+        let upcomingList = this.upcoming();
+        let upcomingDivClass = "";
+        let upcomingClass = "";
 
         if (upcomingList.length === 0) {
             upcomingDivClass = styles.none;

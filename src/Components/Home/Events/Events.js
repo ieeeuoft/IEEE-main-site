@@ -6,7 +6,7 @@ import * as eventList from "./../../../Assets/Lists/allEvents";
 
 export default class Sponsors extends PureComponent {
     render() {
-        var settings = {
+        let settings = {
             dots: true,
             arrows: true,
             autoplaySpeed: 2500,

@@ -16,16 +16,19 @@ export default class TeamNav extends Component {
     showTeam(group) {
         this.state.group = true;
 
-        if (group == "execs") {
-            this.setState({ execs: true });
-        } else if (group == "mf") {
-            this.setState({ mf: true });
-        } else if (group == "web") {
-            this.setState({ web: true });
-        } else if (group == "computer") {
-            this.setState({ computer: true });
-        } else if (group == "electronics") {
-            this.setState({ electronics: true });
+        switch (group) {
+            case "execs":
+                this.setState({ execs: true });
+            case "mf":
+                this.setState({ mf: true });
+            case "web":
+                this.setState({ web: true });
+            case "computer":
+                this.setState({ computer: true });
+            case "electronics":
+                this.setState({ electronics: true });
+            default:
+                return;
         }
     }
 

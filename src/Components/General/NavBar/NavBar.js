@@ -63,7 +63,7 @@ export default class NavBar extends PureComponent {
     };
 
     render() {
-        var { logoClass, logoImg, logoBackground } = this.state;
+        let { logoClass, logoImg, logoBackground } = this.state;
         let zindex = { zIndex: 100 };
 
         return (

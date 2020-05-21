@@ -3,12 +3,13 @@ import Footer from "./../../Components/General/Footer/Footer.js";
 import styles from "./team.module.scss";
 import skylineLeft from "./../../Assets/Images/skyline/skyline-left.svg";
 import skylineRight from "./../../Assets/Images/skyline/skyline-right.svg";
-import baby from "./../../Assets/Images/misc/baby.svg";
-import dog from "./../../Assets/Images/misc/dog.svg";
 import Member from "./../../Components/Team/Member/Member.js";
 import PastTeam from "../../Components/Team/PastTeam/PastTeam";
 import memberData from "./../../Assets/Lists/members.js";
-import Switch from "react-switch";
+// Wait till we can use baby and dog again :(
+// import baby from "./../../Assets/Images/misc/baby.svg";
+// import dog from "./../../Assets/Images/misc/dog.svg";
+// import Switch from "react-switch";
 
 export default class Team extends Component {
     constructor(props) {
@@ -24,8 +25,8 @@ export default class Team extends Component {
 
     constructRows(memberData) {
         const members = [];
-        for (var i = 0; i < memberData["membersList"].length; i++) {
-            var member = memberData["membersList"][i];
+        for (let i = 0; i < memberData["membersList"].length; i++) {
+            let member = memberData["membersList"][i];
             members.push(
                 <Member
                     fullName={member.fullName}
@@ -39,18 +40,18 @@ export default class Team extends Component {
             );
         }
 
-        var numRows =
+        let numRows =
             Math.ceil((members.length - memberData["firstRowSize"]) / 7) * 2 + 1;
-        var membersLeft = members.length;
+        let membersLeft = members.length;
         const rows = [];
-        var ind = 0;
+        let ind = 0;
+        let obj;
 
-        for (i = 0; i < numRows; i++) {
+        for (let i = 0; i < numRows; i++) {
             if (membersLeft === 0) {
                 break;
             } else if (i === 0) {
                 // treat the first row differently
-                var obj;
                 if (memberData["firstRowSize"] === 1) {
                     obj = React.createElement(
                         "div",
@@ -92,7 +93,6 @@ export default class Team extends Component {
                 }
             } else if (i % 2 !== 0) {
                 // 0, 2, 4, ... even row add 4 members
-                var obj;
                 if (membersLeft > 3) {
                     obj = React.createElement(
                         "div",
@@ -134,7 +134,6 @@ export default class Team extends Component {
                 }
             } else {
                 // 1, 3, 5, ... odd row add 3 members
-                var obj;
                 if (membersLeft >= 3) {
                     obj = React.createElement(
                         "div",
@@ -191,22 +190,6 @@ export default class Team extends Component {
         }
 
         return this.constructRows(memberData[this.state.year][this.state.teamKey]);
-
-        // Redundant for now, leave in case differentiation needed later
-        // switch(this.state.teamKey){
-        //     case "Exec Team":
-        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
-        //     case "Marketing & Finance":
-        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
-        //     case "Computer Chapter":
-        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
-        //     case "Electronics Chapter":
-        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
-        //     case "Energy/Power Chapter":
-        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
-        //     default:
-        //         return this.constructRows(memberData[this.state.year][this.state.teamKey])
-        // }
     }
 
     showTeam(group, activeNum) {
@@ -234,12 +217,12 @@ export default class Team extends Component {
             return;
         }
 
-        var thisYearsData = Object.keys(memberData[this.state.year]);
-        var numCategories = thisYearsData.length;
-        var items = [];
+        let thisYearsData = Object.keys(memberData[this.state.year]);
+        let numCategories = thisYearsData.length;
+        let items = [];
 
-        for (var i = 0; i < numCategories; i++) {
-            var categoryName = thisYearsData[i];
+        for (let i = 0; i < numCategories; i++) {
+            let categoryName = thisYearsData[i];
             items.push(this.constructNavListItem(categoryName));
         }
 
@@ -365,6 +348,8 @@ export default class Team extends Component {
                         Advisors
                     </li>
                 );
+            default:
+                return;
         }
     }
 
@@ -390,7 +375,7 @@ export default class Team extends Component {
     }
 
     render() {
-        var { teamKey, year } = this.state;
+        let { teamKey, year } = this.state;
         const yearKeys = Object.keys(memberData);
 
         return (
