@@ -1,7 +1,0 @@
-{
-    "git.ignoreLimitWarning": true,
-    "editor.formatOnSave": true,
-    "prettier.tabWidth": 4,
-    "prettier.printWidth": 85,
-    "editor.detectIndentation": false
-}
