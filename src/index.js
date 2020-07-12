@@ -9,24 +9,17 @@ import ScrollToTop from "./Assets/ScrollToTop";
 import ToTop from "./Components/General/ToTop/ToTop";
 import * as serviceWorker from "./serviceWorker";
 
-class MyApp extends React.PureComponent {
-    render() {
-        return (
-            <div>
-                <Router>
-                    <ScrollToTop>
-                        <NavBar />
-                        <Route exact path="/" component={App} />
-                        <Route path="/team" component={Team} />
-                        <ToTop />
-                    </ScrollToTop>
-                </Router>
-            </div>
-        );
-    }
-}
-
-ReactDOM.render(<MyApp />, document.getElementById("root"));
+ReactDOM.render(
+    <Router>
+        <ScrollToTop>
+            <NavBar />
+            <Route exact path="/" component={App} />
+            <Route path="/team" component={Team} />
+            <ToTop />
+        </ScrollToTop>
+    </Router>,
+    document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

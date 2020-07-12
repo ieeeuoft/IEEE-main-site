@@ -6,10 +6,9 @@ import skylineRight from "./../../Assets/Images/skyline/skyline-right.svg";
 import Member from "./../../Components/Team/Member/Member.js";
 import PastTeam from "../../Components/Team/PastTeam/PastTeam";
 import memberData from "./../../Assets/Lists/members.js";
-// Wait till we can use baby and dog again :(
-// import baby from "./../../Assets/Images/misc/baby.svg";
-// import dog from "./../../Assets/Images/misc/dog.svg";
-// import Switch from "react-switch";
+import baby from "./../../Assets/Images/misc/baby.svg";
+import dog from "./../../Assets/Images/misc/dog.svg";
+import Switch from "react-switch";
 
 export default class Team extends Component {
     constructor(props) {
@@ -392,24 +391,43 @@ export default class Team extends Component {
                     </select>
                 </div>
 
-                {/* Uncomment for babies and puppies */}
-                {/* {(yearKeys.slice(0, -4).includes(year)) && // Checks years 2020-2021 and beyond for baby feature
-                    <div className={styles['toggles']}>
-                        <div className={styles['baby']}>
+                {yearKeys.slice(0, -4).includes(year) && ( // Checks years 2020-2021 and beyond for baby feature
+                    <div className={styles["toggles"]}>
+                        <div className={styles["baby"]}>
                             <label>
-                                <Switch onChange={() => this.handleChange(1)} checked={this.state.checkedDog}  onColor={'#00639C'} uncheckedIcon={false} checkedIcon={false}  />
+                                <Switch
+                                    onChange={() => this.handleChange(1)}
+                                    checked={this.state.checkedDog}
+                                    onColor={"#00639C"}
+                                    uncheckedIcon={false}
+                                    checkedIcon={false}
+                                />
                             </label>
-                            <img src={dog} alt="Dog Emoji" className={styles['baby-emoji']} />
+                            <img
+                                src={dog}
+                                alt="Dog Emoji"
+                                className={styles["baby-emoji"]}
+                            />
                         </div>
 
-                        <div className={styles['baby']}>
+                        <div className={styles["baby"]}>
                             <label>
-                                <Switch onChange={() => this.handleChange(2)} checked={this.state.checkedBaby}  onColor={'#00639C'} uncheckedIcon={false} checkedIcon={false}  />
+                                <Switch
+                                    onChange={() => this.handleChange(2)}
+                                    checked={this.state.checkedBaby}
+                                    onColor={"#00639C"}
+                                    uncheckedIcon={false}
+                                    checkedIcon={false}
+                                />
                             </label>
-                            <img src={baby} alt="Baby Emoji" className={styles['baby-emoji']} />
+                            <img
+                                src={baby}
+                                alt="Baby Emoji"
+                                className={styles["baby-emoji"]}
+                            />
                         </div>
                     </div>
-                } */}
+                )}
 
                 {this.constructNav()}
 
