@@ -10,14 +10,16 @@ import ToTop from "./Components/General/ToTop/ToTop";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-    <Router>
-        <ScrollToTop>
-            <NavBar />
-            <Route exact path="/" component={App} />
-            <Route path="/team" component={Team} />
-            <ToTop />
-        </ScrollToTop>
-    </Router>,
+    <div>
+        <Router>
+            <ScrollToTop>
+                <NavBar />
+                <Route exact path="/" component={App} />
+                <Route path="/team" component={Team} />
+                <ToTop />
+            </ScrollToTop>
+        </Router>
+    </div>,
     document.getElementById("root")
 );
 

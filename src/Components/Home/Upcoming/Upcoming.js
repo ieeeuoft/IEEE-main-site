@@ -39,7 +39,7 @@ const Upcoming = () => {
         <div
             id="events"
             className={`${styles["upcoming-div"]} ${upcomingDivClass}`}
-            onLoad={() => this.upcoming()}
+            onLoad={() => upcomingEvents()}
         >
             <h2 className={styles["upcoming-div-heading"]}>Upcoming Events</h2>
             <div className={`${styles["upcoming"]} ${upcomingClass}`}>
