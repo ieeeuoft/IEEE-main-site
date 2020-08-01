@@ -14,11 +14,15 @@ const Member = ({ fullName, position, year, emailLink, LinkedInLink, baby, puppy
     }
 
     let imgSrc;
-    imgSrc = require("./../../../Assets/Images/team/" +
-        year +
-        extension +
-        fullName +
-        ".jpg");
+    try {
+        imgSrc = require("./../../../Assets/Images/team/" +
+            year +
+            extension +
+            fullName +
+            ".jpg");
+    } catch (err) {
+        imgSrc = require("./../../../Assets/Images/team/placeholder.png");
+    }
 
     return (
         <div className={styles["card"]}>
