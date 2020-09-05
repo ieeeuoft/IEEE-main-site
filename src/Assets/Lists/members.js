@@ -25,9 +25,9 @@ const memberData = {
                     emailLink: "matthewchingho.leung@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Fumi Shibutani",
+                    fullName: "Smile Peng",
                     position: "Finance Managing Director",
-                    emailLink: "fumi.shibutani@mail.utoronto.ca",
+                    emailLink: "smile.peng@mail.utoronto.ca",
                 },
                 {
                     fullName: "Kathy Zhuang",
@@ -89,11 +89,6 @@ const memberData = {
                     fullName: "Shuyi Wang",
                     position: "Logistics Senior Associate",
                     emailLink: "shuyiw.wang@mail.utoronto.ca",
-                },
-                {
-                    fullName: "Smile Peng",
-                    position: "Logistics Senior Associate",
-                    emailLink: "smile.peng@mail.utoronto.ca",
                 },
                 {
                     fullName: "Bikramjit Narwal",

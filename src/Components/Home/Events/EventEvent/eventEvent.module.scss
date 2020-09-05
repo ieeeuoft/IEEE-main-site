@@ -20,23 +20,23 @@
 }
 
 .events {
+    &-event-hover:hover {
+        .events-event-img-crop {
+            height: 30vw;
+            width: 30vw;
+            max-height: 40rem;
+            margin-top: -1.5rem;
+        }
+        .events-event-text {
+            bottom: 6rem;
+        }
+    }
+
     &-event {
         display: flex !important;
         @include flexPosition(center, center);
         flex-direction: column;
         margin-top: 1.5rem;
-
-        &:hover {
-            .events-event-img-crop {
-                height: 30vw;
-                width: 30vw;
-                max-height: 40rem;
-                margin-top: -1.5rem;
-            }
-            .events-event-text {
-                bottom: 6rem;
-            }
-        }
 
         &-img {
             width: 30vw;
@@ -129,13 +129,6 @@
 
     @include response(lg/md) {
         &-event {
-            &:hover {
-                .events-event-img-crop {
-                    height: 40vw;
-                    width: 40vw;
-                }
-            }
-
             &-text {
                 bottom: 4rem;
                 width: calc(40vw - 80px);
@@ -155,16 +148,16 @@
                 }
             }
         }
+
+        &-event-hover:hover {
+            .events-event-img-crop {
+                height: 40vw;
+                width: 40vw;
+            }
+        }
     }
     @include response(sm) {
         &-event {
-            &:hover {
-                .events-event-img-crop {
-                    height: 50vw;
-                    width: 50vw;
-                }
-            }
-
             &-text {
                 bottom: 3.5rem;
                 width: calc(50vw - 80px);
@@ -182,6 +175,12 @@
                         height: 50vw;
                     }
                 }
+            }
+        }
+        &-event-hover:hover {
+            .events-event-img-crop {
+                height: 50vw;
+                width: 50vw;
             }
         }
     }

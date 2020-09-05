@@ -2,6 +2,43 @@
 @import "./../../../../abstracts/mixins";
 
 .upcoming {
+    &-event-hover {
+        .Crop:hover {
+            height: 23vw;
+            max-height: 33rem;
+            margin-top: -1.5rem;
+        }
+        @include response(lg) {
+            .Crop:hover {
+                height: 26vw;
+                max-height: 26vw;
+                margin-top: -3rem;
+            }
+        }
+        @include response(lg/mg) {
+            .Crop:hover {
+                height: 30vw;
+                max-height: 30vw;
+            }
+        }
+        @include response(md) {
+            .Crop:hover {
+                height: calc(38vw - 0rem);
+                max-height: calc(38vw - 0rem);
+                margin-top: -3rem;
+            }
+        }
+
+        @include response(sm) {
+            .Crop:hover {
+                height: 45vw;
+                max-height: 45vw;
+
+                margin-top: -1.5rem;
+            }
+        }
+    }
+
     &-event {
         text-decoration: none;
         display: flex;
@@ -26,7 +63,7 @@
             margin-bottom: 2rem;
             @include flexPosition(center, center);
 
-            &-crop {
+            .Crop {
                 height: calc(23vw - 4rem);
                 width: calc(23vw - 4rem);
                 max-width: 30rem;
@@ -45,18 +82,13 @@
                     height: 23vw;
                     max-height: 33rem;
                 }
-                &:hover {
-                    height: 23vw;
-                    max-height: 33rem;
-                    margin-top: -1.5rem;
-                }
             }
             @include response(lg) {
                 width: 26vw;
                 max-width: 26vw;
                 height: auto;
 
-                &-crop {
+                .Crop {
                     height: calc(26vw - 3rem);
                     max-height: 26vw;
 
@@ -65,11 +97,6 @@
                         height: 26vw;
                         max-height: 26vw;
                     }
-                    &:hover {
-                        height: 26vw;
-                        max-height: 26vw;
-                        margin-top: -3rem;
-                    }
                 }
             }
             @include response(lg/mg) {
@@ -77,17 +104,12 @@
                 max-width: 30vw;
                 height: auto;
 
-                &-crop {
+                .Crop {
                     height: calc(30vw - 3rem);
                     max-height: 30vw;
 
                     &-src {
                         display: block;
-                        height: 30vw;
-                        max-height: 30vw;
-                    }
-
-                    &:hover {
                         height: 30vw;
                         max-height: 30vw;
                     }
@@ -98,7 +120,7 @@
                 max-width: 38vw;
                 height: auto;
 
-                &-crop {
+                .Crop {
                     height: calc(38vw - 3rem);
                     max-height: 38vw;
                     width: calc(38vw - 3rem);
@@ -107,11 +129,6 @@
                         display: block;
                         height: 38vw;
                         max-height: 38vw;
-                    }
-                    &:hover {
-                        height: calc(38vw - 0rem);
-                        max-height: calc(38vw - 0rem);
-                        margin-top: -3rem;
                     }
                 }
             }
@@ -123,7 +140,7 @@
                 padding: 0;
                 margin: 0;
 
-                &-crop {
+                .Crop {
                     height: calc(45vw - 1rem);
                     max-height: 45vw;
 
@@ -131,12 +148,6 @@
                         display: block;
                         height: 45vw;
                         max-height: 45vw;
-                    }
-                    &:hover {
-                        height: 45vw;
-                        max-height: 45vw;
-
-                        margin-top: -1.5rem;
                     }
                 }
             }
