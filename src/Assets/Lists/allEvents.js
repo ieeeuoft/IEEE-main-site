@@ -6,7 +6,7 @@ export const allEvents = [
         EventName: "Python Workshop 1",
         displayDate: "September 15th , 2020",
         date: "2020/09/15",
-        link: "https://www.facebook.com/events/968475240285668/",
+        link: "www.facebook.com/events/968475240285668/",
     },
     {
         EventName: "Arduino Workshop 1",
