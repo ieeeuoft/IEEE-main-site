@@ -81,9 +81,10 @@ const memberData = {
                     emailLink: "brenny.chao@mail.utoronto.ca",
                 },
                 {
-                    fullName: "William Sinnatamby",
+                    fullName: "Martin Ffrench",
                     position: "Technical Events Managing Director",
-                    emailLink: "william.flint@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/martin-0xff",
+                    emailLink: "martin.ffrench@mail.utoronto.ca",
                 },
                 {
                     fullName: "Shuyi Wang",
@@ -231,12 +232,6 @@ const memberData = {
                     emailLink: "lisasa.li@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Martin Ffrench",
-                    position: "Advisor",
-                    LinkedInLink: "https://www.linkedin.com/in/martin-0xff",
-                    emailLink: "martin.ffrench@mail.utoronto.ca",
-                },
-                {
                     fullName: "Linda Wu",
                     position: "Advisor",
                     LinkedInLink: "https://www.linkedin.com/in/lindawu123/",
@@ -252,6 +247,11 @@ const memberData = {
                     position: "Advisor",
                     LinkedInLink: "https://www.linkedin.com/in/genshengzhang/",
                     emailLink: "kevinhk.zhang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Fumi Shibutani",
+                    position: "VC Finance",
+                    emailLink: "fumi.shibutani@mail.utoronto.ca",
                 },
             ],
             firstRowSize: 3,
