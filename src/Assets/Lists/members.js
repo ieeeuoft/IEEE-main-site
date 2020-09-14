@@ -250,7 +250,7 @@ const memberData = {
                 },
                 {
                     fullName: "Fumi Shibutani",
-                    position: "VC Finance",
+                    position: "Advisor",
                     emailLink: "fumi.shibutani@mail.utoronto.ca",
                 },
             ],
