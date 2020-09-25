@@ -12,11 +12,7 @@ export const allEvents = [
         EventName: "Arduino Workshop 1",
         displayDate: "September 22nd, 2020",
         date: "2020/09/22",
-    },
-    {
-        EventName: "Python Workshop 2",
-        displayDate: "September 29th, 2020",
-        date: "2020/09/29",
+        link: "www.facebook.com/events/1072989649798521",
     },
     {
         EventName: "C Basics Workshop",

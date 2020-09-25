@@ -190,10 +190,6 @@ const memberData = {
                     position: "Tech Team Associate",
                     emailLink: "stephy.yang@mail.utoronto.ca",
                 },
-                {
-                    fullName: "Tony Liu",
-                    position: "Tech Team Associate",
-                },
             ],
             firstRowSize: 2,
         },
@@ -214,6 +210,16 @@ const memberData = {
                     fullName: "Akinori Kimura",
                     position: "Webmaster Associate",
                     emailLink: "akinori.kimura@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Armin Ale",
+                    position: "Webmaster Associate",
+                    emailLink: "Seyedarmin.alemohammad@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Siddharth Vijay",
+                    position: "Webmaster Associate",
+                    emailLink: "siddharth.vijay@mail.utoronto.ca",
                 },
             ],
             firstRowSize: 2,
