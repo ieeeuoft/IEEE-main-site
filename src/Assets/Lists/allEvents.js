@@ -26,17 +26,17 @@ export const allEvents = [
         date: "2020/10/08",
         link: "www.facebook.com/events/1013853395720817/",
     },
-    {
-        EventName: "Django Workshop Pt 2",
-        displayDate: "October 13th, 2020",
-        date: "2020/10/13",
-        link: "www.facebook.com/events/1425631157640950/",
-    },
-    {
-        EventName: "React Workshop",
-        displayDate: "October 20th, 2020",
-        date: "2020/10/20",
-    },
+    // {
+    //     EventName: "Django Workshop Pt 2",
+    //     displayDate: "October 13th, 2020",
+    //     date: "2020/10/13",
+    //     link: "www.facebook.com/events/1425631157640950/",
+    // },
+    // {
+    //     EventName: "React Workshop",
+    //     displayDate: "October 20th, 2020",
+    //     date: "2020/10/20",
+    // },
     {
         EventName: "Technical Interview Workshop",
         displayDate: "November 24-27, 2020",
