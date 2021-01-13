@@ -1,46 +1,87 @@
-export const allSponsors = [        
+export const allSponsors = [
+    {
+        companyName: "Qualcomm",
+        tier: "Platinum - MakeUofT",
+        imgType: ".svg",
+        siteLink: "https://www.qualcomm.com/",
+    },
+    {
+        companyName: "Waterfront International",
+        tier: "Bronze - MakeUofT",
+        imgType: ".svg",
+        siteLink: "https://www.wil.com/",
+    },
+    {
+        companyName: "L-SPARK",
+        tier: "Partner - MakeUofT",
+        imgType: ".svg",
+        siteLink: "https://www.l-spark.com/",
+    },
     {
         companyName: "Daisy Intelligence",
         tier: "Platinum - NewHacks",
         imgType: ".svg",
-        siteLink: "https://www.daisyintelligence.com",
-    },    
+        siteLink: "https://www.daisyintelligence.com"
+    }, 
     {
         companyName: "Traction On Demand",
         tier: "Platinum - NewHacks",
-        imgType: ".png",
-        siteLink: "https://tractionondemand.com",
-    },    
-    {
-        companyName: "Rotman School of Management, MMA Program",
-        tier: "Gold - NewHacks",
         imgType: ".svg",
-        siteLink: "https://www.rotman.utoronto.ca/Degrees/MastersPrograms/MMA",
-    },    
+        siteLink: "https://tractionondemand.com"
+    }, 
     {
         companyName: "MathWorks",
         tier: "Gold - NewHacks",
         imgType: ".svg",
-        siteLink: "https://www.mathworks.com",
-    },    
+        siteLink: "https://www.mathworks.com"
+    }, 
+    {
+        companyName: "Rotman School of Management",
+        tier: "Platinum - MakeUofT, Gold - NewHacks",
+        imgType: ".svg",
+        siteLink: "https://www.rotman.utoronto.ca"
+    }, 
     {
         companyName: "Analog Devices",
         tier: "Silver - NewHacks",
         imgType: ".svg",
-        siteLink: "https://www.analog.com/en/index.html",
-    },    
+        siteLink: "https://www.analog.com"
+    }, 
+    {
+        companyName: "ecobee",
+        tier: "Partner - NewHacks",
+        imgType: ".svg",
+        siteLink: "https://www.ecobee.com/en-ca"
+    },
+    {
+        companyName: "AMD",
+        tier: "Partner - NewHacks",
+        imgType: ".svg",
+        siteLink: "https://www.amd.com"
+    },
     {
         companyName: "The Hatchery",
-        tier: "Mentorship - NewHacks",
+        tier: "Partner - NewHacks",
         imgType: ".svg",
-        siteLink: "https://hatchery.engineering.utoronto.ca",
-    },    
+        siteLink: "https://hatchery.engineering.utoronto.ca"
+    },
     {
         companyName: "Voiceflow",
-        tier: "Mentorship - NewHacks",
-        imgType: ".png",
-        siteLink: "https://www.voiceflow.com",
-},    
+        tier: "Partner - NewHacks",
+        imgType: ".svg",
+        iteLink: "https://www.voiceflow.com"
+        
+    },
+    {
+        companyName: "Huawei",
+        tier: "Partner - NewHacks",
+        imgType: ".svg",
+        siteLink: "https://www.huawei.com/ca"
+    }
+];
+
+// OLD, CAN REUSE
+
     // {
     //     companyName: "IEEE Toronto",
     //     tier: "Branch-Level Partner",
@@ -53,12 +94,6 @@ export const allSponsors = [
     //     imgType: ".png",
     //     siteLink: "https://www.ieee.ca/en/",
     // },
-    {
-        companyName: "Qualcomm",
-        tier: "Platinum - MakeUofT",
-        imgType: ".svg",
-        siteLink: "https://www.qualcomm.com/",
-    },
     // {
     //     companyName: "Telus",
     //     tier: "Platinum - MakeUofT",
@@ -102,28 +137,10 @@ export const allSponsors = [
     //     siteLink: "https://www.partnertechnologies.net/",
     // },
     // {
-    //     companyName: "ecobee",
-    //     tier: "Prize Sponsor - MakeUofT",
-    //     imgType: ".svg",
-    //     siteLink: "https://www.ecobee.com/",
-    // },
-    // {
     //     companyName: "City of Brampton",
     //     tier: "Prize Sponsor - MakeUofT",
     //     imgType: ".svg",
     //     siteLink: "https://www.brampton.ca/",
-    // },
-    // {
-    //     companyName: "Huawei",
-    //     tier: "Silver - NewHacks, Prize Sponsor - MakeUofT",
-    //     imgType: ".svg",
-    //     siteLink: "https://www.huawei.com/",
-    // },
-    // {
-    //     companyName: "Voiceflow",
-    //     tier: "Product Sponsor - NewHacks",
-    //     imgType: ".png",
-    //     siteLink: "https://www.voiceflow.com/",
     // },
     // {
     //     companyName: "BITalino",
@@ -156,22 +173,10 @@ export const allSponsors = [
     //     siteLink: "https://about.google",
     // },
     // {
-    //     companyName: "AMD",
-    //     tier: "Event Partner",
-    //     imgType: ".svg",
-    //     siteLink: "https://www.amd.com/en",
-    // },
-    // {
     //     companyName: "IBM",
     //     tier: "Event Partner",
     //     imgType: ".svg",
     //     siteLink: "https://www.ibm.com/ca-en",
-    // },
-    // {
-    //     companyName: "Daisy Intelligence",
-    //     tier: "Gold - Hello, Con!",
-    //     imgType: ".svg",
-    //     siteLink: "https://www.daisyintelligence.com/",
     // },
     // {
     //     companyName: "Munvo",
@@ -185,4 +190,3 @@ export const allSponsors = [
     //     imgType: ".svg",
     //     siteLink: " https://www.rbcinvestease.com/",
     // },
-];

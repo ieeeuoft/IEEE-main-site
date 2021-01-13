@@ -20,19 +20,24 @@ const memberData = {
         "Marketing & Finance": {
             membersList: [
                 {
-                    fullName: "Matthew Leung",
-                    position: "Marketing Managing Director",
-                    emailLink: "matthewchingho.leung@mail.utoronto.ca",
+                    fullName: "Soliman Ali",
+                    position: "Social Media Co-Director",
+                    emailLink: "soliman.ali@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Andrew Chen",
+                    position: "Social Media Co-Director",
+                    emailLink: "mengjue.chen@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Kathy Zhuang",
+                    position: "Graphics Director",
+                    emailLink: "kathy.zhuang@mail.utoronto.ca",
                 },
                 {
                     fullName: "Smile Peng",
                     position: "Finance Managing Director",
                     emailLink: "smile.peng@mail.utoronto.ca",
-                },
-                {
-                    fullName: "Kathy Zhuang",
-                    position: "Graphic Design Senior Associate",
-                    emailLink: "kathy.zhuang@mail.utoronto.ca",
                 },
                 {
                     fullName: "Skyler Zhang",
@@ -50,22 +55,12 @@ const memberData = {
                     emailLink: "ishaa.sharma@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Soliman Ali",
-                    position: "Marketing Associate",
-                    emailLink: "soliman.ali@mail.utoronto.ca",
-                },
-                {
                     fullName: "Rosie Wang",
                     position: "Finance Associate",
                     emailLink: "rushi.wang@mail.utoronto.ca",
                 },
-                {
-                    fullName: "Andrew Chen",
-                    position: "Finance Associate",
-                    emailLink: "mengjue.chen@mail.utoronto.ca",
-                },
             ],
-            firstRowSize: 2,
+            firstRowSize: 4,
         },
         Logistics: {
             membersList: [
@@ -79,12 +74,6 @@ const memberData = {
                     position: "Hackathon Co-Managing Director",
                     LinkedInLink: "https://www.linkedin.com/in/brenny-chao-4962aa17b/",
                     emailLink: "brenny.chao@mail.utoronto.ca",
-                },
-                {
-                    fullName: "Martin Ffrench",
-                    position: "Technical Events Managing Director",
-                    LinkedInLink: "https://www.linkedin.com/in/martin-0xff",
-                    emailLink: "martin.ffrench@mail.utoronto.ca",
                 },
                 {
                     fullName: "Shuyi Wang",
@@ -112,7 +101,7 @@ const memberData = {
                     emailLink: "pi.sharma@mail.utoronto.ca",
                 },
             ],
-            firstRowSize: 3,
+            firstRowSize: 2,
         },
         "External Relations": {
             membersList: [
@@ -255,9 +244,20 @@ const memberData = {
                     emailLink: "kevinhk.zhang@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Fumi Shibutani",
+                    fullName: "Martin Ffrench",
                     position: "Advisor",
+                    LinkedInLink: "https://www.linkedin.com/in/martin-0xff",
+                    emailLink: "martin.ffrench@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Fumi Shibutani",
+                    position: "Finance Advisor",
                     emailLink: "fumi.shibutani@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Matthew Leung",
+                    position: "Marketing Advisor",
+                    emailLink: "matthewchingho.leung@mail.utoronto.ca",
                 },
             ],
             firstRowSize: 3,

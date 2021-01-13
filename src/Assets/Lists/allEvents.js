@@ -26,17 +26,6 @@ export const allEvents = [
         date: "2020/10/08",
         link: "www.facebook.com/events/1013853395720817/",
     },
-    // {
-    //     EventName: "Django Workshop Pt 2",
-    //     displayDate: "October 13th, 2020",
-    //     date: "2020/10/13",
-    //     link: "www.facebook.com/events/1425631157640950/",
-    // },
-    // {
-    //     EventName: "React Workshop",
-    //     displayDate: "October 20th, 2020",
-    //     date: "2020/10/20",
-    // },
     {
         EventName: "Technical Interview Workshop",
         displayDate: "November 24-27, 2020",
@@ -49,29 +38,68 @@ export const allEvents = [
         link: "ieee.utoronto.ca/newhacks",
     },
     {
-        EventName: "Basic Hardware Series",
-        displayDate: "January 9th, 2021",
-        date: "2021/01/09",
+        EventName: "Git Workshop" ,
+        displayDate: "January 14th, 2021",
+        date: "2021/01/14",
+        link: "www.facebook.com/events/897562894380332/",
     },
     {
-        EventName: "Arduino Run It Back",
-        displayDate: "January 19th, 2021",
-        date: "2021/01/19",
+        EventName: "PCB Workshop" ,
+        displayDate: "January 21th, 2021",
+        date: "2021/01/21",
     },
     {
-        EventName: "Motors + Actuators",
-        displayDate: "January 26th, 2021",
-        date: "2021/01/26",
-    },
-    {
-        EventName: "IOT Crash Course",
-        displayDate: "February 2nd, 2021",
-        date: "2021/02/02",
+        EventName: "Quantum AI Talks",
+        displayDate: "February 6-21, 2021",
+        date: "2021/02/06",
+        link: "facebook.com/events/2858257254497350/",
     },
     {
         EventName: "MakeUofT",
-        displayDate: "February 13-14, 2021",
-        date: "2021/02/14",
-        link: "ieee.utoronto.ca/makeuoft/",
+        displayDate: "February 6-21, 2021",
+        date: "2021/02/06",
+        link: "makeuoft.ca",
     },
 ];
+
+
+
+
+
+
+
+
+
+
+// {
+//     EventName: "Basic Hardware Series",
+//     displayDate: "January 9th, 2021",
+//     date: "2021/01/09",
+// },
+// {
+//     EventName: "Arduino Run It Back",
+//     displayDate: "January 19th, 2021",
+//     date: "2021/01/19",
+// },
+// {
+//     EventName: "Motors + Actuators",
+//     displayDate: "January 26th, 2021",
+//     date: "2021/01/26",
+// },
+// {
+//     EventName: "IOT Crash Course",
+//     displayDate: "February 2nd, 2021",
+//     date: "2021/02/02",
+// },
+
+    // {
+    //     EventName: "Django Workshop Pt 2",
+    //     displayDate: "October 13th, 2020",
+    //     date: "2020/10/13",
+    //     link: "www.facebook.com/events/1425631157640950/",
+    // },
+    // {
+    //     EventName: "React Workshop",
+    //     displayDate: "October 20th, 2020",
+    //     date: "2020/10/20",
+    // },
