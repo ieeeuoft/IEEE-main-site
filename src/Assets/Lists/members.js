@@ -233,11 +233,6 @@ const memberData = {
                     emailLink: "lindaa.wu@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Quin Sykora",
-                    position: "Advisor",
-                    emailLink: "quinlan.sykora@mail.utoronto.ca",
-                },
-                {
                     fullName: "Kevin Zhang",
                     position: "Advisor",
                     LinkedInLink: "https://www.linkedin.com/in/genshengzhang/",
