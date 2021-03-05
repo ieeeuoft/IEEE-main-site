@@ -5,9 +5,9 @@ import ScrollAnimation from "react-animate-on-scroll";
 const UpcomingEventContent = ({ name, date }) => {
     let imgSrc;
     try {
-        imgSrc = require("./../../../../Assets/Images/events/" + name + ".JPG");
+        imgSrc = require("./../../../../Assets/Images/events/" + name + ".jpg");
     } catch (err) {
-        imgSrc = require("./../../../../Assets/Images/events/Workshops.JPG");
+        imgSrc = require("./../../../../Assets/Images/events/Workshops.jpg");
     }
 
     return (

@@ -1,4 +1,204 @@
 const memberData = {
+    "2021-2022": {
+        "Exec Team": {
+            membersList: [
+                {
+                    fullName: "Julia Wagner",
+                    position: "Chair",
+                    emailLink: "julia.wagner@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Smile Peng",
+                    position: "Vice Chair",
+                    emailLink: "smile.peng@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/smile-peng/"
+                },
+            ],
+            firstRowSize: 2,
+        },
+        "Marketing & Finance": {
+            membersList: [
+                {
+                    fullName: "Annam Shamas",
+                    position: "Marketing Co-Managing Director",
+                    emailLink: "annam.shamas@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Terry Luan",
+                    position: "Marketing Co-Managing Director",
+                    emailLink: "t.luan@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/terryluan12/",
+                },	
+                {
+                    fullName: "Irene Li",
+                    position: "Marketing Co-Managing Director",
+                    emailLink: "ireneyr.li@mail.utoronto.ca",
+                },
+            ],
+            firstRowSize: 3,
+        },
+        "Logistics": {
+            membersList: [
+                {
+                    fullName: "Himanish Jindal",
+                    position: "Logistics Co-Managing Director",
+                    emailLink: "himanish.jindal@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Isha Sharma",
+                    position: "Logistics Co-Managing Director",
+                    emailLink: "ishaa.sharma@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Floria Fang Zhang",
+                    position: "Logistics Co-Managing Director",
+                    emailLink: "floria.fang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Mojtaba Khavaninzadeh",
+                    position: "Logistics Senior Associate",
+                    emailLink: "Mojtaba.khavaninzadeh@mail.utoronto.ca",
+                },
+
+                {
+                    fullName: "Rosie Wang",
+                    position: "Logistics Senior Associate",
+                    emailLink: "rushi.wang@mail.utoronto.ca",
+                },
+            ],
+            firstRowSize: 3,
+        },
+        "External": {
+            membersList: [
+                {
+                    fullName: "Kushagra Goel",
+                    position: "External Relations Associate",
+                    emailLink: "kushagra.goel@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Anmol Mahajan",
+                    position: "External Senior Associate",
+                    emailLink: "anmol.mahajan@mail.utoronto.ca",
+                },
+            ],
+            firstRowSize: 1,
+        },
+        "Tech": {
+            membersList: [
+                {
+                    fullName: "Selena Liu",
+                    position: "Tech Team Co-Managing Director",
+                    emailLink: "selena.liu@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Stephen Yang",
+                    position: "Tech Team Co-Managing Director",
+                    emailLink: "stephy.yang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Fahim Talukder",
+                    position: "Tech Team Senior Associate",
+                    emailLink: "Fahim.Talukder@mail.utoronto.ca",
+                },
+            ],
+            firstRowSize: 2,
+        },
+        "Web": {
+            membersList: [
+                {
+                    fullName: "Piyush Sharma",
+                    position: "Web Associate",
+                    emailLink: "pi.sharma@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Soliman Ali",
+                    position: "Web Associate",
+                    emailLink: "soliman.ali@mail.utoronto.ca",
+                },
+            ],
+            firstRowSize: 0,
+        },
+        "Advisors": {
+            membersList: [
+                {
+                    fullName: "Gaurav Ranganath",
+                    position: "Advisor",
+                    LinkedInLink: "https://www.linkedin.com/in/gaurav-ranganath/",
+                    emailLink: "gaurav.ranganath@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Haochen Zhang",
+                    position: "Advisor",
+                    LinkedInLink: "https://www.linkedin.com/in/haochenz11/",
+                    emailLink: "hcz.zhang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Brenny Chao",
+                    position: "Advisor",
+                    LinkedInLink: "https://www.linkedin.com/in/brenny-chao-4962aa17b/",
+                    emailLink: "brenny.chao@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Katherine Liang",
+                    position: "Advisor",
+                    emailLink: "katherine.liang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Shawn Zhang",
+                    position: "Advisor",
+                    LinkedInLink: "www.linkedin.com/in/shawn-zhang-2000717",
+                    emailLink: "xiaoen.zhang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Urmil Modi",
+                    position: "Advisor",
+                    LinkedInLink: "https://linkedin.com/in/urmilkm/",
+                    emailLink: "u.modi@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Raghav Srinivasan",
+                    position: "Advisor",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/raghav-srinivasan-b45350170",
+                    emailLink: "raghav.srinivasan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Graham Hoyes",
+                    position: "Advisor",
+                    emailLink: "graham.hoyes@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Alex Bogdan",
+                    position: "Advisor",
+                    LinkedInLink: "https://www.linkedin.com/in/bogdanalex/",
+                    emailLink: "alex.bogdan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Matthew Leung",
+                    position: "Advisor",
+                    emailLink: "matthewchingho.leung@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Martin Ffrench",
+                    position: "Advisor",
+                    LinkedInLink: "https://www.linkedin.com/in/martin-0xff",
+                    emailLink: "martin.ffrench@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Andrew Chen",
+                    position: "Advisor",
+                    emailLink: "mengjue.chen@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Kathy Zhuang",
+                    position: "Advisor",
+                    emailLink: "kathy.zhuang@mail.utoronto.ca",
+                },
+            ],
+            firstRowSize: 3,
+        },
+    },
+
     "2020-2021": {
         "Exec Team": {
             membersList: [
@@ -62,7 +262,7 @@ const memberData = {
             ],
             firstRowSize: 4,
         },
-        Logistics: {
+        "Logistics": {
             membersList: [
                 {
                     fullName: "Julia Wagner",
@@ -76,11 +276,6 @@ const memberData = {
                     emailLink: "brenny.chao@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Shuyi Wang",
-                    position: "Logistics Senior Associate",
-                    emailLink: "shuyiw.wang@mail.utoronto.ca",
-                },
-                {
                     fullName: "Bikramjit Narwal",
                     position: "Logistics Associate",
                     emailLink: "bikramjit.narwal@mail.utoronto.ca",
@@ -88,7 +283,7 @@ const memberData = {
                 {
                     fullName: "Mojtaba Khavaninzadeh",
                     position: "Logistics Associate",
-                    emailLink: "chenhui.yeh@mail.utoronto.ca",
+                    emailLink: "Mojtaba.khavaninzadeh@mail.utoronto.ca",
                 },
                 {
                     fullName: "Himanish Jindal",
@@ -103,7 +298,7 @@ const memberData = {
             ],
             firstRowSize: 2,
         },
-        "External Relations": {
+        "External": {
             membersList: [
                 {
                     fullName: "Katherine Liang",
@@ -138,7 +333,7 @@ const memberData = {
             ],
             firstRowSize: 1,
         },
-        Tech: {
+        "Tech": {
             membersList: [
                 {
                     fullName: "Shawn Zhang",
@@ -182,7 +377,7 @@ const memberData = {
             ],
             firstRowSize: 2,
         },
-        Web: {
+        "Web": {
             membersList: [
                 {
                     fullName: "Graham Hoyes",
@@ -213,7 +408,32 @@ const memberData = {
             ],
             firstRowSize: 2,
         },
-        Advisors: {
+        "FYA": {
+            membersList: [
+                {
+                    fullName: "Annam Shamas",
+                    position: "First Year Associate",
+                    emailLink: "annam.shamas@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Floria Fang Zhang",
+                    position: "First Year Associate",
+                    emailLink: "floria.fang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Irene Li",
+                    position: "First Year Associate",
+                    emailLink: "ireneyr.li@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Anmol Mahajan",
+                    position: "First Year Associate",
+                    emailLink: "anmol.mahajan@mail.utoronto.ca",
+                },
+            ],
+            firstRowSize: 0,
+        },
+        "Advisors": {
             membersList: [
                 {
                     fullName: "Nhien Tran-Nguyen",

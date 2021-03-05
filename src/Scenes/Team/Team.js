@@ -15,7 +15,7 @@ export default class Team extends Component {
         super(props);
         this.state = {
             teamKey: "Exec Team",
-            year: "2020-2021",
+            year: "2021-2022",
             active: 1,
             checkedBaby: false,
             checkedDog: false,
@@ -303,15 +303,15 @@ export default class Team extends Component {
                         Logistics
                     </li>
                 );
-            case "External Relations":
+            case "External":
                 return (
                     <li
                         className={`${styles["team-nav-list-item"]} ${
                             active === 4 ? styles["team-nav-list-item-active"] : null
                         }`}
-                        onClick={() => this.showTeam("External Relations", 4)}
+                        onClick={() => this.showTeam("External", 4)}
                     >
-                        External Relations
+                        External
                     </li>
                 );
             case "Tech":
@@ -334,6 +334,17 @@ export default class Team extends Component {
                         onClick={() => this.showTeam("Web", 6)}
                     >
                         Web
+                    </li>
+                );
+            case "FYA":
+                return (
+                    <li
+                        className={`${styles["team-nav-list-item"]} ${
+                            active === 7 ? styles["team-nav-list-item-active"] : null
+                        }`}
+                        onClick={() => this.showTeam("FYA", 7)}
+                    >
+                        FYA
                     </li>
                 );
             case "Advisors":

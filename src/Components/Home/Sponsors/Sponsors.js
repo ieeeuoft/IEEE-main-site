@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./sponsors.module.scss";
-import * as sponsorList from "./../../../Assets/Lists/allSponsors";
+import allSponsors from "./../../../Assets/Lists/allSponsors";
 import Slider from "react-slick";
 import Sponsor from "./Sponsor/Sponsor";
 
@@ -36,7 +36,7 @@ const Sponsors = () => {
             <h2 className={styles["sponsors-div-heading"]}>Our Sponsors</h2>
             <div className={styles["sponsors"]}>
                 <Slider {...settings}>
-                    {sponsorList.allSponsors.map((item, i) => (
+                    {allSponsors.map((item, i) => (
                         <Sponsor
                             companyName={item.companyName}
                             tier={item.tier}

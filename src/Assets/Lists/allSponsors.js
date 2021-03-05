@@ -80,6 +80,8 @@ export const allSponsors = [
     }
 ];
 
+export default allSponsors;
+
 // OLD, CAN REUSE
 
     // {

@@ -4,9 +4,9 @@ import styles from "./eventEvent.module.scss";
 const EventContent = ({ name, date }) => {
     let imgSrc;
     try {
-        imgSrc = require("./../../../../Assets/Images/events/" + name + ".JPG");
+        imgSrc = require("./../../../../Assets/Images/events/" + name + ".jpg");
     } catch (err) {
-        imgSrc = require("./../../../../Assets/Images/events/Workshops.JPG");
+        imgSrc = require("./../../../../Assets/Images/events/Workshops.jpg");
     }
 
     return (
@@ -39,7 +39,7 @@ const EventEvent = ({ link, EventName, EventDate }) => (
 
         {link && (
             <a
-                href={"http://" + link}
+                href={link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${styles["events-event"]} ${styles["events-event-hover"]}`}
