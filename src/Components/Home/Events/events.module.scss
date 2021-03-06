@@ -5,13 +5,17 @@
     font-family: font(source);
     color: color(blue1);
     font-weight: bold;
-    margin-right: 50px;
+    margin-right: 5rem;
     font-size: size(sm);
     cursor: pointer;
     align-self: flex-end;
 
     &:hover {
         text-decoration: underline;
+    }
+
+    @include response(sm) {
+        margin-right: 2rem;
     }
 }
 
@@ -23,7 +27,6 @@
     padding: 8rem 0 0;
     margin-top: -3rem;
     background-color: color(white);
-    overflow-x: hidden;
 
     &Heading {
         @include title;
@@ -40,7 +43,7 @@
     }
 
     @include response(lg/md) {
-        padding: 5rem 0px;
+        padding: 5rem 0;
 
         .events {
             padding: 2rem 0 0.5rem;
@@ -48,15 +51,14 @@
     }
 
     @include response(sm) {
-        padding: 4rem 0px;
+        padding: 4rem 0;
     }
 }
 
 .spread {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 .slick-current {
