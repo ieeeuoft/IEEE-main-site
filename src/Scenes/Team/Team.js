@@ -351,9 +351,9 @@ export default class Team extends Component {
                 return (
                     <li
                         className={`${styles["team-nav-list-item"]} ${
-                            active === 7 ? styles["team-nav-list-item-active"] : null
+                            active === 8 ? styles["team-nav-list-item-active"] : null
                         }`}
-                        onClick={() => this.showTeam("Advisors", 7)}
+                        onClick={() => this.showTeam("Advisors", 8)}
                     >
                         Advisors
                     </li>
