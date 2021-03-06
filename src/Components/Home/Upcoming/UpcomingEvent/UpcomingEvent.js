@@ -23,35 +23,24 @@ const UpcomingEventContent = ({ name, date }) => {
     );
 };
 const UpcomingEvent = ({ link, EventName, EventDate }) => (
-    <>
+    <ScrollAnimation
+        animateOnce={true}
+        duration={1}
+        offset={80}
+        animateIn="fadeInUp"
+        className={`${styles["upcoming-event"]} ${link && styles["upcoming-event-hover"]}`}
+    >
         {link === undefined && (
-            <ScrollAnimation
-                animateOnce={true}
-                duration={1}
-                offset={80}
-                animateIn="fadeInUp"
-                className={styles["upcoming-event"]}
-            >
-                <div style={{ cursor: "default" }}>
-                    <UpcomingEventContent name={EventName} date={EventDate} />
-                </div>
-            </ScrollAnimation>
+            <div style={{ cursor: "default" }}>
+                <UpcomingEventContent name={EventName} date={EventDate} />
+            </div>
         )}
-
         {link && (
-            <ScrollAnimation
-                animateOnce={true}
-                duration={1}
-                offset={80}
-                animateIn="fadeInUp"
-                className={`${styles["upcoming-event"]} ${styles["upcoming-event-hover"]}`}
-            >
-                <a href={"http://" + link} target="_blank" rel="noopener noreferrer">
-                    <UpcomingEventContent name={EventName} date={EventDate} />
-                </a>
-            </ScrollAnimation>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+                <UpcomingEventContent name={EventName} date={EventDate} />
+            </a>
         )}
-    </>
+    </ScrollAnimation>
 );
 
 export default UpcomingEvent;

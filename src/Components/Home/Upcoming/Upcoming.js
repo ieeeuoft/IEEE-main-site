@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./upcoming.module.scss";
 import UpcomingEvent from "./UpcomingEvent/UpcomingEvent";
-import * as eventsList from "./../../../Assets/Lists/allEvents";
+import allEvents from "./../../../Assets/Lists/allEvents";
 
 const upcomingEvents = () => {
     let today = new Date();
@@ -13,9 +13,9 @@ const upcomingEvents = () => {
         ("0" + today.getDate()).slice(-2);
     let upcomingList = [];
 
-    for (let i = 0; i < eventsList.allEvents.length; i++) {
-        if (eventsList.allEvents[i].date > todayDate) {
-            upcomingList.push(eventsList.allEvents[i]);
+    for (let i = 0; i < allEvents.length; i++) {
+        if (allEvents[i].date > todayDate) {
+            upcomingList.push(allEvents[i]);
             if (upcomingList.length === 3) {
                 break;
             }
@@ -28,20 +28,25 @@ const Upcoming = () => {
     let upcomingList = upcomingEvents();
     let upcomingDivClass = "";
     let upcomingClass = "";
+    let recentHighlights = upcomingList.length === 0 ? true : false;
+    if (recentHighlights) {
+        // 3 events where the highlightEvent flag is true in allEvents.js
+        upcomingList = allEvents.filter(event => event.highlightEvent).slice(0, 3);
+    }
 
-    if (upcomingList.length === 0) {
-        upcomingDivClass = styles.none;
-    } else if (upcomingList.length < 3) {
+    if (upcomingList.length < 3) {
         upcomingClass = styles.two;
     }
 
     return (
         <div
             id="events"
-            className={`${styles["upcoming-div"]} ${upcomingDivClass}`}
+            className={`${styles["upcoming-div"]}`}
             onLoad={() => upcomingEvents()}
         >
-            <h2 className={styles["upcoming-div-heading"]}>Upcoming Events</h2>
+            <h2 className={styles["upcoming-div-heading"]}>
+                {recentHighlights ? "Last Year's Highlights" : "Upcoming Events"}
+            </h2>
             <div className={`${styles["upcoming"]} ${upcomingClass}`}>
                 {upcomingList.map((eventItem, i) => {
                     return (

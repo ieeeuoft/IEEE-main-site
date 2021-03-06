@@ -11,7 +11,7 @@ const memberData = {
                     fullName: "Smile Peng",
                     position: "Vice Chair",
                     emailLink: "smile.peng@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/smile-peng/"
+                    LinkedInLink: "https://www.linkedin.com/in/smile-peng/",
                 },
             ],
             firstRowSize: 2,
@@ -28,7 +28,7 @@ const memberData = {
                     position: "Marketing Co-Managing Director",
                     emailLink: "t.luan@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/terryluan12/",
-                },	
+                },
                 {
                     fullName: "Irene Li",
                     position: "Marketing Co-Managing Director",
@@ -37,7 +37,7 @@ const memberData = {
             ],
             firstRowSize: 3,
         },
-        "Logistics": {
+        Logistics: {
             membersList: [
                 {
                     fullName: "Himanish Jindal",
@@ -68,7 +68,7 @@ const memberData = {
             ],
             firstRowSize: 3,
         },
-        "External": {
+        External: {
             membersList: [
                 {
                     fullName: "Kushagra Goel",
@@ -83,7 +83,7 @@ const memberData = {
             ],
             firstRowSize: 1,
         },
-        "Tech": {
+        Tech: {
             membersList: [
                 {
                     fullName: "Selena Liu",
@@ -103,7 +103,7 @@ const memberData = {
             ],
             firstRowSize: 2,
         },
-        "Web": {
+        Web: {
             membersList: [
                 {
                     fullName: "Piyush Sharma",
@@ -118,7 +118,7 @@ const memberData = {
             ],
             firstRowSize: 0,
         },
-        "Advisors": {
+        Advisors: {
             membersList: [
                 {
                     fullName: "Gaurav Ranganath",
@@ -262,7 +262,7 @@ const memberData = {
             ],
             firstRowSize: 4,
         },
-        "Logistics": {
+        Logistics: {
             membersList: [
                 {
                     fullName: "Julia Wagner",
@@ -298,7 +298,7 @@ const memberData = {
             ],
             firstRowSize: 2,
         },
-        "External": {
+        External: {
             membersList: [
                 {
                     fullName: "Katherine Liang",
@@ -333,7 +333,7 @@ const memberData = {
             ],
             firstRowSize: 1,
         },
-        "Tech": {
+        Tech: {
             membersList: [
                 {
                     fullName: "Shawn Zhang",
@@ -377,7 +377,7 @@ const memberData = {
             ],
             firstRowSize: 2,
         },
-        "Web": {
+        Web: {
             membersList: [
                 {
                     fullName: "Graham Hoyes",
@@ -408,7 +408,7 @@ const memberData = {
             ],
             firstRowSize: 2,
         },
-        "FYA": {
+        FYA: {
             membersList: [
                 {
                     fullName: "Annam Shamas",
@@ -433,7 +433,7 @@ const memberData = {
             ],
             firstRowSize: 0,
         },
-        "Advisors": {
+        Advisors: {
             membersList: [
                 {
                     fullName: "Nhien Tran-Nguyen",

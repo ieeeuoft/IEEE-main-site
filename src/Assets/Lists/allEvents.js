@@ -1,5 +1,6 @@
 // NOTE: UPLOADED IMAGES MUST BE WIDER THAN THEY ARE TALL
 // Square is optimal
+// Mark 3 events with highlightEvent: true,
 
 export const allEvents = [
     {
@@ -34,42 +35,45 @@ export const allEvents = [
         EventName: "Technical Interview Workshop",
         displayDate: "November 24-27, 2020",
         date: "2019/11/27",
-        link: "https://www.eventbrite.ca/e/technical-interview-workshop-day-one-tickets-126679294179",
+        link:
+            "https://www.eventbrite.ca/e/technical-interview-workshop-day-one-tickets-126679294179",
         highlightEvent: false,
     },
     {
         EventName: "NewHacks",
         displayDate: "November 7-8, 2020",
         date: "2020/11/08",
-        link: "ieee.utoronto.ca/newhacks",
-        highlightEvent: false,
+        // link: "ieee.utoronto.ca/newhacks",
+        link: "https://www.facebook.com/events/325634132024192/",
+        highlightEvent: true,
     },
     {
-        EventName: "Git Workshop" ,
+        EventName: "Git Workshop",
         displayDate: "January 14th, 2021",
         date: "2021/01/14",
         link: "https://www.facebook.com/events/897562894380332/",
         highlightEvent: false,
     },
     {
-        EventName: "PCB Workshop" ,
+        EventName: "PCB Workshop",
         displayDate: "January 21th, 2021",
         date: "2021/01/21",
         link: "https://www.facebook.com/events/401527524267206/",
         highlightEvent: false,
     },
     {
-        EventName: "Quantum AI Talks",
-        displayDate: "February 6-21, 2021",
-        date: "2021/02/06",
-        link: "https://www.facebook.com/events/2858257254497350/",
-        highlightEvent: true,
-    },
-    {
         EventName: "MakeUofT",
         displayDate: "February 6-21, 2021",
         date: "2021/02/06",
         link: "https://www.makeuoft.ca",
+        // link: "https://www.facebook.com/events/804261383638377",
+        highlightEvent: true,
+    },
+    {
+        EventName: "Quantum AI Talks",
+        displayDate: "February 13, 2021",
+        date: "2021/02/13",
+        link: "https://www.facebook.com/events/2858257254497350/",
         highlightEvent: true,
     },
     {

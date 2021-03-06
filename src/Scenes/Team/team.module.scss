@@ -39,7 +39,7 @@
     }
 
     &-title {
-        font-family: font(merri);
+        font-family: font(roboto);
         font-weight: bold;
         font-size: 2.2rem;
         margin-top: 1.2rem;
@@ -162,7 +162,7 @@
         border-bottom: 3px solid color(blue1);
 
         &-item {
-            font-family: font(merri);
+            font-family: font(roboto);
             font-weight: bold;
             font-size: 2rem;
             text-align: center;
@@ -236,7 +236,7 @@
 
     &-div {
         display: inline-block;
-        font-family: font(merri);
+        font-family: font(roboto);
         font-weight: bold;
         font-size: size(md) - 0.5rem;
         color: color(blue1);
