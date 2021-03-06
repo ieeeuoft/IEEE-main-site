@@ -16,7 +16,7 @@
     }
 
     &-div {
-        @extend .events-div;
+        @extend .eventsDiv;
         overflow: hidden;
         background-color: color(white);
 
@@ -33,4 +33,17 @@
 
 .slick-slide div {
     margin: 20px;
+}
+
+.spread {
+    justify-content: center;
+    padding-bottom: 20px;
+
+    > a {
+        padding: 20px;
+
+        @include response(sm) {
+            padding: 20px 10px;
+        }
+    }
 }

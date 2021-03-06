@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./sponsors.module.scss";
 import allSponsors from "./../../../Assets/Lists/allSponsors";
 import Slider from "react-slick";
@@ -31,11 +31,29 @@ const Sponsors = () => {
         ],
     };
 
+    const [compact, setCompact] = useState(true);
+
     return (
         <div id="sponsors" className={styles["sponsors-div"]}>
             <h2 className={styles["sponsors-div-heading"]}>Our Sponsors</h2>
-            <div className={styles["sponsors"]}>
-                <Slider {...settings}>
+            <p onClick={() => setCompact(!compact)} className={styles.compactBtn}>
+                {compact ? "expand" : "minimize"}
+            </p>
+            {compact ? (
+                <div className={styles["sponsors"]}>
+                    <Slider {...settings}>
+                        {allSponsors.map((item, i) => (
+                            <Sponsor
+                                companyName={item.companyName}
+                                tier={item.tier}
+                                imgType={item.imgType}
+                                siteLink={item.siteLink}
+                            />
+                        ))}
+                    </Slider>
+                </div>
+            ) : (
+                <div className={styles.spread}>
                     {allSponsors.map((item, i) => (
                         <Sponsor
                             companyName={item.companyName}
@@ -44,8 +62,9 @@ const Sponsors = () => {
                             siteLink={item.siteLink}
                         />
                     ))}
-                </Slider>
-            </div>
+                </div>
+            )}
+            ;
         </div>
     );
 };

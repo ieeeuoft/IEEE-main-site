@@ -31,7 +31,7 @@ const Upcoming = () => {
     let recentHighlights = upcomingList.length === 0 ? true : false;
     if (recentHighlights) {
         // 3 events where the highlightEvent flag is true in allEvents.js
-        upcomingList = allEvents.filter(event => event.highlightEvent).slice(0, 3);
+        upcomingList = allEvents.filter((event) => event.highlightEvent).slice(0, 3);
     }
 
     if (upcomingList.length < 3) {

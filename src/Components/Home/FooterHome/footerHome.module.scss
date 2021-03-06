@@ -3,7 +3,7 @@
 @import "./../Events/events.module.scss";
 
 .footer {
-    @extend .events-div;
+    @extend .eventsDiv;
     background-color: color(blue1);
     color: color(white);
     &-heading {

@@ -11,28 +11,26 @@ const EventContent = ({ name, date }) => {
 
     return (
         <>
-            <div className={styles["events-event-img"]}>
-                <div className={styles["events-event-img-crop"]}>
-                    <div className={styles["dark-gradient"]}></div>
-                    <img
-                        src={imgSrc}
-                        alt={name}
-                        className={styles["events-event-img-crop-src"]}
-                    />
-                </div>
+            <div className={styles.eventCrop}>
+                <div className={styles.darkGradient}></div>
+                <img src={imgSrc} alt={name} className={styles.eventCropImg} />
             </div>
-            <div className={styles["events-event-text"]}>
-                <h3 className={styles["events-event-text-name"]}>{name}</h3>
-                <p className={styles["events-event-text-date"]}>{date}</p>
+
+            <div className={styles.eventText}>
+                <h3 className={styles.eventTextName}>{name}</h3>
+                <p className={styles.eventTextDate}>{date}</p>
             </div>
         </>
     );
 };
 
-const EventEvent = ({ link, EventName, EventDate }) => (
+const EventEvent = ({ link, EventName, EventDate, spread = false }) => (
     <>
         {link === undefined && (
-            <div className={styles["events-event"]} style={{ cursor: "default" }}>
+            <div
+                className={`${styles.event} ${spread && styles.spread}`}
+                style={{ cursor: "default" }}
+            >
                 <EventContent name={EventName} date={EventDate} />
             </div>
         )}
@@ -42,7 +40,9 @@ const EventEvent = ({ link, EventName, EventDate }) => (
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${styles["events-event"]} ${styles["events-event-hover"]}`}
+                className={`${styles.event} ${styles.eventHover} ${
+                    spread && styles.spread
+                }`}
             >
                 <EventContent name={EventName} date={EventDate} />
             </a>

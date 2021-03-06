@@ -23,6 +23,11 @@
             @content;
         }
     }
+    @if ($breakpoint == xl-up) {
+        @media (min-width: 1201px) {
+            @content;
+        }
+    }
     @if ($breakpoint == lg) {
         @media (max-width: 1000px) {
             @content;
@@ -43,6 +48,11 @@
 
     @if ($breakpoint == sm) {
         @media (max-width: 465px) {
+            @content;
+        }
+    }
+    @if ($breakpoint == sm-up) {
+        @media (min-width: 466px) {
             @content;
         }
     }

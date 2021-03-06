@@ -28,7 +28,9 @@ const UpcomingEvent = ({ link, EventName, EventDate }) => (
         duration={1}
         offset={80}
         animateIn="fadeInUp"
-        className={`${styles["upcoming-event"]} ${link && styles["upcoming-event-hover"]}`}
+        className={`${styles["upcoming-event"]} ${
+            link && styles["upcoming-event-hover"]
+        }`}
     >
         {link === undefined && (
             <div style={{ cursor: "default" }}>

@@ -1,25 +1,39 @@
 @import "./../../../abstracts/variables";
 @import "./../../../abstracts/mixins";
 
-.events-div {
-    width: 100%;
+.compactBtn {
+    font-family: font(source);
+    color: color(blue1);
+    font-weight: bold;
+    margin-right: 50px;
+    font-size: size(sm);
+    cursor: pointer;
+    align-self: flex-end;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.eventsDiv {
+    width: 100vw;
     @include flexPosition;
     flex-direction: column;
     align-items: center;
-    padding: 8rem 0 4rem;
+    padding: 8rem 0 0;
     margin-top: -3rem;
     background-color: color(white);
     overflow-x: hidden;
 
-    &-heading {
+    &Heading {
         @include title;
         font-size: size(xl);
     }
 
     .events {
-        width: 100vw;
+        width: 100%;
         align-self: center;
-        padding: 4rem 0px;
+        padding: 2rem 0;
         background: color(white);
         overflow-x: hidden;
         outline: none;
@@ -29,18 +43,20 @@
         padding: 5rem 0px;
 
         .events {
-            width: 140vw;
             padding: 2rem 0 0.5rem;
         }
     }
 
     @include response(sm) {
         padding: 4rem 0px;
-
-        .events {
-            width: 150vw;
-        }
     }
+}
+
+.spread {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
 .slick-current {
