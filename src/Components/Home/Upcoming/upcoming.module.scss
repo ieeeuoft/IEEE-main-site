@@ -1,7 +1,7 @@
 @import "./../../../abstracts/variables";
 @import "./../../../abstracts/mixins";
 
-.upcoming-div {
+.upcomingDiv {
     background-color: color(blue2);
     width: 100vw;
     @include flexPosition;
@@ -14,7 +14,7 @@
         text-decoration: none !important;
     }
 
-    &-heading {
+    &Heading {
         @include title(white);
         font-size: size(xl);
     }

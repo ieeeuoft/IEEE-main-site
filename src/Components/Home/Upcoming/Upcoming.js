@@ -26,7 +26,6 @@ const upcomingEvents = () => {
 
 const Upcoming = () => {
     let upcomingList = upcomingEvents();
-    let upcomingDivClass = "";
     let upcomingClass = "";
     let recentHighlights = upcomingList.length === 0 ? true : false;
     if (recentHighlights) {
@@ -41,13 +40,13 @@ const Upcoming = () => {
     return (
         <div
             id="events"
-            className={`${styles["upcoming-div"]}`}
+            className={`${styles.upcomingDiv}`}
             onLoad={() => upcomingEvents()}
         >
-            <h2 className={styles["upcoming-div-heading"]}>
+            <h2 className={styles.upcomingDivHeading}>
                 {recentHighlights ? "Last Year's Highlights" : "Upcoming Events"}
             </h2>
-            <div className={`${styles["upcoming"]} ${upcomingClass}`}>
+            <div className={`${styles.upcoming} ${upcomingClass}`}>
                 {upcomingList.map((eventItem, i) => {
                     return (
                         <UpcomingEvent

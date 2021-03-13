@@ -67,7 +67,7 @@ export default class NavBar extends PureComponent {
         let zindex = { zIndex: 100 };
 
         return (
-            <header className={styles["header"]} style={zindex}>
+            <header className={styles.header} style={zindex}>
                 <Link
                     smooth
                     to={"/"}
@@ -76,38 +76,32 @@ export default class NavBar extends PureComponent {
                         this.scrollToTop();
                     }}
                 >
-                    <div className={`${styles["logo"]} ${logoClass} ${logoBackground}`}>
-                        <img src={logoImg} alt="Logo" className={styles["logo-img"]} />
+                    <div className={`${styles.logo} ${logoClass} ${logoBackground}`}>
+                        <img src={logoImg} alt="Logo" className={styles.logoImg} />
                     </div>
                 </Link>
 
-                <nav className={styles["nav"]}>
+                <nav className={styles.nav}>
                     <input
                         type="checkbox"
                         ref="checkboxRef"
                         id="check"
-                        className={styles["checkbox"]}
+                        className={styles.checkbox}
                         hidden
                     />
-                    <div className={styles["hamburger-menu"]}>
-                        <label for="check" className={styles["menu"]}>
-                            <div
-                                className={`${styles["menu-line"]} ${styles["menu-line-1"]}`}
-                            ></div>
-                            <div
-                                className={`${styles["menu-line"]} ${styles["menu-line-2"]}`}
-                            ></div>
-                            <div
-                                className={`${styles["menu-line"]} ${styles["menu-line-3"]}`}
-                            ></div>
+                    <div className={styles.hamburgerMenu}>
+                        <label for="check" className={styles.menu}>
+                            <div className={`${styles.menuLine} ${styles.menuLine1}`} />
+                            <div className={`${styles.menuLine} ${styles.menuLine2}`} />
+                            <div className={`${styles.menuLine} ${styles.menuLine3}`} />
                         </label>
                     </div>
 
-                    <div className={styles["slideoutNav"]}>
-                        <ul className={styles["nav-list"]}>
+                    <div className={styles.slideoutNav}>
+                        <ul className={styles.navList}>
                             <Link smooth to={"/#about"}>
                                 <li
-                                    className={styles["nav-list-item"]}
+                                    className={styles.navListItem}
                                     tab="0"
                                     onClick={() => this.closeNav()}
                                 >
@@ -116,7 +110,7 @@ export default class NavBar extends PureComponent {
                             </Link>
                             <Link to={"/team"}>
                                 <li
-                                    className={styles["nav-list-item"]}
+                                    className={styles.navListItem}
                                     onClick={() => this.closeNav()}
                                 >
                                     Our Team
@@ -124,7 +118,7 @@ export default class NavBar extends PureComponent {
                             </Link>
                             <Link smooth to={"/#events"}>
                                 <li
-                                    className={styles["nav-list-item"]}
+                                    className={styles.navListItem}
                                     onClick={() => this.closeNav()}
                                 >
                                     Events
@@ -132,7 +126,7 @@ export default class NavBar extends PureComponent {
                             </Link>
                             <Link smooth to={"/#joinus"}>
                                 <li
-                                    className={styles["nav-list-item"]}
+                                    className={styles.navListItem}
                                     onClick={() => this.closeNav()}
                                 >
                                     Join Us
@@ -140,7 +134,7 @@ export default class NavBar extends PureComponent {
                             </Link>
                             <Link smooth to={"/#sponsors"}>
                                 <li
-                                    className={styles["nav-list-item"]}
+                                    className={styles.navListItem}
                                     onClick={() => this.closeNav()}
                                 >
                                     Sponsors
@@ -148,7 +142,7 @@ export default class NavBar extends PureComponent {
                             </Link>
                             <Link smooth to={"/#contactus"}>
                                 <li
-                                    className={styles["nav-list-item"]}
+                                    className={styles.navListItem}
                                     onClick={() => this.closeNav()}
                                 >
                                     Contact Us

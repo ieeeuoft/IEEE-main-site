@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Footer from "./../../Components/General/Footer/Footer.js";
 import styles from "./team.module.scss";
 import skylineLeft from "./../../Assets/Images/skyline/skyline-left.svg";
@@ -10,459 +10,194 @@ import baby from "./../../Assets/Images/misc/baby.svg";
 import dog from "./../../Assets/Images/misc/dog.svg";
 import Switch from "react-switch";
 
-export default class Team extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            teamKey: "Exec Team",
-            year: "2021-2022",
-            active: 1,
-            checkedBaby: false,
-            checkedDog: false,
-        };
+const Team = () => {
+    const [year, setYear] = useState(Object.keys(memberData)[0]);
+    const [teamKey, setTeamKey] = useState("Exec Team");
+    const [active, setActive] = useState(0);
+    const [checkedBaby, setCheckedBaby] = useState(false);
+    const [checkedDog, setCheckedDog] = useState(false);
+
+    const yearKeys = Object.keys(memberData);
+    let teamMap = {};
+    if (year !== "past") {
+        Object.keys(memberData[year]).forEach((team, i) => (teamMap[team] = i));
     }
 
-    constructRows(memberData) {
-        const members = [];
-        for (let i = 0; i < memberData["membersList"].length; i++) {
-            let member = memberData["membersList"][i];
-            members.push(
-                <Member
-                    fullName={member.fullName}
-                    position={member.position}
-                    year={this.state.year}
-                    LinkedInLink={member.LinkedInLink}
-                    emailLink={member.emailLink}
-                    baby={this.state.checkedBaby}
-                    puppy={this.state.checkedDog}
-                />
+    const ConstructMemberChart = () => {
+        // Decide to show "Past teams", 404, or the correct members of year and team
+        if (year === "past") {
+            return (
+                <div>
+                    <div className={styles.spacer1}></div>
+                    <PastTeam />
+                    <div className={styles.spacer2}></div>
+                </div>
+            );
+        } else if (!memberData.hasOwnProperty(year)) {
+            return (
+                <div>
+                    <div className={styles.spacer2}></div>
+                    <div className={styles.spacer2}>ERROR 404. Team not found.</div>
+                </div>
             );
         }
+        return <ConstructRows />;
+    };
+
+    const TeamRow = ({ children }) => <div className={styles.row}>{children}</div>;
+
+    const ConstructRows = () => {
+        const team = memberData[year][teamKey];
+        const membersArr = team.membersList.map((member) => (
+            <Member
+                fullName={member.fullName}
+                position={member.position}
+                year={year}
+                LinkedInLink={member.LinkedInLink}
+                emailLink={member.emailLink}
+                baby={checkedBaby}
+                puppy={checkedDog}
+            />
+        ));
 
         let numRows =
-            Math.ceil((members.length - memberData["firstRowSize"]) / 7) * 2 + 1;
-        let membersLeft = members.length;
+            Math.ceil((team.membersList.length - team["firstRowSize"]) / 7) * 2 + 1;
+        let membersLeft = team.membersList.length;
         const rows = [];
         let ind = 0;
-        let obj;
 
         for (let i = 0; i < numRows; i++) {
             if (membersLeft === 0) {
                 break;
             } else if (i === 0) {
                 // treat the first row differently
-                if (memberData["firstRowSize"] === 1) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind]
-                    );
-                    ind += 1;
-                    membersLeft -= 1;
-                } else if (memberData["firstRowSize"] === 2) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind],
-                        members[ind + 1]
-                    );
-                    ind += 2;
-                    membersLeft -= 2;
-                } else if (memberData["firstRowSize"] === 3) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind],
-                        members[ind + 1],
-                        members[ind + 2]
-                    );
-                    ind += 3;
-                    membersLeft -= 3;
-                } else if (memberData["firstRowSize"] === 4) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind],
-                        members[ind + 1],
-                        members[ind + 2],
-                        members[ind + 3]
-                    );
-                    ind += 4;
-                    membersLeft -= 4;
-                }
-            } else if (i % 2 !== 0) {
-                // 0, 2, 4, ... even row add 4 members
-                if (membersLeft > 3) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind],
-                        members[ind + 1],
-                        members[ind + 2],
-                        members[ind + 3]
-                    );
-                    ind += 4;
-                    membersLeft -= 4;
-                } else if (membersLeft === 3) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind],
-                        members[ind + 1],
-                        members[ind + 2]
-                    );
-                    ind += 3;
-                    membersLeft -= 3;
-                } else if (membersLeft === 2) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind],
-                        members[ind + 1]
-                    );
-                    ind += 2;
-                    membersLeft -= 2;
-                } else if (membersLeft === 1) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind]
-                    );
-                    ind += 1;
-                    membersLeft -= 1;
-                }
+                rows.push(
+                    <TeamRow>{membersArr.slice(ind, ind + team.firstRowSize)}</TeamRow>
+                );
+                ind += team.firstRowSize;
+                membersLeft -= team.firstRowSize;
             } else {
+                // 0, 2, 4, ... even row add 4 members
                 // 1, 3, 5, ... odd row add 3 members
-                if (membersLeft >= 3) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind],
-                        members[ind + 1],
-                        members[ind + 2]
-                    );
-                    ind += 3;
-                    membersLeft -= 3;
-                } else if (membersLeft === 2) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind],
-                        members[ind + 1]
-                    );
-                    ind += 2;
-                    membersLeft -= 2;
-                } else if (membersLeft === 1) {
-                    obj = React.createElement(
-                        "div",
-                        { className: styles["row"] },
-                        members[ind]
-                    );
-                    ind += 1;
-                    membersLeft -= 1;
-                }
+                const slicedArr = membersArr.slice(ind, ind + (i % 2 !== 0 ? 4 : 3));
+                rows.push(<TeamRow>{slicedArr}</TeamRow>);
+                ind += slicedArr.length;
+                membersLeft -= slicedArr.length;
             }
-            rows.push(obj);
         }
-
-        return <div className={styles["team-container"]}>{rows}</div>;
-    }
-
-    constructMemberChart() {
-        if (this.state.year === "past") {
-            return (
-                <div>
-                    <div className={styles["spacer1"]}></div>
-                    {PastTeam()}
-                    <div className={styles["spacer2"]}></div>
-                </div>
-            );
-        }
-
-        if (memberData[this.state.year] === undefined) {
-            return (
-                <div>
-                    <div className={styles["spacer2"]}></div>
-                    <div className={styles["spacer2"]}>ERROR 404. Team not found.</div>
-                </div>
-            );
-        }
-
-        return this.constructRows(memberData[this.state.year][this.state.teamKey]);
-    }
-
-    showTeam(group, activeNum) {
-        this.setState({
-            teamKey: group,
-            active: activeNum,
-        });
-    }
-
-    changeYear = (event) => {
-        this.setState({
-            year: event.target.value,
-            teamKey: "Exec Team",
-            active: 1,
-            checkedPuppy: false,
-            checkedBaby: false,
-        });
+        return <div className={styles.teamContainer}>{rows}</div>;
     };
 
-    constructNav() {
-        if (this.state.year === "past") {
-            return;
-        }
-        if (memberData[this.state.year] === undefined) {
-            return;
-        }
+    const ConstructNav = () => (
+        <nav className={styles.teamNav}>
+            <ul className={styles.teamNavList}>
+                {Object.keys(memberData[year]).map((team) => (
+                    <ConstructNavListItem teamKey={team} />
+                ))}
+            </ul>
+        </nav>
+    );
 
-        let thisYearsData = Object.keys(memberData[this.state.year]);
-        let numCategories = thisYearsData.length;
-        let items = [];
-
-        for (let i = 0; i < numCategories; i++) {
-            let categoryName = thisYearsData[i];
-            items.push(this.constructNavListItem(categoryName));
-        }
-
+    const ConstructNavListItem = (teamKey) => {
+        const teamName = teamKey.teamKey;
+        const activeNum = teamMap[teamName];
         return (
-            <nav className={styles["team-nav"]}>
-                <ul className={styles["team-nav-list"]}>{items}</ul>
-            </nav>
+            <li
+                className={`${styles.teamNavListItem} ${
+                    active === activeNum && styles.teamNavListItemActive
+                }`}
+                onClick={() => (setTeamKey(teamName), setActive(activeNum))}
+            >
+                {teamName}
+            </li>
         );
-    }
+    };
 
-    constructNavListItem(teamKey) {
-        let { active } = this.state;
-        switch (teamKey) {
-            case "Exec Team":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            active === 1 ? styles["team-nav-list-item-active"] : null
-                        }`}
-                        onClick={() => this.showTeam("Exec Team", 1)}
-                    >
-                        Exec Team
-                    </li>
-                );
-            case "Marketing & Finance":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            active === 2 ? styles["team-nav-list-item-active"] : null
-                        }`}
-                        onClick={() => this.showTeam("Marketing & Finance", 2)}
-                    >
-                        Marketing & Finance
-                    </li>
-                );
-            case "Computer Chapter":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            styles["computer-nav-item"]
-                        } ${active === 3 ? styles["computer-nav-item-active"] : null}`}
-                        onClick={() => this.showTeam("Computer Chapter", 3)}
-                    >
-                        Computer Chapter
-                    </li>
-                );
-            case "Electronics Chapter":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            styles["electronics-nav-item"]
-                        } ${
-                            active === 4 ? styles["electronics-nav-item-active"] : null
-                        }`}
-                        onClick={() => this.showTeam("Electronics Chapter", 4)}
-                    >
-                        Electronics Chapter
-                    </li>
-                );
-            case "Energy/Power Chapter":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            styles["energy-nav-item"]
-                        } ${active === 5 ? styles["energy-nav-item-active"] : null}`}
-                        onClick={() => this.showTeam("Energy/Power Chapter", 5)}
-                    >
-                        Energy/Power Chapter
-                    </li>
-                );
-            case "Logistics":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            active === 3 ? styles["team-nav-list-item-active"] : null
-                        }`}
-                        onClick={() => this.showTeam("Logistics", 3)}
-                    >
-                        Logistics
-                    </li>
-                );
-            case "External":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            active === 4 ? styles["team-nav-list-item-active"] : null
-                        }`}
-                        onClick={() => this.showTeam("External", 4)}
-                    >
-                        External
-                    </li>
-                );
-            case "Tech":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            active === 5 ? styles["team-nav-list-item-active"] : null
-                        }`}
-                        onClick={() => this.showTeam("Tech", 5)}
-                    >
-                        Tech
-                    </li>
-                );
-            case "Web":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            active === 6 ? styles["team-nav-list-item-active"] : null
-                        }`}
-                        onClick={() => this.showTeam("Web", 6)}
-                    >
-                        Web
-                    </li>
-                );
-            case "FYA":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            active === 7 ? styles["team-nav-list-item-active"] : null
-                        }`}
-                        onClick={() => this.showTeam("FYA", 7)}
-                    >
-                        FYA
-                    </li>
-                );
-            case "Advisors":
-                return (
-                    <li
-                        className={`${styles["team-nav-list-item"]} ${
-                            active === 8 ? styles["team-nav-list-item-active"] : null
-                        }`}
-                        onClick={() => this.showTeam("Advisors", 8)}
-                    >
-                        Advisors
-                    </li>
-                );
-            default:
-                return;
-        }
-    }
-
-    contructYearOptions(keys) {
-        let options = [];
-        for (let i = 0; i < keys.length; i++) {
-            options.push(<option value={`${keys[i]}`}>{keys[i]}</option>);
-        }
-        return options;
-    }
-
-    handleChange(toggleNum) {
+    function HandleChange(toggleNum) {
         if (toggleNum === 1) {
-            // puppy
-            this.setState({ checkedDog: !this.state.checkedDog, checkedBaby: false });
+            setCheckedDog(!checkedDog);
+            setCheckedBaby(false);
         } else if (toggleNum === 2) {
-            // baby
-            this.setState({
-                checkedBaby: !this.state.checkedBaby,
-                checkedDog: false,
-            });
+            setCheckedDog(false);
+            setCheckedBaby(!checkedBaby);
         }
     }
 
-    render() {
-        let { teamKey, year } = this.state;
-        const yearKeys = Object.keys(memberData);
-
-        return (
-            <div className={styles["team"]}>
-                <div className={styles["select-year"]}>
-                    <div className={styles["triangle-down"]}></div>
-                    <select
-                        onChange={this.changeYear}
-                        value={this.state.value}
-                        className={styles["select-year-div"]}
-                    >
-                        {this.contructYearOptions(yearKeys)}
-                        <option value="past">Past Teams</option>
-                    </select>
-                </div>
-
-                {yearKeys.slice(0, -4).includes(year) && ( // Checks years 2020-2021 and beyond for baby feature
-                    <div className={styles["toggles"]}>
-                        <div className={styles["baby"]}>
-                            <label>
-                                <Switch
-                                    onChange={() => this.handleChange(1)}
-                                    checked={this.state.checkedDog}
-                                    onColor={"#00639C"}
-                                    uncheckedIcon={false}
-                                    checkedIcon={false}
-                                />
-                            </label>
-                            <img
-                                src={dog}
-                                alt="Dog Emoji"
-                                className={styles["baby-emoji"]}
-                            />
-                        </div>
-
-                        <div className={styles["baby"]}>
-                            <label>
-                                <Switch
-                                    onChange={() => this.handleChange(2)}
-                                    checked={this.state.checkedBaby}
-                                    onColor={"#00639C"}
-                                    uncheckedIcon={false}
-                                    checkedIcon={false}
-                                />
-                            </label>
-                            <img
-                                src={baby}
-                                alt="Baby Emoji"
-                                className={styles["baby-emoji"]}
-                            />
-                        </div>
-                    </div>
-                )}
-
-                {this.constructNav()}
-
-                {year !== "past" && <h2 className={styles.teamTitle}>{teamKey}</h2>}
-
-                {this.constructMemberChart()}
-
-                <div className={styles["skyline-imgs-crop"]}>
-                    <div className={styles["skyline-imgs"]}>
-                        <img
-                            src={skylineLeft}
-                            alt="Skyline"
-                            className={styles["skyline-imgs-lr"]}
-                        />
-                        <img
-                            src={skylineRight}
-                            alt="Skyline"
-                            className={styles["skyline-imgs-lr"]}
-                        />
-                    </div>
-                </div>
-
-                <Footer />
-            </div>
-        );
+    function ChangeYear(event) {
+        setTeamKey("Exec Team");
+        setYear(event.target.value);
+        setActive(0);
+        setCheckedBaby(false);
+        setCheckedDog(false);
     }
-}
+
+    return (
+        <div className={styles.team}>
+            <div className={styles.selectYear}>
+                <div className={styles.triangleDown}></div>
+                <select
+                    onChange={ChangeYear}
+                    value={year}
+                    className={styles.selectYearDiv}
+                >
+                    {yearKeys.map((key) => (
+                        <option value={`${key}`}>{key}</option>
+                    ))}
+                    <option value="past">Past Teams</option>
+                </select>
+            </div>
+
+            {yearKeys.slice(0, -4).includes(year) && ( // Checks years 2020-2021 and beyond for baby feature
+                <div className={styles.toggles}>
+                    <div className={styles.baby}>
+                        <label>
+                            <Switch
+                                onChange={() => HandleChange(1)}
+                                checked={checkedDog}
+                                onColor={"#00639C"}
+                                uncheckedIcon={false}
+                                checkedIcon={false}
+                            />
+                        </label>
+                        <img src={dog} alt="Dog Emoji" className={styles.babyEmoji} />
+                    </div>
+
+                    <div className={styles.baby}>
+                        <label>
+                            <Switch
+                                onChange={() => HandleChange(2)}
+                                checked={checkedBaby}
+                                onColor={"#00639C"}
+                                uncheckedIcon={false}
+                                checkedIcon={false}
+                            />
+                        </label>
+                        <img src={baby} alt="Baby Emoji" className={styles.babyEmoji} />
+                    </div>
+                </div>
+            )}
+
+            {memberData.hasOwnProperty(year) && <ConstructNav />}
+            <ConstructMemberChart />
+
+            <div className={styles["skyline-imgs-crop"]}>
+                <div className={styles["skyline-imgs"]}>
+                    <img
+                        src={skylineLeft}
+                        alt="Skyline"
+                        className={styles["skyline-imgs-lr"]}
+                    />
+                    <img
+                        src={skylineRight}
+                        alt="Skyline"
+                        className={styles["skyline-imgs-lr"]}
+                    />
+                </div>
+            </div>
+
+            <Footer />
+        </div>
+    );
+};
+
+export default Team;

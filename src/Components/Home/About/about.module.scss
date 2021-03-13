@@ -33,19 +33,20 @@
         &-container {
             width: 100%;
             padding-bottom: 5rem;
+            @include flexPosition($jusCon: center);
 
             &-button {
                 cursor: pointer;
-                width: 100%;
-                padding: 15px 40px;
+                width: 25rem;
+                margin: 0 2rem;
                 border: 2px solid color(blue1);
                 color: color(blue1);
                 background-color: transparent;
                 font-family: font(roboto);
                 font-weight: bold;
-                font-size: size(md);
+                font-size: size(md) - 0.5rem;
                 text-align: center;
-                padding: 2rem;
+                padding: 1.5rem;
                 margin-bottom: 15px;
                 transition: all 0.5s;
 
@@ -56,12 +57,27 @@
                 }
 
                 @include response(lg) {
-                    font-size: size(md) - 0.3rem;
+                    font-size: size(md) - 0.7rem;
+                    width: 20rem;
+                }
+
+                @include response(md) {
+                    font-size: size(md) - 0.7rem;
+                    width: 16rem;
+                    margin: 0 1rem;
                 }
             }
         }
         @include response(lg) {
             margin-top: 2rem;
+        }
+    }
+
+    @include response(md) {
+        &-text,
+        &-btn-scroll {
+            width: 100%;
+            padding: 0 2rem;
         }
     }
 }

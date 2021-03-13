@@ -1,22 +1,13 @@
 @import "./../../Home/FooterHome/footerHome.module.scss";
 
-.small-footer {
-    padding: 1rem 0 1.5rem;
+.smallFooter {
+    padding: 1rem 0;
     z-index: 100;
     margin: 0;
 
     p {
-        margin: 1.5rem 60px 1.5rem;
-    }
-
-    .email {
-        cursor: pointer;
-        margin: 0;
-        text-decoration: none;
-        transition: all 0.2s;
-
-        &:hover {
-            text-decoration: underline;
-        }
+        margin: 1rem 60px 0;
+        font-weight: normal;
+        font-size: size(xs);
     }
 }

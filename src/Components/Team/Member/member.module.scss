@@ -7,20 +7,21 @@
     margin: 0 4vw 3rem;
     z-index: 1;
     width: 21rem;
+    color: color(font);
 
-    &-crop {
+    &Crop {
         height: 18rem;
         width: 18rem;
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         @include flexPosition(center, center);
 
-        &-img {
+        &Img {
             width: 100%;
         }
     }
 
-    &-title {
+    &Title {
         font-family: font(roboto);
         font-weight: bold;
         font-size: 2rem;
@@ -28,20 +29,20 @@
         text-align: center;
         letter-spacing: 0.02rem;
     }
-    &-name {
+    &Name {
         font-family: font(source);
         font-size: 1.8rem;
         text-align: center;
     }
 
-    &-btn {
+    &Btn {
         display: flex;
         justify-content: space-around;
         padding: 1rem;
         box-sizing: border-box;
 
-        &-email,
-        &-linkedin {
+        &Email,
+        &Linkedin {
             text-decoration: none;
             width: 40px;
             height: 40px;
@@ -51,7 +52,7 @@
             margin: 0 1.5rem;
             transition: all 0.3s;
 
-            &-icon {
+            &Icon {
                 width: 20px;
                 z-index: 1;
             }
@@ -60,8 +61,8 @@
                 background-color: darken(color(blue1), 10%);
             }
         }
-        &-email {
-            &-icon {
+        &Email {
+            &Icon {
                 width: 24px;
             }
         }
@@ -70,7 +71,7 @@
     @include response(lg/md) {
         margin: 0 3vw 3rem;
         width: 18rem;
-        &-crop {
+        &Crop {
             height: 16rem;
             width: 16rem;
         }
@@ -78,7 +79,7 @@
 
     @include response(md) {
         width: 17rem 1rem;
-        &-crop {
+        &Crop {
             height: 14rem;
             width: 14rem;
         }
@@ -88,10 +89,10 @@
         width: 16rem;
         margin: 0 2vw 1rem;
 
-        &-title {
+        &Title {
             font-size: 1.7rem;
         }
-        &-name {
+        &Name {
             font-size: 1.5rem;
         }
     }

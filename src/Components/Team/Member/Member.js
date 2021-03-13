@@ -25,30 +25,27 @@ const Member = ({ fullName, position, year, emailLink, LinkedInLink, baby, puppy
     }
 
     return (
-        <div className={styles["card"]}>
-            <div className={styles["card-crop"]}>
-                <img className={styles["card-crop-img"]} src={imgSrc} alt={fullName} />
+        <div className={styles.card}>
+            <div className={styles.cardCrop}>
+                <img className={styles.cardCropImg} src={imgSrc} alt={fullName} />
             </div>
-            <p className={styles["card-title"]}>{position}</p>
-            <p className={styles["card-name"]}>{fullName}</p>
-            <div className={styles["card-btn"]}>
+            <p className={styles.cardTitle}>{position}</p>
+            <p className={styles.cardName}>{fullName}</p>
+            <div className={styles.cardBtn}>
                 {emailLink && (
-                    <a
-                        href={`mailto:${emailLink}`}
-                        className={styles["card-btn-email"]}
-                    >
+                    <a href={`mailto:${emailLink}`} className={styles.cardBtnEmail}>
                         <img
                             src={Email}
-                            className={styles["card-btn-email-icon"]}
+                            className={styles.cardBtnEmailIcon}
                             alt="Email"
                         />
                     </a>
                 )}
                 {LinkedInLink && (
-                    <a href={LinkedInLink} className={styles["card-btn-linkedin"]}>
+                    <a href={LinkedInLink} className={styles.cardBtnLinkedin}>
                         <img
                             src={LinkedIn}
-                            className={styles["card-btn-linkedin-icon"]}
+                            className={styles.cardBtnLinkedinIcon}
                             alt="LinkedIn"
                         />
                     </a>

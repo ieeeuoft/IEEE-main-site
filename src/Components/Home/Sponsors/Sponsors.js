@@ -34,13 +34,13 @@ const Sponsors = () => {
     const [compact, setCompact] = useState(true);
 
     return (
-        <div id="sponsors" className={styles["sponsors-div"]}>
-            <h2 className={styles["sponsors-div-heading"]}>Our Sponsors</h2>
+        <div id="sponsors" className={styles.sponsorsDiv}>
+            <h2 className={styles.sponsorsDivHeading}>Our Sponsors</h2>
             <p onClick={() => setCompact(!compact)} className={styles.compactBtn}>
                 {compact ? "expand" : "minimize"}
             </p>
             {compact ? (
-                <div className={styles["sponsors"]}>
+                <div className={styles.sponsors}>
                     <Slider {...settings}>
                         {allSponsors.map((item, i) => (
                             <Sponsor

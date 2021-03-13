@@ -4,26 +4,26 @@
 .sponsors {
     @include flexPosition;
 
-    &-container {
+    &Container {
         @include flexPosition;
         flex-direction: column;
         transition: all 0.4s;
         padding: 1rem 4rem 0;
         text-decoration: none;
-        margin-top: 10px;
+        margin-bottom: 2rem;
 
         &:hover {
             padding-top: 0;
         }
 
-        &-img-div {
+        &ImgDiv {
             height: 10rem;
             width: 100%;
             @include flexPosition(center, center);
             outline: none;
         }
 
-        &-img {
+        &Img {
             display: block;
             max-width: 15vw;
             max-height: 10rem;
@@ -31,18 +31,9 @@
             height: auto;
         }
 
-        &-tier {
-            color: color(green1);
-            font-family: font(roboto);
-            font-weight: bold;
-            font-size: size(sm);
-            margin-top: 2rem;
-            text-align: center;
-        }
-
         @include response(lg/md) {
             margin-top: 0;
-            &-img-div {
+            &ImgDiv {
                 height: 10rem;
             }
         }
@@ -50,16 +41,12 @@
         @include response(md) {
             padding: 1rem 0 0;
 
-            &-img-div {
+            &ImgDiv {
                 height: 10rem;
             }
 
-            &-img {
+            &Img {
                 max-width: 30vw;
-            }
-
-            &-tier {
-                font-size: 1.6rem;
             }
         }
     }

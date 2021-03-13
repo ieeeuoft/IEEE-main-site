@@ -6,18 +6,10 @@ const getYear = () => {
     return today.getFullYear();
 };
 
-const Copyright = () => {
-    let year = getYear();
-    return (
-        <p
-            className={styles["copyright"]}
-            onLoad={() => {
-                getYear();
-            }}
-        >
-            {"© " + year + " IEEE University of Toronto Student Branch"}
-        </p>
-    );
-};
+const Copyright = () => (
+    <p className={styles.copyright}>
+        {"© " + getYear() + " IEEE University of Toronto Student Branch"}
+    </p>
+);
 
 export default Copyright;

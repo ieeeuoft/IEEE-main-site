@@ -138,7 +138,7 @@
     }
 }
 
-.team-container {
+.teamContainer {
     width: 100vw;
     flex-direction: column;
     @include flexPosition;
@@ -150,32 +150,33 @@
     flex-wrap: wrap;
 }
 
-.team-nav {
+.teamNav {
     width: 100vw;
     @include flexPosition(center, center);
     flex-direction: column;
-    margin-top: 4rem;
+    margin: 4rem 0;
     z-index: 101;
 
-    &-list {
+    &List {
         @include flexPosition;
-        border-bottom: 3px solid color(blue1);
 
-        &-item {
+        &Item {
             font-family: font(roboto);
             font-weight: bold;
             font-size: 2rem;
             text-align: center;
             color: color(blue1);
-            padding: 2rem;
+            margin: 0 2rem;
+            padding-bottom: 5px;
             list-style: none;
             line-height: 120%;
             cursor: pointer;
-            transition: all 0.4s;
+            transition: border-bottom-style 0.4s;
 
             &:hover,
-            &-active {
-                background-color: color(blue6);
+            &Active {
+                border-bottom: 2px solid color(blue1);
+                padding-bottom: 3px;
             }
         }
 
@@ -191,50 +192,17 @@
                 padding: 1.5rem;
             }
         }
-
-        .computer-nav-item {
-            color: color(blue2);
-
-            &:hover,
-            &:active,
-            &:focus,
-            &-active {
-                background-color: #b4daea;
-            }
-        }
-
-        .electronics-nav-item {
-            color: color(green1);
-
-            &:hover,
-            &:active,
-            &:focus,
-            &-active {
-                background-color: #c6ecee;
-            }
-        }
-
-        .energy-nav-item {
-            color: color(orange1);
-
-            &:hover,
-            &:active,
-            &:focus,
-            &-active {
-                background-color: #ffefde;
-            }
-        }
     }
 }
 
-.select-year {
+.selectYear {
     width: 100%;
     margin-top: 9vw;
     @include flexPosition(center, center);
     flex-direction: row-reverse;
     z-index: 101;
 
-    &-div {
+    &Div {
         display: inline-block;
         font-family: font(roboto);
         font-weight: bold;
@@ -271,7 +239,7 @@
     text-align: center;
 }
 
-.triangle-down {
+.triangleDown {
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
@@ -296,7 +264,7 @@
         justify-content: flex-end;
         margin-left: 25px;
 
-        &-emoji {
+        &Emoji {
             height: 25px;
             margin-left: 10px;
             margin-bottom: 5px;

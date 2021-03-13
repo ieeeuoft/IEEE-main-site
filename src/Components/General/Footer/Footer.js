@@ -3,14 +3,8 @@ import styles from "./footer.module.scss";
 import Copyright from "../../General/Copyright/Copyright";
 
 const Footer = () => (
-    <footer className={`${styles["footer"]} ${styles["small-footer"]}`}>
+    <footer className={`${styles.footer} ${styles.smallFooter}`}>
         <Copyright />
-        <a
-            className={`${styles["footer-copyright"]} ${styles["email"]}`}
-            href="mailto:uoft@ieee.org"
-        >
-            uoft@ieee.org
-        </a>
     </footer>
 );
 

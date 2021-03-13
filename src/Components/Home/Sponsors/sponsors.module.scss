@@ -15,12 +15,12 @@
         padding: 3rem 0 2rem;
     }
 
-    &-div {
+    &Div {
         @extend .eventsDiv;
         overflow: hidden;
         background-color: color(white);
 
-        &-heading {
+        &Heading {
             @include title;
             font-size: size(xl);
         }

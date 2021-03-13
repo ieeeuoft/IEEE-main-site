@@ -24,9 +24,9 @@ const About = () => (
         >
             <p>
                 IEEE is the world's largest technical professional organization
-                dedicated to advancing technology for the benefit of humanity. We host
-                numerous events throughout the year, which are designed to help students
-                reach their personal and professional development goals.
+                dedicated to advancing technology for the benefit of humanity. As UofT's 
+                branch, we host numerous events throughout the year, which are designed
+                to help students reach their personal and professional development goals.
             </p>
         </ScrollAnimation>
 

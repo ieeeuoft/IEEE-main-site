@@ -20,7 +20,7 @@
         margin-left: 1rem;
         padding-top: 1rem;
 
-        &-img {
+        &Img {
             height: 100%;
         }
     }
@@ -72,14 +72,14 @@
 
 // Navigation on top right corner
 .nav {
-    &-list {
+    &List {
         @include flexPosition(space-around);
         font-size: size(xs);
         font-weight: 600;
         font-family: font(roboto);
         width: calc(100% - 140px);
 
-        &-item {
+        &Item {
             list-style: none;
             padding: 0 0.8rem;
         }
@@ -126,7 +126,7 @@
         height: 100vh;
         @include flexPosition(center, center);
 
-        .nav-list {
+        .navList {
             flex-direction: column;
             width: 100%;
 
@@ -141,13 +141,13 @@
     }
 
     @include response(lg) {
-        .nav-list a li {
+        .navList a li {
             font-size: size(md);
         }
     }
 }
 
-.hamburger-menu {
+.hamburgerMenu {
     width: 40px;
     height: 40px;
     margin-top: 1rem;
@@ -173,7 +173,7 @@
         cursor: pointer;
         transition: transform 0.5s;
 
-        &-line {
+        &Line {
             width: 100%;
             height: 4px;
             background-color: color(orange1);
@@ -186,15 +186,15 @@
 .checkbox:checked ~ .slideoutNav {
     right: 0;
 }
-.checkbox:checked ~ .hamburger-menu .menu {
+.checkbox:checked ~ .hamburgerMenu .menu {
     transform: rotateZ(90deg);
 }
-.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+.checkbox:checked ~ .hamburgerMenu .menuLine1 {
     transform: rotateZ(-42deg);
 }
-.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+.checkbox:checked ~ .hamburgerMenu .menuLine2 {
     opacity: 0;
 }
-.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+.checkbox:checked ~ .hamburgerMenu .menuLine3 {
     transform: rotateZ(42deg);
 }
