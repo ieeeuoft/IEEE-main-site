@@ -2,16 +2,13 @@
 @import "./../../../abstracts/mixins";
 
 .header {
-    @include flexPosition(space-between, flex-start);
+    @include flexPosition($alIte: flex-start);
     width: 100vw;
-    padding: 0 2rem;
+    padding-left: 2rem;
     margin: auto;
     position: fixed;
     top: 0;
-
-    @include response(sm) {
-        padding: 0 1rem;
-    }
+    z-index: 100;
 
     .logo {
         height: calc(50vw / 6);
@@ -26,12 +23,23 @@
     }
 
     .logoShrink {
-        height: 50px !important;
-        width: 50px;
+        @include flexPosition($jusCon: center);
+        height: 45px !important;
+        width: 45px !important;
         animation: shrink 0.2s ease-in;
-        padding: 0.5rem;
-        margin-top: 0.5rem;
-        margin-left: 0.5rem;
+        padding: 0.5rem 2.5rem;
+        margin: 0.25rem;
+    }
+
+    @include response(md) {
+        padding: 0 2rem;
+
+        .logoShrink {
+            padding: 0.5rem 3.1rem;
+        }
+    }
+    @include response(sm) {
+        padding: 0 1rem;
     }
 
     .logoBackground {
@@ -70,6 +78,22 @@
     }
 }
 
+.teamPage {
+    .navListItem {
+        color: color(blue1);
+    }
+}
+
+.scrolled {
+    background-color: rgba(4, 133, 186, 0.8);
+    box-shadow: 2px -5px 8px rgba(0, 0, 0, 0.14), 0 -1px 10px -2px rgba(0, 0, 0, 0.12),
+        0 -1px 15px 0 rgba(0, 0, 0, 0.2);
+
+    .navListItem {
+        color: color(white);
+    }
+}
+
 // Navigation on top right corner
 .nav {
     &List {
@@ -77,11 +101,26 @@
         font-size: size(xs);
         font-weight: 600;
         font-family: font(roboto);
-        width: calc(100% - 140px);
 
         &Item {
             list-style: none;
-            padding: 0 0.8rem;
+            padding: 1.5rem 1.25rem;
+            color: color(white);
+
+            &:hover,
+            &:focus {
+                color: color(blue5);
+                background-color: transparent;
+                outline: none;
+            }
+
+            &Active {
+                color: color(orange1)
+            }
+
+            @include response(lg/md) {
+                padding: 1.5rem 0.9rem;
+            }
         }
 
         a {
@@ -90,59 +129,6 @@
             list-style: none;
             text-align: center;
             text-decoration: none;
-            color: color(blue1);
-
-            &:hover,
-            &:focus {
-                color: color(blue4);
-                background-color: transparent;
-                outline: none;
-            }
-
-            &:active {
-                color: color(orange1);
-            }
-        }
-    }
-}
-
-.slideoutNav {
-    padding-left: 20px;
-    width: 750px;
-    height: 60px;
-    background-color: color(white);
-    position: fixed;
-    right: -750px;
-    top: 0;
-    z-index: -1;
-    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
-    @include flexPosition;
-    border-bottom: solid 1px #ccc;
-    border-left: solid 1px #ccc;
-
-    @include response(lg) {
-        width: 60vw;
-        right: -60vw;
-        height: 100vh;
-        @include flexPosition(center, center);
-
-        .navList {
-            flex-direction: column;
-            width: 100%;
-
-            a {
-                padding: 30px;
-
-                li {
-                    font-size: size(lg);
-                }
-            }
-        }
-    }
-
-    @include response(lg) {
-        .navList a li {
-            font-size: size(md);
         }
     }
 }
@@ -183,18 +169,69 @@
     }
 }
 
-.checkbox:checked ~ .slideoutNav {
-    right: 0;
+@include response(md-up) {
+    .checkbox,
+    .hamburgerMenu {
+        display: none;
+    }
 }
-.checkbox:checked ~ .hamburgerMenu .menu {
-    transform: rotateZ(90deg);
-}
-.checkbox:checked ~ .hamburgerMenu .menuLine1 {
-    transform: rotateZ(-42deg);
-}
-.checkbox:checked ~ .hamburgerMenu .menuLine2 {
-    opacity: 0;
-}
-.checkbox:checked ~ .hamburgerMenu .menuLine3 {
-    transform: rotateZ(42deg);
+
+@include response(md) {
+    .slideoutNav {
+        padding-left: 20px;
+        width: 750px;
+        height: 60px;
+        background-color: color(white);
+        position: fixed;
+        right: -750px;
+        top: 0;
+        z-index: -1;
+        transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+        @include flexPosition;
+        border-bottom: solid 1px #ccc;
+        border-left: solid 1px #ccc;
+
+        @include response(lg) {
+            width: 60vw;
+            right: -60vw;
+            height: 100vh;
+            @include flexPosition(center, center);
+
+            .navList {
+                flex-direction: column;
+                width: 100%;
+
+                a {
+                    padding: 1rem;
+
+                    li {
+                        font-size: size(lg);
+                        color: color(blue1);
+                    }
+                }
+            }
+        }
+
+        @include response(lg) {
+            .navList a li {
+                font-size: size(md);
+            }
+        }
+    }
+
+    .checkbox:checked ~ .slideoutNav {
+        right: 0;
+    }
+    .checkbox:checked ~ .hamburgerMenu .menu {
+        transform: rotateZ(90deg);
+    }
+    .checkbox:checked ~ .hamburgerMenu .menuLine1 {
+        transform: rotateZ(-42deg);
+    }
+    .checkbox:checked ~ .hamburgerMenu .menuLine2 {
+        opacity: 0;
+    }
+    .checkbox:checked ~ .hamburgerMenu .menuLine3 {
+        transform: rotateZ(42deg);
+    }
 }

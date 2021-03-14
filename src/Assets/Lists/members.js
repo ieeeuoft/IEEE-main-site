@@ -56,6 +56,7 @@ const memberData = {
                     fullName: "Floria Fang Zhang",
                     position: "Logistics Co-Managing Director",
                     emailLink: "floria.fang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/floriafangzhang",
                 },
                 {
                     fullName: "Mojtaba Khavaninzadeh",
@@ -166,7 +167,7 @@ const memberData = {
                     fullName: "Raghav Srinivasan",
                     position: "Advisor",
                     LinkedInLink:
-                        "https://www.linkedin.com/in/raghav-srinivasan-b45350170",
+                        "https://www.linkedin.com/in/raghavsrini/",
                     emailLink: "raghav.srinivasan@mail.utoronto.ca",
                 },
                 {
@@ -366,7 +367,7 @@ const memberData = {
                     fullName: "Raghav Srinivasan",
                     position: "Tech Team Senior Associate",
                     LinkedInLink:
-                        "https://www.linkedin.com/in/raghav-srinivasan-b45350170",
+                        "https://www.linkedin.com/in/raghavsrini/",
                     emailLink: "raghav.srinivasan@mail.utoronto.ca",
                 },
                 {
@@ -437,6 +438,7 @@ const memberData = {
                     fullName: "Floria Fang Zhang",
                     position: "First Year Associate",
                     emailLink: "floria.fang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/floriafangzhang",
                 },
                 {
                     fullName: "Irene Li",
@@ -712,7 +714,7 @@ const memberData = {
                     fullName: "Raghav Srinivasan",
                     position: "Tech Director",
                     LinkedInLink:
-                        "https://www.linkedin.com/in/raghav-srinivasan-b45350170",
+                        "https://www.linkedin.com/in/raghavsrini/",
                     emailLink: "raghav.srinivasan@mail.utoronto.ca",
                 },
                 {

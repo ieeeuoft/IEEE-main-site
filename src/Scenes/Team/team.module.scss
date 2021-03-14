@@ -171,6 +171,7 @@
             list-style: none;
             line-height: 120%;
             cursor: pointer;
+            white-space: nowrap;
             transition: border-bottom-style 0.4s;
 
             &:hover,
@@ -184,6 +185,7 @@
             width: 100%;
             overflow-x: scroll;
             align-self: flex-end;
+            padding-bottom: 2rem;
         }
 
         @include response(md) {
@@ -192,6 +194,9 @@
                 padding: 1.5rem;
             }
         }
+    }
+    @include response(lg/md) {
+        margin-bottom: 2rem;
     }
 }
 

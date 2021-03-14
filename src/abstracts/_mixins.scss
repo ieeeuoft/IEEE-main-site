@@ -45,6 +45,11 @@
             @content;
         }
     }
+    @if ($breakpoint == md-up) {
+        @media (min-width: 600px) {
+            @content;
+        }
+    }
 
     @if ($breakpoint == sm) {
         @media (max-width: 465px) {
