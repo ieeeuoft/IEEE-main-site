@@ -98,6 +98,7 @@ const memberData = {
                     fullName: "Stephen Yang",
                     position: "Tech Team Co-Managing Director",
                     emailLink: "stephy.yang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/stepheny755/"
                 },
                 {
                     fullName: "Fahim Talukder",
@@ -140,7 +141,7 @@ const memberData = {
                 {
                     fullName: "Brenny Chao",
                     position: "Advisor",
-                    LinkedInLink: "https://www.linkedin.com/in/brenny-chao-4962aa17b/",
+                    LinkedInLink: "https://www.linkedin.com/in/brennychao/",
                     emailLink: "brenny.chao@mail.utoronto.ca",
                 },
                 {
@@ -152,7 +153,7 @@ const memberData = {
                 {
                     fullName: "Shawn Zhang",
                     position: "Advisor",
-                    LinkedInLink: "https://www.linkedin.com/in/shawn-zhang-2000717",
+                    LinkedInLink: "https://www.linkedin.com/in/shawn-zhang717/",
                     emailLink: "xiaoen.zhang@mail.utoronto.ca",
                 },
                 {
@@ -172,6 +173,7 @@ const memberData = {
                     fullName: "Graham Hoyes",
                     position: "Advisor",
                     emailLink: "graham.hoyes@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/grahamhoyes/",
                 },
                 {
                     fullName: "Alex Bogdan",
@@ -199,6 +201,7 @@ const memberData = {
                     fullName: "Kathy Zhuang",
                     position: "Advisor",
                     emailLink: "kathy.zhuang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/yue-kathy-zhuang/",
                 },
             ],
             firstRowSize: 3,
@@ -239,6 +242,7 @@ const memberData = {
                     fullName: "Kathy Zhuang",
                     position: "Graphics Director",
                     emailLink: "kathy.zhuang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/yue-kathy-zhuang/",
                 },
                 {
                     fullName: "Smile Peng",
@@ -280,7 +284,7 @@ const memberData = {
                 {
                     fullName: "Brenny Chao",
                     position: "Hackathon Co-Managing Director",
-                    LinkedInLink: "https://www.linkedin.com/in/brenny-chao-4962aa17b/",
+                    LinkedInLink: "https://www.linkedin.com/in/brennychao/",
                     emailLink: "brenny.chao@mail.utoronto.ca",
                 },
                 {
@@ -349,7 +353,7 @@ const memberData = {
                 {
                     fullName: "Shawn Zhang",
                     position: "Tech Team Co-Managing Director",
-                    LinkedInLink: "www.linkedin.com/in/shawn-zhang-2000717",
+                    LinkedInLink: "https://www.linkedin.com/in/shawn-zhang717/",
                     emailLink: "xiaoen.zhang@mail.utoronto.ca",
                 },
                 {
@@ -385,6 +389,7 @@ const memberData = {
                     fullName: "Stephen Yang",
                     position: "Tech Team Associate",
                     emailLink: "stephy.yang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/stepheny755/"
                 },
             ],
             firstRowSize: 2,
@@ -395,6 +400,7 @@ const memberData = {
                     fullName: "Graham Hoyes",
                     position: "Co-Chief Webmaster",
                     emailLink: "graham.hoyes@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/grahamhoyes/",
                 },
                 {
                     fullName: "Alex Bogdan",
@@ -579,6 +585,7 @@ const memberData = {
                     fullName: "Kathy Zhuang",
                     position: "Computer Graphics Design",
                     emailLink: "kathy.zhuang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/yue-kathy-zhuang/",
                 },
                 {
                     fullName: "Shashwat Panwar",
@@ -658,6 +665,7 @@ const memberData = {
                     fullName: "Kathy Zhuang",
                     position: "Graphics Design",
                     emailLink: "kathy.zhuang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/yue-kathy-zhuang/",
                 },
 
                 {
@@ -737,7 +745,7 @@ const memberData = {
                 {
                     fullName: "Brenny Chao",
                     position: "Logistics Associate",
-                    LinkedInLink: "https://www.linkedin.com/in/brenny-chao-4962aa17b/",
+                    LinkedInLink: "https://www.linkedin.com/in/brennychao/",
                     emailLink: "brenny.chao@mail.utoronto.ca",
                 },
 
@@ -750,7 +758,7 @@ const memberData = {
                 {
                     fullName: "Shawn Zhang",
                     position: "Tech Team",
-                    LinkedInLink: "www.linkedin.com/in/shawn-zhang-2000717",
+                    LinkedInLink: "https://www.linkedin.com/in/shawn-zhang717/",
                     emailLink: "xiaoen.zhang@mail.utoronto.ca",
                 },
                 {
