@@ -3,12 +3,12 @@ import styles from "./toTop.module.scss";
 
 const ToTop = () => (
     <div
-        className={styles["to-top"]}
+        className={styles.toTop}
         onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
         }}
     >
-        <div className={styles["to-top-arrow"]}></div>
+        <div className={styles.toTopArrow} />
     </div>
 );
 

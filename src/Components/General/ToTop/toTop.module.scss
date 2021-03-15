@@ -1,7 +1,7 @@
 @import "./../../../abstracts/variables";
 @import "./../../../abstracts/mixins";
 
-.to-top {
+.toTop {
     width: 40px;
     height: 40px;
     background-color: color(blue3);
@@ -12,12 +12,13 @@
     @include flexPosition(center, center);
     transition: bottom 0.2s;
     z-index: 99;
+    cursor: pointer;
 
     &:hover {
         bottom: 23px;
     }
 
-    &-arrow {
+    &Arrow {
         width: 0;
         height: 0;
         border-left: 5px solid transparent;

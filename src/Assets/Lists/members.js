@@ -23,6 +23,7 @@ const memberData = {
                     fullName: "Annam Shamas",
                     position: "Marketing Co-Managing Director",
                     emailLink: "annam.shamas@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/annam-shamas/",
                 },
                 {
                     fullName: "Terry Luan",
@@ -186,6 +187,7 @@ const memberData = {
                     fullName: "Matthew Leung",
                     position: "Advisor",
                     emailLink: "matthewchingho.leung@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/matthewchleung/",
                 },
                 {
                     fullName: "Martin Ffrench",
@@ -433,6 +435,7 @@ const memberData = {
                     fullName: "Annam Shamas",
                     position: "First Year Associate",
                     emailLink: "annam.shamas@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/annam-shamas/",
                 },
                 {
                     fullName: "Floria Fang Zhang",
@@ -494,6 +497,7 @@ const memberData = {
                     fullName: "Matthew Leung",
                     position: "Marketing Advisor",
                     emailLink: "matthewchingho.leung@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/matthewchleung/",
                 },
             ],
             firstRowSize: 3,
@@ -737,6 +741,7 @@ const memberData = {
                     fullName: "Matthew Leung",
                     position: "Logistics Associate",
                     emailLink: "matthewchingho.leung@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/matthewchleung/",
                 },
                 {
                     fullName: "Julia Wagner",
