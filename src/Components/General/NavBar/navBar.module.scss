@@ -5,77 +5,39 @@
     @include flexPosition($alIte: flex-start);
     width: 100vw;
     padding-left: 2rem;
-    margin: auto;
     position: fixed;
     top: 0;
     z-index: 100;
+    transition: top .5s;
 
     .logo {
         height: calc(50vw / 6);
         max-height: 110px;
         min-height: 50px;
-        margin-left: 1rem;
-        padding-top: 1rem;
-
+        margin-top: 2rem;
         &Img {
             height: 100%;
         }
     }
 
     .logoShrink {
-        @include flexPosition($jusCon: center);
-        height: 45px !important;
-        width: 45px !important;
-        animation: shrink 0.2s ease-in;
-        padding: 0.5rem 2.5rem;
-        margin: 0.25rem;
+        height: 5rem !important;
+        width: 5rem !important;
+        margin-top: 0;
     }
 
     @include response(md) {
         padding: 0 2rem;
-
-        .logoShrink {
-            padding: 0.5rem 3.1rem;
+        .logo {
+            margin-top: 1rem;
         }
     }
     @include response(sm) {
         padding: 0 1rem;
     }
-
-    .logoBackground {
-        background-color: color(white);
-        border-radius: 200px;
-        @include flexPosition(center, center);
-        margin-left: 0;
-
-        &:hover {
-            background-color: color(blue7);
-        }
-    }
-
-    .logoGrow {
-        width: auto;
-        height: calc(50vw / 6) !important;
-        animation: grow 0.2s ease-in;
-    }
 }
-
-@keyframes shrink {
-    0% {
-        height: calc(50vw / 6);
-    }
-    100% {
-        height: 50px;
-    }
-}
-
-@keyframes grow {
-    0% {
-        height: 50px;
-    }
-    100% {
-        height: calc(50vw / 6);
-    }
+.headerHidden {
+    top: -7rem;
 }
 
 .teamPage {
@@ -85,6 +47,7 @@
 }
 
 .scrolled {
+    align-items: center;
     background-color: rgba(4, 133, 186, 0.8);
     box-shadow: 2px -5px 8px rgba(0, 0, 0, 0.14), 0 -1px 10px -2px rgba(0, 0, 0, 0.12),
         0 -1px 15px 0 rgba(0, 0, 0, 0.2);
@@ -104,7 +67,7 @@
 
         &Item {
             list-style: none;
-            padding: 1.5rem 1.25rem;
+            padding: 2rem 1.25rem;
             color: color(white);
 
             &:hover,
@@ -119,7 +82,7 @@
             }
 
             @include response(lg/md) {
-                padding: 1.5rem 0.9rem;
+                padding: 2rem 0.9rem;
             }
         }
 

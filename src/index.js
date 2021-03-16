@@ -11,7 +11,7 @@ import ToTop from "./Components/General/ToTop/ToTop";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-    <div>
+    <>
         <BrowserRouter>
             <Switch>
                 <ScrollToTop>
@@ -22,7 +22,7 @@ ReactDOM.render(
                 </ScrollToTop>
             </Switch>
         </BrowserRouter>
-    </div>,
+    </>,
     document.getElementById("root")
 );
 

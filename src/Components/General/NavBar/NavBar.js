@@ -7,11 +7,13 @@ import { withRouter } from "react-router-dom";
 
 const NavBar = ({ history }) => {
     const [logoClass, setLogoClass] = useState("");
-    const [logoBackground, setLogoBackground] = useState("");
     const [logoImg, setlogoImg] = useState(logoBlue);
     const [scrolled, setScrolled] = useState("");
     const [checked, setChecked] = React.useState(false);
+    const [headerHidden, setHeaderHidden] = React.useState(false);
+    const [prevScroll, setPrevScroll] = useState(window.pageYOffset);
     const teamPage = history.location.pathname === "/team";
+    const shrink = teamPage ? 70 : 120;
 
     function scrollToTop() {
         window.scrollTo({
@@ -20,18 +22,23 @@ const NavBar = ({ history }) => {
         });
     }
 
+    function handleScroll() {
+        const currentScrollPos = window.pageYOffset;
+        if (currentScrollPos > shrink) {
+            setHeaderHidden(prevScroll < currentScrollPos);
+            setPrevScroll(currentScrollPos);
+        }
+    }
+
     function getWindowHeight() {
         const distanceY = window.pageYOffset || document.documentElement.scrollTop;
-        const shrink = teamPage ? 70 : 120;
 
         if (distanceY >= shrink) {
-            setLogoBackground(styles.logoBackground);
             setLogoClass(styles.logoShrink);
             setlogoImg(logoBlueLeaf);
             setScrolled(styles.scrolled);
         } else if (distanceY < shrink) {
-            setLogoBackground("");
-            setLogoClass(styles.logoGrow);
+            setLogoClass("");
             setlogoImg(logoBlue);
             setScrolled("");
         }
@@ -39,27 +46,27 @@ const NavBar = ({ history }) => {
 
     useEffect(() => {
         window.addEventListener("scroll", getWindowHeight);
+        window.addEventListener("scroll", handleScroll);
     });
 
     function closeNav() {
         setChecked(false);
     }
 
-    const NavItem = ({children}) => (
-        <li
-            onClick={() => closeNav()}
-            className={styles.navListItem}
-        >
+    const NavItem = ({ children }) => (
+        <li onClick={() => closeNav()} className={styles.navListItem}>
             {children}
         </li>
     );
 
     return (
         <header
-            className={`${styles.header} ${scrolled} ${teamPage && styles.teamPage}`}
+            className={`${styles.header} ${scrolled} ${teamPage && styles.teamPage} ${
+                headerHidden && styles.headerHidden
+            }`}
         >
             <Link smooth to={"/"} onClick={scrollToTop}>
-                <div className={`${styles.logo} ${logoClass} ${logoBackground}`}>
+                <div className={`${styles.logo} ${logoClass}`}>
                     <img src={logoImg} alt="Logo" className={styles.logoImg} />
                 </div>
             </Link>
