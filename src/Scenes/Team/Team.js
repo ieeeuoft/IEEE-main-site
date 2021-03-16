@@ -133,69 +133,81 @@ const Team = () => {
 
     return (
         <div className={styles.team}>
-            <div className={styles.selectYear}>
-                <div className={styles.triangleDown}></div>
-                <select
-                    onChange={ChangeYear}
-                    value={year}
-                    className={styles.selectYearDiv}
-                >
-                    {yearKeys.map((key) => (
-                        <option value={`${key}`}>{key}</option>
-                    ))}
-                    <option value="past">Past Teams</option>
-                </select>
+            <div>
+                <div className={styles.selectYear}>
+                    <div className={styles.triangleDown}></div>
+                    <select
+                        onChange={ChangeYear}
+                        value={year}
+                        className={styles.selectYearDiv}
+                    >
+                        {yearKeys.map((key) => (
+                            <option value={`${key}`}>{key}</option>
+                        ))}
+                        <option value="past">Past Teams</option>
+                    </select>
+                </div>
+
+                {yearKeys.slice(0, -4).includes(year) && ( // Checks years 2020-2021 and beyond for baby feature
+                    <div className={styles.toggles}>
+                        <div className={styles.baby}>
+                            <label>
+                                <Switch
+                                    onChange={() => HandleChange(1)}
+                                    checked={checkedDog}
+                                    onColor={"#00639C"}
+                                    uncheckedIcon={false}
+                                    checkedIcon={false}
+                                />
+                            </label>
+                            <img
+                                src={dog}
+                                alt="Dog Emoji"
+                                className={styles.babyEmoji}
+                            />
+                        </div>
+
+                        <div className={styles.baby}>
+                            <label>
+                                <Switch
+                                    onChange={() => HandleChange(2)}
+                                    checked={checkedBaby}
+                                    onColor={"#00639C"}
+                                    uncheckedIcon={false}
+                                    checkedIcon={false}
+                                />
+                            </label>
+                            <img
+                                src={baby}
+                                alt="Baby Emoji"
+                                className={styles.babyEmoji}
+                            />
+                        </div>
+                    </div>
+                )}
+
+                {memberData.hasOwnProperty(year) && <ConstructNav />}
+                <ConstructMemberChart />
             </div>
 
-            {yearKeys.slice(0, -4).includes(year) && ( // Checks years 2020-2021 and beyond for baby feature
-                <div className={styles.toggles}>
-                    <div className={styles.baby}>
-                        <label>
-                            <Switch
-                                onChange={() => HandleChange(1)}
-                                checked={checkedDog}
-                                onColor={"#00639C"}
-                                uncheckedIcon={false}
-                                checkedIcon={false}
-                            />
-                        </label>
-                        <img src={dog} alt="Dog Emoji" className={styles.babyEmoji} />
-                    </div>
-
-                    <div className={styles.baby}>
-                        <label>
-                            <Switch
-                                onChange={() => HandleChange(2)}
-                                checked={checkedBaby}
-                                onColor={"#00639C"}
-                                uncheckedIcon={false}
-                                checkedIcon={false}
-                            />
-                        </label>
-                        <img src={baby} alt="Baby Emoji" className={styles.babyEmoji} />
+            <div>
+                <div className={styles.skylineImgsCrop}>
+                    <div className={styles.skylineImgs}>
+                        <img
+                            src={skylineLeft}
+                            alt="Skyline"
+                            className={styles.skylineImgsLr}
+                        />
+                        <img
+                            src={skylineRight}
+                            alt="Skyline"
+                            className={styles.skylineImgsLr}
+                        />
                     </div>
                 </div>
-            )}
 
-            {memberData.hasOwnProperty(year) && <ConstructNav />}
-            <ConstructMemberChart />
-
-            <div className={styles["skyline-imgs-crop"]}>
-                <div className={styles["skyline-imgs"]}>
-                    <img
-                        src={skylineLeft}
-                        alt="Skyline"
-                        className={styles["skyline-imgs-lr"]}
-                    />
-                    <img
-                        src={skylineRight}
-                        alt="Skyline"
-                        className={styles["skyline-imgs-lr"]}
-                    />
-                </div>
+                <Footer />
             </div>
-
-            <Footer />
         </div>
     );
 };

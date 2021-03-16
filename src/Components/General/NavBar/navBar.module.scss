@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     z-index: 100;
-    transition: top .5s;
+    transition: top 0.5s;
 
     .logo {
         height: calc(50vw / 6);
@@ -78,7 +78,7 @@
             }
 
             &Active {
-                color: color(orange1)
+                color: color(orange1);
             }
 
             @include response(lg/md) {

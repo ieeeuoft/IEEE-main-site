@@ -73,6 +73,9 @@
             }
         }
     }
+    @include response(lg/md) {
+        padding-bottom: 1rem;
+    }
 }
 
 .email {

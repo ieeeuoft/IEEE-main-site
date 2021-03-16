@@ -1,25 +1,6 @@
 @import "./../../abstracts/variables";
 @import "./../../abstracts/mixins";
 
-.logo-sm {
-    height: calc(50vw / 12) !important;
-}
-
-.teamTitle {
-    font-family: font(roboto);
-    font-weight: bold;
-    font-size: 5rem;
-    text-align: center;
-    color: color(blue1);
-    margin: 5rem 0 4rem;
-}
-
-.team-container {
-    width: 100vw;
-    flex-direction: column;
-    @include flexPosition;
-}
-
 .card {
     @include flexPosition;
     flex-direction: column;
@@ -92,13 +73,13 @@
     align-items: $alIte;
 }
 
-.skyline-imgs {
+.skylineImgs {
     width: 100vw;
     overflow-x: hidden;
 
     @include flexPosition(space-between, flex-end);
 
-    &-crop {
+    &Crop {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         margin-top: -25vw;
@@ -107,7 +88,7 @@
         width: 100%;
         position: relative;
     }
-    &-lr {
+    &Lr {
         width: 40vw;
         max-width: 55rem;
         overflow-x: hidden;
@@ -117,37 +98,52 @@
         width: 120vw;
         margin-left: -10vw;
 
-        &-lr {
+        &Lr {
             width: 40vw;
         }
     }
     @include response(md) {
-        &-crop {
+        &Crop {
             margin-top: -35vw;
         }
 
-        &-lr {
+        &Lr {
             width: 50vw;
         }
     }
 
     @include response(sm) {
-        &-lr {
+        &Lr {
             width: 55vw;
         }
     }
-}
-
-.teamContainer {
-    width: 100vw;
-    flex-direction: column;
-    @include flexPosition;
 }
 
 .row {
     @include flexPosition(center, flex-start);
     width: 100%;
     flex-wrap: wrap;
+}
+
+.team {
+    height: 100vh;
+    @include flexPosition;
+    flex-direction: column;
+
+    &Title {
+        font-family: font(roboto);
+        font-weight: bold;
+        font-size: 5rem;
+        text-align: center;
+        color: color(blue1);
+        margin: 5rem 0 4rem;
+    }
+
+    &Container {
+        width: 100vw;
+        flex-direction: column;
+        @include flexPosition;
+    }
 }
 
 .teamNav {
@@ -230,7 +226,7 @@
     }
 
     @include response(md) {
-        margin-top: 7rem;
+        margin-top: 8rem;
     }
 }
 
@@ -282,7 +278,7 @@
 
     @include response(lg/md) {
         margin-top: 2rem;
-        margin-bottom: -3rem;
+        margin-bottom: -2rem;
         justify-content: center;
         margin-right: 0;
     }

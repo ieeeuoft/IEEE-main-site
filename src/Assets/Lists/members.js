@@ -100,7 +100,7 @@ const memberData = {
                     fullName: "Stephen Yang",
                     position: "Tech Team Co-Managing Director",
                     emailLink: "stephy.yang@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/stepheny755/"
+                    LinkedInLink: "https://www.linkedin.com/in/stepheny755/",
                 },
                 {
                     fullName: "Fahim Talukder",
@@ -167,8 +167,7 @@ const memberData = {
                 {
                     fullName: "Raghav Srinivasan",
                     position: "Advisor",
-                    LinkedInLink:
-                        "https://www.linkedin.com/in/raghavsrini/",
+                    LinkedInLink: "https://www.linkedin.com/in/raghavsrini/",
                     emailLink: "raghav.srinivasan@mail.utoronto.ca",
                 },
                 {
@@ -368,8 +367,7 @@ const memberData = {
                 {
                     fullName: "Raghav Srinivasan",
                     position: "Tech Team Senior Associate",
-                    LinkedInLink:
-                        "https://www.linkedin.com/in/raghavsrini/",
+                    LinkedInLink: "https://www.linkedin.com/in/raghavsrini/",
                     emailLink: "raghav.srinivasan@mail.utoronto.ca",
                 },
                 {
@@ -392,7 +390,7 @@ const memberData = {
                     fullName: "Stephen Yang",
                     position: "Tech Team Associate",
                     emailLink: "stephy.yang@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/stepheny755/"
+                    LinkedInLink: "https://www.linkedin.com/in/stepheny755/",
                 },
             ],
             firstRowSize: 2,
@@ -717,8 +715,7 @@ const memberData = {
                 {
                     fullName: "Raghav Srinivasan",
                     position: "Tech Director",
-                    LinkedInLink:
-                        "https://www.linkedin.com/in/raghavsrini/",
+                    LinkedInLink: "https://www.linkedin.com/in/raghavsrini/",
                     emailLink: "raghav.srinivasan@mail.utoronto.ca",
                 },
                 {
