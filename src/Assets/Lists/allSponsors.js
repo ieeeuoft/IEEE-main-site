@@ -5,6 +5,16 @@ export const allSponsors = [
         siteLink: "https://www.qualcomm.com/",
     },
     {
+        companyName: "ECE",
+        imgType: ".png",
+        siteLink: "https://www.ece.utoronto.ca/",
+    },
+    {
+        companyName: "Faculty of Applied Science and Engineering",
+        imgType: ".png",
+        siteLink: "https://www.engineering.utoronto.ca/",
+    },
+    {
         companyName: "Waterfront International",
         imgType: ".svg",
         siteLink: "https://www.wil.com/",
@@ -64,6 +74,27 @@ export const allSponsors = [
         imgType: ".svg",
         siteLink: "https://www.huawei.com/ca",
     },
+
+    {
+        companyName: "BLiNQ Networks",
+        imgType: ".svg",
+        siteLink: "",
+    },
+    {
+        companyName: "Entrepreneur First",
+        imgType: ".svg",
+        siteLink: "https://www.joinef.com/",
+    },
+    {
+        companyName: "Arctype",
+        imgType: ".svg",
+        siteLink: "https://arctype.com/",
+    },
+    {
+        companyName: "Airmeet",
+        imgType: ".svg",
+        siteLink: "https://www.airmeet.com/",
+    },
 ];
 
 export default allSponsors;
@@ -84,16 +115,6 @@ export default allSponsors;
 //     companyName: "Telus",
 //     imgType: ".svg",
 //     siteLink: "https://www.telus.com/en/",
-// },
-// {
-//     companyName: "ECE",
-//     imgType: ".png",
-//     siteLink: "https://www.partnertechnologies.net/",
-// },
-// {
-//     companyName: "Faculty of Applied Science and Engineering",
-//     imgType: ".png",
-//     siteLink: "https://www.engineering.utoronto.ca/",
 // },
 // {
 //     companyName: "Solace",
