@@ -148,7 +148,7 @@ const Team = () => {
                     </select>
                 </div>
 
-                {yearKeys.slice(0, -4).includes(year) && ( // Checks years 2020-2021 and beyond for baby feature
+                {yearKeys.slice(0, -5).includes(year) && ( // Checks years 2021-2022 and beyond for baby feature
                     <div className={styles.toggles}>
                         <div className={styles.baby}>
                             <label>
