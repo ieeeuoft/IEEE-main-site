@@ -74,7 +74,6 @@ export const allSponsors = [
         imgType: ".svg",
         siteLink: "https://www.huawei.com/ca",
     },
-
     {
         companyName: "BLiNQ Networks",
         imgType: ".svg",

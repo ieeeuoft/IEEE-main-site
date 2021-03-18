@@ -25,9 +25,11 @@ const NavBar = ({ history }) => {
     function handleScroll() {
         const currentScrollPos = window.pageYOffset;
         if (currentScrollPos > shrink) {
-            setHeaderHidden(prevScroll < currentScrollPos);
-            setPrevScroll(currentScrollPos);
+            setHeaderHidden(
+                prevScroll < currentScrollPos && prevScroll - currentScrollPos < 70
+            );
         }
+        setPrevScroll(currentScrollPos);
     }
 
     function getWindowHeight() {
@@ -47,7 +49,12 @@ const NavBar = ({ history }) => {
     useEffect(() => {
         window.addEventListener("scroll", getWindowHeight);
         window.addEventListener("scroll", handleScroll);
-    });
+
+        return () => (
+            window.removeEventListener("scroll", handleScroll),
+            window.removeEventListener("scroll", getWindowHeight)
+        );
+    }, [headerHidden, prevScroll, getWindowHeight, handleScroll]);
 
     function closeNav() {
         setChecked(false);
