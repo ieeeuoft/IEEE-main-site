@@ -64,11 +64,30 @@ const memberData = {
                     position: "Logistics Senior Associate",
                     emailLink: "Mojtaba.khavaninzadeh@mail.utoronto.ca",
                 },
-
                 {
                     fullName: "Rosie Wang",
                     position: "Logistics Senior Associate",
                     emailLink: "rushi.wang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Liza Zoubakina",
+                    position: "Logistics Associate",
+                    emailLink: "liza.zoubakina@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Hailin Wang",
+                    position: "Logistics Associate",
+                    emailLink: "hailinw.wang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Yunjia Hao",
+                    position: "Logistics Associate",
+                    emailLink: "yunjia.hao@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Colin Imaizumi-Rankin",
+                    position: "Logistics Associate",
+                    emailLink: "colin.imaizumi@mail.utoronto.ca",
                 },
             ],
             firstRowSize: 3,
@@ -84,6 +103,16 @@ const memberData = {
                     fullName: "Anmol Mahajan",
                     position: "External Senior Associate",
                     emailLink: "anmol.mahajan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Bora Bayazit",
+                    position: "External Associate",
+                    emailLink: "bora.bayazit@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Abdultayeb Akberali",
+                    position: "External Associate",
+                    emailLink: "tayeb.akberali@mail.utoronto.ca",
                 },
             ],
             firstRowSize: 1,
@@ -107,33 +136,66 @@ const memberData = {
                     position: "Tech Team Senior Associate",
                     emailLink: "Fahim.Talukder@mail.utoronto.ca",
                 },
+                {
+                    fullName: "Gandharv Nagrani",
+                    position: "Tech Team Associate",
+                    emailLink: "gandharv.nagrani@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Eric Ji",
+                    position: "Tech Team Associate",
+                    emailLink: "erichanxiang.ji@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Avelyn Wong",
+                    position: "Tech Team Associate",
+                    emailLink: "avelyn.wong@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Jacky Liao",
+                    position: "Tech Team Associate",
+                    emailLink: "ja.liao@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Hitarth Desai",
+                    position: "Tech Team Associate",
+                    emailLink: "hitarth.desai@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Sanjana Dasadia",
+                    position: "Tech Team Associate",
+                    emailLink: "sanjana.dasadia@mail.utoronto.ca",
+                },
             ],
             firstRowSize: 2,
         },
         Web: {
             membersList: [
                 {
-                    fullName: "Piyush Sharma",
-                    position: "Web Associate",
-                    emailLink: "pi.sharma@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/piyush19sha",
+                    fullName: "Arsh Kadakia",
+                    position: "Technical Lead",
+                    emailLink: "arsh.kadakia@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Soliman Ali",
-                    position: "Web Associate",
-                    emailLink: "soliman.ali@mail.utoronto.ca",
+                    fullName: "YuYing Liang",
+                    position: "Technical Lead",
+                    emailLink: "yuying.liang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Gaurav Ranganath",
+                    position: "Project Manager",
+                    emailLink: "gaurav.ranganath@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Leo Li",
+                    position: "Webmaster Associate",
+                    emailLink: "leeoo.li@mail.utoronto.ca",
                 },
             ],
-            firstRowSize: 0,
+            firstRowSize: 3,
         },
         Advisors: {
             membersList: [
-                {
-                    fullName: "Gaurav Ranganath",
-                    position: "Advisor",
-                    LinkedInLink: "https://www.linkedin.com/in/gaurav-ranganath/",
-                    emailLink: "gaurav.ranganath@mail.utoronto.ca",
-                },
                 {
                     fullName: "Haochen Zhang",
                     position: "Advisor",
