@@ -114,4 +114,3 @@ with `$blue1` as an example. Applies to any CSS style that can take in a color (
 
 Simply add a new varible name and hex/rbga code of the new color in the array `$color`.
 
-###### IEEEEEEEEEEEEE
