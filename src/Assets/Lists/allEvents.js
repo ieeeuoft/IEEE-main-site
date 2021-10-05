@@ -15,14 +15,14 @@ export const allEvents = [
         EventName: "Django Workshop",
         displayDate: "October 14th, 2021",
         date: "2021/10/14",
-        link: "https://ieee.utoronto.ca/",
+        link: "https://www.eventbrite.ca/e/django-workshop-tickets-162473995093",
         highlightEvent: false,
     },
     {
         EventName: "React Workshop",
         displayDate: "October 28th, 2021",
         date: "2021/10/28",
-        link: "https://ieee.utoronto.ca/",
+        link: "https://www.eventbrite.ca/e/react-workshop-tickets-162476741307",
         highlightEvent: false,
     },
     {
