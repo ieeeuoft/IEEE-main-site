@@ -22,31 +22,31 @@ const NavBar = ({ history }) => {
         });
     }
 
-    function handleScroll() {
-        const currentScrollPos = window.pageYOffset;
-        if (currentScrollPos > shrink) {
-            setHeaderHidden(
-                prevScroll < currentScrollPos && prevScroll - currentScrollPos < 70
-            );
-        }
-        setPrevScroll(currentScrollPos);
-    }
-
-    function getWindowHeight() {
-        const distanceY = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (distanceY >= shrink) {
-            setLogoClass(styles.logoShrink);
-            setlogoImg(logoBlueLeaf);
-            setScrolled(styles.scrolled);
-        } else if (distanceY < shrink) {
-            setLogoClass("");
-            setlogoImg(logoBlue);
-            setScrolled("");
-        }
-    }
-
     useEffect(() => {
+        function handleScroll() {
+            const currentScrollPos = window.pageYOffset;
+            if (currentScrollPos > shrink) {
+                setHeaderHidden(
+                    prevScroll < currentScrollPos && prevScroll - currentScrollPos < 70
+                );
+            }
+            setPrevScroll(currentScrollPos);
+        }
+    
+        function getWindowHeight() {
+            const distanceY = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (distanceY >= shrink) {
+                setLogoClass(styles.logoShrink);
+                setlogoImg(logoBlueLeaf);
+                setScrolled(styles.scrolled);
+            } else if (distanceY < shrink) {
+                setLogoClass("");
+                setlogoImg(logoBlue);
+                setScrolled("");
+            }
+        }
+        
         window.addEventListener("scroll", getWindowHeight);
         window.addEventListener("scroll", handleScroll);
 
@@ -54,7 +54,7 @@ const NavBar = ({ history }) => {
             window.removeEventListener("scroll", handleScroll),
             window.removeEventListener("scroll", getWindowHeight)
         );
-    }, [headerHidden, prevScroll, getWindowHeight, handleScroll]);
+    }, [headerHidden, prevScroll, shrink]);
 
     function closeNav() {
         setChecked(false);

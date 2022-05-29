@@ -4,7 +4,7 @@
 .header {
     @include flexPosition($alIte: flex-start);
     width: 100vw;
-    padding-left: 2rem;
+    padding: 0rem 2rem;
     position: fixed;
     top: 0;
     z-index: 100;
