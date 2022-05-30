@@ -23,6 +23,8 @@ jobs:
           node-version: '12.x'
 
       - name: Install dependencies and build application
+        env:
+          CI: false
         run: |
           npm install
           npm run build
