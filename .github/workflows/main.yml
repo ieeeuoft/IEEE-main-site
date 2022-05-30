@@ -37,6 +37,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           overwrite: true
           # scp-action doesn't obey working-directory, runs at repo root
-          source: "build/*.*"
+          source: "build/*.js,build/*.json,build/*.ico,build/*.html,build/static"
           target: "/var/www/html/public_html/"
           strip_components: 1
