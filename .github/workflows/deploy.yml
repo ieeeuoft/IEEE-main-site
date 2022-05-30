@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://ieee.utoronto.ca
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Install dependencies and build application
+        run: |
+          npm install
+          npm run build
+
+      - name: Transfer static files to web server root 
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          overwrite: true
+          # scp-action doesn't obey working-directory, runs at repo root
+          source: "build/"
+          target: "/var/www/html/public_html/"
+        run: echo "Deployment complete"

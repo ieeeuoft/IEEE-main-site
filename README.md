@@ -2,8 +2,6 @@
 
 https://ieee.utoronto.ca/
 
-Contact Alex Bodgan `alex.bogdan@mail.utoronto.ca` or Lisa Li `lisasa.li@mail.utoronto.ca` for access to the repo or if you have any questions.
-
 ## Install
 
 ```bash
