@@ -37,9 +37,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           overwrite: true
           # scp-action doesn't obey working-directory, runs at repo root
-          source: "build/"
+          source: "build/*"
           target: "/var/www/html/public_html/"
-          strip_components: 1
-      
-      - name: Finish Deployment
-        run: echo "Deployment complete"
