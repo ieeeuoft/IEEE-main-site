@@ -20,20 +20,20 @@ jobs:
         with:
           node-version: '12.x'
 
-      - name: Install nodejs dependencies
-        run: npm install
-
-      - name: Build application
-        run: npm run build
-          
-      - name: Set up SSH
+      - name: Install dependencies and build application
         run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan -t rsa ${{ secrets.HOST_IP }} >> ~/.ssh/known_hosts
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" >> ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+          npm install
+          npm run build
 
-      - name: Update files
-        env: 
-          local_dir: "build/"
-        run: scp ${local_dir} $${{ secrets.DEPLOY_USER }}@$${{ secrets.HOST_IP }}:/var/www/html/public_html
+      - name: Transfer static files to web server root 
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          overwrite: true
+          # scp-action doesn't obey working-directory, runs at repo root
+          source: "build/"
+          target: "/var/www/html/public_html/"
+          strip_components: 1
+        run: echo "Deployment complete"
