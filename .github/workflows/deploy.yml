@@ -36,7 +36,4 @@ jobs:
       - name: Update files
         env: 
           local_dir: "build/"
-          remote_dir: ${{ secrets.REMOTE_DIR }}
-          user: $${{ secrets.DEPLOY_USER }}
-          host: $${{ secrets.HOST_IP }}
-        run: scp ${local_dir} ${user}@${host}:${remote_dir}
+        run: scp ${local_dir} $${{ secrets.DEPLOY_USER }}@$${{ secrets.HOST_IP }}:/var/www/html/public_html
