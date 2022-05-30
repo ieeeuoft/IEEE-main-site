@@ -38,4 +38,6 @@ jobs:
           # scp-action doesn't obey working-directory, runs at repo root
           source: "build/"
           target: "/var/www/html/public_html/"
+      
+      - name: Finish Deployment
         run: echo "Deployment complete"
