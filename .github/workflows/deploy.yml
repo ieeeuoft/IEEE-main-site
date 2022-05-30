@@ -1,0 +1,42 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://ieee.utoronto.ca
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Install nodejs dependencies
+        run: npm install
+
+      - name: Build application
+        run: npm run build
+          
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -t rsa ${{ secrets.HOST_IP }} >> ~/.ssh/known_hosts
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" >> ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Update files
+        env: 
+          local_dir: "build/"
+          remote_dir: ${{ secrets.REMOTE_DIR }}
+          user: $${{ secrets.DEPLOY_USER }}
+          host: $${{ secrets.HOST_IP }}
+        run: scp ${local_dir} ${user}@${host}:${remote_dir}
