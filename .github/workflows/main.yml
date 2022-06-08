@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - 'master'
-      - 'updated-actions'
 
   workflow_dispatch:
 
