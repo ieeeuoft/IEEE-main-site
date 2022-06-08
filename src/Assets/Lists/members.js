@@ -158,19 +158,19 @@ const memberData = {
                     emailLink: "nick.nabavi@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Shikhar Chaurasia",
-                    position: "Associate",
-                    emailLink: "shikhar.chaurasia@mail.utoronto.ca",
-                },
-                {
                     fullName: "Sharmieka Premaseelan",
                     position: "Associate",
                     emailLink: "sharmieka.premaseelan@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Berke Altiparmak",
+                    fullName: "Berke Altıparmak",
                     position: "Associate",
                     emailLink: "berke.altiparmak@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Shikhar Chaurasia",
+                    position: "Associate",
+                    emailLink: "shikhar.chaurasia@mail.utoronto.ca",
                 },
             ],
             firstRowSize: 2,
