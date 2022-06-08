@@ -45,4 +45,3 @@ jobs:
           # scp-action doesn't obey working-directory, runs at repo root
           source: "public_html/"
           target: "/var/www/html/"
-          strip_components: 1
