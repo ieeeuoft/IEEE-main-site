@@ -48,14 +48,19 @@ const memberData = {
         Logistics: {
             membersList: [
                 {
-                    fullName: "Alisha Pham",
-                    position: "Senior Associate",
-                    emailLink: "alisha.pham@mail.utoronto.ca",
+                    fullName: "Alice Zhou",
+                    position: "Managing Director",
+                    emailLink: "alicexyz.zhou@mail.utoronto.ca",
                 },
                 {
                     fullName: "Srinidhi Shankar",
                     position: "Managing Director",
                     emailLink: "srinidhi.shankar@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Alisha Pham",
+                    position: "Senior Associate",
+                    emailLink: "alisha.pham@mail.utoronto.ca",
                 },
                 {
                     fullName: "Yun Jia Hao",
@@ -108,15 +113,10 @@ const memberData = {
                     emailLink: "judy.yue@mail.utoronto.ca",
                 },
             ],
-            firstRowSize: 3,
+            firstRowSize: 2,
         },
         Tech: {
             membersList: [
-                {
-                    fullName: "Alice Zhou",
-                    position: "Managing Director",
-                    emailLink: "alicexyz.zhou@mail.utoronto.ca",
-                },
                 {
                     fullName: "Avelyn Wong",
                     position: "Managing Director",
@@ -166,6 +166,11 @@ const memberData = {
                     fullName: "Sharmieka Premaseelan",
                     position: "Associate",
                     emailLink: "sharmieka.premaseelan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Berke Altiparmak",
+                    position: "Associate",
+                    emailLink: "berke.altiparmak@mail.utoronto.ca",
                 },
             ],
             firstRowSize: 2,
