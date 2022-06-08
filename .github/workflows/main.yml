@@ -30,7 +30,9 @@ jobs:
           npm run build
 
       - name: Rename build folder
-        run: mv build public_html
+        run: |
+        chmod 760 build
+        mv build public_html
 
       - name: Transfer static files to web server root 
         uses: appleboy/scp-action@v0.1.1
