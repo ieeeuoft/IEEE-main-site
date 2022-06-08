@@ -29,9 +29,6 @@ jobs:
           npm install
           npm run build
 
-      - name: Rename build folder
-        run: mv build public_html
-
       - name: Transfer static files to web server root 
         uses: appleboy/scp-action@v0.1.1
         with:
@@ -40,6 +37,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           overwrite: true
           # scp-action doesn't obey working-directory, runs at repo root
-          source: "public_html/"
-          target: "/var/www/html/"
-          strip_components: 1
+          source: "build/"
+          target: "/var/www/html/public_html"
