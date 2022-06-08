@@ -39,4 +39,4 @@ jobs:
           overwrite: true
           # scp-action doesn't obey working-directory, runs at repo root
           source: "build/"
-          target: "/var/www/html/"
+          target: "/var/www/html/public_html"
