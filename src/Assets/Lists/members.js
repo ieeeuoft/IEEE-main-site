@@ -98,14 +98,14 @@ const memberData = {
         Web: {
             membersList: [
                 {
+                    fullName: "YuYing Liang",
+                    position: "Managing Director",
+                    emailLink: "yuying.liang@mail.utoronto.ca",
+                },
+                {
                     fullName: "Mustafa Abdulrahman",
                     position: "Web Project Manager",
                     emailLink: "mustafa.abdulrahman@mail.utoronto.ca",
-                },
-                {
-                    fullName: "YuYing Liang",
-                    position: "Chief Director",
-                    emailLink: "yuying.liang@mail.utoronto.ca",
                 },
                 {
                     fullName: "Arsh Kadakia",
