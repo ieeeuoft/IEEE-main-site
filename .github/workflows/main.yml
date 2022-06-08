@@ -33,7 +33,7 @@ jobs:
       - name: Rename build folder
         run: |
           mv build public_html
-          chmod 760 public_html
+          chmod -R 755 public_html
 
       - name: Transfer static files to web server root 
         uses: appleboy/scp-action@v0.1.1
