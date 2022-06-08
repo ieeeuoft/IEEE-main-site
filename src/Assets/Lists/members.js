@@ -3,12 +3,17 @@ const memberData = {
         "Exec Team": {
             membersList: [
                 {
+                    fullName: "Himanish Jindal",
+                    position: "Chair",
+                    emailLink: "himanish.jindal@mail.utoronto.ca",
+                },
+                {
                     fullName: "Floria Xin Yi Fang Zhang",
                     position: "Vice Chair",
                     emailLink: "floria.fang@mail.utoronto.ca",
                 },
             ],
-            firstRowSize: 1,
+            firstRowSize: 2,
         },
         Marketing: {
             membersList: [
@@ -45,7 +50,12 @@ const memberData = {
                 {
                     fullName: "Alisha Pham",
                     position: "Senior Associate",
-                    emailLink: "Alisha Pham",
+                    emailLink: "alisha.pham@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Srinidhi Shankar",
+                    position: "Managing Director",
+                    emailLink: "srinidhi.shankar@mail.utoronto.ca",
                 },
                 {
                     fullName: "Yun Jia Hao",
@@ -67,11 +77,46 @@ const memberData = {
                     position: "Associate",
                     emailLink: "ellina.zhang@mail.utoronto.ca",
                 },
+                {
+                    fullName: "Amelie Wang",
+                    position: "Associate",
+                    emailLink: "amelie.wang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Rayan Hossain",
+                    position: "Associate",
+                    emailLink: "Rayan.hossain@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Eri Yoshida",
+                    position: "Associate",
+                    emailLink: "eri.yoshida@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Martha Teferi",
+                    position: "Associate",
+                    emailLink: "m.teferi@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Xianglin (Simon) Wang",
+                    position: "Associate",
+                    emailLink: "simonwithnoe.wang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Judy Yue",
+                    position: "Associate",
+                    emailLink: "judy.yue@mail.utoronto.ca",
+                },
             ],
-            firstRowSize: 4,
+            firstRowSize: 3,
         },
         Tech: {
             membersList: [
+                {
+                    fullName: "Alice Zhou",
+                    position: "Managing Director",
+                    emailLink: "alicexyz.zhou@mail.utoronto.ca",
+                },
                 {
                     fullName: "Avelyn Wong",
                     position: "Managing Director",
@@ -92,8 +137,38 @@ const memberData = {
                     position: "Associate",
                     emailLink: "daniel.qiu@mail.utoronto.ca",
                 },
+                {
+                    fullName: "Samuel Liu",
+                    position: "Associate",
+                    emailLink: "samuelt.liu@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Alastair Sim",
+                    position: "Associate",
+                    emailLink: "a.sim@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Tudor Sigmund",
+                    position: "Associate",
+                    emailLink: "tudor.sigmund@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Nick Nabavi",
+                    position: "Associate",
+                    emailLink: "nick.nabavi@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Shikhar Chaurasia",
+                    position: "Associate",
+                    emailLink: "shikhar.chaurasia@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Sharmieka Premaseelan",
+                    position: "Associate",
+                    emailLink: "sharmieka.premaseelan@mail.utoronto.ca",
+                },
             ],
-            firstRowSize: 1,
+            firstRowSize: 2,
         },
         Web: {
             membersList: [
@@ -108,6 +183,11 @@ const memberData = {
                     emailLink: "mustafa.abdulrahman@mail.utoronto.ca",
                 },
                 {
+                    fullName: "Leo Li",
+                    position: "Managing Director",
+                    emailLink: "leeoo.li@mail.utoronto.ca"
+                },
+                {
                     fullName: "Arsh Kadakia",
                     position: "Senior Associate",
                     emailLink: "arsh.kadakia@mail.utoronto.ca",
@@ -116,6 +196,11 @@ const memberData = {
                     fullName: "Terry Luan",
                     position: "Senior Associate",
                     emailLink: "t.luan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Eric Ji",
+                    position: "Senior Associate",
+                    emailLink: "erichanxiang.ji@mail.utoronto.ca",
                 },
                 {
                     fullName: "Dana Al Shekerchi",
@@ -132,8 +217,13 @@ const memberData = {
                     position: "Associate",
                     emailLink: "ethan.hugh@mail.utoronto.ca",
                 },
+                {
+                    fullName: "Karandeep Lubana",
+                    position: "Associate",
+                    emailLink: "karandeep.lubana@mail.utoronto.ca",
+                },
             ],
-            firstRowSize: 2,
+            firstRowSize: 3,
         },
         Advisors: {
             membersList: [
@@ -142,8 +232,18 @@ const memberData = {
                     position: "Advisor",
                     emailLink: "katherine.liang@mail.utoronto.ca",
                 },
+                {
+                    fullName: "Julia Wagner",
+                    position: "Advisor",
+                    emailLink: "Julia.wagner@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Smile Peng",
+                    position: "Advisor",
+                    emailLink: "smile.peng@mail.utoronto.ca",
+                },
             ],
-            firstRowSize: 1,
+            firstRowSize: 3,
         },
     },
 
