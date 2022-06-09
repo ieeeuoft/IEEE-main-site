@@ -45,16 +45,16 @@ const memberData = {
             ],
             firstRowSize: 2,
         },
-        Logistics: {
+        "Logistics and Business Development": {
             membersList: [
                 {
                     fullName: "Alice Zhou",
-                    position: "Managing Director",
+                    position: "Logistics Managing Director",
                     emailLink: "alicexyz.zhou@mail.utoronto.ca",
                 },
                 {
                     fullName: "Srinidhi Shankar",
-                    position: "Managing Director",
+                    position: "BD Managing Director",
                     emailLink: "srinidhi.shankar@mail.utoronto.ca",
                 },
                 {
