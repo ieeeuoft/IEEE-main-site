@@ -79,7 +79,7 @@ const memberData = {
                 },
                 {
                     fullName: "Ellina Zhang",
-                    position: "Associate",
+                    position: "Senior Associate",
                     emailLink: "ellina.zhang@mail.utoronto.ca",
                 },
                 {
