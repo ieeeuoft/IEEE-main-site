@@ -51,11 +51,13 @@ const memberData = {
                     fullName: "Alice Zhou",
                     position: "Logistics Managing Director",
                     emailLink: "alicexyz.zhou@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/alice-x-zhou/"
                 },
                 {
                     fullName: "Srinidhi Shankar",
                     position: "BD Managing Director",
                     emailLink: "srinidhi.shankar@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/srinidhi-shanka"
                 },
                 {
                     fullName: "Alisha Pham",
@@ -106,6 +108,7 @@ const memberData = {
                     fullName: "Xianglin (Simon) Wang",
                     position: "Associate",
                     emailLink: "simonwithnoe.wang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/srinidhi-shankar"
                 },
                 {
                     fullName: "Judy Yue",
@@ -126,6 +129,11 @@ const memberData = {
                     fullName: "Jiaheng Liao",
                     position: "Senior Associate",
                     emailLink: "ja.liao@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Fahim Talukder",
+                    position: "Tech Team Senior Associate",
+                    emailLink: "Fahim.Talukder@mail.utoronto.ca",
                 },
                 {
                     fullName: "Preetha Manohar",
@@ -171,6 +179,7 @@ const memberData = {
                     fullName: "Shikhar Chaurasia",
                     position: "Associate",
                     emailLink: "shikhar.chaurasia@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/shikhar-chaurasia-768955200/"
                 },
             ],
             firstRowSize: 2,
@@ -181,16 +190,19 @@ const memberData = {
                     fullName: "YuYing Liang",
                     position: "Managing Director",
                     emailLink: "yuying.liang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/yuying-liang/"
                 },
                 {
                     fullName: "Leo Li",
                     position: "Managing Director",
-                    emailLink: "leeoo.li@mail.utoronto.ca"
+                    emailLink: "leeoo.li@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/haocheng-leo/"
                 },
                 {
                     fullName: "Mustafa Abdulrahman",
                     position: "Web Project Manager",
                     emailLink: "mustafa.abdulrahman@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/mus123/"
                 },
                 {
                     fullName: "Arsh Kadakia",
@@ -236,6 +248,12 @@ const memberData = {
                     fullName: "Katherine Liang",
                     position: "Advisor",
                     emailLink: "katherine.liang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Haochen Zhang",
+                    position: "Advisor",
+                    LinkedInLink: "https://www.linkedin.com/in/haochenz11/",
+                    emailLink: "hcz.zhang@mail.utoronto.ca",
                 },
                 {
                     fullName: "Julia Wagner",
