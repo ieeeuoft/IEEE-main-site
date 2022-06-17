@@ -61,7 +61,7 @@ const memberData = {
                 },
                 {
                     fullName: "Alisha Pham",
-                    position: "Senior Associate",
+                    position: "Logistics Managing Director",
                     emailLink: "alisha.pham@mail.utoronto.ca",
                 },
                 {
@@ -116,7 +116,7 @@ const memberData = {
                     emailLink: "judy.yue@mail.utoronto.ca",
                 },
             ],
-            firstRowSize: 2,
+            firstRowSize: 3,
         },
         Tech: {
             membersList: [
@@ -126,14 +126,14 @@ const memberData = {
                     emailLink: "avelyn.wong@mail.utoronto.ca",
                 },
                 {
+                    fullName: "Fahim Talukder",
+                    position: "Managing Director",
+                    emailLink: "Fahim.Talukder@mail.utoronto.ca",
+                },
+                {
                     fullName: "Jiaheng Liao",
                     position: "Senior Associate",
                     emailLink: "ja.liao@mail.utoronto.ca",
-                },
-                {
-                    fullName: "Fahim Talukder",
-                    position: "Tech Team Senior Associate",
-                    emailLink: "Fahim.Talukder@mail.utoronto.ca",
                 },
                 {
                     fullName: "Preetha Manohar",
@@ -171,7 +171,7 @@ const memberData = {
                     emailLink: "sharmieka.premaseelan@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Berke Altıparmak",
+                    fullName: "Berke Altiparmak",
                     position: "Associate",
                     emailLink: "berke.altiparmak@mail.utoronto.ca",
                 },
@@ -223,11 +223,13 @@ const memberData = {
                     fullName: "Dana Al Shekerchi",
                     position: "Associate",
                     emailLink: "d.alshekerchi@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/dalshekerchi/"
                 },
                 {
                     fullName: "Luke Cheseldine",
                     position: "Associate",
                     emailLink: "luke.cheseldine@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/lukechessr/"
                 },
                 {
                     fullName: "Ethan Hugh",
