@@ -26,6 +26,7 @@ const memberData = {
                     fullName: "Dalia Victoria Mahidashti",
                     position: "Managing Director",
                     emailLink: "dalia.mahidashti@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/daliavictoriamahidashti/"
                 },
                 {
                     fullName: "Natalie Chan",
@@ -37,11 +38,6 @@ const memberData = {
                     position: "Associate",
                     emailLink: "ananya.sharma@mail.utoronto.ca",
                 },
-                {
-                    fullName: "Mihika Bahadur",
-                    position: "Associate",
-                    emailLink: "m.bahadur@mail.utoronto.ca",
-                },
             ],
             firstRowSize: 2,
         },
@@ -52,6 +48,12 @@ const memberData = {
                     position: "Logistics Managing Director",
                     emailLink: "alicexyz.zhou@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/alice-x-zhou/"
+                },
+                {
+                    fullName: "Tasnim Reza",
+                    position: "Logistics Managing Director",
+                    emailLink: "tasnimreza2000@gmail.com",
+                    LinkedInLink: "https://www.linkedin.com/in/tasnim-reza/"
                 },
                 {
                     fullName: "Srinidhi Shankar",
@@ -83,6 +85,12 @@ const memberData = {
                     fullName: "Ellina Zhang",
                     position: "Senior Associate",
                     emailLink: "ellina.zhang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Joy Lai",
+                    position: "Associate",
+                    emailLink: "joylai2002@gmail.com",
+                    LinkedInLink: "https://ca.linkedin.com/in/joy-lai-0a40ab194"
                 },
                 {
                     fullName: "Amelie Wang",
@@ -240,6 +248,7 @@ const memberData = {
                     fullName: "Karandeep Lubana",
                     position: "Associate",
                     emailLink: "karandeep.lubana@mail.utoronto.ca",
+                    LinkedInLink: "http://www.linkedin.com/in/karandeep-lubana"
                 },
             ],
             firstRowSize: 3,
