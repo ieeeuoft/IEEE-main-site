@@ -124,7 +124,7 @@ const memberData = {
                     emailLink: "judy.yue@mail.utoronto.ca",
                 },
             ],
-            firstRowSize: 3,
+            firstRowSize: 4,
         },
         Tech: {
             membersList: [
@@ -162,11 +162,6 @@ const memberData = {
                     fullName: "Alastair Sim",
                     position: "Associate",
                     emailLink: "a.sim@mail.utoronto.ca",
-                },
-                {
-                    fullName: "Tudor Sigmund",
-                    position: "Associate",
-                    emailLink: "tudor.sigmund@mail.utoronto.ca",
                 },
                 {
                     fullName: "Nick Nabavi",
@@ -211,11 +206,6 @@ const memberData = {
                     position: "Web Project Manager",
                     emailLink: "mustafa.abdulrahman@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/mus123/"
-                },
-                {
-                    fullName: "Arsh Kadakia",
-                    position: "Senior Associate",
-                    emailLink: "arsh.kadakia@mail.utoronto.ca",
                 },
                 {
                     fullName: "Terry Luan",
@@ -276,6 +266,12 @@ const memberData = {
                     position: "Advisor",
                     emailLink: "smile.peng@mail.utoronto.ca",
                 },
+                {
+                    fullName: "Irene Li",
+                    position: "Advisor",
+                    emailLink: "ireneyr.li@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/irene-yiran-li/",
+                }
             ],
             firstRowSize: 3,
         },
