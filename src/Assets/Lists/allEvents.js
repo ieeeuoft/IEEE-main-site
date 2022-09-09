@@ -14,22 +14,12 @@ export const allEvents = [
         EventName: "Technical Interview Night",
         displayDate: "October 5, 2022",
         date: "2022/10/05",
-        link: "https://ieee.utoronto.ca/",
         highlightEvent: false,
     },
     {
         EventName: "MakeUofT",
         displayDate: "February 18-19, 2022",
         date: "2022/02/18",
-        link: "https://ieee.utoronto.ca/",
-        highlightEvent: false,
-    },
-    {
-        // waiting for new graphic with updated event date
-        EventName: "React Workshop",
-        displayDate: "September 22nd, 2022",
-        date: "2021/09/22",
-        link: "https://ieee.utoronto.ca/",
         highlightEvent: false,
     },
     {
@@ -38,6 +28,13 @@ export const allEvents = [
         date: "2022/11/05",
         link: "https://www.newhacks.ca/",
         highlightEvent: true,
+    },
+    {
+        // waiting for new graphic with updated event date
+        EventName: "React Workshop",
+        displayDate: "September 22nd, 2022",
+        date: "2022/09/22",
+        highlightEvent: false,
     },
 ];
 
