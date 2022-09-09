@@ -4,41 +4,41 @@
 
 export const allEvents = [
     {
-        EventName: "Technical Interview Workshop",
-        displayDate: "October 5, 2021",
-        date: "2021/10/05",
-        link:
-            "https://ieee.utoronto.ca/",
+        EventName: "First Year Recruitment",
+        // is date necessary?
+        date: "2022/10/05",
+        link: "https://forms.gle/ua2gKPgu3DGWC3wz9",
+        highlightEvent: true,
+    },
+    {
+        EventName: "Technical Interview Night",
+        displayDate: "October 5, 2022",
+        date: "2022/10/05",
+        link: "https://ieee.utoronto.ca/",
         highlightEvent: false,
     },
     {
-        EventName: "Django Workshop",
-        displayDate: "October 14th, 2021",
-        date: "2021/10/14",
-        link: "https://www.eventbrite.ca/e/django-workshop-tickets-162473995093",
+        EventName: "MakeUofT",
+        displayDate: "February 18-19, 2022",
+        date: "2022/02/18",
+        link: "https://ieee.utoronto.ca/",
         highlightEvent: false,
     },
     {
+        // waiting for new graphic with updated event date
         EventName: "React Workshop",
-        displayDate: "October 28th, 2021",
-        date: "2021/10/28",
-        link: "https://www.eventbrite.ca/e/react-workshop-tickets-162476741307",
+        displayDate: "September 22nd, 2022",
+        date: "2021/09/22",
+        link: "https://ieee.utoronto.ca/",
         highlightEvent: false,
     },
     {
         EventName: "NewHacks",
-        displayDate: "November 6-7, 2021",
-        date: "2021/11/06",
+        displayDate: "November 5-6, 2022",
+        date: "2022/11/05",
         link: "https://www.newhacks.ca/",
         highlightEvent: true,
     },
-    {
-        EventName: "PCB Workshop",
-        displayDate: "January 20th, 2022",
-        date: "2022/01/20",
-        link: "https://ieee.utoronto.ca/",
-        highlightEvent: false,
-    }
 ];
 
 export default allEvents;
