@@ -16,6 +16,7 @@ const upcomingEvents = () => {
     for (let i = 0; i < allEvents.length; i++) {
         if (allEvents[i].date > todayDate) {
             upcomingList.push(allEvents[i]);
+            // change made from 3 to 4
             if (upcomingList.length === 3) {
                 break;
             }
@@ -28,10 +29,10 @@ const Upcoming = () => {
     let upcomingList = upcomingEvents();
     let upcomingClass = "";
     let recentHighlights = upcomingList.length === 0 ? true : false;
-    if (recentHighlights) {
-        // 3 events where the highlightEvent flag is true in allEvents.js
-        upcomingList = allEvents.filter((event) => event.highlightEvent).slice(0, 3);
-    }
+    // if (recentHighlights) {
+    // 3 events where the highlightEvent flag is true in allEvents.js
+    upcomingList = allEvents.filter((event) => event.highlightEvent).slice(0, 3);
+    // }
 
     if (upcomingList.length < 3) {
         upcomingClass = styles.two;
@@ -44,7 +45,7 @@ const Upcoming = () => {
             onLoad={() => upcomingEvents()}
         >
             <h2 className={styles.upcomingDivHeading}>
-                {recentHighlights ? "Last Year's Highlights" : "Upcoming Events"}
+                {recentHighlights ? "Last Year's Highlights" : "Currently Happening"}
             </h2>
             <div className={`${styles.upcoming} ${upcomingClass}`}>
                 {upcomingList.map((eventItem, i) => {

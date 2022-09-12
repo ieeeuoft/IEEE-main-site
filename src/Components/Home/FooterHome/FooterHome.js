@@ -16,9 +16,9 @@ const FooterHome = () => (
                 <br />
                 <a
                     className={`${styles["footer-div-contact-text"]} ${styles["email"]}`}
-                    href="mailto:uoft@ieee.org"
+                    href="mailto:general@ieee.utoronto.ca"
                 >
-                    uoft@ieee.org
+                    general@ieee.utoronto.ca
                 </a>
                 <h3 className={styles["footer-div-contact-heading"]}>Address</h3>
                 <p className={styles["footer-div-contact-text"]}>
