@@ -8,14 +8,14 @@ export const allEvents = [
         displayDate: "Deadline: September 19th @ 11:59PM",
         date: "2022/10/05",
         link: "https://forms.gle/ua2gKPgu3DGWC3wz9",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         // waiting for new graphic with updated event date
         EventName: "React Workshop",
         displayDate: "September 22nd, 2022",
         date: "2022/09/22",
-        highlightEvent: false,
+        highlightEvent: true,
     },
     {
         EventName: "Technical Interview Night",
