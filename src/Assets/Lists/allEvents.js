@@ -21,7 +21,7 @@ export const allEvents = [
         EventName: "Technical Interview Night",
         displayDate: "October 5, 2022",
         date: "2022/10/05",
-        highlightEvent: false,
+        highlightEvent: true,
     },
     {
         EventName: "NewHacks",
