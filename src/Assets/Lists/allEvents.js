@@ -15,6 +15,7 @@ export const allEvents = [
         EventName: "React Workshop",
         displayDate: "September 22nd, 2022",
         date: "2022/09/22",
+        link: "https://www.eventbrite.ca/e/ieee-uoft-react-workshop-tickets-420908186717",
         highlightEvent: true,
     },
     {
