@@ -22,6 +22,7 @@ export const allEvents = [
         EventName: "Technical Interview Night",
         displayDate: "October 5, 2022",
         date: "2022/10/05",
+        link: "https://www.eventbrite.ca/e/417248019057",
         highlightEvent: true,
     },
     {
