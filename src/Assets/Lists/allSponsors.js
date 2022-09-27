@@ -1,7 +1,7 @@
 export const allSponsors = [
     {
         companyName: "Github",
-        imgType: ".png",
+        imgType: ".svg",
         siteLink: "https://github.com/",
     },
     {
