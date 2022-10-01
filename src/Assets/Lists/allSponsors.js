@@ -1,5 +1,10 @@
 export const allSponsors = [
     {
+        companyName: "Github",
+        imgType: ".svg",
+        siteLink: "https://github.com/",
+    },
+    {
         companyName: "Qualcomm",
         imgType: ".svg",
         siteLink: "https://www.qualcomm.com/",
