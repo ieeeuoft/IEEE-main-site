@@ -93,19 +93,9 @@ const memberData = {
                     LinkedInLink: "https://ca.linkedin.com/in/joy-lai-0a40ab194"
                 },
                 {
-                    fullName: "Amelie Wang",
-                    position: "Associate",
-                    emailLink: "amelie.wang@mail.utoronto.ca",
-                },
-                {
                     fullName: "Rayan Hossain",
                     position: "Associate",
                     emailLink: "Rayan.hossain@mail.utoronto.ca",
-                },
-                {
-                    fullName: "Eri Yoshida",
-                    position: "Associate",
-                    emailLink: "eri.yoshida@mail.utoronto.ca",
                 },
                 {
                     fullName: "Martha Teferi",
@@ -117,11 +107,6 @@ const memberData = {
                     position: "Associate",
                     emailLink: "simonwithnoe.wang@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/srinidhi-shankar"
-                },
-                {
-                    fullName: "Judy Yue",
-                    position: "Associate",
-                    emailLink: "judy.yue@mail.utoronto.ca",
                 },
             ],
             firstRowSize: 4,
@@ -216,12 +201,6 @@ const memberData = {
                     fullName: "Eric Ji",
                     position: "Senior Associate",
                     emailLink: "erichanxiang.ji@mail.utoronto.ca",
-                },
-                {
-                    fullName: "Dana Al Shekerchi",
-                    position: "Associate",
-                    emailLink: "d.alshekerchi@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/dalshekerchi/"
                 },
                 {
                     fullName: "Luke Cheseldine",
