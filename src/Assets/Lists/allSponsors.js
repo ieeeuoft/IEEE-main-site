@@ -1,5 +1,95 @@
 export const allSponsors = [
     {
+        companyName: "Github",
+        imgType: ".svg",
+        siteLink: "https://github.com/",
+    },
+    {
+        companyName: "Qualcomm",
+        imgType: ".svg",
+        siteLink: "https://www.qualcomm.com/",
+    },
+    {
+        companyName: "ECE",
+        imgType: ".png",
+        siteLink: "https://www.ece.utoronto.ca/",
+    },
+    {
+        companyName: "Faculty of Applied Science and Engineering",
+        imgType: ".png",
+        siteLink: "https://www.engineering.utoronto.ca/",
+    },
+    {
+        companyName: "Waterfront International",
+        imgType: ".svg",
+        siteLink: "https://www.wil.com/",
+    },
+    {
+        companyName: "L-SPARK",
+        imgType: ".svg",
+        siteLink: "https://www.l-spark.com/",
+    },
+    {
+        companyName: "Daisy Intelligence",
+        imgType: ".svg",
+        siteLink: "https://www.daisyintelligence.com",
+    },
+    {
+    companyName: "Traction On Demand",
+    imgType: ".svg",
+    siteLink: "https://tractionondemand.com",
+    },
+    {
+        companyName: "MathWorks",
+        imgType: ".svg",
+        siteLink: "https://www.mathworks.com",
+    },
+    {
+        companyName: "Rotman School of Management",
+        imgType: ".svg",
+        siteLink: "https://www.rotman.utoronto.ca",
+    },
+    {
+        companyName: "Analog Devices",
+        imgType: ".svg",
+        siteLink: "https://www.analog.com",
+    },
+    {
+        companyName: "ecobee",
+        imgType: ".svg",
+        siteLink: "https://www.ecobee.com/en-ca",
+    },
+    {
+        companyName: "Voiceflow",
+        imgType: ".svg",
+        siteLink: "https://www.voiceflow.com",
+    },
+    {
+        companyName: "Huawei",
+        imgType: ".svg",
+        siteLink: "https://www.huawei.com/ca",
+    },
+    {
+        companyName: "BLiNQ Networks",
+        imgType: ".svg",
+        siteLink: "",
+    },
+    {
+        companyName: "Entrepreneur First",
+        imgType: ".svg",
+        siteLink: "https://www.joinef.com/",
+    },
+    {
+        companyName: "Arctype",
+        imgType: ".svg",
+        siteLink: "https://arctype.com/",
+    },
+    {
+        companyName: "Airmeet",
+        imgType: ".svg",
+        siteLink: "https://www.airmeet.com/",
+    },
+    {
         companyName: "Telus",
         imgType: ".svg",
         siteLink: "https://www.telus.com/en/",
@@ -126,93 +216,9 @@ export default allSponsors;
 //     imgType: ".svg",
 //     siteLink: "https://www.ibm.com/ca-en",
 // },
-// {
-//     companyName: "Github",
-//     imgType: ".svg",
-//     siteLink: "https://github.com/",
-// },
-// {
-//     companyName: "Qualcomm",
-//     imgType: ".svg",
-//     siteLink: "https://www.qualcomm.com/",
-// },
-// {
-//     companyName: "ECE",
-//     imgType: ".png",
-//     siteLink: "https://www.ece.utoronto.ca/",
-// },
-// {
-//     companyName: "Faculty of Applied Science and Engineering",
-//     imgType: ".png",
-//     siteLink: "https://www.engineering.utoronto.ca/",
-// },
-// {
-//     companyName: "Waterfront International",
-//     imgType: ".svg",
-//     siteLink: "https://www.wil.com/",
-// },
-// {
-//     companyName: "L-SPARK",
-//     imgType: ".svg",
-//     siteLink: "https://www.l-spark.com/",
-// },
-// {
-//     companyName: "Daisy Intelligence",
-//     imgType: ".svg",
-//     siteLink: "https://www.daisyintelligence.com",
-// },
-// {
-//     companyName: "Traction On Demand",
-//     imgType: ".svg",
-//     siteLink: "https://tractionondemand.com",
-// },
-// {
-//     companyName: "MathWorks",
-//     imgType: ".svg",
-//     siteLink: "https://www.mathworks.com",
-// },
-// {
-//     companyName: "Rotman School of Management",
-//     imgType: ".svg",
-//     siteLink: "https://www.rotman.utoronto.ca",
-// },
-// {
-//     companyName: "Analog Devices",
-//     imgType: ".svg",
-//     siteLink: "https://www.analog.com",
-// },
-// {
-//     companyName: "ecobee",
-//     imgType: ".svg",
-//     siteLink: "https://www.ecobee.com/en-ca",
-// },
-// {
-//     companyName: "Voiceflow",
-//     imgType: ".svg",
-//     siteLink: "https://www.voiceflow.com",
-// },
-// {
-//     companyName: "Huawei",
-//     imgType: ".svg",
-//     siteLink: "https://www.huawei.com/ca",
-// },
-// {
-//     companyName: "BLiNQ Networks",
-//     imgType: ".svg",
-//     siteLink: "",
-// },
-// {
-//     companyName: "Entrepreneur First",
-//     imgType: ".svg",
-//     siteLink: "https://www.joinef.com/",
-// },
-// {
-//     companyName: "Arctype",
-//     imgType: ".svg",
-//     siteLink: "https://arctype.com/",
-// },
-// {
-//     companyName: "Airmeet",
-//     imgType: ".svg",
-//     siteLink: "https://www.airmeet.com/",
-// },
+
+
+
+
+
+
