@@ -7,7 +7,7 @@ export const allSponsors = [
     {
         companyName: "RBC",
         imgType: ".svg",
-        siteLink: "https://www.rbcinvestease.com/",
+        siteLink: "https://www.rbcroyalbank.com",
     },
     {
         companyName: "Amazon",
