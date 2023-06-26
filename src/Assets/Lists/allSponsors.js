@@ -35,9 +35,9 @@ export const allSponsors = [
         siteLink: "https://www.daisyintelligence.com",
     },
     {
-        companyName: "Traction On Demand",
-        imgType: ".svg",
-        siteLink: "https://tractionondemand.com",
+    companyName: "Traction On Demand",
+    imgType: ".svg",
+    siteLink: "https://tractionondemand.com",
     },
     {
         companyName: "MathWorks",
@@ -58,16 +58,6 @@ export const allSponsors = [
         companyName: "ecobee",
         imgType: ".svg",
         siteLink: "https://www.ecobee.com/en-ca",
-    },
-    {
-        companyName: "AMD",
-        imgType: ".svg",
-        siteLink: "https://www.amd.com",
-    },
-    {
-        companyName: "The Hatchery",
-        imgType: ".svg",
-        siteLink: "https://hatchery.engineering.utoronto.ca",
     },
     {
         companyName: "Voiceflow",
@@ -99,61 +89,117 @@ export const allSponsors = [
         imgType: ".svg",
         siteLink: "https://www.airmeet.com/",
     },
+    {
+        companyName: "Telus",
+        imgType: ".svg",
+        siteLink: "https://www.telus.com/en/",
+    },
+    {
+        companyName: "RBC",
+        imgType: ".svg",
+        siteLink: "https://www.rbcroyalbank.com",
+    },
+    {
+        companyName: "Amazon",
+        imgType: ".svg",
+        siteLink: "https://www.amazon.ca/"
+    },
+    {
+        companyName: "Munvo",
+        imgType: ".png",
+        siteLink: "https://munvo.com/",
+    },
+    {
+        companyName: "IEEE Toronto",
+        imgType: ".svg",
+        siteLink: "https://toronto.ieee.ca/",
+    },
+    {
+        companyName: "Xilinx",
+        imgType: ".svg",
+        siteLink: "https://www.xilinx.com/",
+    },
+    {
+        companyName: "PTI Transformers",
+        imgType: ".svg",
+        siteLink: "https://www.partnertechnologies.net/",
+    },
+    {
+        companyName: "HP",
+        imgType: ".svg",
+        siteLink: "https://www.hpe.com/ca/en/home.html",
+    },
+    {
+        companyName: "Solace",
+        imgType: ".svg",
+        siteLink: "https://solace.com",
+    },
+    {
+        companyName: "Cognitive Systems",
+        imgType: ".svg",
+        siteLink: "https://www.cognitivesystems.com/",
+    },
+    {
+        companyName: "City of Brampton",
+        imgType: ".svg",
+        siteLink: "https://www.brampton.ca/",
+    },
+    {
+        companyName: "BITalino",
+        imgType: ".png",
+        siteLink: "https://bitalino.com/en/",
+    },
+    {
+        companyName: "Synopsys",
+        imgType: ".svg",
+        siteLink: "https://www.synopsys.com/",
+    },
+    {
+        companyName: "Intel",
+        imgType: ".svg",
+        siteLink: "https://www.intel.ca/",
+    },
+    {
+        companyName: "Bell",
+        imgType: ".svg",
+        siteLink: "https://www.bell.ca/",
+    },
+    {
+        companyName: "Mozilla",
+        imgType: ".svg",
+        siteLink: "https://www.mozilla.org",
+    },
+    {
+        companyName: "AMD",
+        imgType: ".svg",
+        siteLink: "https://www.amd.com",
+    },
+    {
+        companyName: "Google",
+        imgType: ".svg",
+        siteLink: "https://about.google",
+    },
+
+    {
+        companyName: "Digi-Key",
+        imgType: ".svg",
+        siteLink: "https://www.digikey.ca/",
+    },
+    {
+        companyName: "The Hatchery",
+        imgType: ".svg",
+        siteLink: "https://hatchery.engineering.utoronto.ca",
+    },
+
 ];
 
 export default allSponsors;
 
 // OLD, CAN REUSE
-
-// {
-//     companyName: "IEEE Toronto",
-//     imgType: ".svg",
-//     siteLink: "https://toronto.ieee.ca/",
-// },
 // {
 //     companyName: "IEEE Canada",
 //     imgType: ".png",
 //     siteLink: "https://www.ieee.ca/en/",
-// },
-// {
-//     companyName: "Telus",
-//     imgType: ".svg",
-//     siteLink: "https://www.telus.com/en/",
-// },
-// {
-//     companyName: "Solace",
-//     imgType: ".svg",
-//     siteLink: "https://solace.com",
-// },
-// {
-//     companyName: "Xilinx",
-//     imgType: ".svg",
-//     siteLink: "https://www.xilinx.com/",
-// },
-// {
-//     companyName: "Cognitive Systems",
-//     imgType: ".svg",
-//     siteLink: "https://www.cognitivesystems.com/",
-// },
-// {
-//     companyName: "PTI Transformers",
-//     imgType: ".svg",
-//     siteLink: "https://www.partnertechnologies.net/",
-// },
-// {
-//     companyName: "City of Brampton",
-//     imgType: ".svg",
-//     siteLink: "https://www.brampton.ca/",
-// },
-// {
-//     companyName: "BITalino",
-//     imgType: ".png",
-//     siteLink: "https://bitalino.com/en/",
-// },
-// {
-//     companyName: "HP",
-//     imgType: ".svg",
-//     siteLink: "https://www.hpe.com/ca/en/home.html",
 // },
 // {
 //     companyName: "IEEE Canadian Foundation",
@@ -166,22 +212,13 @@ export default allSponsors;
 //     siteLink: "https://www.studentlife.utoronto.ca/bts/sif",
 // },
 // {
-//     companyName: "Google",
-//     imgType: ".svg",
-//     siteLink: "https://about.google",
-// },
-// {
 //     companyName: "IBM",
 //     imgType: ".svg",
 //     siteLink: "https://www.ibm.com/ca-en",
 // },
-// {
-//     companyName: "Munvo",
-//     imgType: ".png",
-//     siteLink: "https://munvo.com/",
-// },
-// {
-//     companyName: "RBC",
-//     imgType: ".svg",
-//     siteLink: " https://www.rbcinvestease.com/",
-// },
+
+
+
+
+
+
