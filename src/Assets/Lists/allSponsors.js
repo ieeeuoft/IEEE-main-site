@@ -96,7 +96,7 @@ export const allSponsors = [
     },
     {
         companyName: "RBC",
-        imgType: ".svg",
+        imgType: ".png",
         siteLink: "https://www.rbcroyalbank.com",
     },
     {
