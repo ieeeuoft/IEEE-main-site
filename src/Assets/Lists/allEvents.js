@@ -5,9 +5,7 @@
 export const allEvents = [
     {
         EventName: "First Year Recruitment",
-        displayDate: "Deadline: September 19th @ 11:59PM",
         date: "2022/10/05",
-        link: "https://forms.gle/ua2gKPgu3DGWC3wz9",
         highlightEvent: false,
     },
     {
@@ -16,7 +14,7 @@ export const allEvents = [
         displayDate: "September 22nd, 2022",
         date: "2022/09/22",
         link: "https://www.eventbrite.ca/e/ieee-uoft-react-workshop-tickets-420908186717",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "Technical Interview Night",
@@ -29,14 +27,15 @@ export const allEvents = [
         EventName: "NewHacks",
         displayDate: "November 5-6, 2022",
         date: "2022/11/05",
-        link: "https://www.newhacks.ca/",
+        link: "https://newhacks-2022.devpost.com/",
         highlightEvent: true,
     },
     {
         EventName: "MakeUofT",
-        displayDate: "February 18-19, 2022",
-        date: "2022/02/18",
-        highlightEvent: false,
+        displayDate: "February 18-19, 2023",
+        date: "2023/02/18",
+        link: "https://makeuoft-2023.devpost.com/",
+        highlightEvent: true,
     },
 ];
 
