@@ -18,7 +18,7 @@ const Events = () => {
     const [compact, setCompact] = useState(true);
     return (
         <div className={styles.eventsDiv}>
-            <h2 className={styles.eventsDivHeading}>All Events</h2>
+            <h2 className={styles.eventsDivHeading}>Past Events</h2>
             <p onClick={() => setCompact(!compact)} className={styles.compactBtn}>
                 {compact ? "expand" : "minimize"}
             </p>
