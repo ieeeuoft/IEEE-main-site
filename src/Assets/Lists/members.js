@@ -109,6 +109,7 @@ const memberData = {
                 {
                     fullName: "Jason Cai",
                     position: "Senior Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/jason--cai/"
                 },
                 {
                     fullName: "Aastha Sharma",
