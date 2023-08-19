@@ -1,4 +1,322 @@
 const memberData = {
+    "2023-2024": {
+        "Exec Team": {
+            membersList: [
+                {
+                    fullName: "Dalia Victoria Mahidashti",
+                    position: "Co-Chair",
+                    emailLink: "dalia.mahidashti@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/daliavictoriamahidashti/"
+                },
+                {
+                    fullName: "Leo Li",
+                    position: "Co-Chair",
+                    emailLink: "leeoo.li@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/haocheng-leo/"
+                },
+            ],
+            firstRowSize: 2,
+        },
+        "Advisors": {
+            membersList: [
+                {
+                    fullName: "Floria Xin Yi Fang Zhang",
+                    position: "Advisor",
+                    emailLink: "floria.fang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Himanish Jindal",
+                    position: "Advisor",
+                    emailLink: "himanish.jindal@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/himanish-jindal/"
+                },
+                {
+                    fullName: "Eric Ji",
+                    position: "Advisor",
+                    emailLink: "erichanxiang.ji@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Avelyn Wong",
+                    position: "Advisor",
+                    emailLink: "avelyn.wong@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Tasnim Reza",
+                    position: "Advisor",
+                    emailLink: "tasnimreza2000@gmail.com",
+                    LinkedInLink: "https://www.linkedin.com/in/tasnim-reza/"
+                },
+            ],
+            firstRowSize: 3
+        },
+        "Graduated Advisors": {
+            membersList: [
+                {
+                    fullName: "Alice Zhou",
+                    position: "Graduated Advisor",
+                    emailLink: "alicexyz.zhou@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/alice-x-zhou/"
+                },
+                {
+                    fullName: "YuYing Liang",
+                    position: "Graduated Advisor",
+                    emailLink: "yuying.liang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/yuying-liang/"
+                },
+                {
+                    fullName: "Julia Wagner",
+                    position: "Graduated Advisor",
+                    emailLink: "Julia.wagner@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Fahim Talukder",
+                    position: "Graduated Advisor",
+                    emailLink: "Fahim.Talukder@mail.utoronto.ca",
+                },
+            ],
+            firstRowSize: 2
+        },
+        "Logistics": {
+            membersList: [
+                {
+                    fullName: "Andrew Cheung",
+                    position: "Logistics Director",
+                    emailLink: "abc.cheung@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Terry Luan",
+                    position: "Logistics Director",
+                    emailLink: "t.luan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Stephanie Lu",
+                    position: "Logistics Director",
+                    LinkedInLink: "https://www.linkedin.com/in/stephanieyflu"
+                },
+                {
+                    fullName: "Sanjana Dasadia",
+                    position: "Senior Associate",
+                    emailLink: "sanjana.dasadia@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Pratibha Thakur",
+                    position: "Senior Associate",
+                },
+                {
+                    fullName: "Victor Deng",
+                    position: "Senior Associate",
+                },
+                {
+                    fullName: "Jason Cai",
+                    position: "Senior Associate",
+                },
+                {
+                    fullName: "Aastha Sharma",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/aastha-sharma-b5444821a/",
+                },
+                {
+                    fullName: "Danelle D'Souza",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Arishi Maisara",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Dylan Ngan",
+                    position: "Associate",
+                },
+            ],
+            firstRowSize: 3
+        },
+        "External Relations": {
+            membersList: [
+                {
+                    fullName: "Bella Yang",
+                    position: "ER Director",
+                    LinkedInLink: "https://www.linkedin.com/in/bella-yang-557a90242/"
+                },
+                {
+                    fullName: "Cassie Cheng",
+                    position: "ER Director",
+                    LinkedInLink: "https://www.linkedin.com/in/tong-cassie-cheng/"
+                },
+                {
+                    fullName: "Tahseen Galib Pavel",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/tahseen-galib-pavel",
+                },
+                {
+                    fullName: "Isabella Tang",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/isabella-tang-0a482a22a/",
+                },
+                {
+                    fullName: "Bang Ly Tran",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Harini Mohan",
+                    position: "Associate",
+                },
+
+            ],
+            firstRowSize: 2
+        },
+        "Marketing": {
+            membersList: [
+                {
+                    fullName: "Natalie Chan",
+                    position: "Graphics Director",
+                    emailLink: "natalieanna.chan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Vivian Song",
+                    position: "Strategies Director",
+                    LinkedInLink: "https://www.linkedin.com/in/vivian-songg/"
+                },
+                {
+                    fullName: "Aryan Hussain",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/aryan-hussain-909238244/",
+                },
+                {
+                    fullName: "Lauren Kang",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/laurenyjkang/",
+                },
+            ],
+            firstRowSize: 2
+        },
+        "Tech Team": {
+            membersList: [
+                {
+                    fullName: "Scott Hirano",
+                    position: "Director",
+                    LinkedInLink: "https://www.linkedin.com/in/scott-hirano/",
+                },
+                {
+                    fullName: "Vraj Prajapati",
+                    position: "Director",
+                },
+                {
+                    fullName: "Razeen Ali",
+                    position: "Senior Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/r4z33n4l1/",
+                },
+                {
+                    fullName: "Kovid Srivart",
+                    position: "Senior Associate",
+                },
+                {
+                    fullName: "Kevin Liu",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/profile-kevinliu/",
+                },
+                {
+                    fullName: "Sangamithra Bala",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Hieu Le Tai Nguyen",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/hieu-le-tai-nguyen-30b67b1a3/",
+                },
+                {
+                    fullName: "Ashley Leal",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/ashleynicoleleal/",
+                },
+                {
+                    fullName: "Geoffrey Fang",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/geoffrey-fang/",
+                },
+                {
+                    fullName: "Tanya Rustogi",
+                    position: "Associate"
+                },
+            ],
+            firstRowSize: 2
+        },
+        "Webmasters" : {
+            membersList: [
+                {
+                    fullName: "Mustafa Abdulrahman",
+                    position: "Director",
+                    emailLink: "mustafa.abdulrahman@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/mus123/"
+                },
+                {
+                    fullName: "Luke Cheseldine",
+                    position: "Director",
+                    emailLink: "luke.cheseldine@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/lukechessr/"
+                },
+                {
+                    fullName: "Thomas Lin",
+                    position: "Director",
+                    LinkedInLink: "https://www.linkedin.com/in/chen-yuan-lin",
+                },
+                {
+                    fullName: "Daniel Qiu",
+                    position: "Senior Associate",
+                    emailLink: "daniel.qiu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/daniel-qiuu/",
+                },
+                {
+                    fullName: "Samuel Liu",
+                    position: "Senior Associate",
+                    emailLink: "samuelt.liu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/liusamuelt2003/",
+                },
+                {
+                    fullName: "Carmen Chau",
+                    position: "Senior Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/carmenchau12/",
+                },
+                {
+                    fullName: "Karandeep Lubana",
+                    position: "Senior Associate",
+                    emailLink: "karandeep.lubana@mail.utoronto.ca",
+                    LinkedInLink: "http://www.linkedin.com/in/karandeep-lubana"
+                },
+                {
+                    fullName: "Natalie Chan",
+                    position: "Senior Associate",
+                    emailLink: "natalieanna.chan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Alisha Pham",
+                    position: "Senior Associate",
+                    emailLink: "alisha.pham@mail.utoronto.ca",
+                    LinkedInLink: "www.linkedin.com/in/alisha-pham-322250273"
+                },
+                {
+                    fullName: "Kenny Cui",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Xiao Zhang",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Ishika Mittal",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/ishika-mittal1202",
+                },
+                {
+                    fullName: "Abubukker Chaudhary",
+                    position: "Associate",
+                },
+
+
+            ],
+            firstRowSize: 3
+        }
+
+    },
     "2022-2023": {
         "Exec Team": {
             membersList: [
