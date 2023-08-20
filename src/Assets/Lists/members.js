@@ -105,6 +105,7 @@ const memberData = {
                 {
                     fullName: "Victor Deng",
                     position: "Senior Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/weian-deng/",
                 },
                 {
                     fullName: "Jason Cai",
