@@ -1,4 +1,325 @@
 const memberData = {
+    "2023-2024": {
+        "Exec Team": {
+            membersList: [
+                {
+                    fullName: "Dalia Victoria Mahidashti",
+                    position: "Co-Chair",
+                    emailLink: "dalia.mahidashti@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/daliavictoriamahidashti/",
+                },
+                {
+                    fullName: "Leo Li",
+                    position: "Co-Chair",
+                    emailLink: "leeoo.li@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/haocheng-leo/",
+                },
+            ],
+            firstRowSize: 2,
+        },
+        Advisors: {
+            membersList: [
+                {
+                    fullName: "Floria Xin Yi Fang Zhang",
+                    position: "Advisor",
+                    emailLink: "floria.fang@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Himanish Jindal",
+                    position: "Advisor",
+                    emailLink: "himanish.jindal@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/himanish-jindal/",
+                },
+                {
+                    fullName: "Eric Ji",
+                    position: "Advisor",
+                    emailLink: "erichanxiang.ji@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Avelyn Wong",
+                    position: "Advisor",
+                    emailLink: "avelyn.wong@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Tasnim Reza",
+                    position: "Advisor",
+                    emailLink: "tasnimreza2000@gmail.com",
+                    LinkedInLink: "https://www.linkedin.com/in/tasnim-reza/",
+                },
+            ],
+            firstRowSize: 3,
+        },
+        "Graduated Advisors": {
+            membersList: [
+                {
+                    fullName: "Alice Zhou",
+                    position: "Graduated Advisor",
+                    emailLink: "alicexyz.zhou@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/alice-x-zhou/",
+                },
+                {
+                    fullName: "YuYing Liang",
+                    position: "Graduated Advisor",
+                    emailLink: "yuying.liang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/yuying-liang/",
+                },
+                {
+                    fullName: "Julia Wagner",
+                    position: "Graduated Advisor",
+                    emailLink: "Julia.wagner@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Fahim Talukder",
+                    position: "Graduated Advisor",
+                    emailLink: "Fahim.Talukder@mail.utoronto.ca",
+                },
+            ],
+            firstRowSize: 2,
+        },
+        Logistics: {
+            membersList: [
+                {
+                    fullName: "Andrew Cheung",
+                    position: "Logistics Director",
+                    emailLink: "abc.cheung@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Terry Luan",
+                    position: "Logistics Director",
+                    emailLink: "t.luan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Stephanie Lu",
+                    position: "Logistics Director",
+                    LinkedInLink: "https://www.linkedin.com/in/stephanieyflu",
+                },
+                {
+                    fullName: "Sanjana Dasadia",
+                    position: "Senior Associate",
+                    emailLink: "sanjana.dasadia@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Pratibha Thakur",
+                    position: "Senior Associate",
+                },
+                {
+                    fullName: "Victor Deng",
+                    position: "Senior Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/weian-deng/",
+                },
+                {
+                    fullName: "Jason Cai",
+                    position: "Senior Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/jason--cai/",
+                },
+                {
+                    fullName: "Aastha Sharma",
+                    position: "Associate",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/aastha-sharma-b5444821a/",
+                },
+                {
+                    fullName: "Danelle D'Souza",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Arishi Maisara",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Dylan Ngan",
+                    position: "Associate",
+                },
+            ],
+            firstRowSize: 3,
+        },
+        "External Relations": {
+            membersList: [
+                {
+                    fullName: "Bella Yang",
+                    position: "ER Director",
+                    LinkedInLink: "https://www.linkedin.com/in/bella-yang-557a90242/",
+                },
+                {
+                    fullName: "Cassie Cheng",
+                    position: "ER Director",
+                    LinkedInLink: "https://www.linkedin.com/in/tong-cassie-cheng/",
+                },
+                {
+                    fullName: "Tahseen Galib Pavel",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/tahseen-galib-pavel",
+                },
+                {
+                    fullName: "Isabella Tang",
+                    position: "Associate",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/isabella-tang-0a482a22a/",
+                },
+                {
+                    fullName: "Bang Ly Tran",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Harini Mohan",
+                    position: "Associate",
+                },
+            ],
+            firstRowSize: 2,
+        },
+        Marketing: {
+            membersList: [
+                {
+                    fullName: "Natalie Chan",
+                    position: "Graphics Director",
+                    emailLink: "natalieanna.chan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Vivian Song",
+                    position: "Strategies Director",
+                    LinkedInLink: "https://www.linkedin.com/in/vivian-songg/",
+                },
+                {
+                    fullName: "Aryan Hussain",
+                    position: "Associate",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/aryan-hussain-909238244/",
+                },
+                {
+                    fullName: "Lauren Kang",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/laurenyjkang/",
+                },
+            ],
+            firstRowSize: 2,
+        },
+        "Tech Team": {
+            membersList: [
+                {
+                    fullName: "Scott Hirano",
+                    position: "Director",
+                    LinkedInLink: "https://www.linkedin.com/in/scott-hirano/",
+                },
+                {
+                    fullName: "Vraj Prajapati",
+                    position: "Director",
+                },
+                {
+                    fullName: "Razeen Ali",
+                    position: "Senior Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/r4z33n4l1/",
+                },
+                {
+                    fullName: "Kovid Srivart",
+                    position: "Senior Associate",
+                },
+                {
+                    fullName: "Kevin Liu",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/profile-kevinliu/",
+                },
+                {
+                    fullName: "Sangamithra Bala",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Hieu Le Tai Nguyen",
+                    position: "Associate",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/hieu-le-tai-nguyen-30b67b1a3/",
+                },
+                {
+                    fullName: "Ashley Leal",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/ashleynicoleleal/",
+                },
+                {
+                    fullName: "Geoffrey Fang",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/geoffrey-fang/",
+                },
+                {
+                    fullName: "Tanya Rustogi",
+                    position: "Associate",
+                },
+            ],
+            firstRowSize: 2,
+        },
+        Webmasters: {
+            membersList: [
+                {
+                    fullName: "Mustafa Abdulrahman",
+                    position: "Director",
+                    emailLink: "mustafa.abdulrahman@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/mus123/",
+                },
+                {
+                    fullName: "Luke Cheseldine",
+                    position: "Director",
+                    emailLink: "luke.cheseldine@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/lukechessr/",
+                },
+                {
+                    fullName: "Thomas Lin",
+                    position: "Director",
+                    LinkedInLink: "https://www.linkedin.com/in/chen-yuan-lin",
+                },
+                {
+                    fullName: "Daniel Qiu",
+                    position: "Senior Associate",
+                    emailLink: "daniel.qiu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/daniel-qiuu/",
+                },
+                {
+                    fullName: "Samuel Liu",
+                    position: "Senior Associate",
+                    emailLink: "samuelt.liu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/liusamuelt2003/",
+                },
+                {
+                    fullName: "Carmen Chau",
+                    position: "Senior Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/carmenchau12/",
+                },
+                {
+                    fullName: "Karandeep Lubana",
+                    position: "Senior Associate",
+                    emailLink: "karandeep.lubana@mail.utoronto.ca",
+                    LinkedInLink: "http://www.linkedin.com/in/karandeep-lubana",
+                },
+                {
+                    fullName: "Natalie Chan",
+                    position: "Senior Associate",
+                    emailLink: "natalieanna.chan@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Alisha Pham",
+                    position: "Senior Associate",
+                    emailLink: "alisha.pham@mail.utoronto.ca",
+                    LinkedInLink: "www.linkedin.com/in/alisha-pham-322250273",
+                },
+                {
+                    fullName: "Kenny Cui",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Xiao Zhang",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Ishika Mittal",
+                    position: "Associate",
+                    LinkedInLink: "https://www.linkedin.com/in/ishika-mittal1202",
+                },
+                {
+                    fullName: "Abubukker Chaudhary",
+                    position: "Associate",
+                },
+            ],
+            firstRowSize: 3,
+        },
+    },
     "2022-2023": {
         "Exec Team": {
             membersList: [
@@ -26,7 +347,8 @@ const memberData = {
                     fullName: "Dalia Victoria Mahidashti",
                     position: "Managing Director",
                     emailLink: "dalia.mahidashti@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/daliavictoriamahidashti/"
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/daliavictoriamahidashti/",
                 },
                 {
                     fullName: "Natalie Chan",
@@ -47,19 +369,19 @@ const memberData = {
                     fullName: "Alice Zhou",
                     position: "Logistics Managing Director",
                     emailLink: "alicexyz.zhou@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/alice-x-zhou/"
+                    LinkedInLink: "https://www.linkedin.com/in/alice-x-zhou/",
                 },
                 {
                     fullName: "Tasnim Reza",
                     position: "Logistics Managing Director",
                     emailLink: "tasnimreza2000@gmail.com",
-                    LinkedInLink: "https://www.linkedin.com/in/tasnim-reza/"
+                    LinkedInLink: "https://www.linkedin.com/in/tasnim-reza/",
                 },
                 {
                     fullName: "Srinidhi Shankar",
                     position: "BD Managing Director",
                     emailLink: "srinidhi.shankar@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/srinidhi-shanka"
+                    LinkedInLink: "https://www.linkedin.com/in/srinidhi-shanka",
                 },
                 {
                     fullName: "Alisha Pham",
@@ -90,7 +412,7 @@ const memberData = {
                     fullName: "Joy Lai",
                     position: "Associate",
                     emailLink: "joylai2002@gmail.com",
-                    LinkedInLink: "https://ca.linkedin.com/in/joy-lai-0a40ab194"
+                    LinkedInLink: "https://ca.linkedin.com/in/joy-lai-0a40ab194",
                 },
                 {
                     fullName: "Rayan Hossain",
@@ -106,7 +428,7 @@ const memberData = {
                     fullName: "Xianglin (Simon) Wang",
                     position: "Associate",
                     emailLink: "simonwithnoe.wang@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/srinidhi-shankar"
+                    LinkedInLink: "https://www.linkedin.com/in/srinidhi-shankar",
                 },
             ],
             firstRowSize: 4,
@@ -167,7 +489,8 @@ const memberData = {
                     fullName: "Shikhar Chaurasia",
                     position: "Associate",
                     emailLink: "shikhar.chaurasia@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/shikhar-chaurasia-768955200/"
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/shikhar-chaurasia-768955200/",
                 },
             ],
             firstRowSize: 2,
@@ -178,19 +501,19 @@ const memberData = {
                     fullName: "YuYing Liang",
                     position: "Managing Director",
                     emailLink: "yuying.liang@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/yuying-liang/"
+                    LinkedInLink: "https://www.linkedin.com/in/yuying-liang/",
                 },
                 {
                     fullName: "Leo Li",
                     position: "Managing Director",
                     emailLink: "leeoo.li@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/haocheng-leo/"
+                    LinkedInLink: "https://www.linkedin.com/in/haocheng-leo/",
                 },
                 {
                     fullName: "Mustafa Abdulrahman",
                     position: "Web Project Manager",
                     emailLink: "mustafa.abdulrahman@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/mus123/"
+                    LinkedInLink: "https://www.linkedin.com/in/mus123/",
                 },
                 {
                     fullName: "Terry Luan",
@@ -206,7 +529,7 @@ const memberData = {
                     fullName: "Luke Cheseldine",
                     position: "Associate",
                     emailLink: "luke.cheseldine@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/lukechessr/"
+                    LinkedInLink: "https://www.linkedin.com/in/lukechessr/",
                 },
                 {
                     fullName: "Ethan Hugh",
@@ -217,7 +540,7 @@ const memberData = {
                     fullName: "Karandeep Lubana",
                     position: "Associate",
                     emailLink: "karandeep.lubana@mail.utoronto.ca",
-                    LinkedInLink: "http://www.linkedin.com/in/karandeep-lubana"
+                    LinkedInLink: "http://www.linkedin.com/in/karandeep-lubana",
                 },
             ],
             firstRowSize: 3,
@@ -250,7 +573,7 @@ const memberData = {
                     position: "Advisor",
                     emailLink: "ireneyr.li@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/irene-yiran-li/",
-                }
+                },
             ],
             firstRowSize: 3,
         },
@@ -1109,20 +1432,20 @@ const memberData = {
     "2018-2019": {
         "Exec Team": {
             membersList: [
-                {fullName: "Kevin Zhang", position: "Executive Chair"},
-                {fullName: "Judy Mao", position: "Marketing Chair"},
-                {fullName: "Shine Ko", position: "Finance Chair"},
-                {fullName: "Danny Zhang", position: "Branch Advisor"},
-                {fullName: "Kevin Tan", position: "Branch Advisor"},
+                { fullName: "Kevin Zhang", position: "Executive Chair" },
+                { fullName: "Judy Mao", position: "Marketing Chair" },
+                { fullName: "Shine Ko", position: "Finance Chair" },
+                { fullName: "Danny Zhang", position: "Branch Advisor" },
+                { fullName: "Kevin Tan", position: "Branch Advisor" },
             ],
             firstRowSize: 1,
         },
 
         "Marketing & Finance": {
             membersList: [
-                {fullName: "Judy Mao", position: "Marketing Chair"},
-                {fullName: "Shine Ko", position: "Finance Chair"},
-                {fullName: "Zining Zhu", position: "Chief Webmaster"},
+                { fullName: "Judy Mao", position: "Marketing Chair" },
+                { fullName: "Shine Ko", position: "Finance Chair" },
+                { fullName: "Zining Zhu", position: "Chief Webmaster" },
                 {
                     fullName: "Dorothy Zhang",
                     position: "Computer Marketing & Finance Director",
@@ -1131,81 +1454,81 @@ const memberData = {
                     fullName: "Fumi Shibutani",
                     position: "Energy Marketing & Finance Director",
                 },
-                {fullName: "Yuyang Wen", position: "Computer Graphic Design"},
-                {fullName: "Lisa Li", position: "Electronics Graphic Design"},
-                {fullName: "Andrew Wang", position: "Computer Webmaster"},
-                {fullName: "Dorina Lin", position: "Computer Webmaster"},
-                {fullName: "Graham Hoyes", position: "Electronics Webmaster"},
+                { fullName: "Yuyang Wen", position: "Computer Graphic Design" },
+                { fullName: "Lisa Li", position: "Electronics Graphic Design" },
+                { fullName: "Andrew Wang", position: "Computer Webmaster" },
+                { fullName: "Dorina Lin", position: "Computer Webmaster" },
+                { fullName: "Graham Hoyes", position: "Electronics Webmaster" },
             ],
             firstRowSize: 2,
         },
 
         "Computer Chapter": {
             membersList: [
-                {fullName: "Mohaimen Khan", position: "Chair"},
-                {fullName: "Rosalyn Wong", position: "Vice Chair"},
+                { fullName: "Mohaimen Khan", position: "Chair" },
+                { fullName: "Rosalyn Wong", position: "Vice Chair" },
                 {
                     fullName: "Linda Wu",
                     position: "Director of Operations and Logistics",
                 },
-                {fullName: "Daniel Koo", position: "Director of Workshops"},
-                {fullName: "Justin Yuan", position: "Event Director"},
-                {fullName: "Vicky Huo", position: "Director of Sponorship"},
+                { fullName: "Daniel Koo", position: "Director of Workshops" },
+                { fullName: "Justin Yuan", position: "Event Director" },
+                { fullName: "Vicky Huo", position: "Director of Sponorship" },
 
-                {fullName: "Ashima Gupta", position: "Associate"},
-                {fullName: "Helen Wang", position: "Associate"},
-                {fullName: "Cynthia Liao", position: "Associate"},
-                {fullName: "Maggie Ding", position: "Associate"},
-                {fullName: "Steven Zhao", position: "Associate"},
-                {fullName: "Shuyi Wang", position: "Associate"},
-                {fullName: "Eric Mejia Uzeda", position: "Associate"},
+                { fullName: "Ashima Gupta", position: "Associate" },
+                { fullName: "Helen Wang", position: "Associate" },
+                { fullName: "Cynthia Liao", position: "Associate" },
+                { fullName: "Maggie Ding", position: "Associate" },
+                { fullName: "Steven Zhao", position: "Associate" },
+                { fullName: "Shuyi Wang", position: "Associate" },
+                { fullName: "Eric Mejia Uzeda", position: "Associate" },
 
-                {fullName: "Yuyang Wen", position: "Graphic Design"},
-                {fullName: "Andrew Wang", position: "Webmaster"},
-                {fullName: "Dorina Lin", position: "Webmaster"},
+                { fullName: "Yuyang Wen", position: "Graphic Design" },
+                { fullName: "Andrew Wang", position: "Webmaster" },
+                { fullName: "Dorina Lin", position: "Webmaster" },
             ],
             firstRowSize: 2,
         },
         "Electronics Chapter": {
             membersList: [
-                {fullName: "Alaynah Malik", position: "Co-Chair"},
-                {fullName: "Nhien Tran-Nguyen", position: "Co-Chair"},
+                { fullName: "Alaynah Malik", position: "Co-Chair" },
+                { fullName: "Nhien Tran-Nguyen", position: "Co-Chair" },
 
-                {fullName: "Aishni Arora", position: "Marketing & Finance Director"},
-                {fullName: "Raghav Srinivasan", position: "Tech Team Director"},
-                {fullName: "Martin Ffrench", position: "Tech Team Director"},
-                {fullName: "Haley Cao", position: "Sponsorship Director"},
+                { fullName: "Aishni Arora", position: "Marketing & Finance Director" },
+                { fullName: "Raghav Srinivasan", position: "Tech Team Director" },
+                { fullName: "Martin Ffrench", position: "Tech Team Director" },
+                { fullName: "Haley Cao", position: "Sponsorship Director" },
                 {
                     fullName: "Lorna Lan",
                     position: "Director of Operations and Logistics",
                 },
-                {fullName: "Mary Wu", position: "Outreach Director"},
+                { fullName: "Mary Wu", position: "Outreach Director" },
 
-                {fullName: "Paul Chen", position: "Associate"},
-                {fullName: "Charlie Wang", position: "Associate"},
-                {fullName: "Shashwat Panwar", position: "Associate"},
-                {fullName: "William Sinnatamby", position: "Associate"},
+                { fullName: "Paul Chen", position: "Associate" },
+                { fullName: "Charlie Wang", position: "Associate" },
+                { fullName: "Shashwat Panwar", position: "Associate" },
+                { fullName: "William Sinnatamby", position: "Associate" },
 
-                {fullName: "Farid Chalabi", position: "Tech Team"},
-                {fullName: "Riley Stringer", position: "Tech Team"},
-                {fullName: "Andres Lombo", position: "Tech Team"},
+                { fullName: "Farid Chalabi", position: "Tech Team" },
+                { fullName: "Riley Stringer", position: "Tech Team" },
+                { fullName: "Andres Lombo", position: "Tech Team" },
 
-                {fullName: "Lisa Li", position: "Graphic Design"},
-                {fullName: "Graham Hoyes", position: "Webmaster"},
+                { fullName: "Lisa Li", position: "Graphic Design" },
+                { fullName: "Graham Hoyes", position: "Webmaster" },
             ],
             firstRowSize: 2,
         },
         "Energy/Power Chapter": {
             membersList: [
-                {fullName: "Verlyn Liang", position: "Co-Chair"},
-                {fullName: "Yew Meng Khaw", position: "Co-Chair"},
-                {fullName: "Abhijith Nair", position: "Technical Director"},
-                {fullName: "Chris Su", position: "Events Director"},
-                {fullName: "Zhaoping Wang", position: "Event Associate"},
-                {fullName: "Yang Su", position: "Associate"},
-                {fullName: "Amy Gao", position: "Event Associate"},
-                {fullName: "Cindy Chen", position: "Associate"},
-                {fullName: "Lancy Wang", position: "Associate"},
+                { fullName: "Verlyn Liang", position: "Co-Chair" },
+                { fullName: "Yew Meng Khaw", position: "Co-Chair" },
+                { fullName: "Abhijith Nair", position: "Technical Director" },
+                { fullName: "Chris Su", position: "Events Director" },
+                { fullName: "Zhaoping Wang", position: "Event Associate" },
+                { fullName: "Yang Su", position: "Associate" },
+                { fullName: "Amy Gao", position: "Event Associate" },
+                { fullName: "Cindy Chen", position: "Associate" },
+                { fullName: "Lancy Wang", position: "Associate" },
             ],
             firstRowSize: 2,
         },
@@ -1213,80 +1536,80 @@ const memberData = {
     "2017-2018": {
         "Exec Team": {
             membersList: [
-                {fullName: "Danny Zhang", position: "Executive Co-Chair"},
-                {fullName: "Kevin Tan", position: "Executive Co-Chair"},
+                { fullName: "Danny Zhang", position: "Executive Co-Chair" },
+                { fullName: "Kevin Tan", position: "Executive Co-Chair" },
             ],
             firstRowSize: 2,
         },
 
         "Marketing & Finance": {
             membersList: [
-                {fullName: "Bond Chen", position: "Finance Chair"},
-                {fullName: "Young Kim", position: "Finance Associate"},
-                {fullName: "Vicky Huo", position: "Marketing Director"},
-                {fullName: "Kevin Zhang", position: "Marketing Director"},
-                {fullName: "Shine Ko", position: "Marketing Director"},
+                { fullName: "Bond Chen", position: "Finance Chair" },
+                { fullName: "Young Kim", position: "Finance Associate" },
+                { fullName: "Vicky Huo", position: "Marketing Director" },
+                { fullName: "Kevin Zhang", position: "Marketing Director" },
+                { fullName: "Shine Ko", position: "Marketing Director" },
 
-                {fullName: "Zining Zhu", position: "Webmaster"},
-                {fullName: "Daniel Koo", position: "Webmaster"},
-                {fullName: "Jerry Li", position: "Webmaster"},
+                { fullName: "Zining Zhu", position: "Webmaster" },
+                { fullName: "Daniel Koo", position: "Webmaster" },
+                { fullName: "Jerry Li", position: "Webmaster" },
             ],
             firstRowSize: 2,
         },
 
         "Computer Chapter": {
             membersList: [
-                {fullName: "Henry Xu", position: "Chair"},
-                {fullName: "Eric Zhang", position: "Vice Chair"},
-                {fullName: "Mohammad Tabrizi", position: "Director"},
-                {fullName: "Justin Yuan", position: "Director"},
-                {fullName: "Charlie Yang", position: "Director"},
-                {fullName: "Walter Yang", position: "Director"},
+                { fullName: "Henry Xu", position: "Chair" },
+                { fullName: "Eric Zhang", position: "Vice Chair" },
+                { fullName: "Mohammad Tabrizi", position: "Director" },
+                { fullName: "Justin Yuan", position: "Director" },
+                { fullName: "Charlie Yang", position: "Director" },
+                { fullName: "Walter Yang", position: "Director" },
 
-                {fullName: "Rain Shen", position: "Director"},
-                {fullName: "Mohaimen Khan", position: "Finance Director"},
-                {fullName: "Himanshu Sharma", position: "Associate"},
-                {fullName: "David Ma", position: "Associate"},
-                {fullName: "Alexander Li", position: "Associate"},
-                {fullName: "Linda Wu", position: "Associate"},
-                {fullName: "Rosalyn Wong", position: "Associate"},
+                { fullName: "Rain Shen", position: "Director" },
+                { fullName: "Mohaimen Khan", position: "Finance Director" },
+                { fullName: "Himanshu Sharma", position: "Associate" },
+                { fullName: "David Ma", position: "Associate" },
+                { fullName: "Alexander Li", position: "Associate" },
+                { fullName: "Linda Wu", position: "Associate" },
+                { fullName: "Rosalyn Wong", position: "Associate" },
             ],
             firstRowSize: 2,
         },
         "Electronics Chapter": {
             membersList: [
-                {fullName: "Henry Cho", position: "Chair"},
-                {fullName: "Anika Meng", position: "Vice-Chair"},
+                { fullName: "Henry Cho", position: "Chair" },
+                { fullName: "Anika Meng", position: "Vice-Chair" },
 
-                {fullName: "Yuni Kim", position: "Director"},
-                {fullName: "Alaynah Malik", position: "Director"},
-                {fullName: "Joanna Zhou", position: "Director"},
+                { fullName: "Yuni Kim", position: "Director" },
+                { fullName: "Alaynah Malik", position: "Director" },
+                { fullName: "Joanna Zhou", position: "Director" },
 
-                {fullName: "Tom Zhang", position: "Associate"},
-                {fullName: "Nhien Tran-Nguyen", position: "Associate"},
-                {fullName: "Omer Faruque", position: "Associate"},
-                {fullName: "Charlie Wang", position: "Associate"},
-                {fullName: "Lorna Lan", position: "Associate"},
-                {fullName: "Chris Kou", position: "Associate"},
-                {fullName: "Haley Cao", position: "Associate"},
-                {fullName: "Martin Ffrench", position: "Associate"},
+                { fullName: "Tom Zhang", position: "Associate" },
+                { fullName: "Nhien Tran-Nguyen", position: "Associate" },
+                { fullName: "Omer Faruque", position: "Associate" },
+                { fullName: "Charlie Wang", position: "Associate" },
+                { fullName: "Lorna Lan", position: "Associate" },
+                { fullName: "Chris Kou", position: "Associate" },
+                { fullName: "Haley Cao", position: "Associate" },
+                { fullName: "Martin Ffrench", position: "Associate" },
             ],
             firstRowSize: 2,
         },
         "Energy/Power Chapter": {
             membersList: [
-                {fullName: "Jenny Yue", position: "Chair"},
-                {fullName: "Robert Fairley", position: "Vice-Chair"},
+                { fullName: "Jenny Yue", position: "Chair" },
+                { fullName: "Robert Fairley", position: "Vice-Chair" },
 
-                {fullName: "Justin Zhang", position: "Director"},
-                {fullName: "Yew Meng Khaw", position: "Director"},
-                {fullName: "Sally Lee", position: "Director"},
+                { fullName: "Justin Zhang", position: "Director" },
+                { fullName: "Yew Meng Khaw", position: "Director" },
+                { fullName: "Sally Lee", position: "Director" },
 
-                {fullName: "John Zhang", position: "Associate"},
-                {fullName: "Akshay Shah", position: "Associate"},
-                {fullName: "Jane Wen", position: "Event Associate"},
-                {fullName: "Verlyn Liang", position: "Associate"},
-                {fullName: "Dorothy Zhang", position: "Associate"},
+                { fullName: "John Zhang", position: "Associate" },
+                { fullName: "Akshay Shah", position: "Associate" },
+                { fullName: "Jane Wen", position: "Event Associate" },
+                { fullName: "Verlyn Liang", position: "Associate" },
+                { fullName: "Dorothy Zhang", position: "Associate" },
             ],
             firstRowSize: 2,
         },
@@ -1294,75 +1617,75 @@ const memberData = {
     "2016-2017": {
         "Exec Team": {
             membersList: [
-                {fullName: "Jane Liu", position: "Executive Co-Chair"},
-                {fullName: "Kevin Tan", position: "Executive Co-Chair"},
+                { fullName: "Jane Liu", position: "Executive Co-Chair" },
+                { fullName: "Kevin Tan", position: "Executive Co-Chair" },
             ],
             firstRowSize: 2,
         },
 
         "Marketing & Finance": {
             membersList: [
-                {fullName: "Jim Zeng", position: "Finance Associate"},
-                {fullName: "Kaiyang Chen", position: "Finance Associate"},
-                {fullName: "William Bi", position: "Marketing - Computer"},
-                {fullName: "Sharon Tao", position: "Marketing - Electronics"},
-                {fullName: "Sally Lee", position: "Marketing - Energy"},
-                {fullName: "Young Kim", position: "Photographer"},
+                { fullName: "Jim Zeng", position: "Finance Associate" },
+                { fullName: "Kaiyang Chen", position: "Finance Associate" },
+                { fullName: "William Bi", position: "Marketing - Computer" },
+                { fullName: "Sharon Tao", position: "Marketing - Electronics" },
+                { fullName: "Sally Lee", position: "Marketing - Energy" },
+                { fullName: "Young Kim", position: "Photographer" },
 
-                {fullName: "Zining Zhu", position: "Webmaster"},
-                {fullName: "Rain Shen", position: "Webmaster"},
-                {fullName: "Jerry Li", position: "Webmaster"},
+                { fullName: "Zining Zhu", position: "Webmaster" },
+                { fullName: "Rain Shen", position: "Webmaster" },
+                { fullName: "Jerry Li", position: "Webmaster" },
             ],
             firstRowSize: 2,
         },
 
         "Computer Chapter": {
             membersList: [
-                {fullName: "Melinda Lu", position: "Chair"},
-                {fullName: "Kathryn Yu", position: "Vice Chair"},
-                {fullName: "Seung-Hun Chung", position: "Events Director"},
+                { fullName: "Melinda Lu", position: "Chair" },
+                { fullName: "Kathryn Yu", position: "Vice Chair" },
+                { fullName: "Seung-Hun Chung", position: "Events Director" },
 
-                {fullName: "Raymond Ly", position: "Associate"},
-                {fullName: "Charlie Yang", position: "Associate"},
-                {fullName: "Justin Yuan", position: "Associate"},
-                {fullName: "Hao Liu", position: "Associate"},
-                {fullName: "Henry Xu", position: "Associate"},
+                { fullName: "Raymond Ly", position: "Associate" },
+                { fullName: "Charlie Yang", position: "Associate" },
+                { fullName: "Justin Yuan", position: "Associate" },
+                { fullName: "Hao Liu", position: "Associate" },
+                { fullName: "Henry Xu", position: "Associate" },
             ],
             firstRowSize: 2,
         },
         "Electronics Chapter": {
             membersList: [
-                {fullName: "Danny Zhang", position: "Chair"},
-                {fullName: "Franklin Li", position: "Vice-Chair"},
+                { fullName: "Danny Zhang", position: "Chair" },
+                { fullName: "Franklin Li", position: "Vice-Chair" },
 
-                {fullName: "Henry Cho", position: "Events Director"},
-                {fullName: "Jianwei Sun", position: "Events Director"},
-                {fullName: "Helena Liu", position: "Events Director"},
-                {fullName: "Barry Fung", position: "Events Director"},
+                { fullName: "Henry Cho", position: "Events Director" },
+                { fullName: "Jianwei Sun", position: "Events Director" },
+                { fullName: "Helena Liu", position: "Events Director" },
+                { fullName: "Barry Fung", position: "Events Director" },
 
-                {fullName: "Yuni Kim", position: "Associate"},
-                {fullName: "Anika Meng", position: "Associate"},
-                {fullName: "Alaynah Malik", position: "Associate"},
-                {fullName: "Joanna Zhou", position: "Associate"},
+                { fullName: "Yuni Kim", position: "Associate" },
+                { fullName: "Anika Meng", position: "Associate" },
+                { fullName: "Alaynah Malik", position: "Associate" },
+                { fullName: "Joanna Zhou", position: "Associate" },
             ],
             firstRowSize: 2,
         },
         "Energy/Power Chapter": {
             membersList: [
-                {fullName: "Amr Mohamed", position: "Chair"},
+                { fullName: "Amr Mohamed", position: "Chair" },
 
-                {fullName: "Sarina Sit", position: "Events Director"},
-                {fullName: "Jenny Yue", position: "Events Director"},
+                { fullName: "Sarina Sit", position: "Events Director" },
+                { fullName: "Jenny Yue", position: "Events Director" },
 
-                {fullName: "Joshua Salim", position: "Associate"},
-                {fullName: "Kimberly Ren", position: "Associate"},
-                {fullName: "Chris Su", position: "Event Associate"},
-                {fullName: "Vaishali Iyer", position: "Associate"},
-                {fullName: "Robert Fairley", position: "Associate"},
-                {fullName: "Charlie Wang", position: "Associate"},
-                {fullName: "Jane Wen", position: "Associate"},
-                {fullName: "Tim Li", position: "Associate"},
-                {fullName: "Arnav Goel", position: "Associate"},
+                { fullName: "Joshua Salim", position: "Associate" },
+                { fullName: "Kimberly Ren", position: "Associate" },
+                { fullName: "Chris Su", position: "Event Associate" },
+                { fullName: "Vaishali Iyer", position: "Associate" },
+                { fullName: "Robert Fairley", position: "Associate" },
+                { fullName: "Charlie Wang", position: "Associate" },
+                { fullName: "Jane Wen", position: "Associate" },
+                { fullName: "Tim Li", position: "Associate" },
+                { fullName: "Arnav Goel", position: "Associate" },
             ],
             firstRowSize: 1,
         },
