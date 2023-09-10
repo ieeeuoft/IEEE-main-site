@@ -47,6 +47,12 @@ const memberData = {
                     emailLink: "tasnimreza2000@gmail.com",
                     LinkedInLink: "https://www.linkedin.com/in/tasnim-reza/",
                 },
+                {
+                    fullName: "Luke Cheseldine",
+                    position: "Director",
+                    emailLink: "luke.cheseldine@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/lukechessr/",
+                },
             ],
             firstRowSize: 3,
         },
@@ -255,12 +261,6 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/mus123/",
                 },
                 {
-                    fullName: "Luke Cheseldine",
-                    position: "Director",
-                    emailLink: "luke.cheseldine@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/lukechessr/",
-                },
-                {
                     fullName: "Thomas Lin",
                     position: "Director",
                     LinkedInLink: "https://www.linkedin.com/in/chen-yuan-lin",
@@ -317,7 +317,7 @@ const memberData = {
                     position: "Associate",
                 },
             ],
-            firstRowSize: 3,
+            firstRowSize: 2,
         },
     },
     "2022-2023": {
