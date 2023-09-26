@@ -49,7 +49,7 @@ const memberData = {
                 },
                 {
                     fullName: "Luke Cheseldine",
-                    position: "Director",
+                    position: "Advisor",
                     emailLink: "luke.cheseldine@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/lukechessr/",
                 },
