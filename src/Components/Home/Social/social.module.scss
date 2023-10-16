@@ -64,7 +64,7 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
             &-text:hover,
             &-heading:hover {
                 @if ($col == 1) {
-                    ~ .facebook {
+                    ~ .instagram {
                         padding: 2rem;
                         box-sizing: content-box;
                         z-index: 3;
@@ -155,7 +155,7 @@ $aboutCols: 1 blue6 blue1, 2 orange3 orange2, 3 green3 green1;
         text-decoration: none;
     }
 
-    .facebook {
+    .instagram {
         @include social(1);
     }
     .newsletter {
