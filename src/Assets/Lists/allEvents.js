@@ -37,6 +37,13 @@ export const allEvents = [
         link: "https://makeuoft-2023.devpost.com/",
         highlightEvent: true,
     },
+    {
+        EventName: "NewHacks 2023",
+        displayDate: "November 4-5, 2023",
+        date: "2023/11/04",
+        link: "https://newhacks.ca/",
+        highlightEvent: true,
+    },
 ];
 
 export default allEvents;
