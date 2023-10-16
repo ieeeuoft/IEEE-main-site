@@ -9,9 +9,9 @@ const Social = () => (
             duration={1}
             offset={80}
             animateIn="fadeInUp"
-            className={styles["facebook-heading"]}
+            className={styles["instagram-heading"]}
         >
-            <a href="https://www.facebook.com/ieeeuoft/">Facebook</a>
+            <a href="https://www.instagram.com/ieee_uoft/">Instagram</a>
         </ScrollAnimation>
 
         <ScrollAnimation
@@ -19,10 +19,10 @@ const Social = () => (
             duration={1}
             offset={80}
             animateIn="fadeInUp"
-            className={styles["facebook-text"]}
+            className={styles["instagram-text"]}
         >
-            <a href="https://www.facebook.com/ieeeuoft/">
-                Like us on Facebook to get the latest updates on our events and
+            <a href="https://www.instagram.com/ieee_uoft/">
+                Like us on Instagram to get the latest updates on our events and
                 registration.
             </a>
         </ScrollAnimation>
@@ -75,8 +75,8 @@ const Social = () => (
             </a>
         </ScrollAnimation>
         <a
-            href="https://www.facebook.com/ieeeuoft/"
-            className={styles["facebook"]}
+            href="https://www.instagram.com/ieee_uoft/"
+            className={styles["instagram"]}
             target="_blank"
             rel="noopener noreferrer"
         >

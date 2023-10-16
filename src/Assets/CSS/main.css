@@ -726,7 +726,7 @@ nav {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6, auto);
       grid-row-gap: 0; } }
-  .social-containter .facebook {
+  .social-containter .instagram {
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -739,13 +739,13 @@ nav {
     grid-row: 1/-1;
     grid-column: 1;
     grid-row: 1/-1; }
-    .social-containter .facebook:hover {
+    .social-containter .instagram:hover {
       padding: 2rem;
       box-sizing: content-box;
       z-index: 3; }
-    .social-containter .facebook:focus, .social-containter .facebook:visited, .social-containter .facebook:active {
+    .social-containter .instagram:focus, .social-containter .instagram:visited, .social-containter .instagram:active {
       background-color: #DBEAF6; }
-    .social-containter .facebook-heading {
+    .social-containter .instagram-heading {
       font-family: "Roboto Condensed";
       color: #00639C;
       font-weight: bold;
@@ -757,7 +757,7 @@ nav {
       z-index: 4;
       margin-top: 8rem;
       text-decoration: none; }
-    .social-containter .facebook-text {
+    .social-containter .instagram-text {
       font-size: 1.8rem;
       line-height: 2.4rem;
       text-align: center;
@@ -770,50 +770,50 @@ nav {
       margin-bottom: 9rem;
       text-decoration: none;
       color: #333; }
-    .social-containter .facebook-text:hover ~ .facebook, .social-containter .facebook-heading:hover ~ .facebook {
+    .social-containter .instagram-text:hover ~ .instagram, .social-containter .instagram-heading:hover ~ .instagram {
       padding: 2rem;
       box-sizing: content-box;
       z-index: 3; }
     @media (max-width: 800px) {
-      .social-containter .facebook {
+      .social-containter .instagram {
         grid-column: 1;
         grid-row: 1/3; }
-        .social-containter .facebook-heading {
+        .social-containter .instagram-heading {
           grid-column: 1;
           font-size: 5rem;
           grid-row: 1;
           margin-top: 5rem; }
-        .social-containter .facebook-text {
+        .social-containter .instagram-text {
           grid-column: 1;
           grid-row: 2;
           width: 80vw;
           max-width: 80vw;
           margin: 2rem 0 4rem; } }
     @media (max-width: 800px) {
-      .social-containter .facebook {
+      .social-containter .instagram {
         grid-column: 1;
         grid-row: 1/3; }
-        .social-containter .facebook-heading {
+        .social-containter .instagram-heading {
           grid-column: 1;
           font-size: 5rem;
           grid-row: 1;
           margin-top: 5rem; }
-        .social-containter .facebook-text {
+        .social-containter .instagram-text {
           grid-column: 1;
           grid-row: 2;
           width: 80vw;
           max-width: 80vw;
           margin: 2rem 0 4rem; } }
     @media (max-width: 800px) {
-      .social-containter .facebook {
+      .social-containter .instagram {
         grid-column: 1;
         grid-row: 1/3; }
-        .social-containter .facebook-heading {
+        .social-containter .instagram-heading {
           grid-column: 1;
           font-size: 5rem;
           grid-row: 1;
           margin-top: 5rem; }
-        .social-containter .facebook-text {
+        .social-containter .instagram-text {
           grid-column: 1;
           grid-row: 2;
           width: 80vw;
