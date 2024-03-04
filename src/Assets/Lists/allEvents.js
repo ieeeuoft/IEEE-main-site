@@ -51,6 +51,13 @@ export const allEvents = [
         link: "https://makeuoft.ca/",
         highlightEvent: true,
     },
+    {
+        EventName: "Hack The Student Life",
+        displayDate: "March 22, 2024",
+        date: "2024/03/22",
+        link: "https://hackstudentlife.ca/",
+        highlightEvent: true,
+    },
 ];
 
 export default allEvents;
