@@ -182,11 +182,6 @@ const memberData = {
                     emailLink: "natalieanna.chan@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Vivian Song",
-                    position: "Strategies Director",
-                    LinkedInLink: "https://www.linkedin.com/in/vivian-songg/",
-                },
-                {
                     fullName: "Aryan Hussain",
                     position: "Associate",
                     LinkedInLink:
