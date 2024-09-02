@@ -35,9 +35,9 @@ export const allSponsors = [
         siteLink: "https://www.daisyintelligence.com",
     },
     {
-    companyName: "Traction On Demand",
-    imgType: ".svg",
-    siteLink: "https://tractionondemand.com",
+        companyName: "Traction On Demand",
+        imgType: ".svg",
+        siteLink: "https://tractionondemand.com",
     },
     {
         companyName: "MathWorks",
@@ -190,7 +190,16 @@ export const allSponsors = [
         imgType: ".svg",
         siteLink: "https://hatchery.engineering.utoronto.ca",
     },
-
+    {
+        companyName: "AWS",
+        imgType: ".svg",
+        siteLink: "https://aws.amazon.com/",
+    },
+    {
+        companyName: "Alphawave Semi",
+        imgType: ".png",
+        siteLink: "https://awavesemi.com/",
+    }
 ];
 
 export default allSponsors;
