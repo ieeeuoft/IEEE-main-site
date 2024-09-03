@@ -13,9 +13,104 @@ const memberData = {
         },
         "Logistics": {
             membersList: [
-                
+                {
+                    fullName: "Kelsang Tsomo",
+                    position: "Logistics Director",
+                    emailLink: "kelsang.tsomo@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/kelsangtsomo23",
+                },
+                {
+                    fullName: "Victor Deng",
+                    position: "Logistics Director",
+                    emailLink: "victor.deng@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/weian-deng/",
+                },
+                {
+                    fullName: "Victoria Yeung",
+                    position: "Logistics Director",
+                    emailLink: "victoria.yeung@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/victoria-yeung5/",
+                },
+                {
+                    fullName: "Andrew Cheung",
+                    position: "Logistics Advisor",
+                    emailLink: "abc.cheung@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/andrewbradleyc/",
+                },
+                {
+                    fullName: "Melanie Xu",
+                    position: "Logistics Sr. Associate",
+                    emailLink: "melanie.xu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/melanie-xu-124a73219/",
+                },
+                {
+                    fullName: "Echo Chen",
+                    position: "Logistics Sr. Associate",
+                    emailLink: "echoecho.chen@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/echosqc/",
+                },
+                {
+                    fullName: "Danelle D'Souza",
+                    position: "Logistics Sr. Associate",
+                    emailLink: "danelle.dsouza@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/danelle-dsouza/"
+                },
+                {
+                    fullName: "Rodoshi Mondal",
+                    position: "Logistics Associate",
+                    emailLink: "rodoshi.mondal@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/rodoshi-mondal-99249126b/",
+                },
+                {
+                    fullName: "Brian Liu",
+                    position: "Logistics Associate",
+                    emailLink: "brians.liu@mail.utoronto.ca",
+                    LinkedInLink: "https://linkedin.com/in/brianliu0412",
+                },
+                {
+                    fullName: "Herman Ho",
+                    position: "Logistics Associate",
+                    emailLink: "hermanc.ho@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/herman-ho/",
+                },
+                {
+                    fullName: "Sana Mehdi",
+                    position: "Logistics Associate",
+                    emailLink: "sana.mehdi@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/sanamehdi/",
+                },
+                {
+                    fullName: "Paul Zhao",
+                    position: "Logistics Associate",
+                    emailLink: "paul.zhao@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/hongyi-zhao-5916ab237",
+                },
+                {
+                    fullName: "Manahil Saeed",
+                    position: "Logistics Associate",
+                    emailLink: "manahil.saeed@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/manahil-saeed-/",
+                },
+                {
+                    fullName: "Jessie Yin",
+                    position: "Logistics Associate",
+                    emailLink: "jessie.yin@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/jessie-yin-639819206/",
+                },
+                {
+                    fullName: "Zoey Xie",
+                    position: "Logistics Associate",
+                    emailLink: "zoey.xie@mail.utoronto.ca",
+                    LinkedInLink: "https://linkedin.com/in/zoey-xie",
+                },
+                {
+                    fullName: "Alexis Kam",
+                    position: "Logistics Associate",
+                    emailLink: "alexis.kam@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/alexis-kam-901361219/",
+                },
             ],
-            firstRowSize: 3,
+            firstRowSize: 4,
         },
         "External Relations": {
             membersList: [
