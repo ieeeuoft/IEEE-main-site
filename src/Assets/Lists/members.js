@@ -1,4 +1,59 @@
 const memberData = {
+    "2024-2025": {
+        "Exec Team": {
+            membersList: [
+            ],
+            firstRowSize: 2,
+        },
+        "Advisors": {
+            membersList: [
+                
+            ],
+            firstRowSize: 3,
+        },
+        "Logistics": {
+            membersList: [
+                
+            ],
+            firstRowSize: 3,
+        },
+        "External Relations": {
+            membersList: [
+                
+            ],
+            firstRowSize: 2,
+        },
+        "Marketing": {
+            membersList: [
+                
+            ],
+            firstRowSize: 2,
+        },
+        "Tech Team": {
+            membersList: [
+                
+            ],
+            firstRowSize: 2,
+        },
+        "Webmasters": {
+            membersList: [
+                
+            ],
+            firstRowSize: 2,
+        },
+        "ASIC": {
+            membersList: [
+                
+            ],
+            firstRowSize: 2,
+        },
+        "Micromouse": {
+            membersList: [
+                
+            ],
+            firstRowSize: 2,
+        },
+    },
     "2023-2024": {
         "Exec Team": {
             membersList: [
