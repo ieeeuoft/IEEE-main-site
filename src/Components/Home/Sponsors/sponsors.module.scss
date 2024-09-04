@@ -38,12 +38,12 @@
 .spread {
     justify-content: center;
     padding-bottom: 20px;
-    flex-wrap: wrap; // Handle image overflow by breaking into multiple lines
+    flex-wrap: wrap;
 
     > a {
         padding: 20px;
-        flex: 1 1 100px; // Defining relative growth/shrink for img size + defining initial size
-        margin: 10px; // margin spacing
+        flex: 1 1 100px;
+        margin: 10px;
 
         @include response(sm) {
             padding: 20px 10px;
