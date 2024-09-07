@@ -32,12 +32,6 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/victoria-yeung5/",
                 },
                 {
-                    fullName: "Andrew Cheung",
-                    position: "Logistics Advisor",
-                    emailLink: "abc.cheung@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/andrewbradleyc/",
-                },
-                {
                     fullName: "Melanie Xu",
                     position: "Logistics Sr. Associate",
                     emailLink: "melanie.xu@mail.utoronto.ca",
@@ -110,7 +104,7 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/alexis-kam-901361219/",
                 },
             ],
-            firstRowSize: 4,
+            firstRowSize: 3,
         },
         "External Relations": {
             membersList: [
