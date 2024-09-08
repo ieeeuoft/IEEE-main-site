@@ -15,12 +15,13 @@ jobs:
       url: https://ieee.utoronto.ca
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '12.x'
+          node-version: 'lts/iron'
 
       - name: Install dependencies and build application
         env:
@@ -30,7 +31,7 @@ jobs:
           npm run build
 
       - name: Transfer static files to web server root 
-        uses: appleboy/scp-action@v0.1.1
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOST_IP }}
           username: ${{ secrets.SSH_USER }}
