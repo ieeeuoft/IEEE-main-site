@@ -73,8 +73,8 @@ export const allEvents = [
     },
     {
         EventName: "Hack The Student Life",
-        displayDate: "March 22, 2025",
-        date: "2025/03/22",
+        displayDate: "November 29, 2024",
+        date: "2024/11/29",
         highlightEvent: true,
     },
 ];
