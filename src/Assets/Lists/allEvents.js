@@ -58,6 +58,25 @@ export const allEvents = [
         link: "https://hackstudentlife.ca/",
         highlightEvent: true,
     },
+    {
+        EventName: "Technical Interview Night",
+        displayDate: "October 3, 2024",
+        date: "2024/10/03",
+        highlightEvent: false,
+    },
+    {
+        EventName: "NewHacks 2024",
+        displayDate: "October 26, 2024",
+        date: "2024/10/26",
+        link: "https://newhacks.ca/",
+        highlightEvent: true,
+    },
+    {
+        EventName: "Hack The Student Life",
+        displayDate: "March 22, 2025",
+        date: "2025/03/22",
+        highlightEvent: true,
+    },
 ];
 
 export default allEvents;
