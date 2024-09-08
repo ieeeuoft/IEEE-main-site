@@ -132,7 +132,69 @@ const memberData = {
         },
         "ASIC": {
             membersList: [
-                
+                {
+                    fullName: "Vraj Prajapati",
+                    position: "ASIC Team Director",
+                    emailLink: "vraj.prajapati@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/vraj8725/",
+                },
+                {
+                    fullName: "Kevin Liu",
+                    position: "ASIC Team Director",
+                    emailLink: "kevv.liu@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/profile-kevinliu/",
+                },
+                {
+                    fullName: "Celine Kwan",
+                    position: "ASIC Team Associate",
+                    emailLink: "celine.kwan@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/celine-kwan/",
+                },
+                {
+                    fullName: "Jerry Wang",
+                    position: "ASIC Team Associate",
+                    emailLink: "jerryzicheng.wang@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/jerry-wang-554b99205/",
+                },
+                {
+                    fullName: "Emily Mamcarz",
+                    position: "ASIC Team Associate",
+                    emailLink: "emily.mamcarz@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/emily-mamcarz-7aa362246/",
+                },
+                {
+                    fullName: "Joonseo Park",
+                    position: "ASIC Team Associate",
+                    emailLink: "joonseo.park@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/jnspk/",
+                },
+                {
+                    fullName: "Andy Gong",
+                    position: "ASIC Team Associate",
+                    emailLink: "andyg.gong@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/ran-andy-gong/",
+                },
+                {
+                    fullName: "Michael Xu",
+                    position: "ASIC Team Associate",
+                    emailLink: "michaeljs.xu@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/michaelxjs/",
+                },
+                {
+                    fullName: "Leo (Lizhi) Li",
+                    position: "ASIC Team Associate",
+                    emailLink: "lizhileo.li@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/lizhi-li/",
+                },
             ],
             firstRowSize: 2,
         },
