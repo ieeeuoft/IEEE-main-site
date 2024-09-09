@@ -138,7 +138,23 @@ const memberData = {
         },
         "Micromouse": {
             membersList: [
-                
+                {
+                    fullName: "Aahan Patel",
+                    position: "Project/Subteam Director",
+                    emailLink: "aahan.patel@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/Aahanp",
+                },
+                {
+                    fullName: "Aidan Principe",
+                    position: "Subsystems Lead",
+                    emailLink: "Aidan.principe@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Daniel Neagu",
+                    position: "Subsystems Lead",
+                    emailLink: "daniel.neagu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/daniel-neagu-027594268/",
+                },
             ],
             firstRowSize: 2,
         },
