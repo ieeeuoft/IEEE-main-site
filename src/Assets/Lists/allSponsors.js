@@ -199,6 +199,11 @@ export const allSponsors = [
         companyName: "Alphawave Semi",
         imgType: ".png",
         siteLink: "https://awavesemi.com/",
+    },
+    {
+        companyName: "Ubisoft",
+        imgType: ".svg",
+        siteLink: "https://www.ubisoft.com/en-us/",
     }
 ];
 
