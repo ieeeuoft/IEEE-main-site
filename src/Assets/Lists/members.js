@@ -202,23 +202,28 @@ const memberData = {
             membersList: [
                 {
                     fullName: "Aahan Patel",
-                    position: "Project/Subteam Director",
-                    emailLink: "aahan.patel@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/Aahanp",
+                    position: "Micromouse Director",
+                    emailLink: "aahan.patel@mail.utoronto.com",
+                    LinkedInLink: "https://www.linkedin.com/in/Aahanp/",
                 },
                 {
                     fullName: "Aidan Principe",
-                    position: "Subsystems Lead",
-                    emailLink: "Aidan.principe@mail.utoronto.ca",
+                    position: "Mechanical Lead",
+                    emailLink: "aidan.principe@mail.utoronto.ca",
                 },
                 {
                     fullName: "Daniel Neagu",
-                    position: "Subsystems Lead",
+                    position: "Electrical Lead",
                     emailLink: "daniel.neagu@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/daniel-neagu-027594268/",
                 },
+                {
+                    fullName: "Gemma Norman",
+                    position: "Software Lead",
+                    emailLink: "Gemma.norman@mail.utoronto.ca",
+                },
             ],
-            firstRowSize: 2,
+            firstRowSize: 1,
         },
     },
     "2023-2024": {
