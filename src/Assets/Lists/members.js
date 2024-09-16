@@ -7,7 +7,7 @@ const memberData = {
         },
         "Advisors": {
             membersList: [
-                
+
             ],
             firstRowSize: 3,
         },
@@ -94,7 +94,7 @@ const memberData = {
                 {
                     fullName: "Zoey Xie",
                     position: "Logistics Associate",
-                    emailLink: "zoey.xie@mail.utoronto.ca",
+                    emaileLink: "zoey.xie@mail.utoronto.ca",
                     LinkedInLink: "https://linkedin.com/in/zoey-xie",
                 },
                 {
@@ -108,25 +108,101 @@ const memberData = {
         },
         "External Relations": {
             membersList: [
-                
+                {
+                    fullName: "Archana Rajendran",
+                    position: "Director",
+                    emailLink: "a.rajendran@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Chu Qiao",
+                    position: "Director",
+                    emailLink: "chu.qiao@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/jocelynqiaochu/",
+                },
+                {
+                    fullName: "Dooyeon Yeom",
+                    position: "Senior Associate",
+                    emailLink: "dooyeon.yeom@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/dooyeon-yeom/",
+                },
+                {
+                    fullName: "Manha Siddiqua",
+                    position: "Associate",
+                    emailLink: "manha.siddiqua@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/manha-siddiqua-14465b231",
+                },
+                {
+                    fullName: "Royce Luo",
+                    position: "Associate",
+                    emailLink: "roycejb.luo@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/royce-luo-63b801244/",
+                },
+                {
+                    fullName: "Tanvi Bansal",
+                    position: "Associate",
+                    emailLink: "tanvi.bansal@mail.utoronto.ca",
+                    LinkedInLink: "https://in.linkedin.com/in/tanvi--bansal",
+                },
+                {
+                    fullName: "Victoria Chen",
+                    position: "Associate",
+                    emailLink: "victoriaj.chen@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/victoria-chen-605009200",
+                },
             ],
+
             firstRowSize: 2,
         },
         "Marketing": {
             membersList: [
-                
+                {
+                    fullName: "Arnav Patil",
+                    position: "Director",
+                    emailLink: "arnav.patil@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/arnavpatil/",
+                },
+                {
+                    fullName: "Daniel Rolfe",
+                    position: "Associate",
+                    emailLink: "daniel.rolfe@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/daniel-rolfe-ab5878277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+                },
+                {
+                    fullName: "Dylan Tanaya Alianto",
+                    position: "Associate",
+                    emailLink: "dylan.alianto@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/dylan-tanaya-alianto-7806a6229/",
+                },
+                {
+                    fullName: "Lauren Kang",
+                    position: "Director",
+                    emailLink: "yj.kang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/laurenyjkang/",
+                },
+                {
+                    fullName: "Mary Ghazi",
+                    position: "Senior Associate",
+                    emailLink: "mary.ghazi@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/mary-ghazi",
+                },
+                {
+                    fullName: "Yunxiang Xu",
+                    position: "Associate",
+                    emailLink: "dagsion.xu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/dagsion/",
+                },
             ],
             firstRowSize: 2,
         },
         "Tech Team": {
             membersList: [
-                
+
             ],
             firstRowSize: 2,
         },
         "Webmasters": {
             membersList: [
-                
+
             ],
             firstRowSize: 2,
         },
