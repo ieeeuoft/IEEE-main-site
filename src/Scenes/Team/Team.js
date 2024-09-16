@@ -12,7 +12,7 @@ import Switch from "react-switch";
 
 const Team = () => {
     const [year, setYear] = useState(Object.keys(memberData)[0]);
-    const [teamKey, setTeamKey] = useState("Exec Team");
+    const [teamKey, setTeamKey] = useState("Chairs");
     const [active, setActive] = useState(0);
     const [checkedBaby, setCheckedBaby] = useState(false);
     const [checkedDog, setCheckedDog] = useState(false);
@@ -124,7 +124,8 @@ const Team = () => {
     }
 
     function ChangeYear(event) {
-        setTeamKey("Exec Team");
+        const year = parseInt(event.target.value.substring(0, 4), 10);
+        setTeamKey(year >= 2024 ? "Chairs" : "Exec Team");
         setYear(event.target.value);
         setActive(0);
         setCheckedBaby(false);
