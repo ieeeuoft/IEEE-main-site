@@ -160,6 +160,13 @@ const memberData = {
                     position: "Director",
                     emailLink: "arnav.patil@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/arnavpatil/",
+
+                },
+                {
+                    fullName: "Lauren Kang",
+                    position: "Director",
+                    emailLink: "yj.kang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/laurenyjkang/",
                 },
                 {
                     fullName: "Daniel Rolfe",
@@ -173,12 +180,7 @@ const memberData = {
                     emailLink: "dylan.alianto@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/dylan-tanaya-alianto-7806a6229/",
                 },
-                {
-                    fullName: "Lauren Kang",
-                    position: "Director",
-                    emailLink: "yj.kang@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/laurenyjkang/",
-                },
+
                 {
                     fullName: "Mary Ghazi",
                     position: "Senior Associate",
