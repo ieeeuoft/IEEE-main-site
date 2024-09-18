@@ -94,7 +94,7 @@ const memberData = {
                 {
                     fullName: "Zoey Xie",
                     position: "Logistics Associate",
-                    emaileLink: "zoey.xie@mail.utoronto.ca",
+                    emailLink: "zoey.xie@mail.utoronto.ca",
                     LinkedInLink: "https://linkedin.com/in/zoey-xie",
                 },
                 {
