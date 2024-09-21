@@ -114,7 +114,7 @@ const memberData = {
                     emailLink: "a.rajendran@mail.utoronto.ca",
                 },
                 {
-                    fullName: "Chu Qiao",
+                    fullName: "Jocelyn Qiao",
                     position: "Director",
                     emailLink: "chu.qiao@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/jocelynqiaochu/",
