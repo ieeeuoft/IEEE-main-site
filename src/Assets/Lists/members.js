@@ -157,7 +157,7 @@ const memberData = {
             membersList: [
                 {
                     fullName: "Arnav Patil",
-                    position: "Director",
+                    position: "Marketing Director",
                     emailLink: "arnav.patil@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/arnavpatil/",
 
