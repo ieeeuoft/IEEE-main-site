@@ -110,7 +110,7 @@ const memberData = {
             membersList: [
                 {
                     fullName: "Archana Rajendran",
-                    position: "Director",
+                    position: "ER Director",
                     emailLink: "a.rajendran@mail.utoronto.ca",
                 },
                 {
