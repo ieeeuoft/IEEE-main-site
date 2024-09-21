@@ -149,6 +149,10 @@ const memberData = {
                     emailLink: "victoriaj.chen@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/victoria-chen-605009200",
                 },
+                {
+                    fullName: "Melissa Cao",
+                    position: "Associate"
+                }
             ],
 
             firstRowSize: 2,
@@ -175,17 +179,16 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/daniel-rolfe-ab5878277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
                 },
                 {
-                    fullName: "Dylan Tanaya Alianto",
-                    position: "Associate",
-                    emailLink: "dylan.alianto@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/dylan-tanaya-alianto-7806a6229/",
-                },
-
-                {
                     fullName: "Mary Ghazi",
                     position: "Senior Associate",
                     emailLink: "mary.ghazi@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/mary-ghazi",
+                },
+                {
+                    fullName: "Dylan Tanaya Alianto",
+                    position: "Associate",
+                    emailLink: "dylan.alianto@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/dylan-tanaya-alianto-7806a6229/",
                 },
                 {
                     fullName: "David Xu",
