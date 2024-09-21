@@ -164,7 +164,7 @@ const memberData = {
                 },
                 {
                     fullName: "Lauren Kang",
-                    position: "Director",
+                    position: "Marketing Director",
                     emailLink: "yj.kang@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/laurenyjkang/",
                 },
