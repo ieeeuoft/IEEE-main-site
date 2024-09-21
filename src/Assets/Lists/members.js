@@ -188,7 +188,7 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/mary-ghazi",
                 },
                 {
-                    fullName: "Yunxiang Xu",
+                    fullName: "David Xu",
                     position: "Associate",
                     emailLink: "dagsion.xu@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/dagsion/",
