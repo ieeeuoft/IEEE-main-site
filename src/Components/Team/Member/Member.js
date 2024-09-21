@@ -42,7 +42,7 @@ const Member = ({ fullName, position, year, emailLink, LinkedInLink, baby, puppy
                     </a>
                 )}
                 {LinkedInLink && (
-                    <a href={LinkedInLink} className={styles.cardBtnLinkedin}>
+                    <a href={LinkedInLink} className={styles.cardBtnLinkedin} target="_blank">
                         <img
                             src={LinkedIn}
                             className={styles.cardBtnLinkedinIcon}
