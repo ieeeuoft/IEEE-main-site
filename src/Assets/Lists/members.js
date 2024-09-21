@@ -120,7 +120,7 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/jocelynqiaochu/",
                 },
                 {
-                    fullName: "Dooyeon Yeom",
+                    fullName: "Dunny Yeom",
                     position: "Senior Associate",
                     emailLink: "dooyeon.yeom@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/dooyeon-yeom/",
