@@ -170,7 +170,7 @@ const memberData = {
                 },
                 {
                     fullName: "Daniel Rolfe",
-                    position: "Associate",
+                    position: "Senior Associate",
                     emailLink: "daniel.rolfe@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/daniel-rolfe-ab5878277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
                 },
