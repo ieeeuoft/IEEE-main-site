@@ -33,7 +33,7 @@ const Member = ({ fullName, position, year, emailLink, LinkedInLink, baby, puppy
             <p className={styles.cardName}>{fullName}</p>
             <div className={styles.cardBtn}>
                 {emailLink && (
-                    <a href={`mailto:${emailLink}`} className={styles.cardBtnEmail}>
+                    <a href={`mailto:${emailLink}`} className={styles.cardBtnEmail} target="_blank">
                         <img
                             src={Email}
                             className={styles.cardBtnEmailIcon}
