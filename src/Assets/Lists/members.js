@@ -112,6 +112,7 @@ const memberData = {
                     fullName: "Archana Rajendran",
                     position: "ER Director",
                     emailLink: "a.rajendran@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/archanarajendran1/",
                 },
                 {
                     fullName: "Jocelyn Qiao",
