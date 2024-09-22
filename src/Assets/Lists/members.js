@@ -1,15 +1,81 @@
 const memberData = {
     "2024-2025": {
-        "Exec Team": {
+        "Chairs": {
             membersList: [
+                {
+                    fullName: "Bella Yang",
+                    position: "Chair",
+                    emailLink: "bellaguang.yang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/bella-yang-557a90242/",
+                },
+                {
+                    fullName: "Scott Hirano",
+                    position: "Vice Chair",
+                    emailLink: "scott.hirano@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/scott-hirano/",
+                },
+                {
+                    fullName: "Stephanie Lu",
+                    position: "Treasurer",
+                    emailLink: "steph.lu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/stephanieyflu/",
+                },
             ],
             firstRowSize: 2,
         },
         "Advisors": {
             membersList: [
-
+                {
+                    fullName: "Dalia Victoria Mahidashti",
+                    position: "Chair Advisor",
+                    emailLink: "dalia.mahidashti@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/daliavictoriamahidashti/",
+                },
+                {
+                    fullName: "Leo Li",
+                    position: "Chair Advisor",
+                    emailLink: "leeoo.li@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/haocheng-leo/",
+                },
+                {
+                    fullName: "Andrew Cheung",
+                    position: "Logistics Advisor",
+                    emailLink: "abc.cheung@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/andrewbradleyc/",
+                },
+                {
+                    fullName: "Natalie Chan",
+                    position: "Marketing Advisor",
+                    emailLink: "natalieanna.chan@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/natalieannachan/",
+                },
+                {
+                    fullName: "Mustafa Abdulrahman",
+                    position: "Web Advisor",
+                    emailLink: "mustafa.abdulrahman@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/mus123/",
+                },
+                {
+                    fullName: "Floria Xin Yi Fang Zhang",
+                    position: "Advisor",
+                    emailLink: "floria.fang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/floriafangzhang/",
+                },
+                {
+                    fullName: "Himanish Jindal",
+                    position: "Advisor",
+                    emailLink: "himanish.jindal@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/himanish-jindal/",
+                },
+                {
+                    fullName: "Julia Wagner",
+                    position: "Advisor",
+                    emailLink: "Julia.wagner@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/julia-m-wagner/",
+                },
             ],
-            firstRowSize: 3,
+            firstRowSize: 2,
         },
         "Logistics": {
             membersList: [
