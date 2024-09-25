@@ -66,7 +66,7 @@ export const allEvents = [
     },
     {
         EventName: "NewHacks 2024",
-        displayDate: "October 26, 2024",
+        displayDate: "October 26-27, 2024",
         date: "2024/10/26",
         link: "https://newhacks.ca/",
         highlightEvent: true,
