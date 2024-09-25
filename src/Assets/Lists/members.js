@@ -270,19 +270,19 @@ const memberData = {
             membersList: [
                 {
                     fullName: "Ashley Leal",
-                    position: "Director",
+                    position: "Tech Director",
                     emailLink: "ashley.leal@mail.utoronto.ca", 
                     LinkedInLink: "https://www.linkedin.com/in/ashleynicoleleal/ ",
                 },
                 {
                     fullName: "Geoffrey Fang",
-                    position: "Director",
+                    position: "Tech Director",
                     emailLink: "geoffrey.fang@mail.utoronto.ca", 
                     LinkedInLink: "https://www.linkedin.com/in/geoffrey-fang/ ",
                 },
                 {
                     fullName: "Kovid Srivart",
-                    position: "Director",
+                    position: "Tech Director",
                     emailLink: "kovid.srivart@mail.utoronto.ca", 
                     LinkedInLink: "https://www.linkedin.com/in/kovid-srivart-2700201b2/ ",
                 },
@@ -291,11 +291,6 @@ const memberData = {
                     position: "Associate",
                     emailLink: "athavan.balakumar@mail.utoronto.ca", 
                     LinkedInLink: "https://www.linkedin.com/in/athavan-balakumar-a85752212/",
-                },
-                {
-                    fullName: "Gemma Norman",
-                    position: "Associate",
-                    emailLink: "Gemma.norman@mail.utoronto.ca", 
                 },
                 {
                     fullName: "Grace Shi",
@@ -338,20 +333,26 @@ const memberData = {
                     emailLink: "mac.pattanasuttinont@mail.utoronto.ca", 
                     LinkedInLink: "https://www.linkedin.com/in/mac-thitiwut/",
                 },
+                {
+                    fullName: "Thomas Lascaud",
+                    position: "Associate",
+                    emailLink: "thomas.lascaud@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/thomas-lascaud/",
+                }
             ],
-            firstRowSize: 2,
+            firstRowSize: 3,
         },
         "Webmasters": {
             membersList: [
                 {
                     fullName: "Carmen Chau",
-                    position: "Director",
+                    position: "Web Director",
                     emailLink: "carmenj.chau@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/carmenchau12/",
                 },
                 {
                     fullName: "Ruihao Li",
-                    position: "Director",
+                    position: "Web Director",
                     emailLink: "ruihao.li@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/ruihao-li-75599b214/",
                 },
