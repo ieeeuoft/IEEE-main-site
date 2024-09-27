@@ -45,7 +45,7 @@ const Upcoming = () => {
             onLoad={() => upcomingEvents()}
         >
             <h2 className={styles.upcomingDivHeading}>
-                {recentHighlights ? "Last Year's Highlights" : "Currently Happening"}
+                {recentHighlights ? "Last Year's Highlights" : "Upcoming Events"}
             </h2>
             <div className={`${styles.upcoming} ${upcomingClass}`}>
                 {upcomingList.map((eventItem, i) => {
