@@ -169,6 +169,12 @@ const memberData = {
                     emailLink: "alexis.kam@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/alexis-kam-901361219/",
                 },
+                {
+                    fullName: "Edward Kim",
+                    position: "Logistics Associate",
+                    emailLink: "edw.kim@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/edwardkm/",
+                },
             ],
             firstRowSize: 3,
         },
@@ -351,20 +357,14 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/carmenchau12/",
                 },
                 {
-                    fullName: "Ruihao Li",
-                    position: "Web Director",
-                    emailLink: "ruihao.li@mail.utoronto.ca",
-                    LinkedInLink: "https://www.linkedin.com/in/ruihao-li-75599b214/",
-                },
-                {
                     fullName: "Ashwin Santhosh",
-                    position: "Senior Associate",
+                    position: "Web Director",
                     emailLink: "ashwin.santhosh@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/ashwin-santhosh-6531761a4/",
                 },
                 {
                     fullName: "Aaron Gu",
-                    position: "Senior Associate",
+                    position: "Web Director",
                     emailLink: "qilin.gu@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/aaron-gu-a3865823a/",
                 },
@@ -399,7 +399,7 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/yifei-wang-l7324/",
                 },
             ],
-            firstRowSize: 2,
+            firstRowSize: 3,
         },
         "ASIC": {
             membersList: [
