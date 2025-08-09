@@ -1,4 +1,23 @@
 const memberData = {
+    "2025-2026" : {
+        Chairs: {
+           membersList: [
+                {
+                    fullName: "Victoria Yeung",
+                    position: "Chair",
+                    emailLink: "victoria.yeung@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/victoria-yeung5/",
+                },
+                {
+                    fullName: "Ashley Leal",
+                    position: "Vice Chair",
+                    emailLink: "ashley.leal@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/ashleynicoleleal/ ",
+                },
+           ],
+           firstRowSize: 2,
+        },
+    },
     "2024-2025": {
         Chairs: {
             membersList: [
