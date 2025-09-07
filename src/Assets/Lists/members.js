@@ -1,7 +1,7 @@
 const memberData = {
-    "2025-2026" : {
+    "2025-2026": {
         Chairs: {
-           membersList: [
+            membersList: [
                 {
                     fullName: "Victoria Yeung",
                     position: "Chair",
@@ -14,8 +14,206 @@ const memberData = {
                     emailLink: "ashley.leal@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/ashleynicoleleal/ ",
                 },
-           ],
-           firstRowSize: 2,
+            ],
+            firstRowSize: 2,
+        },
+        Webmasters: {
+            membersList: [
+                {
+                    fullName: "Aaron Gu",
+                    position: "Web Director",
+                    emailLink: "qilin.gu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/aaron-gu-a3865823a/",
+                },
+                {
+                    fullName: "Ashwin Santhosh",
+                    position: "Web Director",
+                    emailLink: "ashwin.santhosh@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/ashwin-santhosh-6531761a4/",
+                },
+                {
+                    fullName: "Aidan Tran",
+                    position: "Associate",
+                    emailLink: "aidan.tran@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/aidantran120",
+                },
+                {
+                    fullName: "Wahib Barqawi",
+                    position: "Associate",
+                    emailLink: "wahib.barqawi@mail.utoronto.ca",
+                    LinkedInLink: "http://linkedin.com/in/wahib-barqawi",
+                },
+                {
+                    fullName: "Warrick Tsui",
+                    position: "Associate",
+                    emailLink: "warrick.tsui@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/warrick-tsui-1a83772a3/",
+                },
+            ],
+            firstRowSize: 2,
+        },
+        "Academic Outreach": {
+            membersList: [
+                {
+                    fullName: "Grace Shi",
+                    position: "Academic Outreach Director",
+                    emailLink: "graace.shi@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/grace-shi-0a790a23a/",
+                },
+                {
+                    fullName: "Kovid Srivart",
+                    position: "Academic Outreach Director",
+                    emailLink: "kovid.srivart@mail.utoronto.ca",
+                    LinkedInLink:
+                        "",
+                },
+                {
+                    fullName: "Maria Chzhen",
+                    position: "Academic Outreach Director",
+                    emailLink: "maria.chzhen@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/mariachzhen",
+                },
+            ],
+            firstRowSize: 3,
+        },
+        "Micromouse Team": {
+            membersList: [
+                {
+                    fullName: "Aahan Patel",
+                    position: "Micromouse Team Director",
+                    emailLink: "aahan.patel@mail.utoronto.ca",
+                    LinkedInLink: "https://linkedin.com/in/AahanP",
+                },
+                {
+                    fullName: "Raghav Kumar Prasad",
+                    position: "Micromouse Team Director",
+                    emailLink: "raghav.prasad@mail.utoronto.ca",
+                    LinkedInLink:
+                        "",
+                },
+                {
+                    fullName: "Daniel Neagu",
+                    position: "Micromouse Team Director",
+                    emailLink: "daniel.neagu@mail.utoronto.ca",
+                    LinkedInLink: "",
+                },
+                {
+                    fullName: "Gideon Tsegaye",
+                    position: "Micromouse Team Associate",
+                    emailLink: "g.tsegaye@mail.utoronto.ca",
+                    LinkedInLink: "",
+                },
+            ],
+            firstRowSize: 3,
+        },
+        ASIC: {
+            membersList: [
+                {
+                    fullName: "Vraj Prajapati",
+                    position: "ASIC Team Director",
+                    emailLink: "vraj.prajapati@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/vraj8725/",
+                },
+                {
+                    fullName: "Snehal Sobti",
+                    position: "ASIC Team Director",
+                    emailLink: "snehal.sobti@mail.utoronto.ca",
+                    LinkedInLink: "http://www.linkedin.com/in/snehalsobti",
+                },
+                {
+                    fullName: "Vishweswar Eswaran",
+                    position: "ASIC Team Associate",
+                    emailLink: "vishwa.eswaran@mail.utoronto.ca",
+                    LinkedInLink: "",
+                },
+                {
+                    fullName: "Sara Zia",
+                    position: "ASIC Team Associate",
+                    emailLink: "s.zia@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/sara-zia/",
+                },
+                {
+                    fullName: "Saptarshi Talukdar",
+                    position: "ASIC Team Associate",
+                    emailLink: "saptarshi.talukdar@mail.utoronto.ca",
+                    LinkedInLink:
+                        "https://www.linkedin.com/in/saptarshi-talukdar",
+                },
+                {
+                    fullName: "Chenjia Hu",
+                    position: "ASIC Team Associate",
+                    emailLink: "chenjia.hu@mail.utoronto.ca",
+                    LinkedInLink: "",
+                },
+                {
+                    fullName: "Ananya Sharma",
+                    position: "ASIC Team Associate",
+                    emailLink: "ann.sharma@mail.utoronto.ca",
+                    LinkedInLink: "http://www.linkedin.com/in/ansharma2404",
+                },
+                {
+                    fullName: "Robert Saab",
+                    position: "ASIC Team Associate",
+                    emailLink: "robert.saab@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/robert-saab",
+                },
+                {
+                    fullName: "Boris Potapov",
+                    position: "ASIC Team Associate",
+                    emailLink: "boris.potapov@mail.utoronto.ca",
+                    LinkedInLink: "",
+                },
+                {
+                    fullName: "Kenny Guo",
+                    position: "ASIC Team Associate",
+                    emailLink: "kennyg.guo@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/kennykguo/",
+                },
+                {
+                    fullName: "James Yun",
+                    position: "ASIC Team Associate",
+                    emailLink: "jj.yun@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/jj-yun",
+                },
+                {
+                    fullName: "Joseph Mi",
+                    position: "ASIC Team Associate",
+                    emailLink: "joseph.mi@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/joseph-mi/",
+                },
+                {
+                    fullName: "Rikuto Ide",
+                    position: "ASIC Team Associate",
+                    emailLink: "rikuto.ide@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/rikuto-ide-a7964a319",
+                },
+                {
+                    fullName: "Runze Zhu",
+                    position: "ASIC Team Associate",
+                    emailLink: "runze.zhu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/runze-zhu-453014259/",
+                },
+                {
+                    fullName: "Brayton Yu",
+                    position: "ASIC Team Associate",
+                    emailLink: "brayt.yu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/braytonyu/",
+                },
+                {
+                    fullName: "Richa Pandya",
+                    position: "ASIC Team Associate",
+                    emailLink: "richa.pandya@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/richa-pandya/",
+                },
+                {
+                    fullName: "Jolyan Ye",
+                    position: "ASIC Team Associate",
+                    emailLink: "jolyan.ye@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/jolyan-ye-36a41621a/",
+                },
+            ],
+            firstRowSize: 2,
         },
     },
     "2024-2025": {
