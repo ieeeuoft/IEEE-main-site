@@ -157,7 +157,7 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/vedantharlalka/"
                 },
             ],
-            firstRowSize: 2,
+            firstRowSize: 3,
 
         }
     },
