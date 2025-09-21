@@ -56,7 +56,7 @@ const memberData = {
                         "LinkedInLink": "https://www.linkedin.com/in/andrewbradleyc/"
                     }
                 ],
-                "firstRowSize": 4
+                "firstRowSize": 3
             },
         LogisticsDirectors: {
                 "membersList": [
@@ -81,9 +81,10 @@ const memberData = {
                 ],
                 "firstRowSize": 3
             },
-        LogisticsSeniorAssociates: {
+
+        LogisticsAssociates: {
                 "membersList": [
-                    {
+                                       {
                         "fullName": "Edward Kim",
                         "position": "Senior Associate",
                         "emailLink": "edw.kim@mail.utoronto.ca",
@@ -100,12 +101,7 @@ const memberData = {
                         "position": "Senior Associate",
                         "emailLink": "zoey.xie@mail.utoronto.ca",
                         "LinkedInLink": "https://www.linkedin.com/in/zoey-xie/"
-                    }
-                ],
-                "firstRowSize": 3
-            },
-        LogisticsAssociates: {
-                "membersList": [
+                    },
                     {
                         "fullName": "Abrar Salam",
                         "position": "Associate",
@@ -155,7 +151,7 @@ const memberData = {
                         "LinkedInLink": "http://linkedin.com/in/punnawit"
                     }
                 ],
-                "firstRowSize": 4
+                "firstRowSize": 3
             },
         ExternalRelationsDirectors: {
                 "membersList": [
@@ -213,7 +209,7 @@ const memberData = {
                         "LinkedInLink": "https://www.linkedin.com/in/dilara-esenceli/"
                     }
                 ],
-                "firstRowSize": 4
+                "firstRowSize": 3
             }
     },
     "2024-2025": {
