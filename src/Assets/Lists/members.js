@@ -14,6 +14,12 @@ const memberData = {
                     emailLink: "ashley.leal@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/ashleynicoleleal/ ",
                 },
+                {
+                    fullName: "Danelle D’Souza",
+                    position: "Treasurer",
+                    emailLink: "danelle.dsouza@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/danelle-dsouza/ ",
+                },
             ],
             firstRowSize: 2,
         },
