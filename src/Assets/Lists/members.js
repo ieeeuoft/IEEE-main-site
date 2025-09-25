@@ -215,6 +215,149 @@ const memberData = {
             ],
             firstRowSize: 2,
         },
+        Marketing: {
+            membersList: [
+                {
+                    fullName: "Daniel Rolfe",
+                    position: "Graphics Director",
+
+                },
+                {
+                    fullName: "Dylan Alianto",
+                    position: "Graphics Director",
+                },
+                {
+                    fullName: "Huda Imran",
+                    position: "Associate",
+                    emailLink: "huda.imran@mail.utoronto.ca",
+
+                },
+                {
+                    fullName: "Minahil Khurram",
+                    position: "Associate",
+                    emailLink: "minahil.khurram@mail.utoronto.ca",
+                    LinkedInLink: "http://www.linkedin.com/in/minahilkhurram-engineer"
+                },
+                {
+                    fullName: "Natasha Chen",
+                    position: "Associate",
+                    emailLink: "natasha.chen@mail.utoronto.ca",
+                    LinkedInLink: "http://linkedin.com/in/natasha-chen-" 
+                }, 
+                {
+                    fullName: "Jane Felicia Jonathan",
+                    position: "Associate",
+                    emailLink: "jane.jonatan@mail.utoronto.ca",
+                    LinkedInLink: "http://linkedin.com/in/janefelicia/"
+                }
+            ],
+            firstRowSize: 2,
+        },
+        Multimedia: {
+            membersList: [
+                {
+                    fullName: "David Xu",
+                    position: "Director",
+                },
+                {
+                    fullName: "Kelsang Tsomo",
+                    position: "Director",
+                },
+                {
+                    fullName: "Aeiou Generao", 
+                    position: "Associate",
+                    emailLink: "aeiou.generao@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/aeiougenerao/"
+                },
+                {
+                    fullName: "Arnav Agarwal",
+                    position: "Associate",
+                    emailLink: "aa.agarwal@mail.utoronto.ca",
+                }
+            ], 
+            firstRowSize: 2,
+        },
+        "Tech Team": {
+            membersList: [
+                {
+                    fullName: "June Lin",
+                    position: "Director",
+                },
+                {
+                    fullName: "Thitiwut Pattanasuttinont",
+                    position: "Director",
+                },
+                {
+                    fullName: "Morris Tu",
+                    position: "Director",
+                },
+                {
+                    fullName: "Athavan Balakumar",
+                    position: "Senior Associate",
+                    emailLink: "athavan.balakumar@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/athavanbalakumar/"
+                },
+                {
+                    fullName: "Thomas Lascaud",
+                    position: "Senior Associate",
+                    emailLink: "thomas.lascaud@mail.utoronto.ca",
+                    LinkedInLink: "http://linkedin.com/in/thomas-lascaud"
+                },
+                {
+                    fullName: "Adam Omarali",
+                    position: "Associate",
+                    emailLink: "adam.omarali@mail.utoronto.ca",
+                },
+                {
+                    fullName: "Alyssa Hee",
+                    position: "Associate",
+                    emailLink: "alyssa.hee@mail.utoronto.ca",
+                    LinkedInLink: "http://www.linkedin.com/in/alyssa-hee"
+                },
+                {
+                    fullName: "Andy Liu",
+                    position: "Associate",
+                    emailLink: "heming.liu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/andy-he-ming-liu/"
+                },
+                {
+                    fullName: "Calvert Zhu",
+                    position: "Associate",
+                    emailLink: "calvert.zhu@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/calvert-zhu/"
+                },
+                {
+                    fullName: "Jim Wang",
+                    position: "Associate",
+                    emailLink: "jimh.wang@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/jimwang2006/"
+                },
+                {
+                    fullName: "Jillian Yang",
+                    position: "Associate",
+                },
+                {
+                    fullName: "Peter Leong",
+                    position: "Associate",
+                    emailLink: "peter.leong@mail.utoronto.ca",
+                    LinkedInLink: "http://www.linkedin.com/in/peter-leong-toronto"
+                },
+                {
+                    fullName: "Phonlakrit Tiraratn",
+                    position: "Associate",
+                    emailLink: "mp.tiraratn@mail.utoronto.ca",
+                    LinkedInLink: "http://www.linkedin.com/in/peter-leong-toronto"
+                },
+                {
+                    fullName: "Vedant Harlalka",
+                    position: "Associate",
+                    emailLink: "vedant.harlalka@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/vedantharlalka/"
+                },
+            ],
+            firstRowSize: 3,
+
+        }
     },
     "2024-2025": {
         Chairs: {
