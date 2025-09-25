@@ -535,10 +535,6 @@ const memberData = {
                     LinkedInLink: "https://www.linkedin.com/in/jimwang2006/"
                 },
                 {
-                    fullName: "Jillian Yang",
-                    position: "Associate",
-                },
-                {
                     fullName: "Peter Leong",
                     position: "Associate",
                     emailLink: "peter.leong@mail.utoronto.ca",
