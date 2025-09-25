@@ -14,6 +14,12 @@ const memberData = {
                     emailLink: "ashley.leal@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/ashleynicoleleal/ ",
                 },
+                {
+                    fullName: "Danelle D’Souza",
+                    position: "Treasurer",
+                    emailLink: "danelle.dsouza@mail.utoronto.ca",
+                    LinkedInLink: "https://www.linkedin.com/in/danelle-dsouza/ ",
+                },
             ],
             firstRowSize: 2,
         },
@@ -527,10 +533,6 @@ const memberData = {
                     position: "Associate",
                     emailLink: "jimh.wang@mail.utoronto.ca",
                     LinkedInLink: "https://www.linkedin.com/in/jimwang2006/"
-                },
-                {
-                    fullName: "Jillian Yang",
-                    position: "Associate",
                 },
                 {
                     fullName: "Peter Leong",
