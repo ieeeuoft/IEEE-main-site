@@ -58,7 +58,7 @@ const Social = () => (
             className={styles["membership-heading"]}
         >
             <a href="https://www.ieee.org/content/ieee-org/en/membership/join/">
-                IEEE Membership
+                IEEE Affiliation
             </a>
         </ScrollAnimation>
 
@@ -70,8 +70,7 @@ const Social = () => (
             className={styles["membership-text"]}
         >
             <a href="https://www.ieee.org/content/ieee-org/en/membership/join/">
-                More than 80% discount for IEEE memberships and receive various
-                exclusive benefits including job opportunities!
+                The world's largest technical professional organization dedicated to advancing technology for the benefit of humanity!
             </a>
         </ScrollAnimation>
         <a
