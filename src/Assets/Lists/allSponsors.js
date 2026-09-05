@@ -175,6 +175,11 @@ export const allSponsors = [
         siteLink: "https://www.amd.com",
     },
     {
+        companyName: "Hitachi",
+        imgType: ".svg",
+        siteLink: "https://www.hitachi.com/",
+    },
+    {
         companyName: "Google",
         imgType: ".svg",
         siteLink: "https://about.google",
