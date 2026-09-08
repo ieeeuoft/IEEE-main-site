@@ -9,7 +9,7 @@ export const allEvents = [
         displayDate: "March 13, 2026",
         date: "2026/03/13",
         link: "https://hackthestudentlife2026.devpost.com/",
-        highlightEvent: false,
+        highlightEvent: true,
     },
     {
         EventName: "Assembly, ISAs + Assemblers Workshop",
@@ -49,7 +49,7 @@ export const allEvents = [
         displayDate: "February 14-15, 2026",
         date: "2026/02/14",
         link: "https://makeuoft-2026.devpost.com/",
-        highlightEvent: false,
+        highlightEvent: true,
     },
     {
         EventName: "Altium Workshop",
@@ -65,7 +65,7 @@ export const allEvents = [
         displayDate: "January 28, 2026",
         date: "2026/01/28",
         link: "https://www.instagram.com/p/DT1RaUTidrE/",
-        highlightEvent: false,
+        highlightEvent: true,
     },
     {
         EventName: "ECE Labs Fundamentals Workshop",
@@ -129,7 +129,7 @@ export const allEvents = [
         displayDate: "October 25-26, 2025",
         date: "2025/10/25",
         link: "https://newhacks-2025.devpost.com/",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "Resume Review Event",
@@ -168,7 +168,7 @@ export const allEvents = [
         EventImage: "hack-the-student-life-nov-2024",
         displayDate: "November 29, 2024",
         date: "2024/11/29",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "NewHacks 2024",
@@ -176,7 +176,7 @@ export const allEvents = [
         displayDate: "October 26-27, 2024",
         date: "2024/10/26",
         link: "https://newhacks.ca/",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "Technical Interview Night",
@@ -191,7 +191,7 @@ export const allEvents = [
         displayDate: "March 22, 2024",
         date: "2024/03/22",
         link: "https://hackstudentlife.ca/",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "MakeUofT 2024",
@@ -199,7 +199,7 @@ export const allEvents = [
         displayDate: "February 17-18, 2024",
         date: "2024/02/17",
         link: "https://makeuoft.ca/",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "NewHacks 2023",
@@ -207,7 +207,7 @@ export const allEvents = [
         displayDate: "November 4-5, 2023",
         date: "2023/11/04",
         link: "https://newhacks-2023.devpost.com/",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "MakeUofT 2023",
@@ -215,7 +215,7 @@ export const allEvents = [
         displayDate: "February 18-19, 2023",
         date: "2023/02/18",
         link: "https://makeuoft-2023.devpost.com/",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "NewHacks 2022",
@@ -223,7 +223,7 @@ export const allEvents = [
         displayDate: "November 5-6, 2022",
         date: "2022/11/05",
         link: "https://newhacks-2022.devpost.com/",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "Technical Interview Night",
