@@ -65,7 +65,7 @@ export const allEvents = [
         displayDate: "January 28, 2026",
         date: "2026/01/28",
         link: "https://www.instagram.com/p/DT1RaUTidrE/",
-        highlightEvent: true,
+        highlightEvent: false,
     },
     {
         EventName: "ECE Labs Fundamentals Workshop",
@@ -129,7 +129,7 @@ export const allEvents = [
         displayDate: "October 25-26, 2025",
         date: "2025/10/25",
         link: "https://newhacks-2025.devpost.com/",
-        highlightEvent: false,
+        highlightEvent: true,
     },
     {
         EventName: "Resume Review Event",
