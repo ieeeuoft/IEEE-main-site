@@ -164,6 +164,22 @@ export const allEvents = [
         highlightEvent: false,
     },
     {
+        EventName: "Technical Interview Night",
+        EventImage: "tin-2025",
+        displayDate: "September 15, 2025",
+        date: "2025/09/15",
+        link: "https://www.instagram.com/p/DOJ7tYpklQk/",
+        highlightEvent: false,
+    },
+    {
+        EventName: "Edge AI Workshop",
+        EventImage: "edge-ai-workshop",
+        displayDate: "September 10, 2025",
+        date: "2025/09/10",
+        link: "https://www.instagram.com/p/DOFBfRIEd13/?img_index=1",
+        highlightEvent: false,
+    },
+    {
         EventName: "Hack The Student Life",
         EventImage: "hack-the-student-life-nov-2024",
         displayDate: "November 29, 2024",
