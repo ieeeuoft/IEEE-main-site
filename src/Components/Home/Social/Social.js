@@ -32,9 +32,9 @@ const Social = () => (
             duration={1}
             offset={80}
             animateIn="fadeInUp"
-            className={styles["newsletter-heading"]}
+            className={styles["discord-heading"]}
         >
-            <a href="http://eepurl.com/7spfT">Newsletter</a>
+            <a href="https://discord.com/invite/7uMVHJtJ6Z">Discord</a>
         </ScrollAnimation>
 
         <ScrollAnimation
@@ -42,11 +42,10 @@ const Social = () => (
             duration={1}
             offset={80}
             animateIn="fadeInUp"
-            className={styles["newsletter-text"]}
+            className={styles["discord-text"]}
         >
-            <a href="http://eepurl.com/7spfT">
-                Sign up for our monthly newsletter. Receive information about IEEE UofT
-                events, updates, and other useful stuff right in your inbox!
+            <a href="https://discord.com/invite/7uMVHJtJ6Z">
+                Join our student branch Discord server to stay up to date with our workshops!
             </a>
         </ScrollAnimation>
 
@@ -57,7 +56,7 @@ const Social = () => (
             animateIn="fadeInUp"
             className={styles["membership-heading"]}
         >
-            <a href="https://www.ieee.org/content/ieee-org/en/membership/join/">
+            <a href="https://www.ieee.org/membership/join">
                 IEEE Affiliation
             </a>
         </ScrollAnimation>
@@ -69,7 +68,7 @@ const Social = () => (
             animateIn="fadeInUp"
             className={styles["membership-text"]}
         >
-            <a href="https://www.ieee.org/content/ieee-org/en/membership/join/">
+            <a href="https://www.ieee.org/membership/join">
                 The world's largest technical professional organization dedicated to advancing technology for the benefit of humanity!
             </a>
         </ScrollAnimation>
@@ -82,8 +81,8 @@ const Social = () => (
             {" "}
         </a>
         <a
-            href="http://eepurl.com/7spfT"
-            className={styles["newsletter"]}
+            href="https://discord.com/invite/7uMVHJtJ6Z"
+            className={styles["discord"]}
             target="_blank"
             rel="noopener noreferrer"
         >
