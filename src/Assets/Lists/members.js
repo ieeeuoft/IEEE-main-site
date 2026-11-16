@@ -93,6 +93,16 @@ const memberData = {
                     position: "Associate",
                     emailLink: "",
                 },
+                {
+                    fullName: "Aliza Haidry",
+                    position: "Associate",
+                    emailLink: "",
+                },
+                {
+                    fullName: "Glenn Huang",
+                    position: "Associate",
+                    emailLink: "",
+                },
             ],
             firstRowSize: 3,
         },
@@ -173,6 +183,11 @@ const memberData = {
                 },
                 {
                     fullName: "Derek Lau",
+                    position: "Associate",
+                    emailLink: "",
+                },
+                {
+                    fullName: "Bianca Zhao",
                     position: "Associate",
                     emailLink: "",
                 },
@@ -275,6 +290,11 @@ const memberData = {
                     position: "Multimedia Associate",
                     emailLink: "",
                 },
+                {
+                    fullName: "Yara Megahed",
+                    position: "Multimedia Associate",
+                    emailLink: "",
+                },
             ],
             firstRowSize: 2,
         },
@@ -355,6 +375,26 @@ const memberData = {
                 },
                 {
                     fullName: "Vedant Harlalka",
+                    position: "Associate",
+                    emailLink: "",
+                },
+                {
+                    fullName: "Jean Huang",
+                    position: "Associate",
+                    emailLink: "",
+                },
+                {
+                    fullName: "Mai Fujii",
+                    position: "Associate",
+                    emailLink: "",
+                },
+                {
+                    fullName: "Dhruv Aggarwal",
+                    position: "Associate",
+                    emailLink: "",
+                },
+                {
+                    fullName: "Adam Pietrewicz",
                     position: "Associate",
                     emailLink: "",
                 },
